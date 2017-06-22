@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAF1E6FB6BC534CC3E320F2F /* Pods_Pop_Up_Circle_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A04C9FFF92B9594A354A9B /* Pods_Pop_Up_Circle_Test.framework */; };
+		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
+		D73011CE1EFB3381003D637A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* ViewController.swift */; };
+		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
+		D73011D41EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D73011D21EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld */; };
+		D73011D61EFB3381003D637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73011D51EFB3381003D637A /* Assets.xcassets */; };
+		D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011D71EFB3381003D637A /* LaunchScreen.storyboard */; };
+		D73011F61EFC0995003D637A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D73011F51EFC0995003D637A /* btn.wav */; };
+		D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F71EFC1E70003D637A /* zazenBell3.mp3 */; };
+		D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43A04C9FFF92B9594A354A9B /* Pods_Pop_Up_Circle_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pop_Up_Circle_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.release.xcconfig"; sourceTree = "<group>"; };
+		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D73011CD1EFB3381003D637A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D73011D01EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D73011D31EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pop_Up_Circle_Test.xcdatamodel; sourceTree = "<group>"; };
+		D73011D51EFB3381003D637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D73011D81EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D73011DA1EFB3381003D637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D73011F51EFC0995003D637A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		D73011F71EFC1E70003D637A /* zazenBell3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell3.mp3; sourceTree = "<group>"; };
+		D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell1.mp3; sourceTree = "<group>"; };
+		DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D73011C51EFB3381003D637A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF1E6FB6BC534CC3E320F2F /* Pods_Pop_Up_Circle_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		458FF4941F612FFC8E62DEE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A04C9FFF92B9594A354A9B /* Pods_Pop_Up_Circle_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		860504ED55FE8C9460E05A12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */,
+				B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D73011BF1EFB3381003D637A = {
+			isa = PBXGroup;
+			children = (
+				D73011CA1EFB3381003D637A /* Pop Up Circle Test */,
+				D73011C91EFB3381003D637A /* Products */,
+				860504ED55FE8C9460E05A12 /* Pods */,
+				458FF4941F612FFC8E62DEE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D73011C91EFB3381003D637A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D73011C81EFB3381003D637A /* Pop Up Circle Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D73011CA1EFB3381003D637A /* Pop Up Circle Test */ = {
+			isa = PBXGroup;
+			children = (
+				D73011E01EFB33EA003D637A /* Model */,
+				D73011E11EFB33FA003D637A /* View */,
+				D73011E21EFB3400003D637A /* Controller */,
+				D73011CB1EFB3381003D637A /* AppDelegate.swift */,
+				D73011CF1EFB3381003D637A /* Main.storyboard */,
+				D73011D51EFB3381003D637A /* Assets.xcassets */,
+				D73011D71EFB3381003D637A /* LaunchScreen.storyboard */,
+				D73011DA1EFB3381003D637A /* Info.plist */,
+				D73011F71EFC1E70003D637A /* zazenBell3.mp3 */,
+				D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */,
+				D73011D21EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld */,
+			);
+			path = "Pop Up Circle Test";
+			sourceTree = "<group>";
+		};
+		D73011E01EFB33EA003D637A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D73011EA1EFB6984003D637A /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D73011E11EFB33FA003D637A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D73011E21EFB3400003D637A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D73011CD1EFB3381003D637A /* ViewController.swift */,
+				D73011F51EFC0995003D637A /* btn.wav */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D73011EA1EFB6984003D637A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D73011C71EFB3381003D637A /* Pop Up Circle Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D73011DD1EFB3381003D637A /* Build configuration list for PBXNativeTarget "Pop Up Circle Test" */;
+			buildPhases = (
+				EDC827825A5F3B8CE4D76CFD /* [CP] Check Pods Manifest.lock */,
+				D73011C41EFB3381003D637A /* Sources */,
+				D73011C51EFB3381003D637A /* Frameworks */,
+				D73011C61EFB3381003D637A /* Resources */,
+				D0BA08CC4D837B2DF9A6F33C /* [CP] Embed Pods Frameworks */,
+				41E4B5A615C7649C4F175AD8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pop Up Circle Test";
+			productName = "Pop Up Circle Test";
+			productReference = D73011C81EFB3381003D637A /* Pop Up Circle Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D73011C01EFB3381003D637A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Om Design";
+				TargetAttributes = {
+					D73011C71EFB3381003D637A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4V5N9W3YDA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D73011C31EFB3381003D637A /* Build configuration list for PBXProject "Pop Up Circle Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D73011BF1EFB3381003D637A;
+			productRefGroup = D73011C91EFB3381003D637A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D73011C71EFB3381003D637A /* Pop Up Circle Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D73011C61EFB3381003D637A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */,
+				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
+				D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */,
+				D73011D61EFB3381003D637A /* Assets.xcassets in Resources */,
+				D73011D11EFB3381003D637A /* Main.storyboard in Resources */,
+				D73011F61EFC0995003D637A /* btn.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41E4B5A615C7649C4F175AD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BA08CC4D837B2DF9A6F33C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDC827825A5F3B8CE4D76CFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D73011C41EFB3381003D637A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73011CE1EFB3381003D637A /* ViewController.swift in Sources */,
+				D73011D41EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld in Sources */,
+				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D73011CF1EFB3381003D637A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D73011D01EFB3381003D637A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D73011D71EFB3381003D637A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D73011D81EFB3381003D637A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D73011DB1EFB3381003D637A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D73011DC1EFB3381003D637A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D73011DE1EFB3381003D637A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4V5N9W3YDA;
+				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.popupzendo.Pop-Up-Circle-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D73011DF1EFB3381003D637A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4V5N9W3YDA;
+				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.popupzendo.Pop-Up-Circle-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D73011C31EFB3381003D637A /* Build configuration list for PBXProject "Pop Up Circle Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73011DB1EFB3381003D637A /* Debug */,
+				D73011DC1EFB3381003D637A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D73011DD1EFB3381003D637A /* Build configuration list for PBXNativeTarget "Pop Up Circle Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73011DE1EFB3381003D637A /* Debug */,
+				D73011DF1EFB3381003D637A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D73011D21EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D73011D31EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodel */,
+			);
+			currentVersion = D73011D31EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodel */;
+			path = Pop_Up_Circle_Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D73011C01EFB3381003D637A /* Project object */;
+}
