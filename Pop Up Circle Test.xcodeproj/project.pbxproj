@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CAF1E6FB6BC534CC3E320F2F /* Pods_Pop_Up_Circle_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A04C9FFF92B9594A354A9B /* Pods_Pop_Up_Circle_Test.framework */; };
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
-		D73011CE1EFB3381003D637A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* ViewController.swift */; };
+		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
 		D73011D41EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D73011D21EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld */; };
 		D73011D61EFB3381003D637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73011D51EFB3381003D637A /* Assets.xcassets */; };
@@ -24,7 +24,7 @@
 		B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.release.xcconfig"; sourceTree = "<group>"; };
 		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D73011CD1EFB3381003D637A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D73011CD1EFB3381003D637A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		D73011D01EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D73011D31EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pop_Up_Circle_Test.xcdatamodel; sourceTree = "<group>"; };
 		D73011D51EFB3381003D637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		D73011E21EFB3400003D637A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D73011CD1EFB3381003D637A /* ViewController.swift */,
+				D73011CD1EFB3381003D637A /* TimerViewController.swift */,
 				D73011F51EFC0995003D637A /* btn.wav */,
 			);
 			name = Controller;
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D73011CE1EFB3381003D637A /* ViewController.swift in Sources */,
+				D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */,
 				D73011D41EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld in Sources */,
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
 			);

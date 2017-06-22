@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TimerViewController.swift
 //  Pop Up Circle Test
 //
 //  Created by Joseph Hall on 6/21/17.
@@ -13,18 +13,25 @@ import CoreData
 
 
 
-class ViewController: UIViewController {
+class TimerViewController: UIViewController {
     
     var progress: KDCircularProgress!
     var btnSound: AVAudioPlayer!
-    var zazen: Double = 60
+    var zazen: Double = 0
     
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var sliderValue: UISlider!
+    
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        
         
         view.backgroundColor = UIColor(white: 1.00, alpha: 0.5)
         
@@ -78,7 +85,7 @@ class ViewController: UIViewController {
         
         playSound()
         
-        self.progress.animate(fromAngle: 0, toAngle: 360, duration: self.zazen) { completed in
+        self.progress.animate(fromAngle: 0, toAngle: 360, duration: self.zazen*60) { completed in
             if completed {
                 playSound()
             } else {
