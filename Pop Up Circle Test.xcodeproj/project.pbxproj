@@ -8,31 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		CAF1E6FB6BC534CC3E320F2F /* Pods_Pop_Up_Circle_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A04C9FFF92B9594A354A9B /* Pods_Pop_Up_Circle_Test.framework */; };
+		D703D49E1F01ACB500580685 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703D49B1F01ACB500580685 /* MaterialView.swift */; };
+		D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703D49C1F01ACB500580685 /* ItemCell.swift */; };
+		D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703D49D1F01ACB500580685 /* CustomTextField.swift */; };
+		D703D4A21F01D11100580685 /* DreamLister.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */; };
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
 		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
-		D73011D41EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D73011D21EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld */; };
 		D73011D61EFB3381003D637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73011D51EFB3381003D637A /* Assets.xcassets */; };
 		D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011D71EFB3381003D637A /* LaunchScreen.storyboard */; };
 		D73011F61EFC0995003D637A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D73011F51EFC0995003D637A /* btn.wav */; };
 		D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F71EFC1E70003D637A /* zazenBell3.mp3 */; };
 		D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */; };
+		D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */; };
+		D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */; };
+		D7CC875D1F00BEB60089A806 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87591F00BEB60089A806 /* Item+CoreDataClass.swift */; };
+		D7CC875E1F00BEB60089A806 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */; };
+		D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC875F1F00BEC50089A806 /* ItemType+CoreDataProperties.swift */; };
+		D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87601F00BEC50089A806 /* Image+CoreDataProperties.swift */; };
+		D7CC87651F00BEC50089A806 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87611F00BEC50089A806 /* Item+CoreDataProperties.swift */; };
+		D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */; };
+		D7CC87691F00BEFD0089A806 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87671F00BEFD0089A806 /* MainVC.swift */; };
+		D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */; };
+		D7CC876C1F00BF430089A806 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7CC876B1F00BF430089A806 /* tesla.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43A04C9FFF92B9594A354A9B /* Pods_Pop_Up_Circle_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pop_Up_Circle_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.release.xcconfig"; sourceTree = "<group>"; };
+		D703D49B1F01ACB500580685 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		D703D49C1F01ACB500580685 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		D703D49D1F01ACB500580685 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73011CD1EFB3381003D637A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		D73011D01EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D73011D31EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pop_Up_Circle_Test.xcdatamodel; sourceTree = "<group>"; };
 		D73011D51EFB3381003D637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73011D81EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73011DA1EFB3381003D637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73011F51EFC0995003D637A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		D73011F71EFC1E70003D637A /* zazenBell3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell3.mp3; sourceTree = "<group>"; };
 		D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell1.mp3; sourceTree = "<group>"; };
+		D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7CC87591F00BEB60089A806 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7CC875F1F00BEC50089A806 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7CC87601F00BEC50089A806 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7CC87611F00BEC50089A806 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7CC87671F00BEFD0089A806 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		D7CC876B1F00BF430089A806 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,13 +118,14 @@
 				D73011E11EFB33FA003D637A /* View */,
 				D73011E21EFB3400003D637A /* Controller */,
 				D73011CB1EFB3381003D637A /* AppDelegate.swift */,
+				D7CC876B1F00BF430089A806 /* tesla.jpg */,
 				D73011CF1EFB3381003D637A /* Main.storyboard */,
 				D73011D51EFB3381003D637A /* Assets.xcassets */,
 				D73011D71EFB3381003D637A /* LaunchScreen.storyboard */,
 				D73011DA1EFB3381003D637A /* Info.plist */,
 				D73011F71EFC1E70003D637A /* zazenBell3.mp3 */,
 				D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */,
-				D73011D21EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld */,
+				D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */,
 			);
 			path = "Pop Up Circle Test";
 			sourceTree = "<group>";
@@ -104,6 +133,10 @@
 		D73011E01EFB33EA003D637A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */,
+				D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */,
+				D7CC87591F00BEB60089A806 /* Item+CoreDataClass.swift */,
+				D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */,
 				D73011EA1EFB6984003D637A /* Generated */,
 			);
 			name = Model;
@@ -112,6 +145,9 @@
 		D73011E11EFB33FA003D637A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D703D49B1F01ACB500580685 /* MaterialView.swift */,
+				D703D49C1F01ACB500580685 /* ItemCell.swift */,
+				D703D49D1F01ACB500580685 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -119,6 +155,8 @@
 		D73011E21EFB3400003D637A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D7CC87671F00BEFD0089A806 /* MainVC.swift */,
+				D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */,
 				D73011CD1EFB3381003D637A /* TimerViewController.swift */,
 				D73011F51EFC0995003D637A /* btn.wav */,
 			);
@@ -128,6 +166,10 @@
 		D73011EA1EFB6984003D637A /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				D7CC875F1F00BEC50089A806 /* ItemType+CoreDataProperties.swift */,
+				D7CC87601F00BEC50089A806 /* Image+CoreDataProperties.swift */,
+				D7CC87611F00BEC50089A806 /* Item+CoreDataProperties.swift */,
+				D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */,
 			);
 			name = Generated;
 			sourceTree = "<group>";
@@ -195,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CC876C1F00BF430089A806 /* tesla.jpg in Resources */,
 				D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */,
 				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
 				D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */,
@@ -259,9 +302,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */,
+				D7CC875D1F00BEB60089A806 /* Item+CoreDataClass.swift in Sources */,
+				D7CC875E1F00BEB60089A806 /* Store+CoreDataClass.swift in Sources */,
+				D703D49E1F01ACB500580685 /* MaterialView.swift in Sources */,
+				D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */,
+				D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */,
+				D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */,
+				D703D4A21F01D11100580685 /* DreamLister.xcdatamodel in Sources */,
+				D7CC87691F00BEFD0089A806 /* MainVC.swift in Sources */,
 				D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */,
-				D73011D41EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld in Sources */,
+				D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */,
+				D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */,
+				D7CC87651F00BEC50089A806 /* Item+CoreDataProperties.swift in Sources */,
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
+				D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */,
+				D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,19 +488,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D73011D21EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D73011D31EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodel */,
-			);
-			currentVersion = D73011D31EFB3381003D637A /* Pop_Up_Circle_Test.xcdatamodel */;
-			path = Pop_Up_Circle_Test.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D73011C01EFB3381003D637A /* Project object */;
 }
