@@ -43,5 +43,12 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>A picture goes beyond words</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SFCompactDisplay-Semibold.otf</string>
+		<string>SFCompactRounded-Thin.otf</string>
+		<string>SFNSDisplayCondensed-Thin.otf</string>
+		<string>SFCompactText-Light.otf</string>
+	</array>
 </dict>
 </plist>

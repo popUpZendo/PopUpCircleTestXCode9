@@ -10,10 +10,10 @@ import UIKit
 
 class ItemCell: UITableViewCell {
     
-    @IBOutlet weak var thumb: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var price: UILabel!
-    @IBOutlet weak var details: UILabel!
+    @IBOutlet  var thumb: UIImageView!
+    @IBOutlet  var title: UILabel!
+    @IBOutlet  var price: UILabel!
+    @IBOutlet  var details: UILabel!
     
     func configureCell(item: Item) {
         

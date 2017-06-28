@@ -12,6 +12,10 @@
 		D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703D49C1F01ACB500580685 /* ItemCell.swift */; };
 		D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703D49D1F01ACB500580685 /* CustomTextField.swift */; };
 		D703D4A21F01D11100580685 /* DreamLister.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */; };
+		D703D4B01F04020100580685 /* SFCompactDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AC1F04020100580685 /* SFCompactDisplay-Semibold.otf */; };
+		D703D4B11F04020100580685 /* SFCompactRounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */; };
+		D703D4B21F04020100580685 /* SFNSDisplayCondensed-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */; };
+		D703D4B31F04020100580685 /* SFCompactText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AF1F04020100580685 /* SFCompactText-Light.otf */; };
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
 		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
@@ -37,9 +41,13 @@
 		43A04C9FFF92B9594A354A9B /* Pods_Pop_Up_Circle_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pop_Up_Circle_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.release.xcconfig"; sourceTree = "<group>"; };
 		D703D49B1F01ACB500580685 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
-		D703D49C1F01ACB500580685 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		D703D49C1F01ACB500580685 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; usesTabs = 0; };
 		D703D49D1F01ACB500580685 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
+		D703D4AC1F04020100580685 /* SFCompactDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactRounded-Thin.otf"; sourceTree = "<group>"; };
+		D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplayCondensed-Thin.otf"; sourceTree = "<group>"; };
+		D703D4AF1F04020100580685 /* SFCompactText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Light.otf"; sourceTree = "<group>"; };
 		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73011CD1EFB3381003D637A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D703D4AB1F0401DE00580685 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D703D4AC1F04020100580685 /* SFCompactDisplay-Semibold.otf */,
+				D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */,
+				D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */,
+				D703D4AF1F04020100580685 /* SFCompactText-Light.otf */,
+				D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */,
+				D73011F71EFC1E70003D637A /* zazenBell3.mp3 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D73011BF1EFB3381003D637A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +135,7 @@
 		D73011CA1EFB3381003D637A /* Pop Up Circle Test */ = {
 			isa = PBXGroup;
 			children = (
+				D703D4AB1F0401DE00580685 /* Resources */,
 				D73011E01EFB33EA003D637A /* Model */,
 				D73011E11EFB33FA003D637A /* View */,
 				D73011E21EFB3400003D637A /* Controller */,
@@ -123,8 +145,6 @@
 				D73011D51EFB3381003D637A /* Assets.xcassets */,
 				D73011D71EFB3381003D637A /* LaunchScreen.storyboard */,
 				D73011DA1EFB3381003D637A /* Info.plist */,
-				D73011F71EFC1E70003D637A /* zazenBell3.mp3 */,
-				D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */,
 				D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */,
 			);
 			path = "Pop Up Circle Test";
@@ -237,12 +257,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D703D4B11F04020100580685 /* SFCompactRounded-Thin.otf in Resources */,
 				D7CC876C1F00BF430089A806 /* tesla.jpg in Resources */,
 				D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */,
 				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
 				D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */,
+				D703D4B31F04020100580685 /* SFCompactText-Light.otf in Resources */,
+				D703D4B21F04020100580685 /* SFNSDisplayCondensed-Thin.otf in Resources */,
 				D73011D61EFB3381003D637A /* Assets.xcassets in Resources */,
 				D73011D11EFB3381003D637A /* Main.storyboard in Resources */,
+				D703D4B01F04020100580685 /* SFCompactDisplay-Semibold.otf in Resources */,
 				D73011F61EFC0995003D637A /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
