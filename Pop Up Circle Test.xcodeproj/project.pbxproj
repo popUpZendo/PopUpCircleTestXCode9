@@ -34,7 +34,6 @@
 		D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */; };
 		D7CC87691F00BEFD0089A806 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87671F00BEFD0089A806 /* MainVC.swift */; };
 		D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */; };
-		D7CC876C1F00BF430089A806 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7CC876B1F00BF430089A806 /* tesla.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +67,6 @@
 		D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D7CC87671F00BEFD0089A806 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
-		D7CC876B1F00BF430089A806 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +138,6 @@
 				D73011E11EFB33FA003D637A /* View */,
 				D73011E21EFB3400003D637A /* Controller */,
 				D73011CB1EFB3381003D637A /* AppDelegate.swift */,
-				D7CC876B1F00BF430089A806 /* tesla.jpg */,
 				D73011CF1EFB3381003D637A /* Main.storyboard */,
 				D73011D51EFB3381003D637A /* Assets.xcassets */,
 				D73011D71EFB3381003D637A /* LaunchScreen.storyboard */,
@@ -258,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D703D4B11F04020100580685 /* SFCompactRounded-Thin.otf in Resources */,
-				D7CC876C1F00BF430089A806 /* tesla.jpg in Resources */,
 				D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */,
 				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
 				D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */,

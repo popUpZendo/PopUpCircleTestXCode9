@@ -11,15 +11,23 @@ import CoreData
 
 
 class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+  // DatePickerController = ItemDetailsVC Here
+  
+    @IBOutlet var datePicker:UIDatePicker!
+    @IBOutlet var timePicker:UIDatePicker!
+    @IBOutlet var dateTimeDisplay:UILabel!
+    
     @IBOutlet weak var storePicker: UIPickerView!
     @IBOutlet weak var titleField: CustomTextField!
     @IBOutlet weak var PriceField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
     @IBOutlet weak var itemTypeField: CustomTextField!
     
-    
     @IBOutlet weak var thumgImg: UIImageView!
+    
+    let dateFormatter = DateFormatter()
+    let timeFormatter = DateFormatter()
+    
     var stores = [Store]()
     var itemToEdit: Item?
     var imagePicker: UIImagePickerController!
@@ -91,6 +99,16 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             
             // handle the error
         }
+    }
+    
+        
+    @IBAction func timePickerChanged(_ sender: AnyObject) {
+        setTime()
+    }
+    
+    func setTime() {
+        timeFormatter.timeStyle = DateFormatter.Style.short
+        dateTimeDisplay.text = timeFormatter.string(from: timePicker.date)
     }
     
     @IBAction func savePressed(_ sender: UIButton) {

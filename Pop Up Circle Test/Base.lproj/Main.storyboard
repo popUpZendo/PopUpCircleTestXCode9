@@ -152,8 +152,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-sf-mch">
-                                <rect key="frame" x="16" y="383" width="343" height="216"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-sf-mch">
+                                <rect key="frame" x="16" y="518" width="343" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="0Xe-H4-alw"/>
                                 </constraints>
@@ -168,8 +168,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule or Practice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llx-8w-lxB">
-                                <rect key="frame" x="140.5" y="354" width="94" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llx-8w-lxB">
+                                <rect key="frame" x="140" y="505" width="94" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="aQX-FA-t30"/>
                                     <constraint firstAttribute="height" constant="21" id="ePD-sv-SEz"/>
@@ -192,6 +192,24 @@
                                     <action selector="savePressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="i7Y-VI-4iS"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-d4-qkF">
+                                <rect key="frame" x="192" y="290" width="167" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="520366037.19810897">
+                                    <!--2017-06-28 18:07:17 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="timePickerChanged:" destination="VrU-Oe-qKj" eventType="valueChanged" id="cFZ-te-a07"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahh-dl-186">
+                                <rect key="frame" x="8" y="466" width="124" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -251,10 +269,12 @@
                     <connections>
                         <outlet property="ItemTypeField" destination="Hpu-pu-Gfa" id="GlZ-2h-FYU"/>
                         <outlet property="PriceField" destination="b5o-Jt-yQ9" id="fHG-TX-G15"/>
+                        <outlet property="dateTimeDisplay" destination="Ahh-dl-186" id="gWN-Jt-PXu"/>
                         <outlet property="detailsField" destination="ihC-tQ-yoR" id="66m-cD-lQr"/>
                         <outlet property="itemTypeField" destination="Hpu-pu-Gfa" id="alu-FH-Rve"/>
                         <outlet property="storePicker" destination="Eyk-sf-mch" id="B2D-VN-PzV"/>
                         <outlet property="thumgImg" destination="Zsg-eR-mg4" id="Db3-Fi-94Q"/>
+                        <outlet property="timePicker" destination="SLI-d4-qkF" id="j41-1N-Vdl"/>
                         <outlet property="titleField" destination="NeI-va-LOz" id="kWi-hY-vA8"/>
                     </connections>
                 </viewController>
@@ -408,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFn-Tr-Ucq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1220" y="131.78410794602701"/>
+            <point key="canvasLocation" x="975" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KdL-04-t90">
@@ -444,8 +464,8 @@
         <image name="YinYang" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZCE-Am-bwg"/>
-        <segue reference="bB5-hM-lUC"/>
+        <segue reference="AEP-Id-hED"/>
         <segue reference="oGC-2J-1Uu"/>
+        <segue reference="1LC-O1-mo7"/>
     </inferredMetricsTieBreakers>
 </document>
