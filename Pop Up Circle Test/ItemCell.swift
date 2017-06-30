@@ -14,9 +14,11 @@ class ItemCell: UITableViewCell {
     @IBOutlet  var title: UILabel!
     @IBOutlet  var price: UILabel!
     @IBOutlet  var details: UILabel!
+    @IBOutlet  var location: UILabel!
     
     func configureCell(item: Item) {
         
+        location.text = item.location
         title.text = item.title
         price.text = item.time
         details.text = item.details

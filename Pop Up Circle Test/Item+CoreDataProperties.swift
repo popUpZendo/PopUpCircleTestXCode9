@@ -19,6 +19,7 @@ extension Item {
     @NSManaged public var created: NSDate?
     @NSManaged public var details: String?
     @NSManaged public var itemType: String?
+    @NSManaged public var location: String?
     @NSManaged public var price: Double
     @NSManaged public var time: String?
     @NSManaged public var title: String?

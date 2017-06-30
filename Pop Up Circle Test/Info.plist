@@ -45,10 +45,17 @@
 	<string>A picture goes beyond words</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>GoatskinBrush_PersonalUse.ttf</string>
 		<string>SFCompactDisplay-Semibold.otf</string>
 		<string>SFCompactRounded-Thin.otf</string>
 		<string>SFNSDisplayCondensed-Thin.otf</string>
 		<string>SFCompactText-Light.otf</string>
+		<string>still time.ttf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
