@@ -143,11 +143,11 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             
         }
         
-        //if let time = timeDisplay.text {
+        if let time = timeDisplay.text {
         
-        //item.time = time
+        item.time = time
         
-        //}
+        }
 
         
         if let price = PriceField.text {
@@ -173,7 +173,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     func loadItemData() {
         
         if let item = itemToEdit {
-            //timeDisplay.text = item.time
+            timeDisplay.text = item.time
             titleField.text = item.title
             PriceField.text = "\(item.price)"
             detailsField.text = item.details

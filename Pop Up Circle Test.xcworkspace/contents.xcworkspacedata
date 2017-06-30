@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../Data Model/Item+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../../Data Model/Item+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:Pop Up Circle Test.xcodeproj">
    </FileRef>
    <FileRef

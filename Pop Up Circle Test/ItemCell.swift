@@ -12,7 +12,7 @@ class ItemCell: UITableViewCell {
     
     @IBOutlet  var thumb: UIImageView!
     @IBOutlet  var title: UILabel!
-    @IBOutlet  var price: UILabel!
+    @IBOutlet  var time: UILabel!
     @IBOutlet  var details: UILabel!
     
     func configureCell(item: Item) {
