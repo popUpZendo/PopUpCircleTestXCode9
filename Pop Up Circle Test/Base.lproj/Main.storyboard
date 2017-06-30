@@ -152,32 +152,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-sf-mch">
-                                <rect key="frame" x="16" y="518" width="343" height="81"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="0Xe-H4-alw"/>
-                                </constraints>
-                            </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item Type" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-pu-Gfa" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="242" width="343" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Item Type" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-pu-Gfa" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
+                                <rect key="frame" x="16" y="208" width="150" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="xff-4i-q9h"/>
                                     <constraint firstAttribute="height" constant="40" id="yEN-iR-eTt"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llx-8w-lxB">
-                                <rect key="frame" x="140" y="505" width="94" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="94" id="aQX-FA-t30"/>
-                                    <constraint firstAttribute="height" constant="21" id="ePD-sv-SEz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOF-DC-nwL">
                                 <rect key="frame" x="16" y="607" width="343" height="40"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,9 +177,8 @@
                                     <action selector="savePressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="i7Y-VI-4iS"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-d4-qkF">
-                                <rect key="frame" x="192" y="290" width="167" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-d4-qkF">
+                                <rect key="frame" x="192" y="258" width="167" height="216"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <date key="date" timeIntervalSinceReferenceDate="520366037.19810897">
                                     <!--2017-06-28 18:07:17 +0000-->
@@ -204,12 +188,29 @@
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahh-dl-186">
-                                <rect key="frame" x="8" y="466" width="124" height="99"/>
+                                <rect key="frame" x="29" y="451" width="124" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-sf-mch">
+                                <rect key="frame" x="28" y="449" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0Xe-H4-alw"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Time Display" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwU-nG-eKl" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
+                                <rect key="frame" x="209" y="208" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="QFC-7l-dqH"/>
+                                    <constraint firstAttribute="height" constant="40" id="b9e-mf-ga2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -221,19 +222,22 @@
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="I7c-sK-2gQ"/>
                             <constraint firstItem="NeI-va-LOz" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="PQW-OH-AGp"/>
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="top" secondItem="lGr-RY-5QO" secondAttribute="bottom" constant="8" id="TPG-fP-H7S"/>
-                            <constraint firstItem="Llx-8w-lxB" firstAttribute="centerX" secondItem="0b2-lK-Aw4" secondAttribute="centerX" id="VsL-CB-bfl"/>
                             <constraint firstItem="bYC-ND-vW1" firstAttribute="top" secondItem="YOF-DC-nwL" secondAttribute="bottom" constant="20" id="YRl-BL-cfw"/>
                             <constraint firstItem="NeI-va-LOz" firstAttribute="leading" secondItem="69P-B8-fkO" secondAttribute="trailing" constant="8" id="dHY-lb-tkq"/>
                             <constraint firstItem="b5o-Jt-yQ9" firstAttribute="top" secondItem="NeI-va-LOz" secondAttribute="bottom" constant="10" id="dh5-od-S20"/>
                             <constraint firstItem="69P-B8-fkO" firstAttribute="centerX" secondItem="Zsg-eR-mg4" secondAttribute="centerX" id="efu-5X-LkD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Eyk-sf-mch" secondAttribute="trailing" id="fq7-3o-ExC"/>
-                            <constraint firstItem="Eyk-sf-mch" firstAttribute="top" secondItem="Llx-8w-lxB" secondAttribute="bottom" constant="8" id="n3S-R4-D9i"/>
+                            <constraint firstItem="Eyk-sf-mch" firstAttribute="centerX" secondItem="0b2-lK-Aw4" secondAttribute="centerX" id="hmP-JB-LVY"/>
+                            <constraint firstItem="SLI-d4-qkF" firstAttribute="top" secondItem="bwU-nG-eKl" secondAttribute="bottom" constant="10" id="lac-Jk-hCu"/>
+                            <constraint firstItem="Hpu-pu-Gfa" firstAttribute="top" secondItem="ihC-tQ-yoR" secondAttribute="bottom" constant="10" id="pGL-xc-PD9"/>
                             <constraint firstItem="ihC-tQ-yoR" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="ptr-OV-sqh"/>
-                            <constraint firstItem="Eyk-sf-mch" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="qvK-CU-qno"/>
+                            <constraint firstItem="Hpu-pu-Gfa" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="q33-xt-pbu"/>
+                            <constraint firstItem="bwU-nG-eKl" firstAttribute="trailing" secondItem="SLI-d4-qkF" secondAttribute="trailing" id="shN-Wh-Je9"/>
                             <constraint firstItem="b5o-Jt-yQ9" firstAttribute="leading" secondItem="69P-B8-fkO" secondAttribute="trailing" constant="8" id="un3-Tz-sVm"/>
+                            <constraint firstItem="bwU-nG-eKl" firstAttribute="baseline" secondItem="Hpu-pu-Gfa" secondAttribute="baseline" id="vMw-uR-BXx"/>
                             <constraint firstItem="YOF-DC-nwL" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="wRO-P8-EUL"/>
                             <constraint firstItem="b5o-Jt-yQ9" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="wwK-vu-ybe"/>
                             <constraint firstItem="ihC-tQ-yoR" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="xyg-hw-ULV"/>
+                            <constraint firstItem="bwU-nG-eKl" firstAttribute="trailing" secondItem="ihC-tQ-yoR" secondAttribute="trailing" id="yab-UV-aiz"/>
                         </constraints>
                     </view>
                     <toolbarItems>
@@ -274,6 +278,7 @@
                         <outlet property="itemTypeField" destination="Hpu-pu-Gfa" id="alu-FH-Rve"/>
                         <outlet property="storePicker" destination="Eyk-sf-mch" id="B2D-VN-PzV"/>
                         <outlet property="thumgImg" destination="Zsg-eR-mg4" id="Db3-Fi-94Q"/>
+                        <outlet property="timeDisplay" destination="bwU-nG-eKl" id="uKd-Qp-t3V"/>
                         <outlet property="timePicker" destination="SLI-d4-qkF" id="j41-1N-Vdl"/>
                         <outlet property="titleField" destination="NeI-va-LOz" id="kWi-hY-vA8"/>
                     </connections>
@@ -464,8 +469,8 @@
         <image name="YinYang" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AEP-Id-hED"/>
-        <segue reference="oGC-2J-1Uu"/>
         <segue reference="1LC-O1-mo7"/>
+        <segue reference="oGC-2J-1Uu"/>
+        <segue reference="ZCE-Am-bwg"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,12 +17,12 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet var timePicker:UIDatePicker!
     @IBOutlet var dateTimeDisplay:UILabel!
     
+    @IBOutlet weak var timeDisplay: CustomTextField!
     @IBOutlet weak var storePicker: UIPickerView!
     @IBOutlet weak var titleField: CustomTextField!
     @IBOutlet weak var PriceField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
     @IBOutlet weak var itemTypeField: CustomTextField!
-    
     @IBOutlet weak var thumgImg: UIImageView!
     
     let dateFormatter = DateFormatter()
@@ -49,10 +49,10 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         store.name = "Schedule"
         let store2 = Store(context: context)
         store2.name = "Practice"
-        let store3 = Store(context: context)
-        store3.name = "Groups"
-        let store4 = Store(context: context)
-        store4.name = "Legal"
+        //let store3 = Store(context: context)
+        //store3.name = "Groups"
+        //let store4 = Store(context: context)
+        //store4.name = "Legal"
 
        
 //        ad.saveContext()
@@ -109,6 +109,8 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     func setTime() {
         timeFormatter.timeStyle = DateFormatter.Style.short
         dateTimeDisplay.text = timeFormatter.string(from: timePicker.date)
+        
+        timeDisplay.text = timeFormatter.string(from: timePicker.date)
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
@@ -140,6 +142,12 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             item.itemType = itemType
             
         }
+        
+        //if let time = timeDisplay.text {
+        
+        //item.time = time
+        
+        //}
 
         
         if let price = PriceField.text {
@@ -165,7 +173,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     func loadItemData() {
         
         if let item = itemToEdit {
-            
+            //timeDisplay.text = item.time
             titleField.text = item.title
             PriceField.text = "\(item.price)"
             detailsField.text = item.details
