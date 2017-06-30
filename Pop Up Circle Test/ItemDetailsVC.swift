@@ -11,9 +11,8 @@ import CoreData
 
 
 class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-  // DatePickerController = ItemDetailsVC Here
   
-    @IBOutlet var datePicker:UIDatePicker!
+
     @IBOutlet var timePicker:UIDatePicker!
     @IBOutlet var dateTimeDisplay:UILabel!
     
@@ -35,6 +34,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if let topItem = self.navigationController?.navigationBar.topItem {
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         }
@@ -49,10 +49,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         store.name = "Schedule"
         let store2 = Store(context: context)
         store2.name = "Practice"
-        //let store3 = Store(context: context)
-        //store3.name = "Groups"
-        //let store4 = Store(context: context)
-        //store4.name = "Legal"
+        
 
        
 //        ad.saveContext()
@@ -169,6 +166,8 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         _ = navigationController?.popViewController(animated: true)
         
     }
+    
+    
     
     func loadItemData() {
         

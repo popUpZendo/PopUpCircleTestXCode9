@@ -12,13 +12,13 @@ class ItemCell: UITableViewCell {
     
     @IBOutlet  var thumb: UIImageView!
     @IBOutlet  var title: UILabel!
-    @IBOutlet  var time: UILabel!
+    @IBOutlet  var price: UILabel!
     @IBOutlet  var details: UILabel!
     
     func configureCell(item: Item) {
         
         title.text = item.title
-        price.text = "\(item.price)"
+        price.text = item.time
         details.text = item.details
         thumb.image = item.toImage?.image as? UIImage
         
