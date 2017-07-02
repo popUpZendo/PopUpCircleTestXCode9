@@ -20,6 +20,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
         tableView.delegate = self
         tableView.dataSource = self
         

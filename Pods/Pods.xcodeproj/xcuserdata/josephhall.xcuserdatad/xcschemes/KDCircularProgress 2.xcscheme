@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D73011C71EFB3381003D637A"
-               BuildableName = "Pop Up Circle Test.app"
-               BlueprintName = "Pop Up Circle Test"
-               ReferencedContainer = "container:Pop Up Circle Test.xcodeproj">
+               BlueprintIdentifier = "322428ECC8C5EC71F14C92233787C7AC"
+               BuildableName = "KDCircularProgress.framework"
+               BlueprintName = "KDCircularProgress"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D73011C71EFB3381003D637A"
-            BuildableName = "Pop Up Circle Test.app"
-            BlueprintName = "Pop Up Circle Test"
-            ReferencedContainer = "container:Pop Up Circle Test.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -53,23 +44,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D73011C71EFB3381003D637A"
-            BuildableName = "Pop Up Circle Test.app"
-            BlueprintName = "Pop Up Circle Test"
-            ReferencedContainer = "container:Pop Up Circle Test.xcodeproj">
+            BlueprintIdentifier = "322428ECC8C5EC71F14C92233787C7AC"
+            BuildableName = "KDCircularProgress.framework"
+            BlueprintName = "KDCircularProgress"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,16 +62,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D73011C71EFB3381003D637A"
-            BuildableName = "Pop Up Circle Test.app"
-            BlueprintName = "Pop Up Circle Test"
-            ReferencedContainer = "container:Pop Up Circle Test.xcodeproj">
+            BlueprintIdentifier = "322428ECC8C5EC71F14C92233787C7AC"
+            BuildableName = "KDCircularProgress.framework"
+            BlueprintName = "KDCircularProgress"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

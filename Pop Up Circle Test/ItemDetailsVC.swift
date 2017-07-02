@@ -23,6 +23,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var detailsField: CustomTextField!
     @IBOutlet weak var itemTypeField: CustomTextField!
     @IBOutlet weak var thumgImg: UIImageView!
+    @IBOutlet weak var locationField: CustomTextField!
     
     let dateFormatter = DateFormatter()
     let timeFormatter = DateFormatter()
@@ -33,6 +34,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         
         if let topItem = self.navigationController?.navigationBar.topItem {
@@ -140,6 +142,12 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             
         }
         
+        if let location = locationField.text {
+            
+            item.location = location
+            
+        }
+        
         if let time = timeDisplay.text {
         
         item.time = time
@@ -174,6 +182,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         if let item = itemToEdit {
             timeDisplay.text = item.time
             titleField.text = item.title
+            locationField.text = item.location
             PriceField.text = "\(item.price)"
             detailsField.text = item.details
             itemTypeField.text = item.itemType

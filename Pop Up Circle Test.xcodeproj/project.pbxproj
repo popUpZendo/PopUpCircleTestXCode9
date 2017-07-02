@@ -22,7 +22,6 @@
 		D7079F241F06127500026B21 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F221F06127500026B21 /* PartyCell.swift */; };
 		D7079F251F06127500026B21 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F231F06127500026B21 /* PartyRock.swift */; };
 		D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F2A1F06B91100026B21 /* LearningVC.swift */; };
-		D7079F2D1F06E41C00026B21 /* GoatskinBrush_PersonalUse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7079F291F06B75B00026B21 /* GoatskinBrush_PersonalUse.ttf */; };
 		D7079F2E1F06E42900026B21 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7079F2C1F06E0D600026B21 /* still time.ttf */; };
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
 		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
@@ -58,7 +57,6 @@
 		D7079F201F0611DD00026B21 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		D7079F221F06127500026B21 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
 		D7079F231F06127500026B21 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
-		D7079F291F06B75B00026B21 /* GoatskinBrush_PersonalUse.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoatskinBrush_PersonalUse.ttf; sourceTree = "<group>"; };
 		D7079F2A1F06B91100026B21 /* LearningVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
 		D7079F2C1F06E0D600026B21 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +150,6 @@
 				D73011E21EFB3400003D637A /* Controller */,
 				D73011CB1EFB3381003D637A /* AppDelegate.swift */,
 				D73011CF1EFB3381003D637A /* Main.storyboard */,
-				D7079F291F06B75B00026B21 /* GoatskinBrush_PersonalUse.ttf */,
 				D73011D51EFB3381003D637A /* Assets.xcassets */,
 				D73011D71EFB3381003D637A /* LaunchScreen.storyboard */,
 				D73011DA1EFB3381003D637A /* Info.plist */,
@@ -239,12 +236,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Om Design";
 				TargetAttributes = {
 					D73011C71EFB3381003D637A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4V5N9W3YDA;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -273,7 +271,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7079F2E1F06E42900026B21 /* still time.ttf in Resources */,
-				D7079F2D1F06E41C00026B21 /* GoatskinBrush_PersonalUse.ttf in Resources */,
 				D703D4B11F04020100580685 /* SFCompactRounded-Thin.otf in Resources */,
 				D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */,
 				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
@@ -397,7 +394,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -405,7 +404,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -448,7 +451,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -456,7 +461,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -487,12 +496,15 @@
 			baseConfigurationReference = DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4V5N9W3YDA;
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.popupzendo.Pop-Up-Circle-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -501,12 +513,15 @@
 			baseConfigurationReference = B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4V5N9W3YDA;
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.popupzendo.Pop-Up-Circle-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

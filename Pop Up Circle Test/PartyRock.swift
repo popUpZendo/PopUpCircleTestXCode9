@@ -14,6 +14,7 @@ class PartyRock {
     private var _videoURL: String!
     private var _videoTitle: String!
     
+    
     var imageURL: String {
         return _imageURL
     }

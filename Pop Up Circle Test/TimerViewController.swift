@@ -17,7 +17,7 @@ class TimerViewController: UIViewController {
     
     var progress: KDCircularProgress!
     var btnSound: AVAudioPlayer!
-    var zazen: Double = 0
+    var zazen: Double = 60
     
     
     @IBOutlet weak var label: UILabel!
@@ -30,10 +30,11 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+    self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         
-        view.backgroundColor = UIColor(white: 1.00, alpha: 0.5)
+        
+        view.backgroundColor = UIColor(white: 1.00, alpha: 1.0)
         
         progress = KDCircularProgress(frame: CGRect(x: 0, y: 0, width: 350, height: 350))
         progress.startAngle = -90
