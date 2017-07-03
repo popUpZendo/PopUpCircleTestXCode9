@@ -22,6 +22,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
+    
+        
         tableView.delegate = self
         tableView.dataSource = self
         

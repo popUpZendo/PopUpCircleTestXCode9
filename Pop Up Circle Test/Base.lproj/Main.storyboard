@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -111,14 +110,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zsg-eR-mg4">
-                                <rect key="frame" x="16" y="144" width="100" height="100"/>
+                                <rect key="frame" x="16" y="124" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="P2T-uJ-1dn"/>
                                     <constraint firstAttribute="height" constant="100" id="u9W-Wh-oiK"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69P-B8-fkO">
-                                <rect key="frame" x="16" y="144" width="100" height="100"/>
+                                <rect key="frame" x="16" y="124" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="paQ-sm-iZv"/>
                                     <constraint firstAttribute="height" constant="100" id="xa2-rJ-F8E"/>
@@ -128,7 +127,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeI-va-LOz" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="124" y="154" width="235" height="40"/>
+                                <rect key="frame" x="124" y="134" width="235" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dHd-6n-pGM"/>
@@ -138,7 +137,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5o-Jt-yQ9" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="124" y="204" width="235" height="40"/>
+                                <rect key="frame" x="124" y="184" width="235" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="PSD-JR-HK4"/>
@@ -148,7 +147,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihC-tQ-yoR" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="254" width="343" height="60"/>
+                                <rect key="frame" x="16" y="234" width="343" height="60"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="16M-sp-bbx"/>
@@ -158,7 +157,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-pu-Gfa" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="324" width="150" height="40"/>
+                                <rect key="frame" x="16" y="304" width="150" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="xff-4i-q9h"/>
@@ -183,7 +182,7 @@
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-d4-qkF">
-                                <rect key="frame" x="192" y="371.5" width="167" height="216"/>
+                                <rect key="frame" x="192" y="351.5" width="167" height="216"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="7Nx-7U-9jY"/>
@@ -209,7 +208,7 @@
                                 </constraints>
                             </pickerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Time Display" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwU-nG-eKl" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="209" y="321.5" width="150" height="40"/>
+                                <rect key="frame" x="209" y="301.5" width="150" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="QFC-7l-dqH"/>
@@ -220,7 +219,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olX-DE-9Hg" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="374" width="150" height="40"/>
+                                <rect key="frame" x="16" y="354" width="150" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="STs-nf-EUf"/>
@@ -231,7 +230,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CR4-Vr-eb9">
-                                <rect key="frame" x="16" y="434" width="97" height="30"/>
+                                <rect key="frame" x="16" y="414" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -443,7 +442,9 @@
                                 <segue destination="BYZ-38-t0r" kind="show" id="ZCE-Am-bwg"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="rVw-NQ-Yg6"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="rVw-NQ-Yg6">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                         <barButtonItem image="YinYang" id="rbb-ia-fY8">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -473,14 +474,18 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems>
                         <barButtonItem image="Temple gate" id="C8X-xF-Xz7"/>
+                        <barButtonItem title="Item" id="oFF-Ic-79m">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                         <barButtonItem title="Item" id="kkk-gM-avm"/>
                     </toolbarItems>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dDh-ix-fFp">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" largeTitles="YES" id="dDh-ix-fFp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.0" contentMode="scaleToFill" id="BBo-dH-YI8">
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BBo-dH-YI8">
                         <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -513,8 +518,8 @@
                                     <constraint firstAttribute="height" constant="174" id="mD4-BQ-05h"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PHL-J7-hKt">
-                                <rect key="frame" x="0.0" y="174" width="375" height="333"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PHL-J7-hKt">
+                                <rect key="frame" x="0.0" y="174" width="375" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="84" id="xaa-fT-zhA" customClass="PartyCell" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
@@ -556,21 +561,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-hF-JnO">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ye-dN-eIQ">
                                 <rect key="frame" x="0.0" y="507" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem id="CZY-FS-05M"/>
-                                    <barButtonItem image="Temple gate" id="MDh-My-Ys3">
-                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <barButtonItem image="Temple gate" id="CPH-8H-xUt">
+                                        <color key="tintColor" red="0.76919416240000005" green="0.76919416240000005" blue="0.76919416240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="3wO-ap-CD3" kind="show" id="g62-u5-i3H"/>
+                                        </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3i1-lc-3GL"/>
-                                    <barButtonItem image="Meditation" id="gyS-iO-6vE">
-                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MXy-OS-gNX"/>
+                                    <barButtonItem image="Meditation" id="dT6-Wl-Ntr">
+                                        <color key="tintColor" red="0.26342830119999999" green="0.26342830119999999" blue="0.26342830119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pdu-Ry-bC7"/>
-                                    <barButtonItem image="YinYang" id="Vwx-xk-bto">
-                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OI7-d5-qnI"/>
+                                    <barButtonItem image="YinYang" id="965-RK-2Pa">
+                                        <color key="tintColor" red="0.26342830119999999" green="0.26342830119999999" blue="0.26342830119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -596,7 +603,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMb-gN-WEZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2620" y="27"/>
+            <point key="canvasLocation" x="2620" y="26.53673163418291"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="vs8-gO-m5A">
@@ -634,6 +641,32 @@
                                     <segue destination="iEr-xJ-TUU" kind="show" id="ZOd-Cz-lFq"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OsM-T9-O1n">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="Temple gate" id="I5d-u7-MZj">
+                                        <color key="tintColor" red="0.76919416240000005" green="0.76919416240000005" blue="0.76919416240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="iEr-xJ-TUU" kind="show" id="si4-8i-z9Z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AYh-SY-u8r"/>
+                                    <barButtonItem image="Meditation" id="4SO-Pw-9BV">
+                                        <color key="tintColor" red="0.26342830119999999" green="0.26342830119999999" blue="0.26342830119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="HfS-Lm-yMo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fuF-nL-pFh"/>
+                                    <barButtonItem image="YinYang" id="lGa-MN-ty0">
+                                        <color key="tintColor" red="0.26342830119999999" green="0.26342830119999999" blue="0.26342830119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <segue destination="3wO-ap-CD3" kind="show" id="SoN-k4-np4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -666,9 +699,9 @@
         <image name="zazen6" width="607" height="629"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GKc-Nz-sL9"/>
         <segue reference="Cs8-zI-QWW"/>
-        <segue reference="oGC-2J-1Uu"/>
-        <segue reference="AEP-Id-hED"/>
+        <segue reference="GKc-Nz-sL9"/>
+        <segue reference="ZCE-Am-bwg"/>
+        <segue reference="ePM-BZ-dMj"/>
     </inferredMetricsTieBreakers>
 </document>
