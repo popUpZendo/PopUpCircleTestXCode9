@@ -1,15 +1,18 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.2.0)
   - DLRadioButton (1.4.9)
   - KDCircularProgress (1.5.2)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - DLRadioButton (~> 1.4)
   - KDCircularProgress
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
   DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
   KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
 
-PODFILE CHECKSUM: c1bd3d40ca5cd8c42bcdd98b923bec8cf46a77fb
+PODFILE CHECKSUM: 00c59ac9d63e0fa9a9aa14a46fe3b8942f10c2a1
 
 COCOAPODS: 1.2.1

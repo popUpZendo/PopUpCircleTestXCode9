@@ -1,14 +1,15 @@
 //
 //  ItemDetailsVC.swift
-//  DreamLister
+//  PopUpZendo
 //
-//  Created by Jonny B on 8/19/16.
-//  Copyright © 2016 Jonny B. All rights reserved.
+//  Created by Joseph Hall on 6/19/17.
+//  Copyright © 2017 Joseph Hall All rights reserved.
 
 
 import UIKit
 import CoreData
 import DLRadioButton
+import ActionSheetPicker_3_0
 
 
 class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
@@ -19,7 +20,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var dateTimeDisplay: UILabel!
     @IBOutlet weak var timeDisplay: CustomTextField!
     @IBOutlet weak var titleField: CustomTextField!
-    @IBOutlet weak var detailsField: CustomTextField!
+    @IBOutlet weak var detailsField1: CustomTextField!
+    @IBOutlet weak var detailsField: UITextView!
     @IBOutlet weak var itemTypeField: CustomTextField!
     @IBOutlet weak var thumgImg: UIImageView!
     @IBOutlet weak var locationField: CustomTextField!
@@ -39,9 +41,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         timePicker.isHidden = true
         thumgImg.isHidden = true
         hideButton.isHidden = true
-       
         
-        
+        titleField.delegate = self
+        //detailsField.delegate = self
+        itemTypeField.delegate = self
         
     self.navigationController?.setNavigationBarHidden(false, animated: true)
         
@@ -58,7 +61,21 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
     }
     
-        
+    func textFieldShouldReturn(_ titleField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func detailsFieldShouldReturn(_ titleField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func itemTypeFieldShouldReturn(_ titleField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
     @IBAction func timePickerChanged(_ sender: AnyObject) {
         setTime()
     }

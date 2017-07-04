@@ -9,5 +9,6 @@ target 'Pop Up Circle Test' do
 
 pod 'KDCircularProgress'
 pod 'DLRadioButton', '~> 1.4'
+pod 'ActionSheetPicker-3.0'
 
 end
