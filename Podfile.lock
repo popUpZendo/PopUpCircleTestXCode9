@@ -1,12 +1,15 @@
 PODS:
+  - DLRadioButton (1.4.9)
   - KDCircularProgress (1.5.2)
 
 DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
   - KDCircularProgress
 
 SPEC CHECKSUMS:
+  DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
   KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
 
-PODFILE CHECKSUM: 3b604014415cfc7c1455bc738a62bc6a2f1f0189
+PODFILE CHECKSUM: c1bd3d40ca5cd8c42bcdd98b923bec8cf46a77fb
 
 COCOAPODS: 1.2.1

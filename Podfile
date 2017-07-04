@@ -8,5 +8,6 @@ target 'Pop Up Circle Test' do
   # Pods for Pop Up Circle Test
 
 pod 'KDCircularProgress'
+pod 'DLRadioButton', '~> 1.4'
 
 end
