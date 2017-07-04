@@ -61,9 +61,10 @@ class TimerViewController: UIViewController {
         }
     }
     
-    //@IBAction func sliderDidChangeValue(_ sender: UISlider) {
-       // progress.angle = Double(sender.value)
-    //}
+    @IBAction func back(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     
     @IBAction func sliderChanged(_ sender: UISlider) {
@@ -80,8 +81,9 @@ class TimerViewController: UIViewController {
         func playSound() {
             if self.btnSound.isPlaying {
                 self.btnSound.stop()
-            }
+            } else {
             self.btnSound.play()
+            }
         }
         
         playSound()

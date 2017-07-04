@@ -93,8 +93,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func attemptFetch() {
         
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
-        let scheduleSort = NSSortDescriptor(key: "time", ascending: false)
-        let practiceSort = NSSortDescriptor(key: "time", ascending: true)
+        let scheduleSort = NSSortDescriptor(key: "time", ascending: true)
+        let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
 
         
         if segment.selectedSegmentIndex == 0 {

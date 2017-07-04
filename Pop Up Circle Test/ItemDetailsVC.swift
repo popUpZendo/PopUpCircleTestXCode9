@@ -14,6 +14,7 @@ import DLRadioButton
 class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
   
 
+    @IBOutlet weak var hideButton: UIButton!
     @IBOutlet var timePicker:UIDatePicker!
     @IBOutlet weak var dateTimeDisplay: UILabel!
     @IBOutlet weak var timeDisplay: CustomTextField!
@@ -30,10 +31,18 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var itemToEdit: Item?
     var imagePicker: UIImagePickerController!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         itemTypeField.delegate = self
+        timePicker.isHidden = true
+        thumgImg.isHidden = true
+        hideButton.isHidden = true
+       
+        
+        
+        
     self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         if let topItem = self.navigationController?.navigationBar.topItem {
@@ -42,6 +51,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        
+        if itemToEdit != nil {
+            loadItemData()
+        }
         
     }
     
@@ -58,10 +71,14 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func radioPractice(_ sender: Any) {
+        hideButton.isHidden = false;
+        thumgImg.isHidden = false;
         itemTypeField.text = "Practice"
     }
     
     @IBAction func radioSchedule(_ sender: Any) {
+        hideButton.isHidden = true;
+        timePicker.isHidden = false;
         itemTypeField.text = "Schedule"
     }
     
