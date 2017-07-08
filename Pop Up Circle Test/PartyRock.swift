@@ -13,7 +13,8 @@ class PartyRock {
     private var _imageURL: String!
     private var _videoURL: String!
     private var _videoTitle: String!
-    
+    private var _contentURL: String!
+    private var _details: String!
     
     var imageURL: String {
         return _imageURL
@@ -27,12 +28,23 @@ class PartyRock {
         return _videoTitle
     }
     
+    var details: String {
+        return _details
+    }
     
-    init(imageURL: String, videoURL:String, videoTitle: String) {
+    var contentURL: String {
+        return _contentURL
+    }
+    
+    
+    init(imageURL: String, videoURL:String, videoTitle: String, details: String, contentURL: String){
         
         _imageURL = imageURL
         _videoURL = videoURL
         _videoTitle = videoTitle
+        _details = details
+        _contentURL = contentURL
     }
     
 }
+

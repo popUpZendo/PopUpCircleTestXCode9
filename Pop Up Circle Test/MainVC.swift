@@ -2,8 +2,8 @@
 //  MainVC.swift
 //  DreamLister
 //
-//  Created by Jonny B on 8/16/16.
-//  Copyright © 2016 Jonny B. All rights reserved.
+//  Created by Joseph Hall on 6/16/17.
+//  Copyright © 2016 Joseph Hall. All rights reserved.
 //
 
 import UIKit

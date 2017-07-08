@@ -9,18 +9,20 @@
 import UIKit
 
 class PartyCell: UITableViewCell {
-
+    
     @IBOutlet weak var videoPreviewImage: UIImageView!
     
     @IBOutlet weak var videoTitle: UILabel!
+    @IBOutlet weak var details: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
     }
-
+    
     func updateUI(partyRock: PartyRock) {
         videoTitle.text = partyRock.videoTitle
+        details.text = partyRock.details
         
         let url = URL(string: partyRock.imageURL)!
         
@@ -30,13 +32,14 @@ class PartyCell: UITableViewCell {
                 DispatchQueue.main.sync {
                     self.videoPreviewImage.image = UIImage(data: data)
                 }
-            
+                
             } catch  {
                 //handle the error
                 
                 
+            }
+            
         }
-        
     }
 }
-}
+
