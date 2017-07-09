@@ -35,7 +35,9 @@ class VideoVC: UIViewController {
         titleLbl.text = partyRock.videoTitle
         details.text = partyRock.details
         webView.loadHTMLString(partyRock.videoURL, baseURL: nil)
-        //webView2.loadHTMLString(partyRock.contentURL, baseURL: nil)
+        
+        
+    // webView2.loadHTMLString(partyRock.videoURL, baseURL: nil)
         webView2.loadRequest(NSURLRequest(url: NSURL(string: partyRock.contentURL)! as URL) as URLRequest)
         
         //webView2.loadHTMLString("https://www.google.com", baseURL: nil)
