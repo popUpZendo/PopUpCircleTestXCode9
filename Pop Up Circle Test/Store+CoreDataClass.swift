@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 
-public class Store: NSManagedObject {
+open class Store: NSManagedObject {
 
 }

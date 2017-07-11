@@ -20,6 +20,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIApplication.shared.isIdleTimerDisabled = false
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
     
@@ -35,14 +36,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
-        configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+        configureCell(cell, indexPath: (indexPath as NSIndexPath) as IndexPath)
         return cell
     }
     
-    func configureCell(cell: ItemCell, indexPath: NSIndexPath) {
+    func configureCell(_ cell: ItemCell, indexPath: IndexPath) {
         
         let item = controller.object(at: indexPath as IndexPath)
-        cell.configureCell(item: item)
+        cell.configureCell(item)
         
     }
     
@@ -92,7 +93,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     
     func attemptFetch() {
         
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() as! NSFetchRequest<Item>
         let scheduleSort = NSSortDescriptor(key: "time", ascending: true)
         let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
 
@@ -159,7 +160,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         case.update:
             if let indexPath = indexPath {
                 let cell = tableView.cellForRow(at: indexPath) as! ItemCell
-                configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+                configureCell(cell, indexPath: (indexPath as NSIndexPath) as IndexPath)
             }
             break
         case.move:

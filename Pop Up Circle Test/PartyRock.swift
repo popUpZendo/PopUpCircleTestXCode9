@@ -10,11 +10,11 @@ import Foundation
 
 
 class PartyRock {
-    private var _imageURL: String!
-    private var _videoURL: String!
-    private var _videoTitle: String!
-    private var _contentURL: String!
-    private var _details: String!
+    fileprivate var _imageURL: String!
+    fileprivate var _videoURL: String!
+    fileprivate var _videoTitle: String!
+    fileprivate var _contentURL: String!
+    fileprivate var _details: String!
     
     var imageURL: String {
         return _imageURL

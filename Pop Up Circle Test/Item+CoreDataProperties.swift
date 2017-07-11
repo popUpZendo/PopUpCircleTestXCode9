@@ -12,11 +12,11 @@ import CoreData
 
 extension Item {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Item> {
-        return NSFetchRequest<Item>(entityName: "Item")
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<Item>(entityName: "Item") as! NSFetchRequest<NSFetchRequestResult>
     }
 
-    @NSManaged public var created: NSDate?
+    @NSManaged public var created: Date?
     @NSManaged public var details: String?
     @NSManaged public var itemType: String?
     @NSManaged public var location: String?

@@ -9,12 +9,14 @@
 import UIKit
 import CoreData
 import DLRadioButton
-import ActionSheetPicker_3_0
+import CHDayPicker
 
 
 class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
   
 
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var dayPicker: CHDayPicker!
     @IBOutlet weak var hideButton: UIButton!
     @IBOutlet var timePicker:UIDatePicker!
     @IBOutlet weak var dateTimeDisplay: UILabel!
@@ -37,6 +39,12 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.dayPicker.singleSelection = false
+        self.dayPicker.delegate = self
+        self.dayPicker.selectDayAtPosition(position: 0)
+        self.dayPicker.selectDayAtPosition(position: 3)
+        self.dayPicker.selectDayAtPosition(position: 5)
+        
         itemTypeField.delegate = self
         timePicker.isHidden = true
         thumgImg.isHidden = true
@@ -58,6 +66,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         if itemToEdit != nil {
             loadItemData()
         }
+        
         
     }
     
@@ -98,6 +107,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         timePicker.isHidden = false;
         itemTypeField.text = "Schedule"
     }
+    
     
     
     @IBAction func savePressed(_ sender: UIButton) {
@@ -200,8 +210,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     
-    
-    
-    
+}
 
+extension ItemDetailsVC : CHDayPickerDelegate {
+    func didSelectDay(position: Int, label: String, selected : Bool) {
+        self.resultLabel.text = "\(position) : \(label)"
+    }
 }

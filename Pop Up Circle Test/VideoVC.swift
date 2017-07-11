@@ -16,7 +16,7 @@ class VideoVC: UIViewController {
     @IBOutlet weak var details: UILabel!
     
     
-    private var _partyRock: PartyRock!
+    fileprivate var _partyRock: PartyRock!
     
     var partyRock: PartyRock {
         get{
@@ -38,7 +38,7 @@ class VideoVC: UIViewController {
         
         
     // webView2.loadHTMLString(partyRock.videoURL, baseURL: nil)
-        webView2.loadRequest(NSURLRequest(url: NSURL(string: partyRock.contentURL)! as URL) as URLRequest)
+        webView2.loadRequest(URLRequest(url: URL(string: partyRock.contentURL)! as URL) as URLRequest)
         
         //webView2.loadHTMLString("https://www.google.com", baseURL: nil)
         

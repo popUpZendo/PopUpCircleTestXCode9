@@ -11,8 +11,8 @@ import CoreData
 
 extension Store {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Store> {
-        return NSFetchRequest<Store>(entityName: "Store");
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<Store>(entityName: "Store") as! NSFetchRequest<NSFetchRequestResult>;
     }
 
     @NSManaged public var name: String?

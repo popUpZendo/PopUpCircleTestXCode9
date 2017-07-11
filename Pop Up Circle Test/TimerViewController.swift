@@ -13,13 +13,17 @@ import CoreData
 
 
 
+
 class TimerViewController: UIViewController {
     
     var progress: KDCircularProgress!
     var btnSound: AVAudioPlayer!
     var zazen: Double = 60
+    //var timer = 60
     
     
+    
+    @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var sliderValue: UISlider!
@@ -30,7 +34,9 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    self.navigationController?.setNavigationBarHidden(true, animated: false)
+        countDownLabel.isHidden = true
+        UIApplication.shared.isIdleTimerDisabled = true
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         
         
@@ -61,6 +67,14 @@ class TimerViewController: UIViewController {
         }
     }
     
+    @IBAction func darkBG(_ sender: Any) {
+        self.view.backgroundColor = UIColor.darkGray
+    }
+    
+    @IBAction func lightBG(_ sender: Any) {
+        self.view.backgroundColor = UIColor.white
+    }
+    
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -75,9 +89,14 @@ class TimerViewController: UIViewController {
     
     @IBAction func animateButtonTapped(_ sender: AnyObject) {
         
+        countDownLabel.isHidden = false
+        //var clock = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: "countdown", userInfo: nil, repeats: true)
+
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
             // Put your code which should be executed with a delay here
-        
+            self.countDownLabel.isHidden = true
+            
         func playSound() {
             if self.btnSound.isPlaying {
                 self.btnSound.stop()

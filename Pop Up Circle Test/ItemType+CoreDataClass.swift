@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 
-public class ItemType: NSManagedObject {
+open class ItemType: NSManagedObject {
 
 }

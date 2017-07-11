@@ -20,7 +20,7 @@ class PartyCell: UITableViewCell {
         
     }
     
-    func updateUI(partyRock: PartyRock) {
+    func updateUI(_ partyRock: PartyRock) {
         videoTitle.text = partyRock.videoTitle
         details.text = partyRock.details
         

@@ -16,7 +16,7 @@ class ItemCell: UITableViewCell {
     @IBOutlet  var details: UILabel!
     @IBOutlet  var location: UILabel!
     
-    func configureCell(item: Item) {
+    func configureCell(_ item: Item) {
         
         location.text = item.location
         title.text = item.title

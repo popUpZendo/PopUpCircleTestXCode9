@@ -11,8 +11,8 @@ import CoreData
 
 extension ItemType {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<ItemType> {
-        return NSFetchRequest<ItemType>(entityName: "ItemType");
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<ItemType>(entityName: "ItemType") as! NSFetchRequest<NSFetchRequestResult>;
     }
 
     @NSManaged public var type: String?

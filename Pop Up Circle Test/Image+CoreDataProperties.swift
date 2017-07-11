@@ -11,8 +11,8 @@ import CoreData
 
 extension Image {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Image> {
-        return NSFetchRequest<Image>(entityName: "Image");
+    @nonobjc open override class func fetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+        return NSFetchRequest<Image>(entityName: "Image") as! NSFetchRequest<NSFetchRequestResult>;
     }
 
     @NSManaged public var image: NSObject?

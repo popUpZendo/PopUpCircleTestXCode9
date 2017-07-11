@@ -40,6 +40,7 @@
 		D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */; };
 		D7CC87691F00BEFD0089A806 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87671F00BEFD0089A806 /* MainVC.swift */; };
 		D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */; };
+		D7F0C3CD1F142DD700DE2897 /* PracticesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D7CC87671F00BEFD0089A806 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		D7E3F7261F15696F00537EB1 /* Pop Up Circle Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pop Up Circle Test.entitlements"; sourceTree = "<group>"; };
+		D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesVC.swift; sourceTree = "<group>"; };
 		DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +149,7 @@
 		D73011CA1EFB3381003D637A /* Pop Up Circle Test */ = {
 			isa = PBXGroup;
 			children = (
+				D7E3F7261F15696F00537EB1 /* Pop Up Circle Test.entitlements */,
 				D703D4AB1F0401DE00580685 /* Resources */,
 				D73011E01EFB33EA003D637A /* Model */,
 				D73011E11EFB33FA003D637A /* View */,
@@ -194,6 +198,7 @@
 				D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */,
 				D73011CD1EFB3381003D637A /* TimerViewController.swift */,
 				D73011F51EFC0995003D637A /* btn.wav */,
+				D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -244,9 +249,14 @@
 				TargetAttributes = {
 					D73011C71EFB3381003D637A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 4V5N9W3YDA;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = 93HG3CWZZK;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -343,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7079F1D1F05D5B700026B21 /* Item+CoreDataClass.swift in Sources */,
+				D7F0C3CD1F142DD700DE2897 /* PracticesVC.swift in Sources */,
 				D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */,
 				D7079F251F06127500026B21 /* PartyRock.swift in Sources */,
 				D7079F1F1F05D5DE00026B21 /* Item+CoreDataProperties.swift in Sources */,
@@ -500,15 +511,16 @@
 			baseConfigurationReference = DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pop Up Circle Test/Pop Up Circle Test.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4V5N9W3YDA;
+				DEVELOPMENT_TEAM = 93HG3CWZZK;
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.popupzendo.Pop-Up-Circle-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo.popupzendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -517,15 +529,16 @@
 			baseConfigurationReference = B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pop Up Circle Test/Pop Up Circle Test.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4V5N9W3YDA;
+				DEVELOPMENT_TEAM = 93HG3CWZZK;
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.popupzendo.Pop-Up-Circle-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo.popupzendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

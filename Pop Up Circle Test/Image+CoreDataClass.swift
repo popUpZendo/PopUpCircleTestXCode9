@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 
-public class Image: NSManagedObject {
+open class Image: NSManagedObject {
 
 }
