@@ -340,9 +340,19 @@
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-es-auO">
                                 <rect key="frame" x="72" y="318" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="VrU-Oe-qKj" eventType="valueChanged" id="Gxn-Kv-vqu"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGH-gF-l1y">
                                 <rect key="frame" x="28" y="323" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Al-uF-t8p">
+                                <rect key="frame" x="24" y="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -417,6 +427,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ItemTypeField" destination="Hpu-pu-Gfa" id="GlZ-2h-FYU"/>
+                        <outlet property="bellSwitch" destination="rSc-es-auO" id="Ys7-si-Yb7"/>
+                        <outlet property="bellValue" destination="0Al-uF-t8p" id="Onr-uL-UAT"/>
                         <outlet property="dateTimeDisplay" destination="l26-QX-eu8" id="X0U-CQ-HTa"/>
                         <outlet property="dayPicker" destination="IKU-Ij-Npt" id="YHQ-q4-MiE"/>
                         <outlet property="detailsField" destination="0dh-cp-ly7" id="IrK-72-yNr"/>

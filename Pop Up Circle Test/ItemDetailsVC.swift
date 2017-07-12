@@ -15,7 +15,11 @@ import CHDayPicker
 class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
   
 
-    //@IBOutlet weak var bellSwitch: UISwitch!
+  
+    @IBOutlet weak var bellSwitch: UISwitch!
+    
+    
+    @IBOutlet weak var bellValue: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var dayPicker: CHDayPicker!
     @IBOutlet weak var hideButton: UIButton!
@@ -39,6 +43,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bellValue.text = "Yes"
         
         self.dayPicker.singleSelection = false
         self.dayPicker.delegate = self
@@ -89,9 +95,19 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         return true
     }
     
+    @IBAction func switchChanged(_ sender: Any) {
+        if bellSwitch.isOn {
+            bellValue.text = "Yes"
+        }
+        else {
+            bellValue.text = "No"
+        }
+    }
+    
     @IBAction func timePickerChanged(_ sender: AnyObject) {
         setTime()
     }
+    
     
     func setTime() {
         timeFormatter.timeStyle = DateFormatter.Style.short
