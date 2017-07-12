@@ -338,7 +338,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-es-auO">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-es-auO">
                                 <rect key="frame" x="72" y="318" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="VrU-Oe-qKj" eventType="valueChanged" id="Gxn-Kv-vqu"/>
@@ -1075,9 +1075,9 @@
         <image name="zazen6" width="607" height="629"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="si4-8i-z9Z"/>
+        <segue reference="GZ9-US-e7K"/>
+        <segue reference="LmE-Dc-22k"/>
+        <segue reference="rq6-Kh-hfX"/>
         <segue reference="ePM-BZ-dMj"/>
-        <segue reference="SoN-k4-np4"/>
-        <segue reference="HfS-Lm-yMo"/>
     </inferredMetricsTieBreakers>
 </document>

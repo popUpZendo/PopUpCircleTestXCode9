@@ -44,7 +44,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bellValue.text = "Yes"
+        bellValue.text = "true"
         
         self.dayPicker.singleSelection = false
         self.dayPicker.delegate = self
@@ -95,14 +95,32 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         return true
     }
     
-    @IBAction func switchChanged(_ sender: Any) {
-        if bellSwitch.isOn {
-            bellValue.text = "Yes"
+    
+    var alarm = Bool ()
+    
+    @IBAction func switchChanged(_ sender: Any)
+        
+        {
+            if bellSwitch.isOn {
+                alarm = true
+                print("true")
+                bellValue.text = "true"
+            }
+            else {
+                alarm = false
+                print(false)
+                bellValue.text = "false"
+            }
         }
-        else {
-            bellValue.text = "No"
-        }
+    
+    func switchState() {
+        if alarm == true {
+            bellSwitch.setOn(true, animated: false)
+        }else{
+            bellSwitch.setOn(false, animated: false)}
     }
+    
+    
     
     @IBAction func timePickerChanged(_ sender: AnyObject) {
         setTime()
@@ -128,15 +146,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         itemTypeField.text = "Schedule"
     }
     
-    /*@IBAction func bellSwitchIsChanged(_ sender: Any) {
-        if bellSwitch.isOn {
-            item.time = true
-        } else {
-            item.bell = false
-        }
-    }*/
-    
-    
     
     @IBAction func savePressed(_ sender: UIButton) {
         
@@ -156,9 +165,14 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
          item.toImage = picture
         
+         item.bell = alarm
+        //print(alarm)
+        print(item.bell)
+        
         if let title = titleField.text {
             
             item.title = title
+            print(item.title)
             
         }
         
@@ -186,9 +200,14 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             
         }
         
-        /*if let bell = bellSwitch.bool {
-            item.bell = bell
-        }*/
+        
+        
+//        var bell: Bool = false
+//        if(bellValue.text = "true"){
+//            return true
+//        }
+        
+        
         
         ad.saveContext()
         
@@ -204,10 +223,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             timeDisplay.text = item.time
             titleField.text = item.title
             locationField.text = item.location
-            //bell.bool = item.bell
+            alarm = item.bell
             detailsField.text = item.details
             itemTypeField.text = item.itemType
             thumgImg.image = item.toImage?.image as? UIImage
+            
             
         }
         
