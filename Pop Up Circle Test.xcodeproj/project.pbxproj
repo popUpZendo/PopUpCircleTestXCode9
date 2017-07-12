@@ -16,8 +16,6 @@
 		D703D4B11F04020100580685 /* SFCompactRounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */; };
 		D703D4B21F04020100580685 /* SFNSDisplayCondensed-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */; };
 		D703D4B31F04020100580685 /* SFCompactText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AF1F04020100580685 /* SFCompactText-Light.otf */; };
-		D7079F1D1F05D5B700026B21 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F1C1F05D5B700026B21 /* Item+CoreDataClass.swift */; };
-		D7079F1F1F05D5DE00026B21 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F1E1F05D5DE00026B21 /* Item+CoreDataProperties.swift */; };
 		D7079F211F0611DD00026B21 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F201F0611DD00026B21 /* VideoVC.swift */; };
 		D7079F241F06127500026B21 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F221F06127500026B21 /* PartyCell.swift */; };
 		D7079F251F06127500026B21 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F231F06127500026B21 /* PartyRock.swift */; };
@@ -31,7 +29,6 @@
 		D73011F61EFC0995003D637A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D73011F51EFC0995003D637A /* btn.wav */; };
 		D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F71EFC1E70003D637A /* zazenBell3.mp3 */; };
 		D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */; };
-		D771D6041F0B10A700AE1F9A /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D771D6031F0B10A700AE1F9A /* DemoViewController.swift */; };
 		D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */; };
 		D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */; };
 		D7CC875E1F00BEB60089A806 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */; };
@@ -40,6 +37,8 @@
 		D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */; };
 		D7CC87691F00BEFD0089A806 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87671F00BEFD0089A806 /* MainVC.swift */; };
 		D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */; };
+		D7E3F7291F15856100537EB1 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3F7281F15856000537EB1 /* Item+CoreDataClass.swift */; };
+		D7E3F72B1F15857A00537EB1 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3F72A1F15857A00537EB1 /* Item+CoreDataProperties.swift */; };
 		D7F0C3CD1F142DD700DE2897 /* PracticesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +53,6 @@
 		D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactRounded-Thin.otf"; sourceTree = "<group>"; };
 		D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplayCondensed-Thin.otf"; sourceTree = "<group>"; };
 		D703D4AF1F04020100580685 /* SFCompactText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Light.otf"; sourceTree = "<group>"; };
-		D7079F1C1F05D5B700026B21 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D7079F1E1F05D5DE00026B21 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D7079F201F0611DD00026B21 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		D7079F221F06127500026B21 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
 		D7079F231F06127500026B21 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 		D73011F51EFC0995003D637A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		D73011F71EFC1E70003D637A /* zazenBell3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell3.mp3; sourceTree = "<group>"; };
 		D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell1.mp3; sourceTree = "<group>"; };
-		D771D6031F0B10A700AE1F9A /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoViewController.swift; path = ../../DLRadio/Example/DLRadioButtonExample/DemoViewController.swift; sourceTree = "<group>"; };
 		D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -81,6 +77,8 @@
 		D7CC87671F00BEFD0089A806 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		D7E3F7261F15696F00537EB1 /* Pop Up Circle Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pop Up Circle Test.entitlements"; sourceTree = "<group>"; };
+		D7E3F7281F15856000537EB1 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D7E3F72A1F15857A00537EB1 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesVC.swift; sourceTree = "<group>"; };
 		DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */,
+				D7E3F7281F15856000537EB1 /* Item+CoreDataClass.swift */,
 				D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */,
-				D7079F1C1F05D5B700026B21 /* Item+CoreDataClass.swift */,
 				D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */,
 				D73011EA1EFB6984003D637A /* Generated */,
 			);
@@ -191,7 +189,6 @@
 		D73011E21EFB3400003D637A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D771D6031F0B10A700AE1F9A /* DemoViewController.swift */,
 				D7079F201F0611DD00026B21 /* VideoVC.swift */,
 				D7079F2A1F06B91100026B21 /* LearningVC.swift */,
 				D7CC87671F00BEFD0089A806 /* MainVC.swift */,
@@ -207,8 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				D7CC875F1F00BEC50089A806 /* ItemType+CoreDataProperties.swift */,
+				D7E3F72A1F15857A00537EB1 /* Item+CoreDataProperties.swift */,
 				D7CC87601F00BEC50089A806 /* Image+CoreDataProperties.swift */,
-				D7079F1E1F05D5DE00026B21 /* Item+CoreDataProperties.swift */,
 				D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */,
 			);
 			name = Generated;
@@ -352,13 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7079F1D1F05D5B700026B21 /* Item+CoreDataClass.swift in Sources */,
+				D7E3F72B1F15857A00537EB1 /* Item+CoreDataProperties.swift in Sources */,
 				D7F0C3CD1F142DD700DE2897 /* PracticesVC.swift in Sources */,
 				D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */,
 				D7079F251F06127500026B21 /* PartyRock.swift in Sources */,
-				D7079F1F1F05D5DE00026B21 /* Item+CoreDataProperties.swift in Sources */,
 				D7079F211F0611DD00026B21 /* VideoVC.swift in Sources */,
 				D7CC875E1F00BEB60089A806 /* Store+CoreDataClass.swift in Sources */,
+				D7E3F7291F15856100537EB1 /* Item+CoreDataClass.swift in Sources */,
 				D703D49E1F01ACB500580685 /* MaterialView.swift in Sources */,
 				D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */,
 				D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */,
@@ -371,7 +368,6 @@
 				D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */,
 				D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */,
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
-				D771D6041F0B10A700AE1F9A /* DemoViewController.swift in Sources */,
 				D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */,
 				D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */,
 			);
@@ -517,7 +513,7 @@
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo.popupzendo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-popupzendo--com.popupzendo-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
@@ -535,7 +531,7 @@
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo.popupzendo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-popupzendo--com.popupzendo-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;

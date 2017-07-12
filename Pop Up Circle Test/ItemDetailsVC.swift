@@ -15,6 +15,7 @@ import CHDayPicker
 class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
   
 
+    //@IBOutlet weak var bellSwitch: UISwitch!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var dayPicker: CHDayPicker!
     @IBOutlet weak var hideButton: UIButton!
@@ -41,7 +42,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         self.dayPicker.singleSelection = false
         self.dayPicker.delegate = self
-        self.dayPicker.selectDayAtPosition(position: 0)
+        self.dayPicker.selectDayAtPosition(position: 1)
         self.dayPicker.selectDayAtPosition(position: 3)
         self.dayPicker.selectDayAtPosition(position: 5)
         
@@ -53,6 +54,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         titleField.delegate = self
         //detailsField.delegate = self
         itemTypeField.delegate = self
+        
+    
         
     self.navigationController?.setNavigationBarHidden(false, animated: true)
         
@@ -69,6 +72,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         
     }
+    
     
     func textFieldShouldReturn(_ titleField: UITextField) -> Bool {
         self.view.endEditing(true)
@@ -107,6 +111,14 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         timePicker.isHidden = false;
         itemTypeField.text = "Schedule"
     }
+    
+    /*@IBAction func bellSwitchIsChanged(_ sender: Any) {
+        if bellSwitch.isOn {
+            item.time = true
+        } else {
+            item.bell = false
+        }
+    }*/
     
     
     
@@ -158,6 +170,9 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             
         }
         
+        /*if let bell = bellSwitch.bool {
+            item.bell = bell
+        }*/
         
         ad.saveContext()
         
@@ -173,7 +188,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             timeDisplay.text = item.time
             titleField.text = item.title
             locationField.text = item.location
-            
+            //bell.bool = item.bell
             detailsField.text = item.details
             itemTypeField.text = item.itemType
             thumgImg.image = item.toImage?.image as? UIImage
@@ -217,3 +232,4 @@ extension ItemDetailsVC : CHDayPickerDelegate {
         self.resultLabel.text = "\(position) : \(label)"
     }
 }
+

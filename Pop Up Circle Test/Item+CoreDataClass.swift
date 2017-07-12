@@ -2,7 +2,7 @@
 //  Item+CoreDataClass.swift
 //  
 //
-//  Created by Joseph Hall on 6/29/17.
+//  Created by Joseph Hall on 7/11/17.
 //
 //
 
@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 
-open class Item: NSManagedObject {
+public class Item: NSManagedObject {
 
 }

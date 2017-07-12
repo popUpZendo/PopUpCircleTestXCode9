@@ -93,14 +93,19 @@ class PracticesVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     
     func attemptFetch() {
         
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() as! NSFetchRequest<Item>
-        let scheduleSort = NSSortDescriptor(key: "time", ascending: true)
-        let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
         
+        let scheduleSort = NSSortDescriptor(key: "time", ascending: true)
+        //let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+        //fetchRequest.predicate = predicate1
+        
+        let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
+        let predicate2 = NSPredicate(format: "itemType CONTAINS[c] %@", "Practice")
+        fetchRequest.predicate = predicate2
         
         if segment.selectedSegmentIndex == 0 {
             
-            fetchRequest.sortDescriptors = [scheduleSort]
+            //fetchRequest.sortDescriptors = [scheduleSort]
             
         } else if segment.selectedSegmentIndex == 1 {
             
@@ -179,17 +184,17 @@ class PracticesVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
         
         let item = Item(context: context)
         item.title = "MacBook Pro"
-        item.price = 1800
+        //item.price = 1800
         item.details = "I can't wait until the September event, I hope they release new MPBs"
         
         let item2 = Item(context: context)
         item2.title = "Bose Headphones"
-        item2.price = 300
+        //item2.price = 300
         item2.details = "But man, its so nice to be able to blaock out everyone with the noise canceling tech."
         
         let item3 = Item(context: context)
         item3.title = "Tesla Model S"
-        item3.price = 110000
+        //item3.price = 110000
         item3.details = "Oh man this is a beautiful car. And one day, I will own it"
         
         ad.saveContext()
