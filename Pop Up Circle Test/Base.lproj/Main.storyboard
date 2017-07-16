@@ -357,6 +357,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-Gu-zEE">
+                                <rect key="frame" x="89" y="275" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -432,6 +439,7 @@
                         <outlet property="dateTimeDisplay" destination="l26-QX-eu8" id="X0U-CQ-HTa"/>
                         <outlet property="dayPicker" destination="IKU-Ij-Npt" id="YHQ-q4-MiE"/>
                         <outlet property="detailsField" destination="0dh-cp-ly7" id="IrK-72-yNr"/>
+                        <outlet property="eventTimeValue" destination="sDF-Gu-zEE" id="X85-ik-jgf"/>
                         <outlet property="hideButton" destination="69P-B8-fkO" id="F0n-8C-5hw"/>
                         <outlet property="itemTypeField" destination="Hpu-pu-Gfa" id="alu-FH-Rve"/>
                         <outlet property="locationField" destination="b5o-Jt-yQ9" id="adU-9W-n7J"/>
@@ -1075,9 +1083,9 @@
         <image name="zazen6" width="607" height="629"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GZ9-US-e7K"/>
-        <segue reference="LmE-Dc-22k"/>
-        <segue reference="rq6-Kh-hfX"/>
         <segue reference="ePM-BZ-dMj"/>
+        <segue reference="SoN-k4-np4"/>
+        <segue reference="si4-8i-z9Z"/>
+        <segue reference="HfS-Lm-yMo"/>
     </inferredMetricsTieBreakers>
 </document>

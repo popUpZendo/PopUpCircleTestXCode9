@@ -19,6 +19,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var bellSwitch: UISwitch!
     
     
+    @IBOutlet weak var eventTimeValue: UILabel!
     @IBOutlet weak var bellValue: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var dayPicker: CHDayPicker!
@@ -39,7 +40,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var stores = [Store]()
     var itemToEdit: Item?
     var imagePicker: UIImagePickerController!
-    
+    var eventTimeCalc: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -134,6 +135,16 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         timeDisplay.text = timeFormatter.string(from: timePicker.date)
     }
     
+    func setCoreTime()  {
+                let dateformatterToDate = DateFormatter()
+        
+                dateformatterToDate.dateFormat = "h:mm a"
+        
+                eventTimeCalc = dateformatterToDate.date(from: timeDisplay.text!)
+    }
+    
+    
+    
     @IBAction func radioPractice(_ sender: Any) {
         hideButton.isHidden = false;
         thumgImg.isHidden = false;
@@ -172,7 +183,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         if let title = titleField.text {
             
             item.title = title
-            print(item.title)
+            //print(item.title)
             
         }
         
@@ -193,6 +204,13 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         item.time = time
         
         }
+        
+        if let eventTime = eventTimeCalc {
+            
+        item.eventTime = eventTime as NSDate
+            print(item.eventTime)
+            
+                    }
         
         if let details = detailsField.text {
             
@@ -228,6 +246,15 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             itemTypeField.text = item.itemType
             thumgImg.image = item.toImage?.image as? UIImage
             
+            //timePicker.date = (item.eventTime as! NSDate) as Date
+            // I am nervous that this exclamation mark could cause crashing.
+            func showCoreTime (){
+                let dateformatterToString = DateFormatter()
+                
+                dateformatterToString.dateFormat = "h:mm a"
+                
+                eventTimeValue.text = dateformatterToString.string(from: item.eventTime! as Date)
+            }
             
         }
         
