@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 import DLRadioButton
 import CHDayPicker
+import UserNotifications
+
 
 
 class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
@@ -17,6 +19,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
 
   
     @IBOutlet weak var bellSwitch: UISwitch!
+    
     
     
     @IBOutlet weak var eventTimeValue: UILabel!
@@ -34,6 +37,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var thumgImg: UIImageView!
     @IBOutlet weak var locationField: CustomTextField!
     
+    @IBOutlet weak var toggleReminderButton: UIButton!
+    
+    
+    
+    
     let dateFormatter = DateFormatter()
     let timeFormatter = DateFormatter()
     
@@ -45,6 +53,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UNUserNotificationCenter.current().delegate = self
         bellValue.text = "true"
         
         self.dayPicker.singleSelection = false
@@ -121,7 +130,19 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             bellSwitch.setOn(false, animated: false)}
     }
     
-    
+//    var onButtonSelection: (() -> ())?
+//
+//    @IBAction func remindButtonTapped(_ sender: Any) {
+//        onButtonSelection?()
+//    }
+//
+//    func showReminderOnIcon() {
+//        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-1"), for: .normal)
+//    }
+//
+//    func showReminderOffIcon() {
+//        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-2"), for: .normal)
+//    }
     
     @IBAction func timePickerChanged(_ sender: AnyObject) {
         setTime()
@@ -135,13 +156,13 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         timeDisplay.text = timeFormatter.string(from: timePicker.date)
     }
     
-    func setCoreTime()  {
-                let dateformatterToDate = DateFormatter()
-        
-                dateformatterToDate.dateFormat = "h:mm a"
-        
-                eventTimeCalc = dateformatterToDate.date(from: timeDisplay.text!)
-    }
+//    func setCoreTime()  {
+//                let dateformatterToDate = DateFormatter()
+//
+//                dateformatterToDate.dateFormat = "h:mm a"
+//
+//                eventTimeCalc = dateformatterToDate.date(from: timeDisplay.text!)
+//    }
     
     
     
@@ -208,7 +229,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         if let eventTime = eventTimeCalc {
             
         item.eventTime = eventTime as NSDate
-            print(item.eventTime)
+           // print(item.eventTime)
             
                     }
         
@@ -245,7 +266,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             detailsField.text = item.details
             itemTypeField.text = item.itemType
             thumgImg.image = item.toImage?.image as? UIImage
-            
+            //timePicker.date = item.eventTime
             //timePicker.date = (item.eventTime as! NSDate) as Date
             // I am nervous that this exclamation mark could cause crashing.
             func showCoreTime (){
@@ -277,6 +298,24 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         present(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func scheduleNotification(_ sender: UIButton) {
+        let content = UNMutableNotificationContent()
+        content.title = titleField.text!
+        //content.subtitle = "Let's see how smart you are!"
+        content.body = detailsField.text
+        content.sound = UNNotificationSound(named: "templeBell.mp3")
+        //content.badge = 1
+        //content.categoryIdentifier = "quizCategory"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let requestIdentifier = "africaQuiz"
+        let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
+            // handle error
+        })
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let img = info[UIImagePickerControllerOriginalImage] as? UIImage {
@@ -288,6 +327,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     
+    
 }
 
 extension ItemDetailsVC : CHDayPickerDelegate {
@@ -295,4 +335,29 @@ extension ItemDetailsVC : CHDayPickerDelegate {
         self.resultLabel.text = "\(position) : \(label)"
     }
 }
+
+extension ItemDetailsVC: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // some other way of handling notification
+        completionHandler([.alert, .sound])
+    }
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        switch response.actionIdentifier {
+//        case "answerOne":
+//            imageView.image = UIImage(named: "bell-button-1")
+//        case "answerTwo":
+//            imageView.image = UIImage(named: "bell-button-2")
+        case "clue":
+            let alert = UIAlertController(title: "Hint", message: "The answer is greater than 29", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Thanks!", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        default:
+            break
+        }
+        completionHandler()
+        
+    }
+}
+
 

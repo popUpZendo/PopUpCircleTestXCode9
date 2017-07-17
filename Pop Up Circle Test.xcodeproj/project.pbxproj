@@ -12,15 +12,10 @@
 		D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703D49C1F01ACB500580685 /* ItemCell.swift */; };
 		D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703D49D1F01ACB500580685 /* CustomTextField.swift */; };
 		D703D4A21F01D11100580685 /* DreamLister.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */; };
-		D703D4B01F04020100580685 /* SFCompactDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AC1F04020100580685 /* SFCompactDisplay-Semibold.otf */; };
-		D703D4B11F04020100580685 /* SFCompactRounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */; };
-		D703D4B21F04020100580685 /* SFNSDisplayCondensed-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */; };
-		D703D4B31F04020100580685 /* SFCompactText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D703D4AF1F04020100580685 /* SFCompactText-Light.otf */; };
 		D7079F211F0611DD00026B21 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F201F0611DD00026B21 /* VideoVC.swift */; };
 		D7079F241F06127500026B21 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F221F06127500026B21 /* PartyCell.swift */; };
 		D7079F251F06127500026B21 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F231F06127500026B21 /* PartyRock.swift */; };
 		D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F2A1F06B91100026B21 /* LearningVC.swift */; };
-		D7079F2E1F06E42900026B21 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7079F2C1F06E0D600026B21 /* still time.ttf */; };
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
 		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
@@ -29,6 +24,8 @@
 		D73011F61EFC0995003D637A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D73011F51EFC0995003D637A /* btn.wav */; };
 		D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F71EFC1E70003D637A /* zazenBell3.mp3 */; };
 		D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */; };
+		D793B3571F1CC264007708FC /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793B3561F1CC264007708FC /* Identifiers.swift */; };
+		D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D793B3581F1CD27D007708FC /* templeBell.mp3 */; };
 		D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */; };
 		D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */; };
 		D7CC875E1F00BEB60089A806 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */; };
@@ -49,15 +46,10 @@
 		D703D49C1F01ACB500580685 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; usesTabs = 0; };
 		D703D49D1F01ACB500580685 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D703D4A11F01D11100580685 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
-		D703D4AC1F04020100580685 /* SFCompactDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Semibold.otf"; sourceTree = "<group>"; };
-		D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactRounded-Thin.otf"; sourceTree = "<group>"; };
-		D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFNSDisplayCondensed-Thin.otf"; sourceTree = "<group>"; };
-		D703D4AF1F04020100580685 /* SFCompactText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactText-Light.otf"; sourceTree = "<group>"; };
 		D7079F201F0611DD00026B21 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		D7079F221F06127500026B21 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
 		D7079F231F06127500026B21 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 		D7079F2A1F06B91100026B21 /* LearningVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
-		D7079F2C1F06E0D600026B21 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73011CD1EFB3381003D637A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +60,8 @@
 		D73011F51EFC0995003D637A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		D73011F71EFC1E70003D637A /* zazenBell3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell3.mp3; sourceTree = "<group>"; };
 		D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell1.mp3; sourceTree = "<group>"; };
+		D793B3561F1CC264007708FC /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiers.swift; path = "../../../Downloads/iOS10-day-by-day-master/06 - Notification Content Extensions/NagMe/NagMe/Identifiers.swift"; sourceTree = "<group>"; };
+		D793B3581F1CD27D007708FC /* templeBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = templeBell.mp3; path = ../../../Downloads/templeBell.mp3; sourceTree = "<group>"; };
 		D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -115,13 +109,9 @@
 		D703D4AB1F0401DE00580685 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D703D4AC1F04020100580685 /* SFCompactDisplay-Semibold.otf */,
-				D703D4AD1F04020100580685 /* SFCompactRounded-Thin.otf */,
-				D703D4AE1F04020100580685 /* SFNSDisplayCondensed-Thin.otf */,
-				D703D4AF1F04020100580685 /* SFCompactText-Light.otf */,
-				D7079F2C1F06E0D600026B21 /* still time.ttf */,
 				D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */,
 				D73011F71EFC1E70003D637A /* zazenBell3.mp3 */,
+				D793B3581F1CD27D007708FC /* templeBell.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -177,6 +167,7 @@
 		D73011E11EFB33FA003D637A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D793B3561F1CC264007708FC /* Identifiers.swift */,
 				D7079F221F06127500026B21 /* PartyCell.swift */,
 				D7079F231F06127500026B21 /* PartyRock.swift */,
 				D703D49B1F01ACB500580685 /* MaterialView.swift */,
@@ -280,16 +271,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7079F2E1F06E42900026B21 /* still time.ttf in Resources */,
-				D703D4B11F04020100580685 /* SFCompactRounded-Thin.otf in Resources */,
 				D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */,
 				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
 				D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */,
-				D703D4B31F04020100580685 /* SFCompactText-Light.otf in Resources */,
-				D703D4B21F04020100580685 /* SFNSDisplayCondensed-Thin.otf in Resources */,
 				D73011D61EFB3381003D637A /* Assets.xcassets in Resources */,
+				D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */,
 				D73011D11EFB3381003D637A /* Main.storyboard in Resources */,
-				D703D4B01F04020100580685 /* SFCompactDisplay-Semibold.otf in Resources */,
 				D73011F61EFC0995003D637A /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +346,7 @@
 				D703D49E1F01ACB500580685 /* MaterialView.swift in Sources */,
 				D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */,
 				D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */,
+				D793B3571F1CC264007708FC /* Identifiers.swift in Sources */,
 				D7079F241F06127500026B21 /* PartyCell.swift in Sources */,
 				D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */,
 				D703D4A21F01D11100580685 /* DreamLister.xcdatamodel in Sources */,

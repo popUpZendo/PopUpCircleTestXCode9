@@ -94,17 +94,36 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func attemptFetch() {
         
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        
         let scheduleSort = NSSortDescriptor(key: "time", ascending: true)
+        //let scheduleSort2 = NSSortDescriptor(key: "time", ascending: true)
         let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
-
         
         if segment.selectedSegmentIndex == 0 {
             
             fetchRequest.sortDescriptors = [scheduleSort]
+            let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+            //let predicateAM = NSPredicate(format: "time CONTAINS[c] %@", "AM")
+            //let predicatePM = NSPredicate(format: "time CONTAINS[c] %@", "PM")
+//            let predicate1 = NSPredicate(format: "time CONTAINS[c] %@", "AM")
+//            let predicate2 = NSPredicate(format: "time CONTAINS[c] %@", "PM")
+//            let compound: NSCompoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate1 > predicate2])
+            //self.filteredArray = self.array.filteredArrayUsingPredicate(compound)
+            //self.table.reloadData()
+           // fetchRequest.predicate = predicateAM || predicatePM
+            
+//            fetchRequest.sortDescriptors = [scheduleSort2]
+//            let predicatePM = NSPredicate(format: "time CONTAINS[c] %@", "PM")
+//            fetchRequest.predicate = predicatePM
+            
+//            fetchRequest.predicate = predicateAM
+            fetchRequest.predicate = predicate1
             
         } else if segment.selectedSegmentIndex == 1 {
             
             fetchRequest.sortDescriptors = [practiceSort]
+            let predicate2 = NSPredicate(format: "itemType CONTAINS[c] %@", "Practice")
+             fetchRequest.predicate = predicate2
             
         }         
         
@@ -115,6 +134,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         self.controller = controller
         
         do {
+            let count = try ad.persistentContainer.viewContext.count(for: fetchRequest)
+            
+            if count == 0 {
+                
+                generateTestData()
+                
+            }
             
             try controller.performFetch()
             
@@ -178,19 +204,60 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func generateTestData() {
         
         let item = Item(context: context)
-        item.title = "MacBook Pro"
-        //item.price = 1800
-        item.details = "I can't wait until the September event, I hope they release new MPBs"
+        item.title = "Zazen"
+        item.location = "Home"
+        item.details = "Morning Sit - 25 Minutes"
+        item.time = "7:00 AM"
+        item.bell = true
+        item.itemType = "Schedule"
         
         let item2 = Item(context: context)
-        item2.title = "Bose Headphones"
-        //item2.price = 300
-        item2.details = "But man, its so nice to be able to blaock out everyone with the noise canceling tech."
+        item2.title = "Zen Driving"
+        item2.location = "Car"
+        item2.details = "Drive with attentive awareness.  Place the hands on the wheel and observe how the body/unconcious mind drives the car."
+        item2.time = "8:00 AM"
+        item2.bell = true
+        item2.itemType = "Schedule"
         
         let item3 = Item(context: context)
-        item3.title = "Tesla Model S"
-        //item3.price = 110000
-        item3.details = "Oh man this is a beautiful car. And one day, I will own it"
+        item3.title = "Mindful Lunch"
+        item3.location = "Cafe"
+        item3.details = "Eat in silence with rapt attention of every detail of the meal on the table, it taste, aroma, color and with awareness of the many beings through which it arose and opportunities that are created through this energy"
+        item3.time = "12:00 PM"
+        item3.bell = true
+        item3.itemType = "Schedule"
+        
+        let item4 = Item(context: context)
+        item4.title = "Loving Kindness Meditation"
+        item4.location = "Work"
+        item4.details = "Morning Sit - 25 Minutes"
+        item4.time = "2:00 PM"
+        item4.bell = true
+        item4.itemType = "Schedule"
+        
+        let item5 = Item(context: context)
+        item5.title = "Zazen"
+        item5.location = "Home"
+        item5.details = "Evening Sit - 15 Minutes"
+        item5.time = "6:00 PM"
+        item5.bell = true
+        item5.itemType = "Schedule"
+        
+        let item6 = Item(context: context)
+        item6.title = "Gratitude Pratice"
+        item6.location = "Home"
+        item6.details = "Before going to bed follow Brother David's gratitude practice"
+        item6.time = "9:00 PM"
+        item6.bell = true
+        item6.itemType = "Schedule"
+        
+        let item7 = Item(context: context)
+        item7.title = "Stop - Look -Go"
+        item7.location = "Anywhere"
+        item7.details = "Follow Brother David's gratitude practice"
+        item6.time = ""
+        item7.bell = false
+        item7.itemType = "Practice"
         
         ad.saveContext()
         

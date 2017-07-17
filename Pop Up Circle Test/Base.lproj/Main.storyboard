@@ -224,8 +224,8 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l26-QX-eu8">
                                 <rect key="frame" x="28" y="507" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qff-Fe-mE0">
@@ -338,18 +338,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rSc-es-auO">
-                                <rect key="frame" x="72" y="318" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switchChanged:" destination="VrU-Oe-qKj" eventType="valueChanged" id="Gxn-Kv-vqu"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGH-gF-l1y">
-                                <rect key="frame" x="28" y="323" width="28" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Al-uF-t8p">
                                 <rect key="frame" x="24" y="276" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -364,6 +352,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-kS-ih7">
+                                <rect key="frame" x="112" y="331" width="40" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Sky-ll-P2b"/>
+                                    <constraint firstAttribute="height" constant="45" id="tTk-pv-X2N"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="bell-button-2"/>
+                                <connections>
+                                    <action selector="scheduleNotification:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="nQv-EH-U7j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -377,16 +376,14 @@
                             <constraint firstItem="IKU-Ij-Npt" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="BcN-Kr-aFI"/>
                             <constraint firstItem="qff-Fe-mE0" firstAttribute="top" secondItem="IKU-Ij-Npt" secondAttribute="bottom" constant="20" id="D2J-Bj-yQx"/>
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="top" secondItem="lGr-RY-5QO" secondAttribute="bottom" constant="8" id="DDN-hq-pjx"/>
-                            <constraint firstItem="ubg-SE-2k0" firstAttribute="top" secondItem="rSc-es-auO" secondAttribute="bottom" constant="17.5" id="ESs-Ab-VW5"/>
                             <constraint firstItem="YOF-DC-nwL" firstAttribute="top" secondItem="qff-Fe-mE0" secondAttribute="bottom" constant="20" id="HQo-5P-582"/>
                             <constraint firstItem="YOF-DC-nwL" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="I34-cC-4gj"/>
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="I7c-sK-2gQ"/>
                             <constraint firstItem="bYC-ND-vW1" firstAttribute="top" secondItem="YOF-DC-nwL" secondAttribute="bottom" constant="80" id="Lug-FQ-kPH"/>
                             <constraint firstItem="0dh-cp-ly7" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="MPD-3E-oPo"/>
                             <constraint firstItem="IKU-Ij-Npt" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="MyY-lt-bFg"/>
-                            <constraint firstItem="rSc-es-auO" firstAttribute="leading" secondItem="MGH-gF-l1y" secondAttribute="trailing" constant="16" id="Nqe-P3-UVu"/>
                             <constraint firstItem="NeI-va-LOz" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="PQW-OH-AGp"/>
-                            <constraint firstItem="ubg-SE-2k0" firstAttribute="top" secondItem="MGH-gF-l1y" secondAttribute="bottom" constant="22.5" id="Rsr-8z-FGG"/>
+                            <constraint firstItem="IFT-kS-ih7" firstAttribute="leading" secondItem="ubg-SE-2k0" secondAttribute="trailing" constant="46" id="QqG-e0-gey"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SLI-d4-qkF" secondAttribute="trailing" constant="8" id="Y8u-Nf-p3k"/>
                             <constraint firstItem="0dh-cp-ly7" firstAttribute="top" secondItem="b5o-Jt-yQ9" secondAttribute="bottom" constant="8" id="Yrc-pq-riq"/>
                             <constraint firstItem="qff-Fe-mE0" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="aHI-m3-wL4"/>
@@ -394,7 +391,7 @@
                             <constraint firstItem="NeI-va-LOz" firstAttribute="leading" secondItem="69P-B8-fkO" secondAttribute="trailing" constant="8" id="dHY-lb-tkq"/>
                             <constraint firstItem="b5o-Jt-yQ9" firstAttribute="top" secondItem="NeI-va-LOz" secondAttribute="bottom" constant="10" id="dh5-od-S20"/>
                             <constraint firstItem="69P-B8-fkO" firstAttribute="centerX" secondItem="Zsg-eR-mg4" secondAttribute="centerX" id="efu-5X-LkD"/>
-                            <constraint firstItem="MGH-gF-l1y" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" constant="12" id="hGW-3L-uiI"/>
+                            <constraint firstItem="IKU-Ij-Npt" firstAttribute="top" secondItem="IFT-kS-ih7" secondAttribute="bottom" constant="41" id="nWX-KA-OIL"/>
                             <constraint firstItem="Hpu-pu-Gfa" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="q33-xt-pbu"/>
                             <constraint firstItem="bYC-ND-vW1" firstAttribute="top" secondItem="OsM-T9-O1n" secondAttribute="bottom" id="rui-aY-ehs"/>
                             <constraint firstItem="NeI-va-LOz" firstAttribute="top" secondItem="lGr-RY-5QO" secondAttribute="bottom" constant="18" id="tZ4-K0-HeM"/>
@@ -434,7 +431,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ItemTypeField" destination="Hpu-pu-Gfa" id="GlZ-2h-FYU"/>
-                        <outlet property="bellSwitch" destination="rSc-es-auO" id="Ys7-si-Yb7"/>
                         <outlet property="bellValue" destination="0Al-uF-t8p" id="Onr-uL-UAT"/>
                         <outlet property="dateTimeDisplay" destination="l26-QX-eu8" id="X0U-CQ-HTa"/>
                         <outlet property="dayPicker" destination="IKU-Ij-Npt" id="YHQ-q4-MiE"/>
@@ -448,6 +444,7 @@
                         <outlet property="timeDisplay" destination="bwU-nG-eKl" id="uKd-Qp-t3V"/>
                         <outlet property="timePicker" destination="SLI-d4-qkF" id="j41-1N-Vdl"/>
                         <outlet property="titleField" destination="NeI-va-LOz" id="kWi-hY-vA8"/>
+                        <outlet property="toggleReminderButton" destination="IFT-kS-ih7" id="joT-iU-rh7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hH1-ai-zVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1078,6 +1075,7 @@
         <image name="Meditation" width="40" height="40"/>
         <image name="Temple gate" width="40" height="40"/>
         <image name="YinYang" width="40" height="40"/>
+        <image name="bell-button-2" width="64" height="64"/>
         <image name="imagePick" width="300" height="300"/>
         <image name="videobanner" width="610" height="310"/>
         <image name="zazen6" width="607" height="629"/>
@@ -1085,7 +1083,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="ePM-BZ-dMj"/>
         <segue reference="SoN-k4-np4"/>
-        <segue reference="si4-8i-z9Z"/>
         <segue reference="HfS-Lm-yMo"/>
+        <segue reference="si4-8i-z9Z"/>
     </inferredMetricsTieBreakers>
 </document>
