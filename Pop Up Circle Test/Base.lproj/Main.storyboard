@@ -222,12 +222,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l26-QX-eu8">
-                                <rect key="frame" x="28" y="507" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qff-Fe-mE0">
                                 <rect key="frame" x="16" y="487" width="343" height="40"/>
                                 <subviews>
@@ -371,7 +365,6 @@
                             <constraint firstItem="ubg-SE-2k0" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" constant="8" id="7Lg-Gh-qGH"/>
                             <constraint firstAttribute="trailing" secondItem="OsM-T9-O1n" secondAttribute="trailing" id="8LB-II-kIt"/>
                             <constraint firstItem="69P-B8-fkO" firstAttribute="centerY" secondItem="Zsg-eR-mg4" secondAttribute="centerY" id="8xJ-Ja-bg6"/>
-                            <constraint firstItem="YOF-DC-nwL" firstAttribute="top" secondItem="l26-QX-eu8" secondAttribute="bottom" constant="19" id="9yZ-jg-sJQ"/>
                             <constraint firstItem="OsM-T9-O1n" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leading" id="A8g-Jl-FFr"/>
                             <constraint firstItem="IKU-Ij-Npt" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="BcN-Kr-aFI"/>
                             <constraint firstItem="qff-Fe-mE0" firstAttribute="top" secondItem="IKU-Ij-Npt" secondAttribute="bottom" constant="20" id="D2J-Bj-yQx"/>
@@ -431,8 +424,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ItemTypeField" destination="Hpu-pu-Gfa" id="GlZ-2h-FYU"/>
-                        <outlet property="bellValue" destination="0Al-uF-t8p" id="Onr-uL-UAT"/>
-                        <outlet property="dateTimeDisplay" destination="l26-QX-eu8" id="X0U-CQ-HTa"/>
+                        <outlet property="dateTimeDisplay" destination="0Al-uF-t8p" id="Wpf-sf-Rdh"/>
                         <outlet property="dayPicker" destination="IKU-Ij-Npt" id="YHQ-q4-MiE"/>
                         <outlet property="detailsField" destination="0dh-cp-ly7" id="IrK-72-yNr"/>
                         <outlet property="eventTimeValue" destination="sDF-Gu-zEE" id="X85-ik-jgf"/>

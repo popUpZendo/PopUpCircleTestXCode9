@@ -44,6 +44,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     let dateFormatter = DateFormatter()
     let timeFormatter = DateFormatter()
+    let dateTimeFormatter = DateFormatter()
     
     var stores = [Store]()
     var itemToEdit: Item?
@@ -54,7 +55,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         super.viewDidLoad()
         
         UNUserNotificationCenter.current().delegate = self
-        bellValue.text = "true"
+        //bellValue.text = "true"
         
         self.dayPicker.singleSelection = false
         self.dayPicker.delegate = self
@@ -151,9 +152,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     func setTime() {
         timeFormatter.timeStyle = DateFormatter.Style.short
-        dateTimeDisplay.text = timeFormatter.string(from: timePicker.date)
-        
         timeDisplay.text = timeFormatter.string(from: timePicker.date)
+        
+        dateTimeFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateTimeDisplay.text = dateTimeFormatter.string(from: timePicker.date)
+        
     }
     
 //    func setCoreTime()  {
@@ -307,7 +310,33 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         //content.badge = 1
         //content.categoryIdentifier = "quizCategory"
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let dateString = "2017-04-04 019:41:00"
+        let dateFormatter = DateFormatter()
+        
+        var localTimeZoneName: String { return TimeZone.current.identifier }
+        var secondsFromGMT: Int { return TimeZone.current.secondsFromGMT() }
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: secondsFromGMT)
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let dateObj:Date = dateFormatter.date(from: dateString)!
+        
+        
+        
+        let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: dateObj)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+        
+        
+        
+        let snoozeAction = UNNotificationAction(identifier: "Snooze",
+                                                title: "Snooze", options: [])
+        let deleteAction = UNNotificationAction(identifier: "UYLDeleteAction",
+                                                title: "Delete", options: [.destructive])
+        
+        //let triggerWeekly = Calendar.current.dateComponents([.weekday,hour,.minute,.second,], from: date)
+        //let trigger = UNCalendarNotificationTrigger(dateMatching: triggerWeekly, repeats: true)
+        
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         let requestIdentifier = "africaQuiz"
         let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
