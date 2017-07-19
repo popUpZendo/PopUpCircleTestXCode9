@@ -20,7 +20,7 @@ extension Item {
     @NSManaged public var created: NSDate?
     @NSManaged public var days: String?
     @NSManaged public var details: String?
-    @NSManaged public var eventTime: NSDate?
+    @NSManaged public var eventTime: Date?
     @NSManaged public var itemType: String?
     @NSManaged public var location: String?
     @NSManaged public var time: String?

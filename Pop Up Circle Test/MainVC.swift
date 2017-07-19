@@ -203,6 +203,18 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     
     func generateTestData() {
         
+        let dateformatterToDate = DateFormatter()
+        dateformatterToDate.dateFormat = "h:mm a"
+        let Date1 = dateformatterToDate.date(from: "7:00 AM")
+        let Date2 = dateformatterToDate.date(from: "8:00 AM")
+        let Date3 = dateformatterToDate.date(from: "12:00 PM")
+        let Date4 = dateformatterToDate.date(from: "2:00 PM")
+        let Date5 = dateformatterToDate.date(from: "6:00 PM")
+        let Date6 = dateformatterToDate.date(from: "9:00 PM")
+        let Date7 = dateformatterToDate.date(from: "12:00 AM")
+        
+        
+        
         let item = Item(context: context)
         item.title = "Zazen"
         item.location = "Home"
@@ -210,6 +222,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item.time = "7:00 AM"
         item.bell = true
         item.itemType = "Schedule"
+        item.eventTime = Date1
         
         let item2 = Item(context: context)
         item2.title = "Zen Driving"
@@ -218,6 +231,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item2.time = "8:00 AM"
         item2.bell = true
         item2.itemType = "Schedule"
+        item2.eventTime = Date2
         
         let item3 = Item(context: context)
         item3.title = "Mindful Lunch"
@@ -226,6 +240,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item3.time = "12:00 PM"
         item3.bell = true
         item3.itemType = "Schedule"
+        item3.eventTime = Date3
         
         let item4 = Item(context: context)
         item4.title = "Loving Kindness Meditation"
@@ -234,6 +249,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item4.time = "2:00 PM"
         item4.bell = true
         item4.itemType = "Schedule"
+        item4.eventTime = Date4
         
         let item5 = Item(context: context)
         item5.title = "Zazen"
@@ -242,6 +258,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item5.time = "6:00 PM"
         item5.bell = true
         item5.itemType = "Schedule"
+        item5.eventTime = Date5
         
         let item6 = Item(context: context)
         item6.title = "Gratitude Pratice"
@@ -250,6 +267,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item6.time = "9:00 PM"
         item6.bell = true
         item6.itemType = "Schedule"
+        item6.eventTime = Date6
         
         let item7 = Item(context: context)
         item7.title = "Stop - Look -Go"
@@ -258,6 +276,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item6.time = ""
         item7.bell = false
         item7.itemType = "Practice"
+        item7.eventTime = Date7
         
         ad.saveContext()
         

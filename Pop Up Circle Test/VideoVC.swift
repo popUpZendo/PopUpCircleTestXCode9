@@ -1,6 +1,6 @@
 //
 //  VideoVC.swift
-//  PartyRockApp
+//  PopUpZendoApp
 //
 //  Created by Joseph Hall on 5/16/17.
 //  Copyright © 2017 Om Design. All rights reserved.
@@ -16,13 +16,13 @@ class VideoVC: UIViewController {
     @IBOutlet weak var details: UILabel!
     
     
-    fileprivate var _partyRock: PartyRock!
+    fileprivate var _dharmaRock: DharmaRock!
     
-    var partyRock: PartyRock {
+    var dharmaRock: DharmaRock {
         get{
-            return _partyRock
+            return _dharmaRock
         } set {
-            _partyRock = newValue
+            _dharmaRock = newValue
         }
     }
     
@@ -32,13 +32,13 @@ class VideoVC: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         
-        titleLbl.text = partyRock.videoTitle
-        details.text = partyRock.details
-        webView.loadHTMLString(partyRock.videoURL, baseURL: nil)
+        titleLbl.text = dharmaRock.videoTitle
+        details.text = dharmaRock.details
+        webView.loadHTMLString(dharmaRock.videoURL, baseURL: nil)
         
         
-    // webView2.loadHTMLString(partyRock.videoURL, baseURL: nil)
-        webView2.loadRequest(URLRequest(url: URL(string: partyRock.contentURL)! as URL) as URLRequest)
+    // webView2.loadHTMLString(dharmaRock.videoURL, baseURL: nil)
+        webView2.loadRequest(URLRequest(url: URL(string: dharmaRock.contentURL)! as URL) as URLRequest)
         
         //webView2.loadHTMLString("https://www.google.com", baseURL: nil)
         

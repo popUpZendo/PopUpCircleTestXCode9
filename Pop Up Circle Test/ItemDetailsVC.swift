@@ -13,7 +13,6 @@ import CHDayPicker
 import UserNotifications
 
 
-
 class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
   
 
@@ -31,7 +30,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var dateTimeDisplay: UILabel!
     @IBOutlet weak var timeDisplay: CustomTextField!
     @IBOutlet weak var titleField: CustomTextField!
-    @IBOutlet weak var detailsField1: CustomTextField!
     @IBOutlet weak var detailsField: UITextView!
     @IBOutlet weak var itemTypeField: CustomTextField!
     @IBOutlet weak var thumgImg: UIImageView!
@@ -131,19 +129,19 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             bellSwitch.setOn(false, animated: false)}
     }
     
-//    var onButtonSelection: (() -> ())?
-//
-//    @IBAction func remindButtonTapped(_ sender: Any) {
-//        onButtonSelection?()
-//    }
-//
-//    func showReminderOnIcon() {
-//        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-1"), for: .normal)
-//    }
-//
-//    func showReminderOffIcon() {
-//        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-2"), for: .normal)
-//    }
+    var onButtonSelection: (() -> ())?
+    
+    @IBAction func remindButtonTapped(_ sender: Any) {
+        onButtonSelection?()
+    }
+    
+    func showReminderOnIcon() {
+        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-1"), for: .normal)
+    }
+    
+    func showReminderOffIcon() {
+        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-2"), for: .normal)
+    }
     
     @IBAction func timePickerChanged(_ sender: AnyObject) {
         setTime()
@@ -158,16 +156,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         dateTimeDisplay.text = dateTimeFormatter.string(from: timePicker.date)
         
     }
-    
-//    func setCoreTime()  {
-//                let dateformatterToDate = DateFormatter()
-//
-//                dateformatterToDate.dateFormat = "h:mm a"
-//
-//                eventTimeCalc = dateformatterToDate.date(from: timeDisplay.text!)
-//    }
-    
-    
     
     @IBAction func radioPractice(_ sender: Any) {
         hideButton.isHidden = false;
@@ -184,19 +172,12 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     @IBAction func savePressed(_ sender: UIButton) {
         
-        var item: Item!
+        var item: Item
         let picture = Image(context: context)
         picture.image = thumgImg.image
         
-        if itemToEdit == nil {
-            
-            item = Item(context: context)
-            
-        } else {
-            
-            item = itemToEdit
-            
-        }
+        item = itemToEdit ?? Item(context: context)
+        
         
          item.toImage = picture
         
@@ -229,13 +210,9 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         }
         
-        if let eventTime = eventTimeCalc {
-            
-        item.eventTime = eventTime as NSDate
-           // print(item.eventTime)
-            
-                    }
         
+        item.eventTime = timePicker.date
+            
         if let details = detailsField.text {
             
             item.details = details
@@ -269,16 +246,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             detailsField.text = item.details
             itemTypeField.text = item.itemType
             thumgImg.image = item.toImage?.image as? UIImage
-            //timePicker.date = item.eventTime
-            //timePicker.date = (item.eventTime as! NSDate) as Date
-            // I am nervous that this exclamation mark could cause crashing.
-            func showCoreTime (){
-                let dateformatterToString = DateFormatter()
-                
-                dateformatterToString.dateFormat = "h:mm a"
-                
-                eventTimeValue.text = dateformatterToString.string(from: item.eventTime! as Date)
-            }
+            timePicker.date = item.eventTime!
+            
+            
+            
             
         }
         
@@ -304,29 +275,25 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBAction func scheduleNotification(_ sender: UIButton) {
         let content = UNMutableNotificationContent()
         content.title = titleField.text!
-        //content.subtitle = "Let's see how smart you are!"
+        content.subtitle = "Let's see how smart you are!"
         content.body = detailsField.text
-        content.sound = UNNotificationSound(named: "templeBell.mp3")
+        content.sound = UNNotificationSound(named: "LovelyBell.mp3")
         //content.badge = 1
         //content.categoryIdentifier = "quizCategory"
         
-        let dateString = "2017-04-04 019:41:00"
-        let dateFormatter = DateFormatter()
+//        let dateString = "2017-04-04 14:19:00"
+//        let dateFormatter = DateFormatter()
+//
+//        var localTimeZoneName: String { return TimeZone.current.identifier }
+//        var secondsFromGMT: Int { return TimeZone.current.secondsFromGMT() }
+//        dateFormatter.timeZone = TimeZone(secondsFromGMT: secondsFromGMT)
+//        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+//
+//        let dateObj:Date = dateFormatter.date(from: dateString)!
         
-        var localTimeZoneName: String { return TimeZone.current.identifier }
-        var secondsFromGMT: Int { return TimeZone.current.secondsFromGMT() }
-        dateFormatter.timeZone = TimeZone(secondsFromGMT: secondsFromGMT)
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        
-        let dateObj:Date = dateFormatter.date(from: dateString)!
-        
-        
-        
-        let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: dateObj)
+        let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: timePicker.date)
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
-        
-        
         
         let snoozeAction = UNNotificationAction(identifier: "Snooze",
                                                 title: "Snooze", options: [])

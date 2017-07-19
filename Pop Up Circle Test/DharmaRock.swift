@@ -1,6 +1,6 @@
 //
-//  PartyRock.swift
-//  PartyRockApp
+//  DharmaRock.swift
+//  PopUPZendoApp
 //
 //  Created by Joseph Hall on 5/16/17.
 //  Copyright © 2017 Om Design. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 
 
-class PartyRock {
+class DharmaRock {
     fileprivate var _imageURL: String!
     fileprivate var _videoURL: String!
     fileprivate var _videoTitle: String!

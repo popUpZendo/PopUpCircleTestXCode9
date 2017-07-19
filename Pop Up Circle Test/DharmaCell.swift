@@ -1,6 +1,6 @@
 //
-//  PartyCell.swift
-//  PartyRockApp
+//  DharmaCell.swift
+//  PopUpZendoApp
 //
 //  Created by Joseph Hall on 5/16/17.
 //  Copyright © 2017 Om Design. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PartyCell: UITableViewCell {
+class DharmaCell: UITableViewCell {
     
     @IBOutlet weak var videoPreviewImage: UIImageView!
     
@@ -20,11 +20,11 @@ class PartyCell: UITableViewCell {
         
     }
     
-    func updateUI(_ partyRock: PartyRock) {
-        videoTitle.text = partyRock.videoTitle
-        details.text = partyRock.details
+    func updateUI(_ dharmaRock: DharmaRock) {
+        videoTitle.text = dharmaRock.videoTitle
+        details.text = dharmaRock.details
         
-        let url = URL(string: partyRock.imageURL)!
+        let url = URL(string: dharmaRock.imageURL)!
         
         DispatchQueue.global().async {
             do {

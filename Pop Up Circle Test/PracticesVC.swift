@@ -95,9 +95,9 @@ class PracticesVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
         
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
         
-        let scheduleSort = NSSortDescriptor(key: "time", ascending: true)
-        //let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
-        //fetchRequest.predicate = predicate1
+        let scheduleSort = NSSortDescriptor(key: "eventTime", ascending: true)
+        let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+        fetchRequest.predicate = predicate1
         
         let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
         let predicate2 = NSPredicate(format: "itemType CONTAINS[c] %@", "Practice")
@@ -105,7 +105,7 @@ class PracticesVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
         
         if segment.selectedSegmentIndex == 0 {
             
-            //fetchRequest.sortDescriptors = [scheduleSort]
+            fetchRequest.sortDescriptors = [scheduleSort]
             
         } else if segment.selectedSegmentIndex == 1 {
             
