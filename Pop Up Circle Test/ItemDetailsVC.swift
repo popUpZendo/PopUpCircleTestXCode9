@@ -34,6 +34,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var itemTypeField: CustomTextField!
     @IBOutlet weak var thumgImg: UIImageView!
     @IBOutlet weak var locationField: CustomTextField!
+    @IBOutlet weak var scheduleButton: DLRadioButton!
+    @IBOutlet weak var practiceButton: DLRadioButton!
     
     @IBOutlet weak var toggleReminderButton: UIButton!
     
@@ -70,7 +72,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         //detailsField.delegate = self
         itemTypeField.delegate = self
         
-    
+        
+        
         
     self.navigationController?.setNavigationBarHidden(false, animated: true)
         
@@ -107,41 +110,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     var alarm = Bool ()
     
-    @IBAction func switchChanged(_ sender: Any)
-        
-        {
-            if bellSwitch.isOn {
-                alarm = true
-                print("true")
-                bellValue.text = "true"
-            }
-            else {
-                alarm = false
-                print(false)
-                bellValue.text = "false"
-            }
-        }
-    
-    func switchState() {
-        if alarm == true {
-            bellSwitch.setOn(true, animated: false)
-        }else{
-            bellSwitch.setOn(false, animated: false)}
-    }
-    
-    var onButtonSelection: (() -> ())?
-    
-    @IBAction func remindButtonTapped(_ sender: Any) {
-        onButtonSelection?()
-    }
-    
-    func showReminderOnIcon() {
-        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-1"), for: .normal)
-    }
-    
-    func showReminderOffIcon() {
-        toggleReminderButton.setImage(#imageLiteral(resourceName: "bell-button-2"), for: .normal)
-    }
     
     @IBAction func timePickerChanged(_ sender: AnyObject) {
         setTime()
@@ -157,10 +125,12 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
     }
     
+    
     @IBAction func radioPractice(_ sender: Any) {
         hideButton.isHidden = false;
         thumgImg.isHidden = false;
         itemTypeField.text = "Practice"
+        
     }
     
     @IBAction func radioSchedule(_ sender: Any) {
@@ -248,12 +218,21 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             thumgImg.image = item.toImage?.image as? UIImage
             timePicker.date = item.eventTime!
             
-            
-            
-            
         }
+        //Need to figure out a way to call this function
         
+        func highlightRadio () {
+            if itemTypeField.text == "Practice" {
+                practiceButton.isSelected = true
+                scheduleButton.isSelected = true
+            }else if itemTypeField.text == "Schedule"{
+                scheduleButton.isSelected = true
+                practiceButton.isSelected = false
+            }
+        }
     }
+    
+    
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         
@@ -272,44 +251,48 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         present(imagePicker, animated: true, completion: nil)
     }
     
+    var toggleState = 1
+    let imgOff = UIImage(named:"bell-button-1.png")
+    let imgOn = UIImage(named:"bell-button-2.png")
+    
+    
+    
     @IBAction func scheduleNotification(_ sender: UIButton) {
-        let content = UNMutableNotificationContent()
-        content.title = titleField.text!
-        content.subtitle = "Let's see how smart you are!"
-        content.body = detailsField.text
-        content.sound = UNNotificationSound(named: "LovelyBell.mp3")
-        //content.badge = 1
-        //content.categoryIdentifier = "quizCategory"
         
-//        let dateString = "2017-04-04 14:19:00"
-//        let dateFormatter = DateFormatter()
-//
-//        var localTimeZoneName: String { return TimeZone.current.identifier }
-//        var secondsFromGMT: Int { return TimeZone.current.secondsFromGMT() }
-//        dateFormatter.timeZone = TimeZone(secondsFromGMT: secondsFromGMT)
-//        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-//
-//        let dateObj:Date = dateFormatter.date(from: dateString)!
+        if alarm == false {
+            let content = UNMutableNotificationContent()
+            content.title = titleField.text!
+            content.subtitle = ""
+            content.body = detailsField.text
+            content.sound = UNNotificationSound(named: "LovelyBell.mp3")
+            
+            let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: timePicker.date)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+            
+            let requestIdentifier = "Pop Up Notifications"
+            let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
+                // handle error
+            })
+            alarm = false
+            toggleReminderButton.setImage(imgOff, for: [])
+            alarm = true
+            if alarm == true {
+                print("true")
+            }
+            
+        } else {
+            
+            alarm = true
+            toggleReminderButton.setImage(imgOn,for: [])
+            alarm = false
+            if alarm == false {
+                print("false")
+            }
+        }
         
-        let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: timePicker.date)
         
-        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
         
-        let snoozeAction = UNNotificationAction(identifier: "Snooze",
-                                                title: "Snooze", options: [])
-        let deleteAction = UNNotificationAction(identifier: "UYLDeleteAction",
-                                                title: "Delete", options: [.destructive])
-        
-        //let triggerWeekly = Calendar.current.dateComponents([.weekday,hour,.minute,.second,], from: date)
-        //let trigger = UNCalendarNotificationTrigger(dateMatching: triggerWeekly, repeats: true)
-        
-        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        
-        let requestIdentifier = "africaQuiz"
-        let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
-            // handle error
-        })
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

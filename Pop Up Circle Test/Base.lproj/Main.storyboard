@@ -332,13 +332,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-Gu-zEE">
-                                <rect key="frame" x="89" y="275" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-kS-ih7">
                                 <rect key="frame" x="112" y="331" width="40" height="45"/>
                                 <constraints>
@@ -347,12 +340,11 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="bell-button-2"/>
                                 <connections>
-                                    <action selector="remindButtonTapped:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="ILS-yP-ti1"/>
-                                    <action selector="scheduleNotification:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="lIw-Lk-ms5"/>
+                                    <action selector="scheduleNotification:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="siE-WE-WoH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Al-uF-t8p">
-                                <rect key="frame" x="24" y="307" width="116" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ja2-Sl-z5P">
+                                <rect key="frame" x="24" y="295" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -425,14 +417,15 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ItemTypeField" destination="Hpu-pu-Gfa" id="GlZ-2h-FYU"/>
-                        <outlet property="dateTimeDisplay" destination="0Al-uF-t8p" id="Wpf-sf-Rdh"/>
+                        <outlet property="dateTimeDisplay" destination="Ja2-Sl-z5P" id="Lqi-86-Ilt"/>
                         <outlet property="dayPicker" destination="IKU-Ij-Npt" id="YHQ-q4-MiE"/>
                         <outlet property="detailsField" destination="0dh-cp-ly7" id="IrK-72-yNr"/>
-                        <outlet property="eventTimeValue" destination="sDF-Gu-zEE" id="X85-ik-jgf"/>
                         <outlet property="hideButton" destination="69P-B8-fkO" id="F0n-8C-5hw"/>
                         <outlet property="itemTypeField" destination="Hpu-pu-Gfa" id="alu-FH-Rve"/>
                         <outlet property="locationField" destination="b5o-Jt-yQ9" id="adU-9W-n7J"/>
+                        <outlet property="practiceButton" destination="T2T-4w-4KF" id="lJv-QH-som"/>
                         <outlet property="resultLabel" destination="ubg-SE-2k0" id="ZtE-3O-lU3"/>
+                        <outlet property="scheduleButton" destination="PL2-xz-3rj" id="3DV-c7-oyQ"/>
                         <outlet property="thumgImg" destination="Zsg-eR-mg4" id="Db3-Fi-94Q"/>
                         <outlet property="timeDisplay" destination="bwU-nG-eKl" id="uKd-Qp-t3V"/>
                         <outlet property="timePicker" destination="SLI-d4-qkF" id="j41-1N-Vdl"/>
