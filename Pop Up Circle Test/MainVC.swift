@@ -28,7 +28,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
-        //generateTestData()
+//generateTestData()
+        // Test Data and real data are separate on sort
+        
         attemptFetch()
 
     }
@@ -95,28 +97,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
         
-        let scheduleSort = NSSortDescriptor(key: "time", ascending: true)
-        //let scheduleSort2 = NSSortDescriptor(key: "time", ascending: true)
+        let scheduleSort = NSSortDescriptor(key: "eventTime", ascending: true)
+        
         let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
         
         if segment.selectedSegmentIndex == 0 {
             
             fetchRequest.sortDescriptors = [scheduleSort]
             let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
-            //let predicateAM = NSPredicate(format: "time CONTAINS[c] %@", "AM")
-            //let predicatePM = NSPredicate(format: "time CONTAINS[c] %@", "PM")
-//            let predicate1 = NSPredicate(format: "time CONTAINS[c] %@", "AM")
-//            let predicate2 = NSPredicate(format: "time CONTAINS[c] %@", "PM")
-//            let compound: NSCompoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate1 > predicate2])
-            //self.filteredArray = self.array.filteredArrayUsingPredicate(compound)
-            //self.table.reloadData()
-           // fetchRequest.predicate = predicateAM || predicatePM
-            
-//            fetchRequest.sortDescriptors = [scheduleSort2]
-//            let predicatePM = NSPredicate(format: "time CONTAINS[c] %@", "PM")
-//            fetchRequest.predicate = predicatePM
-            
-//            fetchRequest.predicate = predicateAM
             fetchRequest.predicate = predicate1
             
         } else if segment.selectedSegmentIndex == 1 {

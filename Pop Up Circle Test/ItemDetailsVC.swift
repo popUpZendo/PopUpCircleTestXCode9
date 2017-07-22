@@ -19,8 +19,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
   
     @IBOutlet weak var bellSwitch: UISwitch!
     
-    
-    
     @IBOutlet weak var eventTimeValue: UILabel!
     @IBOutlet weak var bellValue: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
@@ -36,7 +34,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var locationField: CustomTextField!
     @IBOutlet weak var scheduleButton: DLRadioButton!
     @IBOutlet weak var practiceButton: DLRadioButton!
-    
     @IBOutlet weak var toggleReminderButton: UIButton!
     
     
@@ -46,10 +43,13 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     let timeFormatter = DateFormatter()
     let dateTimeFormatter = DateFormatter()
     
+    
     var stores = [Store]()
     var itemToEdit: Item?
     var imagePicker: UIImagePickerController!
     var eventTimeCalc: Date?
+    
+    var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +62,17 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         self.dayPicker.selectDayAtPosition(position: 1)
         self.dayPicker.selectDayAtPosition(position: 3)
         self.dayPicker.selectDayAtPosition(position: 5)
+        
+        if let didSelectDay(position: 0, label: "S", selected : true) {
+            
+        }
+        
+        
+        
+        print(self.dayPicker.daysLabel)
+        
+        
+        
         
         itemTypeField.delegate = self
         timePicker.isHidden = true
@@ -139,8 +150,39 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         itemTypeField.text = "Schedule"
     }
     
-    
     @IBAction func savePressed(_ sender: UIButton) {
+        
+        if alarm == true {
+        let content = UNMutableNotificationContent()
+                content.title = NSString.localizedUserNotificationString(forKey: (titleField.text)!, arguments: nil)
+                content.body = NSString.localizedUserNotificationString(forKey: (detailsField.text), arguments: nil)
+                content.sound = UNNotificationSound(named: "LovelyBell.mp3")
+        
+            let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: timePicker.date)
+            
+            let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+            
+            //let triggerWeekly = Calendar.current.dateComponents([.weekday,hour,.minute,.second,], from: date)
+            //let trigger = UNCalendarNotificationTrigger(dateMatching: triggerWeekly, repeats: true)
+            
+            //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+            let request = UNNotificationRequest(identifier: "\(String(describing: titleField.text)))PopUpReminder", content: content, trigger: trigger)
+                let center = UNUserNotificationCenter.current()
+            center.add(request, withCompletionHandler: nil)
+            
+            
+            
+        }else{
+            func removePendingNotificationRequests(withIdentifiers identifiers: [String]){
+                
+
+            
+            }
+            
+        }
+        
+        //removeAllPendingNotificationRequests()
         
         var item: Item
         let picture = Image(context: context)
@@ -151,14 +193,13 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
          item.toImage = picture
         
-         item.bell = alarm
         //print(alarm)
-        print(item.bell)
+        //print(item.bell)
         
         if let title = titleField.text {
             
             item.title = title
-            //print(item.title)
+            
             
         }
         
@@ -189,16 +230,10 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             
         }
         
-        
-        
-//        var bell: Bool = false
-//        if(bellValue.text = "true"){
-//            return true
-//        }
-        
-        
-        
+        item.bell = alarm
         ad.saveContext()
+        
+        
         
         _ = navigationController?.popViewController(animated: true)
         
@@ -213,25 +248,29 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             titleField.text = item.title
             locationField.text = item.location
             alarm = item.bell
+            
+            if (alarm == true) {
+                toggleReminderButton.setImage(UIImage(named:"bell-button-1.png"), for: [])
+            }
+            else {
+                toggleReminderButton.setImage(UIImage(named:"bell-button-2.png"), for: [])
+            }
             detailsField.text = item.details
             itemTypeField.text = item.itemType
-            thumgImg.image = item.toImage?.image as? UIImage
-            timePicker.date = item.eventTime!
             
-        }
-        //Need to figure out a way to call this function
-        
-        func highlightRadio () {
             if itemTypeField.text == "Practice" {
-                practiceButton.isSelected = true
-                scheduleButton.isSelected = true
-            }else if itemTypeField.text == "Schedule"{
+                 practiceButton.isSelected = true
+                 scheduleButton.isSelected = false
+                 timePicker.isHidden = true
+            } else if itemTypeField.text == "Schedule" {
                 scheduleButton.isSelected = true
                 practiceButton.isSelected = false
+                timePicker.isHidden = false
             }
+            thumgImg.image = item.toImage?.image as? UIImage
+            timePicker.date = item.eventTime!
         }
     }
-    
     
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
@@ -260,25 +299,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBAction func scheduleNotification(_ sender: UIButton) {
         
         if alarm == false {
-            let content = UNMutableNotificationContent()
-            content.title = titleField.text!
-            content.subtitle = ""
-            content.body = detailsField.text
-            content.sound = UNNotificationSound(named: "LovelyBell.mp3")
             
-            let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: timePicker.date)
-            let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
-            
-            let requestIdentifier = "Pop Up Notifications"
-            let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
-            UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
-                // handle error
-            })
-            alarm = false
             toggleReminderButton.setImage(imgOff, for: [])
             alarm = true
             if alarm == true {
-                print("true")
+                print("True")
             }
             
         } else {

@@ -12,7 +12,7 @@ class ItemCell: UITableViewCell {
     
     @IBOutlet  var thumb: UIImageView!
     @IBOutlet  var title: UILabel!
-    @IBOutlet  var price: UILabel!
+    @IBOutlet weak var eTime: UILabel!
     @IBOutlet  var details: UILabel!
     @IBOutlet  var location: UILabel!
     
@@ -20,7 +20,7 @@ class ItemCell: UITableViewCell {
         
         location.text = item.location
         title.text = item.title
-        price.text = item.time
+        eTime.text = item.time
         details.text = item.details
         thumb.image = item.toImage?.image as? UIImage
         
