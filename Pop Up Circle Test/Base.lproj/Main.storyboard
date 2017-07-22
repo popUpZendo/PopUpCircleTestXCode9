@@ -302,12 +302,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubg-SE-2k0">
-                                <rect key="frame" x="24" y="366.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-d4-qkF">
                                 <rect key="frame" x="184" y="276" width="167" height="138"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -322,23 +316,7 @@
                                     <action selector="timePickerChanged:" destination="VrU-Oe-qKj" eventType="valueChanged" id="cFZ-te-a07"/>
                                 </connections>
                             </datePicker>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKU-Ij-Npt" customClass="CHDayPicker" customModule="CHDayPicker">
-                                <rect key="frame" x="16" y="417" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="NGz-Mb-XYD"/>
-                                    <constraint firstAttribute="width" constant="343" id="fMD-LE-vhC"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
-                                        <color key="value" red="0.70042686050000003" green="0.2494734029" blue="0.1520102958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="defaultSelectedDay">
-                                        <integer key="value" value="-1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="singleSelection" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-kS-ih7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-kS-ih7">
                                 <rect key="frame" x="112" y="331" width="40" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Sky-ll-P2b"/>
@@ -360,22 +338,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SLI-d4-qkF" firstAttribute="top" secondItem="0dh-cp-ly7" secondAttribute="bottom" constant="20" id="5oS-Hx-USM"/>
-                            <constraint firstItem="IKU-Ij-Npt" firstAttribute="top" secondItem="ubg-SE-2k0" secondAttribute="bottom" constant="30" id="6r6-aE-CLt"/>
-                            <constraint firstItem="ubg-SE-2k0" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" constant="8" id="7Lg-Gh-qGH"/>
                             <constraint firstAttribute="trailing" secondItem="OsM-T9-O1n" secondAttribute="trailing" id="8LB-II-kIt"/>
                             <constraint firstItem="69P-B8-fkO" firstAttribute="centerY" secondItem="Zsg-eR-mg4" secondAttribute="centerY" id="8xJ-Ja-bg6"/>
                             <constraint firstItem="OsM-T9-O1n" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leading" id="A8g-Jl-FFr"/>
-                            <constraint firstItem="IKU-Ij-Npt" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="BcN-Kr-aFI"/>
-                            <constraint firstItem="qff-Fe-mE0" firstAttribute="top" secondItem="IKU-Ij-Npt" secondAttribute="bottom" constant="20" id="D2J-Bj-yQx"/>
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="top" secondItem="lGr-RY-5QO" secondAttribute="bottom" constant="8" id="DDN-hq-pjx"/>
                             <constraint firstItem="YOF-DC-nwL" firstAttribute="top" secondItem="qff-Fe-mE0" secondAttribute="bottom" constant="20" id="HQo-5P-582"/>
                             <constraint firstItem="YOF-DC-nwL" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="I34-cC-4gj"/>
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="I7c-sK-2gQ"/>
                             <constraint firstItem="bYC-ND-vW1" firstAttribute="top" secondItem="YOF-DC-nwL" secondAttribute="bottom" constant="80" id="Lug-FQ-kPH"/>
                             <constraint firstItem="0dh-cp-ly7" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="MPD-3E-oPo"/>
-                            <constraint firstItem="IKU-Ij-Npt" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="MyY-lt-bFg"/>
                             <constraint firstItem="NeI-va-LOz" firstAttribute="trailing" secondItem="0b2-lK-Aw4" secondAttribute="trailingMargin" id="PQW-OH-AGp"/>
-                            <constraint firstItem="IFT-kS-ih7" firstAttribute="leading" secondItem="ubg-SE-2k0" secondAttribute="trailing" constant="46" id="QqG-e0-gey"/>
                             <constraint firstItem="0dh-cp-ly7" firstAttribute="top" secondItem="b5o-Jt-yQ9" secondAttribute="bottom" constant="8" id="VvW-31-eFv"/>
                             <constraint firstItem="bwU-nG-eKl" firstAttribute="top" secondItem="b5o-Jt-yQ9" secondAttribute="bottom" constant="77.5" id="XPf-an-L5e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SLI-d4-qkF" secondAttribute="trailing" constant="8" id="Y8u-Nf-p3k"/>
@@ -386,7 +358,6 @@
                             <constraint firstItem="NeI-va-LOz" firstAttribute="leading" secondItem="69P-B8-fkO" secondAttribute="trailing" constant="8" id="dHY-lb-tkq"/>
                             <constraint firstItem="b5o-Jt-yQ9" firstAttribute="top" secondItem="NeI-va-LOz" secondAttribute="bottom" constant="10" id="dh5-od-S20"/>
                             <constraint firstItem="69P-B8-fkO" firstAttribute="centerX" secondItem="Zsg-eR-mg4" secondAttribute="centerX" id="efu-5X-LkD"/>
-                            <constraint firstItem="IKU-Ij-Npt" firstAttribute="top" secondItem="IFT-kS-ih7" secondAttribute="bottom" constant="41" id="nWX-KA-OIL"/>
                             <constraint firstItem="Hpu-pu-Gfa" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="q33-xt-pbu"/>
                             <constraint firstItem="bYC-ND-vW1" firstAttribute="top" secondItem="OsM-T9-O1n" secondAttribute="bottom" id="rui-aY-ehs"/>
                             <constraint firstItem="NeI-va-LOz" firstAttribute="top" secondItem="lGr-RY-5QO" secondAttribute="bottom" constant="18" id="tZ4-K0-HeM"/>
@@ -428,13 +399,11 @@
                     <connections>
                         <outlet property="ItemTypeField" destination="Hpu-pu-Gfa" id="GlZ-2h-FYU"/>
                         <outlet property="dateTimeDisplay" destination="Ja2-Sl-z5P" id="Lqi-86-Ilt"/>
-                        <outlet property="dayPicker" destination="IKU-Ij-Npt" id="YHQ-q4-MiE"/>
                         <outlet property="detailsField" destination="0dh-cp-ly7" id="IrK-72-yNr"/>
                         <outlet property="hideButton" destination="69P-B8-fkO" id="F0n-8C-5hw"/>
                         <outlet property="itemTypeField" destination="Hpu-pu-Gfa" id="alu-FH-Rve"/>
                         <outlet property="locationField" destination="b5o-Jt-yQ9" id="adU-9W-n7J"/>
                         <outlet property="practiceButton" destination="T2T-4w-4KF" id="lJv-QH-som"/>
-                        <outlet property="resultLabel" destination="ubg-SE-2k0" id="ZtE-3O-lU3"/>
                         <outlet property="scheduleButton" destination="PL2-xz-3rj" id="3DV-c7-oyQ"/>
                         <outlet property="thumgImg" destination="Zsg-eR-mg4" id="Db3-Fi-94Q"/>
                         <outlet property="timeDisplay" destination="bwU-nG-eKl" id="uKd-Qp-t3V"/>

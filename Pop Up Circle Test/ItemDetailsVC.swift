@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import DLRadioButton
-import CHDayPicker
+//import CHDayPicker
 import UserNotifications
 
 
@@ -21,8 +21,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     @IBOutlet weak var eventTimeValue: UILabel!
     @IBOutlet weak var bellValue: UILabel!
-    @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var dayPicker: CHDayPicker!
+//    @IBOutlet weak var resultLabel: UILabel!
+//    @IBOutlet weak var dayPicker: CHDayPicker!
     @IBOutlet weak var hideButton: UIButton!
     @IBOutlet var timePicker:UIDatePicker!
     @IBOutlet weak var dateTimeDisplay: UILabel!
@@ -57,20 +57,20 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         UNUserNotificationCenter.current().delegate = self
         //bellValue.text = "true"
         
-        self.dayPicker.singleSelection = false
-        self.dayPicker.delegate = self
-        self.dayPicker.selectDayAtPosition(position: 1)
-        self.dayPicker.selectDayAtPosition(position: 3)
-        self.dayPicker.selectDayAtPosition(position: 5)
+//        self.dayPicker.singleSelection = false
+//        self.dayPicker.delegate = self
+//        self.dayPicker.selectDayAtPosition(position: 1)
+//        self.dayPicker.selectDayAtPosition(position: 3)
+//        self.dayPicker.selectDayAtPosition(position: 5)
         
-        if let didSelectDay(position: 0, label: "S", selected : true) {
-            
-        }
+//        if let didSelectDay(position: 0, label: "S", selected : true) {
+//
+//        }
         
         
         
-        print(self.dayPicker.daysLabel)
-        
+//        print(self.dayPicker.daysLabel)
+//
         
         
         
@@ -334,11 +334,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
 }
 
-extension ItemDetailsVC : CHDayPickerDelegate {
-    func didSelectDay(position: Int, label: String, selected : Bool) {
-        self.resultLabel.text = "\(position) : \(label)"
-    }
-}
+//extension ItemDetailsVC : CHDayPickerDelegate {
+//    func didSelectDay(position: Int, label: String, selected : Bool) {
+//        self.resultLabel.text = "\(position) : \(label)"
+//    }
+//}
 
 extension ItemDetailsVC: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
