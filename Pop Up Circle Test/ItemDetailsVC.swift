@@ -147,25 +147,88 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func sundayPressed(_ sender: Any) {
+        if sundayButton.isSelected == false {
+            sundayButton.isSelected = true
+            weekdays[0] = "sunday"
+            print(weekdays)
+        }else{
+            sundayButton.isSelected = false
+            weekdays[0] = "s"
+            print(weekdays)
+        }
         
     }
     
     @IBAction func mondayPressed(_ sender: Any) {
+        if mondayButton.isSelected == false {
+            mondayButton.isSelected = true
+            weekdays[1] = "monday"
+            print(weekdays)
+        }else{
+            mondayButton.isSelected = false
+            weekdays[1] = "m"
+            print(weekdays)
+        }
     }
     
     @IBAction func tuesdayPressed(_ sender: Any) {
+        if tuesdayButton.isSelected == false {
+            tuesdayButton.isSelected = true
+            weekdays[2] = "tuesday"
+            print(weekdays)
+        }else{
+            tuesdayButton.isSelected = false
+            weekdays[2] = "t"
+            print(weekdays)
+        }
     }
     
     @IBAction func wednesdayPressed(_ sender: Any) {
+        if wednesdayButton.isSelected == false {
+            wednesdayButton.isSelected = true
+            weekdays[3] = "wednesday"
+            print(weekdays)
+        }else{
+            wednesdayButton.isSelected = false
+            weekdays[3] = "w"
+            print(weekdays)
+        }
     }
     
     @IBAction func thursdayPressed(_ sender: Any) {
+        if thursdayButton.isSelected == false {
+            thursdayButton.isSelected = true
+            weekdays[4] = "thursday"
+            print(weekdays)
+        }else{
+            thursdayButton.isSelected = false
+            weekdays[4] = "t"
+            print(weekdays)
+        }
     }
     
     @IBAction func fridayPressed(_ sender: Any) {
+        if fridayButton.isSelected == false {
+            fridayButton.isSelected = true
+            weekdays[5] = "friday"
+            print(weekdays)
+        }else{
+            fridayButton.isSelected = false
+            weekdays[5] = "f"
+            print(weekdays)
+        }
     }
     
     @IBAction func saturdayPressed(_ sender: Any) {
+        if saturdayButton.isSelected == false {
+            saturdayButton.isSelected = true
+            weekdays[6] = "saturday"
+            print(weekdays)
+        }else{
+            saturdayButton.isSelected = false
+            weekdays[6] = "s"
+            print(weekdays)
+        }
     }
     
     
