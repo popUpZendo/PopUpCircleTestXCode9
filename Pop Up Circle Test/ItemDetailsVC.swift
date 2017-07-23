@@ -37,6 +37,16 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var toggleReminderButton: UIButton!
     
     
+    @IBOutlet weak var sundayButton: UIButton!
+    @IBOutlet weak var mondayButton: UIButton!
+    @IBOutlet weak var tuesdayButton: UIButton!
+    @IBOutlet weak var wednesdayButton: UIButton!
+    @IBOutlet weak var thursdayButton: UIButton!
+    @IBOutlet weak var fridayButton: UIButton!
+    @IBOutlet weak var saturdayButton: UIButton!
+    
+    
+    
     
     
     let dateFormatter = DateFormatter()
@@ -49,7 +59,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var imagePicker: UIImagePickerController!
     var eventTimeCalc: Date?
     
-    var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    var weekdays = ["s", "m", "t", "w", "t", "f", "s"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,6 +145,29 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         dateTimeDisplay.text = dateTimeFormatter.string(from: timePicker.date)
         
     }
+    
+    @IBAction func sundayPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func mondayPressed(_ sender: Any) {
+    }
+    
+    @IBAction func tuesdayPressed(_ sender: Any) {
+    }
+    
+    @IBAction func wednesdayPressed(_ sender: Any) {
+    }
+    
+    @IBAction func thursdayPressed(_ sender: Any) {
+    }
+    
+    @IBAction func fridayPressed(_ sender: Any) {
+    }
+    
+    @IBAction func saturdayPressed(_ sender: Any) {
+    }
+    
     
     
     @IBAction func radioPractice(_ sender: Any) {

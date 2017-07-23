@@ -347,6 +347,9 @@
                                         <state key="normal" title="s">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sundayPressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="IcW-zn-VbW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFa-Y8-V0k">
                                         <rect key="frame" x="51" y="0.0" width="36" height="24"/>
@@ -358,6 +361,9 @@
                                         <state key="normal" title="m">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mondayPressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="miI-Vd-vsC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-tA-1Ok">
                                         <rect key="frame" x="102.5" y="0.0" width="36" height="24"/>
@@ -369,6 +375,9 @@
                                         <state key="normal" title="t">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tuesdayPressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="W8I-iV-P4p"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-hm-b91">
                                         <rect key="frame" x="153.5" y="0.0" width="36" height="24"/>
@@ -380,6 +389,9 @@
                                         <state key="normal" title="w">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="wednesdayPressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="5hf-YK-LIu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-ok-9vW">
                                         <rect key="frame" x="204.5" y="0.0" width="36" height="24"/>
@@ -391,6 +403,9 @@
                                         <state key="normal" title="t">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="thursdayPressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="zRl-JL-9JH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9k-IZ-Vpr">
                                         <rect key="frame" x="256" y="0.0" width="36" height="24"/>
@@ -402,6 +417,9 @@
                                         <state key="normal" title="f">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fridayPressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="khK-7w-cyj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbS-r2-6a8">
                                         <rect key="frame" x="307" y="0.0" width="36" height="24"/>
@@ -413,6 +431,9 @@
                                         <state key="normal" title="s">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saturdayPressed:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="FmM-Sy-KYF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -485,16 +506,23 @@
                         <outlet property="ItemTypeField" destination="Hpu-pu-Gfa" id="GlZ-2h-FYU"/>
                         <outlet property="dateTimeDisplay" destination="Ja2-Sl-z5P" id="Lqi-86-Ilt"/>
                         <outlet property="detailsField" destination="0dh-cp-ly7" id="IrK-72-yNr"/>
+                        <outlet property="fridayButton" destination="E9k-IZ-Vpr" id="93v-qn-2Ei"/>
                         <outlet property="hideButton" destination="69P-B8-fkO" id="F0n-8C-5hw"/>
                         <outlet property="itemTypeField" destination="Hpu-pu-Gfa" id="alu-FH-Rve"/>
                         <outlet property="locationField" destination="b5o-Jt-yQ9" id="adU-9W-n7J"/>
+                        <outlet property="mondayButton" destination="gFa-Y8-V0k" id="7wN-Jd-7bf"/>
                         <outlet property="practiceButton" destination="T2T-4w-4KF" id="lJv-QH-som"/>
+                        <outlet property="saturdayButton" destination="tbS-r2-6a8" id="vUH-lf-eXN"/>
                         <outlet property="scheduleButton" destination="PL2-xz-3rj" id="3DV-c7-oyQ"/>
+                        <outlet property="sundayButton" destination="g0J-3s-N11" id="W2C-Jj-oYO"/>
                         <outlet property="thumgImg" destination="Zsg-eR-mg4" id="Db3-Fi-94Q"/>
+                        <outlet property="thursdayButton" destination="jiE-ok-9vW" id="cJm-8p-uUg"/>
                         <outlet property="timeDisplay" destination="bwU-nG-eKl" id="uKd-Qp-t3V"/>
                         <outlet property="timePicker" destination="SLI-d4-qkF" id="j41-1N-Vdl"/>
                         <outlet property="titleField" destination="NeI-va-LOz" id="kWi-hY-vA8"/>
                         <outlet property="toggleReminderButton" destination="IFT-kS-ih7" id="tey-KK-mpP"/>
+                        <outlet property="tuesdayButton" destination="HiA-tA-1Ok" id="SCA-av-0B1"/>
+                        <outlet property="wednesdayButton" destination="y1k-hm-b91" id="Dou-zE-A6k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hH1-ai-zVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
