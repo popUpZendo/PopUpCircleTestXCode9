@@ -334,14 +334,99 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="NVM-3w-OVY">
+                                <rect key="frame" x="16" y="455" width="343" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-3s-N11">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="cZn-rG-Mt6"/>
+                                            <constraint firstAttribute="height" constant="24" id="pYQ-EE-uqV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="s">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFa-Y8-V0k">
+                                        <rect key="frame" x="51" y="0.0" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="DVG-lI-hBg"/>
+                                            <constraint firstAttribute="width" constant="36" id="vJq-Ga-MJY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="m">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-tA-1Ok">
+                                        <rect key="frame" x="102.5" y="0.0" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="FKN-kT-syZ"/>
+                                            <constraint firstAttribute="width" constant="36" id="Ggq-SU-pEv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="t">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-hm-b91">
+                                        <rect key="frame" x="153.5" y="0.0" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="dqW-kn-LMi"/>
+                                            <constraint firstAttribute="width" constant="36" id="fEG-Hd-5z2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="w">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiE-ok-9vW">
+                                        <rect key="frame" x="204.5" y="0.0" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="OxA-67-anH"/>
+                                            <constraint firstAttribute="height" constant="24" id="RMU-pW-vDA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="t">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9k-IZ-Vpr">
+                                        <rect key="frame" x="256" y="0.0" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="48M-Ir-cHi"/>
+                                            <constraint firstAttribute="height" constant="24" id="jrF-tK-HN1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="f">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbS-r2-6a8">
+                                        <rect key="frame" x="307" y="0.0" width="36" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="TUr-Mo-53B"/>
+                                            <constraint firstAttribute="height" constant="24" id="zS3-Dz-CAu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="s">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SLI-d4-qkF" firstAttribute="top" secondItem="0dh-cp-ly7" secondAttribute="bottom" constant="20" id="5oS-Hx-USM"/>
+                            <constraint firstItem="NVM-3w-OVY" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="6iT-hh-eL8"/>
+                            <constraint firstItem="qff-Fe-mE0" firstAttribute="top" secondItem="NVM-3w-OVY" secondAttribute="bottom" constant="8" id="7RP-bS-bDx"/>
                             <constraint firstAttribute="trailing" secondItem="OsM-T9-O1n" secondAttribute="trailing" id="8LB-II-kIt"/>
                             <constraint firstItem="69P-B8-fkO" firstAttribute="centerY" secondItem="Zsg-eR-mg4" secondAttribute="centerY" id="8xJ-Ja-bg6"/>
                             <constraint firstItem="OsM-T9-O1n" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leading" id="A8g-Jl-FFr"/>
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="top" secondItem="lGr-RY-5QO" secondAttribute="bottom" constant="8" id="DDN-hq-pjx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NVM-3w-OVY" secondAttribute="trailing" id="Doq-N7-5La"/>
                             <constraint firstItem="YOF-DC-nwL" firstAttribute="top" secondItem="qff-Fe-mE0" secondAttribute="bottom" constant="20" id="HQo-5P-582"/>
                             <constraint firstItem="YOF-DC-nwL" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="I34-cC-4gj"/>
                             <constraint firstItem="Zsg-eR-mg4" firstAttribute="leading" secondItem="0b2-lK-Aw4" secondAttribute="leadingMargin" id="I7c-sK-2gQ"/>
