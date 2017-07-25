@@ -93,7 +93,17 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return 75
     }
     
-    func getDayOfWeek () {
+    
+    
+    
+    func attemptFetch() {
+
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        
+        let scheduleSort = NSSortDescriptor(key: "eventTime", ascending: true)
+        
+        let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
+        
         let date = Date()
         let dateFormatter1 = DateFormatter()
         dateFormatter1.dateFormat = "dd-MM-yyyy"
@@ -102,63 +112,75 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let currentDateString: String = dateFormatter1.string(from: date)
         print("today is \(currentDateString)")
         
-        var thisDay: String = ""
-        
-        switch currentDateString {
-            
-        case "Sunday":
-            thisDay = "sunday"
-            
-        case "Monday":
-            thisDay = "monday"
-            
-        case "Tuesday":
-            thisDay = "tuesday"
-            
-        case "Wednesday":
-            thisDay = "wednesday"
-            
-        case "Thursday":
-            thisDay = "thursday"
-            
-        case "Friday":
-            thisDay = "friday"
-            
-        case "Saturday":
-            thisDay = "saturday"
-            
-        default:
-            print("Today's date was not translated")
-        }
-        
-        print("date comparison is functional if it is \(thisDay)")
-    }
-    
-    
-    
-    func attemptFetch() {
-        
-        getDayOfWeek()
-
-        
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
-        
-        let scheduleSort = NSSortDescriptor(key: "eventTime", ascending: true)
-        
-        let practiceSort = NSSortDescriptor(key: "itemType", ascending: true)
         
         if segment.selectedSegmentIndex == 0 {
+                
+                switch currentDateString {
+                    
+                case "Sunday":
+                    
+                    fetchRequest.sortDescriptors = [scheduleSort]
+                    let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+                    let predicate3 = NSPredicate(format: "sunday == %@", NSNumber(booleanLiteral: true))
+                    let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+                    fetchRequest.predicate = andPredicate
+                    
+                case "Monday":
+                    
+                    fetchRequest.sortDescriptors = [scheduleSort]
+                    let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+                    let predicate3 = NSPredicate(format: "monday == %@", NSNumber(booleanLiteral: true))
+                    let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+                    fetchRequest.predicate = andPredicate
+                    
+                case "Tuesday":
+                    
+                    fetchRequest.sortDescriptors = [scheduleSort]
+                    let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+                    let predicate3 = NSPredicate(format: "tuesday == %@", NSNumber(booleanLiteral: true))
+                    let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+                    fetchRequest.predicate = andPredicate
+                    
+                case "Wednesday":
+                    
+                    fetchRequest.sortDescriptors = [scheduleSort]
+                    let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+                    let predicate3 = NSPredicate(format: "wednesday == %@", NSNumber(booleanLiteral: true))
+                    let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+                    fetchRequest.predicate = andPredicate
+                    
+                case "Thursday":
+                    
+                    fetchRequest.sortDescriptors = [scheduleSort]
+                    let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+                    let predicate3 = NSPredicate(format: "thursday == %@", NSNumber(booleanLiteral: true))
+                    let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+                    fetchRequest.predicate = andPredicate
+                    
+                case "Friday":
+                    
+                    fetchRequest.sortDescriptors = [scheduleSort]
+                    let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+                    let predicate3 = NSPredicate(format: "friday == %@", NSNumber(booleanLiteral: true))
+                    let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+                    fetchRequest.predicate = andPredicate
+                    
+                case "Saturday":
+                    
+                    fetchRequest.sortDescriptors = [scheduleSort]
+                    let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
+                    let predicate3 = NSPredicate(format: "saturday == %@", NSNumber(booleanLiteral: true))
+                    let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+                    fetchRequest.predicate = andPredicate
+                    
+                default:
+                    print("Today's date was not translated")
+                }
+                
             
-            fetchRequest.sortDescriptors = [scheduleSort]
-            let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
-            //fetchRequest.predicate = predicate1
-            let predicate3 = NSPredicate(format: "tuesday == %@", NSNumber(booleanLiteral: true))
-            //fetchRequest.predicate = predicate3
-            //let predicate1 = NSPredicate("self.label = 'foo'"))
-            //let predicate2 = NSPredicate("self.label = 'bar'"))
-            let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
-            fetchRequest.predicate = andPredicate
-            //fetchRequest.predicate = predicate3
+            
+            
+            
             
         } else if segment.selectedSegmentIndex == 1 {
             
