@@ -13,3 +13,5 @@ import CoreData
 open class ItemType: NSManagedObject {
 
 }
+
+

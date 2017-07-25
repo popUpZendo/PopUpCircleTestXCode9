@@ -93,7 +93,53 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return 75
     }
     
+    func getDayOfWeek () {
+        let date = Date()
+        let dateFormatter1 = DateFormatter()
+        dateFormatter1.dateFormat = "dd-MM-yyyy"
+        
+        dateFormatter1.dateFormat = "EEEE"
+        let currentDateString: String = dateFormatter1.string(from: date)
+        print("today is \(currentDateString)")
+        
+        var thisDay: String = ""
+        
+        switch currentDateString {
+            
+        case "Sunday":
+            thisDay = "sunday"
+            
+        case "Monday":
+            thisDay = "monday"
+            
+        case "Tuesday":
+            thisDay = "tuesday"
+            
+        case "Wednesday":
+            thisDay = "wednesday"
+            
+        case "Thursday":
+            thisDay = "thursday"
+            
+        case "Friday":
+            thisDay = "friday"
+            
+        case "Saturday":
+            thisDay = "saturday"
+            
+        default:
+            print("Today's date was not translated")
+        }
+        
+        print("date comparison is functional if it is \(thisDay)")
+    }
+    
+    
+    
     func attemptFetch() {
+        
+        getDayOfWeek()
+
         
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
         
@@ -105,7 +151,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             
             fetchRequest.sortDescriptors = [scheduleSort]
             let predicate1 = NSPredicate(format: "itemType CONTAINS[c] %@", "Schedule")
-            fetchRequest.predicate = predicate1
+            //fetchRequest.predicate = predicate1
+            let predicate3 = NSPredicate(format: "tuesday == %@", NSNumber(booleanLiteral: true))
+            //fetchRequest.predicate = predicate3
+            //let predicate1 = NSPredicate("self.label = 'foo'"))
+            //let predicate2 = NSPredicate("self.label = 'bar'"))
+            let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
+            fetchRequest.predicate = andPredicate
+            //fetchRequest.predicate = predicate3
             
         } else if segment.selectedSegmentIndex == 1 {
             

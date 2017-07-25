@@ -21,9 +21,9 @@
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
 		D73011D61EFB3381003D637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73011D51EFB3381003D637A /* Assets.xcassets */; };
 		D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011D71EFB3381003D637A /* LaunchScreen.storyboard */; };
-		D73011F61EFC0995003D637A /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = D73011F51EFC0995003D637A /* btn.wav */; };
 		D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F71EFC1E70003D637A /* zazenBell3.mp3 */; };
 		D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */; };
+		D73B93591F24E62C009E5926 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73B93581F24E62C009E5926 /* DetailsVC.swift */; };
 		D76938281F1FA14700EE83A2 /* LovelyBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76938271F1FA14600EE83A2 /* LovelyBell.mp3 */; };
 		D793B3571F1CC264007708FC /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793B3561F1CC264007708FC /* Identifiers.swift */; };
 		D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D793B3581F1CD27D007708FC /* templeBell.mp3 */; };
@@ -58,9 +58,9 @@
 		D73011D51EFB3381003D637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73011D81EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73011DA1EFB3381003D637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D73011F51EFC0995003D637A /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		D73011F71EFC1E70003D637A /* zazenBell3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell3.mp3; sourceTree = "<group>"; };
 		D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell1.mp3; sourceTree = "<group>"; };
+		D73B93581F24E62C009E5926 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		D76938271F1FA14600EE83A2 /* LovelyBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = LovelyBell.mp3; path = "../../Om Design/Pop Up Zendo/Sound/LovelyBell.mp3"; sourceTree = "<group>"; };
 		D793B3561F1CC264007708FC /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiers.swift; path = "../../../Downloads/iOS10-day-by-day-master/06 - Notification Content Extensions/NagMe/NagMe/Identifiers.swift"; sourceTree = "<group>"; };
 		D793B3581F1CD27D007708FC /* templeBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = templeBell.mp3; path = ../../../Downloads/templeBell.mp3; sourceTree = "<group>"; };
@@ -188,8 +188,8 @@
 				D7CC87671F00BEFD0089A806 /* MainVC.swift */,
 				D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */,
 				D73011CD1EFB3381003D637A /* TimerViewController.swift */,
-				D73011F51EFC0995003D637A /* btn.wav */,
 				D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */,
+				D73B93581F24E62C009E5926 /* DetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -281,7 +281,6 @@
 				D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */,
 				D73011D11EFB3381003D637A /* Main.storyboard in Resources */,
 				D76938281F1FA14700EE83A2 /* LovelyBell.mp3 in Resources */,
-				D73011F61EFC0995003D637A /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +357,7 @@
 				D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */,
 				D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */,
 				D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */,
+				D73B93591F24E62C009E5926 /* DetailsVC.swift in Sources */,
 				D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */,
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
 				D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */,

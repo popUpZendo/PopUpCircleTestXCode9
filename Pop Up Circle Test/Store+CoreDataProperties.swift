@@ -1,4 +1,4 @@
-//
+
 //  Store+CoreDataProperties.swift
 //  DreamLister
 //

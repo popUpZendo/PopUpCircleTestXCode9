@@ -7,29 +7,112 @@
 //
 
 import UIKit
+import CoreData
+import DLRadioButton
 
-class DetailsVC: UIViewController {
 
+class DetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+    
+    
+    @IBOutlet weak var hideButton: UIButton!
+    @IBOutlet weak var dateTimeDisplay: UILabel!
+    @IBOutlet weak var timeDisplay: CustomTextField!
+    @IBOutlet weak var titleField: CustomTextField!
+    @IBOutlet weak var detailsField: UITextView!
+    @IBOutlet weak var itemTypeField: CustomTextField!
+    @IBOutlet weak var thumgImg: UIImageView!
+    @IBOutlet weak var locationField: CustomTextField!
+    
+    
+    
+    
+    
+    
+    
+    var weekdays_list = [NSManagedObject]()
+    
+    let dateFormatter = DateFormatter()
+    let timeFormatter = DateFormatter()
+    let dateTimeFormatter = DateFormatter()
+    
+    
+    
+    var itemToEdit: Item?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        
+        
+        
+        itemTypeField.delegate = self
+        thumgImg.isHidden = true
+        hideButton.isHidden = true
+        
+        
+        
+        
+        
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        if let topItem = self.navigationController?.navigationBar.topItem {
+            topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        }
+        
+        
+        if itemToEdit != nil {
+            loadItemData()
+        }
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
+    
+    
+    
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+    
+    func loadItemData() {
+        
+        if let item = itemToEdit {
+            timeDisplay.text = item.time
+            titleField.text = item.title
+            locationField.text = item.location
+            detailsField.text = item.details
+            itemTypeField.text = item.itemType
+            thumgImg.image = item.toImage?.image as? UIImage
+        }
     }
-    */
-
+    
+    
+        
 }
+    
+    
+
+    
+    
+
+        
+        
+        
+
+
+    
+    
+
+
+
+
+
+
+

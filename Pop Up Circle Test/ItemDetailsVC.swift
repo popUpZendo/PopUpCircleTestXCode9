@@ -9,7 +9,6 @@
 import UIKit
 import CoreData
 import DLRadioButton
-//import CHDayPicker
 import UserNotifications
 
 
@@ -21,11 +20,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     @IBOutlet weak var eventTimeValue: UILabel!
     @IBOutlet weak var bellValue: UILabel!
-//    @IBOutlet weak var resultLabel: UILabel!
-//    @IBOutlet weak var dayPicker: CHDayPicker!
     @IBOutlet weak var hideButton: UIButton!
+    @IBOutlet weak var timeView: UIView!
     @IBOutlet var timePicker:UIDatePicker!
-    @IBOutlet weak var dateTimeDisplay: UILabel!
+    @IBOutlet weak var dateTimeDisplay: CustomTextField!
+
     @IBOutlet weak var timeDisplay: CustomTextField!
     @IBOutlet weak var titleField: CustomTextField!
     @IBOutlet weak var detailsField: UITextView!
@@ -47,7 +46,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     
     
-    
+    var weekdays_list = [NSManagedObject]()
     
     let dateFormatter = DateFormatter()
     let timeFormatter = DateFormatter()
@@ -59,33 +58,31 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var imagePicker: UIImagePickerController!
     var eventTimeCalc: Date?
     
-    var weekdays = ["s", "m", "t", "w", "t", "f", "s"]
+    var weekdays: [String] = ["s", "m", "t", "w", "t", "f", "s"]
+    
+    var sundayBool: Bool = false
+    var mondayBool: Bool = false
+    var tuesdayBool: Bool = false
+    var wednesdayBool: Bool = false
+    var thursdayBool: Bool = false
+    var fridayBool: Bool = false
+    var saturdayBool: Bool = false
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UNUserNotificationCenter.current().delegate = self
-        //bellValue.text = "true"
         
-//        self.dayPicker.singleSelection = false
-//        self.dayPicker.delegate = self
-//        self.dayPicker.selectDayAtPosition(position: 1)
-//        self.dayPicker.selectDayAtPosition(position: 3)
-//        self.dayPicker.selectDayAtPosition(position: 5)
-        
-//        if let didSelectDay(position: 0, label: "S", selected : true) {
-//
-//        }
-        
-        
-        
-//        print(self.dayPicker.daysLabel)
-//
         
         
         
         itemTypeField.delegate = self
-        timePicker.isHidden = true
+        timeView.isHidden = true
         thumgImg.isHidden = true
         hideButton.isHidden = true
         
@@ -113,6 +110,18 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     
+    
+//    func getDayOfWeek(_ today:String) -> Int? {
+//    let formatter  = DateFormatter()
+//    formatter.dateFormat = "yyyy-MM-dd"
+//    guard let todayDate = formatter.date(from: today) else { return nil }
+//    let myCalendar = Calendar(identifier: .gregorian)
+//    let weekDay = myCalendar.component(.weekday, from: todayDate)
+//    print(weekDay)
+//    return weekDay
+//    }
+
+    
     func textFieldShouldReturn(_ titleField: UITextField) -> Bool {
         self.view.endEditing(true)
         return true
@@ -127,7 +136,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         self.view.endEditing(true)
         return true
     }
-    
     
     var alarm = Bool ()
     
@@ -147,86 +155,102 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func sundayPressed(_ sender: Any) {
-        if sundayButton.isSelected == false {
-            sundayButton.isSelected = true
-            weekdays[0] = "sunday"
+        if sundayBool == false {
+            sundayButton.setImage(UIImage(named:"sOn"), for: [])
+            weekdays[0] = "Sunday"
+            sundayBool = true
             print(weekdays)
         }else{
-            sundayButton.isSelected = false
+            sundayButton.setImage(UIImage(named:"sOff"), for: [])
             weekdays[0] = "s"
+            sundayBool = false
             print(weekdays)
         }
         
     }
     
     @IBAction func mondayPressed(_ sender: Any) {
-        if mondayButton.isSelected == false {
-            mondayButton.isSelected = true
-            weekdays[1] = "monday"
+        if mondayBool == false {
+            mondayButton.setImage(UIImage(named:"mOn"), for: [])
+            weekdays[1] = "Monday"
+            mondayBool = true
+            
             print(weekdays)
         }else{
-            mondayButton.isSelected = false
+            mondayButton.setImage(UIImage(named:"mOff"), for: [])
             weekdays[1] = "m"
+            mondayBool = false
             print(weekdays)
+            
         }
     }
     
     @IBAction func tuesdayPressed(_ sender: Any) {
-        if tuesdayButton.isSelected == false {
-            tuesdayButton.isSelected = true
-            weekdays[2] = "tuesday"
+        if tuesdayBool == false {
+            tuesdayButton.setImage(UIImage(named:"tOn"), for: [])
+            weekdays[2] = "Tuesday"
+            tuesdayBool = true
             print(weekdays)
         }else{
-            tuesdayButton.isSelected = false
+            tuesdayButton.setImage(UIImage(named:"tOff"), for: [])
             weekdays[2] = "t"
+            tuesdayBool = false
             print(weekdays)
         }
     }
     
     @IBAction func wednesdayPressed(_ sender: Any) {
-        if wednesdayButton.isSelected == false {
-            wednesdayButton.isSelected = true
-            weekdays[3] = "wednesday"
+        if wednesdayBool == false {
+            wednesdayButton.setImage(UIImage(named:"wOn"), for: [])
+            weekdays[3] = "Wednesday"
+            wednesdayBool = true
             print(weekdays)
         }else{
-            wednesdayButton.isSelected = false
+            wednesdayButton.setImage(UIImage(named:"wOff"), for: [])
             weekdays[3] = "w"
+            wednesdayBool = false
             print(weekdays)
         }
     }
     
     @IBAction func thursdayPressed(_ sender: Any) {
-        if thursdayButton.isSelected == false {
-            thursdayButton.isSelected = true
-            weekdays[4] = "thursday"
+        if thursdayBool == false {
+            thursdayButton.setImage(UIImage(named:"tOn"), for: [])
+            weekdays[4] = "Thursday"
+            thursdayBool = true
             print(weekdays)
         }else{
-            thursdayButton.isSelected = false
+            thursdayButton.setImage(UIImage(named:"tOff"), for: [])
             weekdays[4] = "t"
+            thursdayBool = false
             print(weekdays)
         }
     }
     
     @IBAction func fridayPressed(_ sender: Any) {
-        if fridayButton.isSelected == false {
-            fridayButton.isSelected = true
-            weekdays[5] = "friday"
+        if fridayBool == false {
+            fridayButton.setImage(UIImage(named:"fOn"), for: [])
+            weekdays[5] = "Friday"
+            fridayBool = true
             print(weekdays)
         }else{
-            fridayButton.isSelected = false
+            fridayButton.setImage(UIImage(named:"fOff"), for: [])
             weekdays[5] = "f"
+            fridayBool = false
             print(weekdays)
         }
     }
     
     @IBAction func saturdayPressed(_ sender: Any) {
-        if saturdayButton.isSelected == false {
-            saturdayButton.isSelected = true
-            weekdays[6] = "saturday"
+        if saturdayBool == false {
+            saturdayButton.setImage(UIImage(named:"sOn"), for: [])
+            weekdays[6] = "Saturday"
+            saturdayBool = true
             print(weekdays)
         }else{
-            saturdayButton.isSelected = false
+            saturdayButton.setImage(UIImage(named:"sOff"), for: [])
             weekdays[6] = "s"
+            saturdayBool = false
             print(weekdays)
         }
     }
@@ -237,14 +261,22 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         hideButton.isHidden = false;
         thumgImg.isHidden = false;
         itemTypeField.text = "Practice"
+        timeView.isHidden = true
         
     }
     
     @IBAction func radioSchedule(_ sender: Any) {
         hideButton.isHidden = true;
-        timePicker.isHidden = false;
+        timeView.isHidden = false;
+//        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+//        visualEffectView.frame = timeView.bounds
+//        timeView.addSubview(visualEffectView)
         itemTypeField.text = "Schedule"
     }
+    
+    
+    
+    //Saving the data
     
     @IBAction func savePressed(_ sender: UIButton) {
         
@@ -271,8 +303,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             
         }else{
             func removePendingNotificationRequests(withIdentifiers identifiers: [String]){
-                
-
             
             }
             
@@ -318,6 +348,11 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
         
         
+            
+       //item.days = ["Sunday", "Monday", "Tuesday"]
+        
+        
+        
         item.eventTime = timePicker.date
             
         if let details = detailsField.text {
@@ -327,6 +362,15 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
         
         item.bell = alarm
+        
+        item.sunday = sundayBool
+        item.monday = mondayBool
+        item.tuesday = tuesdayBool
+        item.wednesday = wednesdayBool
+        item.thursday = thursdayBool
+        item.friday = fridayBool
+        item.saturday = saturdayBool
+        
         ad.saveContext()
         
         
@@ -338,6 +382,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     
     func loadItemData() {
+        
         
         if let item = itemToEdit {
             timeDisplay.text = item.time
@@ -351,21 +396,97 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             else {
                 toggleReminderButton.setImage(UIImage(named:"bell-button-2.png"), for: [])
             }
+            
             detailsField.text = item.details
             itemTypeField.text = item.itemType
             
             if itemTypeField.text == "Practice" {
                  practiceButton.isSelected = true
                  scheduleButton.isSelected = false
-                 timePicker.isHidden = true
+                 timeView.isHidden = true
             } else if itemTypeField.text == "Schedule" {
                 scheduleButton.isSelected = true
                 practiceButton.isSelected = false
-                timePicker.isHidden = false
+                timeView.isHidden = false
             }
             thumgImg.image = item.toImage?.image as? UIImage
             timePicker.date = item.eventTime!
+            
+            sundayBool = item.sunday
+            mondayBool = item.monday
+            tuesdayBool = item.tuesday
+            wednesdayBool = item.wednesday
+            thursdayBool = item.thursday
+            fridayBool = item.friday
+            saturdayBool = item.saturday
+            
+            if (sundayBool == true) {
+                sundayButton.setImage(UIImage(named:"sOn"), for: [])
+            }
+            else {
+                sundayButton.setImage(UIImage(named:"sOff"), for: [])
+            }
+            
+            mondayBool = item.monday
+            
+            if (mondayBool == true) {
+                mondayButton.setImage(UIImage(named:"mOn"), for: [])
+            }
+            else {
+                mondayButton.setImage(UIImage(named:"mOff"), for: [])
+            }
+            
+            tuesdayBool = item.tuesday
+            
+            if (tuesdayBool == true) {
+                tuesdayButton.setImage(UIImage(named:"tOn"), for: [])
+            }
+            else {
+                tuesdayButton.setImage(UIImage(named:"tOff"), for: [])
+            }
+            
+            wednesdayBool = item.wednesday
+            
+            if (wednesdayBool == true) {
+                wednesdayButton.setImage(UIImage(named:"wOn"), for: [])
+            }
+            else {
+                wednesdayButton.setImage(UIImage(named:"wOff"), for: [])
+            }
+            
+            thursdayBool = item.thursday
+            
+            if (thursdayBool == true) {
+                thursdayButton.setImage(UIImage(named:"tOn"), for: [])
+            }
+            else {
+                thursdayButton.setImage(UIImage(named:"tOff"), for: [])
+            }
+            
+            fridayBool = item.friday
+            
+            if (fridayBool == true) {
+                fridayButton.setImage(UIImage(named:"fOn"), for: [])
+            }
+            else {
+                fridayButton.setImage(UIImage(named:"fOff"), for: [])
+            }
+            
+            saturdayBool = item.saturday
+            
+            if (saturdayBool == true) {
+                saturdayButton.setImage(UIImage(named:"sOn"), for: [])
+            }
+            else {
+                saturdayButton.setImage(UIImage(named:"sOff"), for: [])
+            }
+            
+            
+            
         }
+        timeView.isHidden = true
+        
+        
     }
     
     
@@ -430,11 +551,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
 }
 
-//extension ItemDetailsVC : CHDayPickerDelegate {
-//    func didSelectDay(position: Int, label: String, selected : Bool) {
-//        self.resultLabel.text = "\(position) : \(label)"
-//    }
-//}
 
 extension ItemDetailsVC: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
