@@ -27,12 +27,16 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var sliderValue: UISlider!
+    @IBOutlet weak var darkMode: UIImageView!
+    @IBOutlet weak var backButton: UIButton!
     
    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         countDownLabel.isHidden = true
         UIApplication.shared.isIdleTimerDisabled = true
@@ -67,19 +71,19 @@ class TimerViewController: UIViewController {
         }
     }
     
-    @IBAction func darkBG(_ sender: Any) {
+   
+    @IBAction func lightSwitch(_ sender: UISwipeGestureRecognizer) {
         self.view.backgroundColor = UIColor.darkGray
     }
     
-    @IBAction func lightBG(_ sender: Any) {
-        self.view.backgroundColor = UIColor.white
+    
+    
+    
+    
+    @IBAction func goBackToOneButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "unwindSegueToVC1", sender: self)
     }
-    
-    @IBAction func back(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    
+
     
     @IBAction func sliderChanged(_ sender: UISlider) {
         label.text = String(Int(sender.value))
@@ -87,14 +91,27 @@ class TimerViewController: UIViewController {
     }
     
     
-    @IBAction func animateButtonTapped(_ sender: AnyObject) {
+    @IBAction func animateButtonTapped(_ sender: AnyObject){
+        if self.progress.isAnimating () || btnSound.isPlaying || countDownLabel.isHidden == false {
+            self.progress.stopAnimation()
+            self.btnSound.stop()
+            label.isHidden = false
+            slider.isHidden = false
+            sliderValue.isHidden = false
+            backButton.isHidden = false
+            countDownLabel.isHidden = true
+            
+        } else {
         
         countDownLabel.isHidden = false
         //var clock = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: "countdown", userInfo: nil, repeats: true)
-
+            label.isHidden = true
+            slider.isHidden = true
+            sliderValue.isHidden = true
+            backButton.isHidden = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-            // Put your code which should be executed with a delay here
+        
             self.countDownLabel.isHidden = true
             
         func playSound() {
@@ -117,8 +134,8 @@ class TimerViewController: UIViewController {
         
         
     })
+    }
 }
-
     
-
+    
 }

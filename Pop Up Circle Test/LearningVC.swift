@@ -12,11 +12,13 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     var dharmaRocks = [DharmaRock]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+     
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         let p1 = DharmaRock(imageURL: "https://i.ytimg.com/vi/fGCo_wx97mo/hqdefault.jpg?custom=true&w=336&h=188&stc=true&jpg444=true&jpgq=90&sp=68&sigh=xopfv2vIENsZG4NMuyBZ0MxAE24", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fGCo_wx97mo\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "This is Water", details: "What is Zen in real life terms?", contentURL: "http://www.nytimes.com/2009/04/26/books/review/Bissell-t.html")
@@ -83,7 +85,6 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let dharmaRock = dharmaRocks[indexPath.row]
         
         performSegue(withIdentifier: "VideoVC", sender: dharmaRock)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -97,6 +98,7 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+
     
 }
 

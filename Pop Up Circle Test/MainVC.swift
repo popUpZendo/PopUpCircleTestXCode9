@@ -11,7 +11,7 @@ import CoreData
 
 class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
 
-    
+    @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
     
@@ -22,8 +22,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         UIApplication.shared.isIdleTimerDisabled = false
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        
-    
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -140,6 +138,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
                     let predicate3 = NSPredicate(format: "tuesday == %@", NSNumber(booleanLiteral: true))
                     let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [predicate1, predicate3])
                     fetchRequest.predicate = andPredicate
+                    //fetchRequest.predicate = predicate1
                     
                 case "Wednesday":
                     
@@ -176,10 +175,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
                 default:
                     print("Today's date was not translated")
                 }
-                
-            
-            
-            
             
             
         } else if segment.selectedSegmentIndex == 1 {
@@ -188,7 +183,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             let predicate2 = NSPredicate(format: "itemType CONTAINS[c] %@", "Practice")
              fetchRequest.predicate = predicate2
             
-        }         
+        } else if segment.selectedSegmentIndex == 2 {
+            
+            fetchRequest.sortDescriptors = [scheduleSort]
+            fetchRequest.sortDescriptors = [practiceSort]
+        }
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
@@ -264,6 +263,54 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
     
+    
+
+    
+    ////////////////
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+                
+            case UISwipeGestureRecognizerDirection.left:
+                UIView.animate(withDuration: 0.1, animations: {
+                    let myFrame = self.view.frame
+                    self.view.frame = CGRect(-myFrame.size.width, myFrame.origin.y , myFrame.size.width, myFrame.size.height)
+                }, completion: {_ in
+                    let myFrame = self.view.frame
+                    self.view.frame = CGRect(myFrame.size.width, myFrame.origin.y , myFrame.size.width, myFrame.size.height)
+                    
+                    UIView.animate(withDuration: 0.3, animations: {
+                        let myFrame = self.view.frame
+                        self.view.frame = CGRect(0.0, myFrame.origin.y , myFrame.size.width, myFrame.size.height)
+                    }, completion: nil)
+                })
+                // do left action here
+                
+            case UISwipeGestureRecognizerDirection.right:
+                UIView.animate(withDuration: 0.1, animations: {
+                    let myFrame = self.view.frame
+                    self.view.frame = CGRect(myFrame.size.width, myFrame.origin.y , myFrame.size.width, myFrame.size.height)
+                }, completion: {_ in
+                    let myFrame = self.view.frame
+                    self.view.frame = CGRect(-myFrame.size.width, myFrame.origin.y , myFrame.size.width, myFrame.size.height)
+                    
+                    UIView.animate(withDuration: 0.3, animations: {
+                        let myFrame = self.view.frame
+                        self.view.frame = CGRect(0.0, myFrame.origin.y , myFrame.size.width, myFrame.size.height)
+                    }, completion: nil)
+                })
+                // do right action here
+                
+            default:
+                break
+            }
+        }
+    }
+    
+    
+    /////////////////
     func generateTestData() {
         
         let dateformatterToDate = DateFormatter()

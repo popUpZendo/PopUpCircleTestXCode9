@@ -23,7 +23,6 @@
 		D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011D71EFB3381003D637A /* LaunchScreen.storyboard */; };
 		D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F71EFC1E70003D637A /* zazenBell3.mp3 */; };
 		D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */; };
-		D73B93591F24E62C009E5926 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73B93581F24E62C009E5926 /* DetailsVC.swift */; };
 		D76938281F1FA14700EE83A2 /* LovelyBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76938271F1FA14600EE83A2 /* LovelyBell.mp3 */; };
 		D793B3571F1CC264007708FC /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793B3561F1CC264007708FC /* Identifiers.swift */; };
 		D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D793B3581F1CD27D007708FC /* templeBell.mp3 */; };
@@ -37,7 +36,6 @@
 		D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */; };
 		D7E3F7291F15856100537EB1 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3F7281F15856000537EB1 /* Item+CoreDataClass.swift */; };
 		D7E3F72B1F15857A00537EB1 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3F72A1F15857A00537EB1 /* Item+CoreDataProperties.swift */; };
-		D7F0C3CD1F142DD700DE2897 /* PracticesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +58,6 @@
 		D73011DA1EFB3381003D637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73011F71EFC1E70003D637A /* zazenBell3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell3.mp3; sourceTree = "<group>"; };
 		D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell1.mp3; sourceTree = "<group>"; };
-		D73B93581F24E62C009E5926 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		D76938271F1FA14600EE83A2 /* LovelyBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = LovelyBell.mp3; path = "../../Om Design/Pop Up Zendo/Sound/LovelyBell.mp3"; sourceTree = "<group>"; };
 		D793B3561F1CC264007708FC /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiers.swift; path = "../../../Downloads/iOS10-day-by-day-master/06 - Notification Content Extensions/NagMe/NagMe/Identifiers.swift"; sourceTree = "<group>"; };
 		D793B3581F1CD27D007708FC /* templeBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = templeBell.mp3; path = ../../../Downloads/templeBell.mp3; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 		D7E3F7261F15696F00537EB1 /* Pop Up Circle Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pop Up Circle Test.entitlements"; sourceTree = "<group>"; };
 		D7E3F7281F15856000537EB1 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7E3F72A1F15857A00537EB1 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesVC.swift; sourceTree = "<group>"; };
 		DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,8 +184,6 @@
 				D7CC87671F00BEFD0089A806 /* MainVC.swift */,
 				D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */,
 				D73011CD1EFB3381003D637A /* TimerViewController.swift */,
-				D7F0C3CC1F142DD700DE2897 /* PracticesVC.swift */,
-				D73B93581F24E62C009E5926 /* DetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -340,7 +334,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E3F72B1F15857A00537EB1 /* Item+CoreDataProperties.swift in Sources */,
-				D7F0C3CD1F142DD700DE2897 /* PracticesVC.swift in Sources */,
 				D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */,
 				D7079F251F06127500026B21 /* DharmaRock.swift in Sources */,
 				D7079F211F0611DD00026B21 /* VideoVC.swift in Sources */,
@@ -357,7 +350,6 @@
 				D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */,
 				D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */,
 				D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */,
-				D73B93591F24E62C009E5926 /* DetailsVC.swift in Sources */,
 				D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */,
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
 				D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */,
@@ -505,7 +497,7 @@
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com-popupzendo--com.popupzendo-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
@@ -523,7 +515,7 @@
 				INFOPLIST_FILE = "Pop Up Circle Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com-popupzendo--com.popupzendo-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;

@@ -248,14 +248,25 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             saturdayBool = true
             print(weekdays)
         }else{
-            saturdayButton.setImage(UIImage(named:"sOff"), for: [])
+        saturdayButton.setImage(UIImage(named:"sOff"), for: [])
             weekdays[6] = "s"
             saturdayBool = false
             print(weekdays)
         }
     }
     
+    @IBAction func keyBye(_ sender: UITapGestureRecognizer) {
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+    }
     
+    
+    @IBAction func timeShow(_ sender: Any) {
+        if timePicker.isHidden == true {
+            timePicker.isHidden = false
+        } else { timePicker.isHidden = true
+            
+        }
+    }
     
     @IBAction func radioPractice(_ sender: Any) {
         hideButton.isHidden = false;
@@ -266,13 +277,20 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func radioSchedule(_ sender: Any) {
-        hideButton.isHidden = true;
-        timeView.isHidden = false;
+        if timePicker.isHidden == true {
+            timePicker.isHidden = false
+            hideButton.isHidden = true
+            timeView.isHidden = false
+            itemTypeField.text = "Schedule"
+        } else {
+            timePicker.isHidden = true}
+        }
+    
 //        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
 //        visualEffectView.frame = timeView.bounds
 //        timeView.addSubview(visualEffectView)
-        itemTypeField.text = "Schedule"
-    }
+    
+    
     
     
     

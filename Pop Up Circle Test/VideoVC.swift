@@ -37,7 +37,7 @@ class VideoVC: UIViewController {
         webView.loadHTMLString(dharmaRock.videoURL, baseURL: nil)
         
         
-    // webView2.loadHTMLString(dharmaRock.videoURL, baseURL: nil)
+        // webView2.loadHTMLString(dharmaRock.videoURL, baseURL: nil)
         webView2.loadRequest(URLRequest(url: URL(string: dharmaRock.contentURL)! as URL) as URLRequest)
         
         //webView2.loadHTMLString("https://www.google.com", baseURL: nil)
