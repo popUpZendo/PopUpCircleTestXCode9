@@ -29,9 +29,7 @@ class VideoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        
-        
+self.navigationController?.setNavigationBarHidden(false, animated: false)
         titleLbl.text = dharmaRock.videoTitle
         details.text = dharmaRock.details
         webView.loadHTMLString(dharmaRock.videoURL, baseURL: nil)

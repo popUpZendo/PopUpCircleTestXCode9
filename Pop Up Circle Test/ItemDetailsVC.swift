@@ -293,7 +293,6 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     @IBAction func radioSchedule(_ sender: Any) {
          print(timePicker.isHidden)
-        
         if timePicker.isHidden == true {
             
             timePicker.isHidden = false
@@ -306,7 +305,8 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             timePicker.isHidden = true
             timeView.isHidden = true
         }
-        }
+    }
+
     
     
     //Saving the data

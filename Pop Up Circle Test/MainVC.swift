@@ -113,7 +113,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         print("today is \(currentDateString)")
         
         
-        if segment.selectedSegmentIndex == 2 {
+        if segment.selectedSegmentIndex == 0 {
                 
                 switch currentDateString {
                     
@@ -179,13 +179,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
                 }
             
             
-        } else if segment.selectedSegmentIndex == 1 {
+        } else if segment.selectedSegmentIndex == 2 {
             
             fetchRequest.sortDescriptors = [practiceSort]
             let predicate2 = NSPredicate(format: "itemType CONTAINS[c] %@", "Practice")
              fetchRequest.predicate = predicate2
             
-        } else if segment.selectedSegmentIndex == 0 {
+        } else if segment.selectedSegmentIndex == 1 {
             
             fetchRequest.sortDescriptors = [scheduleSort]
             fetchRequest.sortDescriptors = [practiceSort]
@@ -381,7 +381,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let item4 = Item(context: context)
         item4.title = "Loving Kindness Meditation"
         item4.location = "Work"
-        item4.details = "Morning Sit - 25 Minutes"
+        item4.details = "Brief Instructions for Loving-Kindness Meditation \n To practice loving-kindness meditation, sit in a comfortable and relaxed manner. Take two or three deep breaths with slow, long and complete exhalations. Let go of any concerns or preoccupations. For a few minutes, feel or imagine the breath moving through the center of your chest - in the area of your heart. /n Metta is first practiced toward oneself, since we often have difficulty loving others without first loving ourselves. Sitting quietly, mentally repeat, slowly and steadily, the following or similar phrases: \n May I be happy. May I be well. May I be safe. May I be peaceful and at ease. \n While you say these phrases, allow yourself to sink into the intentions they express. Loving-kindness meditation consists primarily of connecting to the intention of wishing ourselves or others happiness. However, if feelings of warmth, friendliness, or love arise in the body or mind, connect to them, allowing them to grow as you repeat the phrases. As an aid to the meditation, you might hold an image of yourself in your mind's eye. This helps reinforce the intentions expressed in the phrases. \n After a period of directing loving-kindness toward yourself, bring to mind a friend or someone in your life who has deeply cared for you. Then slowly repeat phrases of loving-kindness toward them: \n May you be happy. May you be well. May you be safe. May you be peaceful and at ease. \n As you say these phrases, again sink into their intention or heartfelt meaning. And, if any feelings of loving-kindness arise, connect the feelings with the phrases so that the feelings may become stronger as you repeat the words. \nAs you continue the meditation, you can bring to mind other friends, neighbors, acquaintances, strangers, animals, and finally people with whom you have difficulty. You can either use the same phrases, repeating them again and again, or make up phrases that better represent the loving-kindness you feel toward these beings. In addition to simple and perhaps personal and creative forms of metta practice, there is a classic and systematic approach to metta as an intensive meditation practice. Because the classic meditation is fairly elaborate, it is usually undertaken during periods of intensive metta practice on retreat. \n Sometimes during loving-kindness meditation, seemingly opposite feelings such as anger, grief, or sadness may arise. Take these to be signs that your heart is softening, revealing what is held there. You can either shift to mindfulness practice or you can—with whatever patience, acceptance, and kindness you can muster for such feelings—direct loving-kindness toward them. Above all, remember that there is no need to judge yourself for having these feelings."
         item4.time = "2:00 PM"
         item4.bell = true
         item4.itemType = "Schedule"
@@ -413,7 +413,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let item6 = Item(context: context)
         item6.title = "Gratitude Pratice"
         item6.location = "Home"
-        item6.details = "Before going to bed follow Brother David's gratitude practice"
+        item6.details = "Before going to bed, I glance back over the day and ask myself: Did I stop and allow myself to be surprised? Or, did I trudge on in a daze? Take this opportunity to feel the gratitude that is offered in each of these moments"
         item6.time = "9:00 PM"
         item6.bell = true
         item6.itemType = "Schedule"
@@ -429,7 +429,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let item7 = Item(context: context)
         item7.title = "Stop - Look -Go"
         item7.location = "Anywhere"
-        item7.details = "Follow Brother David's gratitude practice"
+        item7.details = "When you are in practice, a split second is enough to stop. And then you look. What is, now, the opportunity of this given moment? Only this moment, the unique opportunity this moment gives? \n And that is where this beholding comes in.And if we really see what the opportunity is, we must, of course, not stop there, but we must do something with it. Go. Avail yourself of that opportunity. And if you do that, if you try practicing that at this moment, tonight, we would already be happier people, because it has an immediate feedback of joy. I always say not — I don’t speak of the gift, because not for everything that’s given to you can you really be grateful. You can’t be grateful for war in a given situation, or violence, or domestic violence, or sickness, things like that. There are many things for which you cannot be grateful. But in every moment, you can be grateful. For instance, the opportunity to learn something from a very difficult experience, what to grow by it, or even to protest, to stand up, and take a stand. That is a wonderful gift in a situation in which things are not the way they ought to be. So opportunity is really the key when people ask, can you be grateful for everything? No, not for everything, but in every moment."
         item7.time = ""
         item7.bell = false
         item7.itemType = "Practice"
