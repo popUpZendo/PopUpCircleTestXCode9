@@ -26,6 +26,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+        
 //generateTestData()
         // Test Data and real data are separate on sort
         
@@ -111,7 +113,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         print("today is \(currentDateString)")
         
         
-        if segment.selectedSegmentIndex == 0 {
+        if segment.selectedSegmentIndex == 2 {
                 
                 switch currentDateString {
                     
@@ -183,7 +185,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             let predicate2 = NSPredicate(format: "itemType CONTAINS[c] %@", "Practice")
              fetchRequest.predicate = predicate2
             
-        } else if segment.selectedSegmentIndex == 2 {
+        } else if segment.selectedSegmentIndex == 0 {
             
             fetchRequest.sortDescriptors = [scheduleSort]
             fetchRequest.sortDescriptors = [practiceSort]
@@ -196,12 +198,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         self.controller = controller
         
         do {
+            
             let count = try ad.persistentContainer.viewContext.count(for: fetchRequest)
             
             if count == 0 {
                 
                 generateTestData()
                 
+
             }
             
             try controller.performFetch()
@@ -322,6 +326,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let Date5 = dateformatterToDate.date(from: "6:00 PM")
         let Date6 = dateformatterToDate.date(from: "9:00 PM")
         let Date7 = dateformatterToDate.date(from: "12:00 AM")
+        let Date8 = dateformatterToDate.date(from: "12:00 AM")
         
         
         
@@ -333,6 +338,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item.bell = true
         item.itemType = "Schedule"
         item.eventTime = Date1
+        item.sunday = true
+        item.monday = true
+        item.tuesday = true
+        item.wednesday = true
+        item.thursday = true
+        item.friday = true
+        item.saturday = true
         
         let item2 = Item(context: context)
         item2.title = "Zen Driving"
@@ -342,6 +354,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item2.bell = true
         item2.itemType = "Schedule"
         item2.eventTime = Date2
+        item2.sunday = true
+        item2.monday = true
+        item2.tuesday = true
+        item2.wednesday = true
+        item2.thursday = true
+        item2.friday = true
+        item2.saturday = true
         
         let item3 = Item(context: context)
         item3.title = "Mindful Lunch"
@@ -351,6 +370,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item3.bell = true
         item3.itemType = "Schedule"
         item3.eventTime = Date3
+        item3.sunday = true
+        item3.monday = true
+        item3.tuesday = true
+        item3.wednesday = true
+        item3.thursday = true
+        item3.friday = true
+        item3.saturday = true
         
         let item4 = Item(context: context)
         item4.title = "Loving Kindness Meditation"
@@ -360,6 +386,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item4.bell = true
         item4.itemType = "Schedule"
         item4.eventTime = Date4
+        item4.sunday = true
+        item4.monday = true
+        item4.tuesday = true
+        item4.wednesday = true
+        item4.thursday = true
+        item4.friday = true
+        item4.saturday = true
         
         let item5 = Item(context: context)
         item5.title = "Zazen"
@@ -369,6 +402,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item5.bell = true
         item5.itemType = "Schedule"
         item5.eventTime = Date5
+        item5.sunday = true
+        item5.monday = true
+        item5.tuesday = true
+        item5.wednesday = true
+        item5.thursday = true
+        item5.friday = true
+        item5.saturday = true
         
         let item6 = Item(context: context)
         item6.title = "Gratitude Pratice"
@@ -378,15 +418,49 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item6.bell = true
         item6.itemType = "Schedule"
         item6.eventTime = Date6
+        item6.sunday = true
+        item6.monday = true
+        item6.tuesday = true
+        item6.wednesday = true
+        item6.thursday = true
+        item6.friday = true
+        item6.saturday = true
         
         let item7 = Item(context: context)
         item7.title = "Stop - Look -Go"
         item7.location = "Anywhere"
         item7.details = "Follow Brother David's gratitude practice"
-        item6.time = ""
+        item7.time = ""
         item7.bell = false
         item7.itemType = "Practice"
         item7.eventTime = Date7
+        item7.sunday = true
+        item7.monday = true
+        item7.tuesday = true
+        item7.wednesday = true
+        item7.thursday = true
+        item7.friday = true
+        item7.saturday = true
+        
+        let item8 = Item(context: context)
+        item8.title = "A Few Notes"
+        item8.location = "About this App"
+        item8.details = "This is an early beta so expect a few bugs.  This app, at this stage, was created to help you design a neo-monastic practice. The five components of Zen Training are Meditation, Learning, and Intentional Practice.  Each of the three main screens focuses on a particular area and is designed to support you in your growth. Each day you make some kind of effort in each of this areas is a day of spiritual growth.  Curious where each button will lead you and the ways you will imagine to do things better.  Much is still in flux and there are more features to come.  One thing that I am still working with is the Schedule Button, which must be pushed twice in order to pull up the clock or to save.  In deep appreciation for your practice which was the inspiration that brought this into existance.  -Joe"
+        item8.time = ""
+        item8.bell = false
+        item8.itemType = "Practice"
+        item8.eventTime = Date8
+        item8.sunday = true
+        item8.monday = true
+        item8.tuesday = true
+        item8.wednesday = true
+        item8.thursday = true
+        item8.friday = true
+        item8.saturday = true
+        
+        
+        
+        
         
         ad.saveContext()
         

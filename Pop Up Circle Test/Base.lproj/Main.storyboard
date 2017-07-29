@@ -552,6 +552,7 @@
                         <outlet property="mondayButton" destination="gFa-Y8-V0k" id="7wN-Jd-7bf"/>
                         <outlet property="practiceButton" destination="T2T-4w-4KF" id="lJv-QH-som"/>
                         <outlet property="saturdayButton" destination="tbS-r2-6a8" id="vUH-lf-eXN"/>
+                        <outlet property="saveButton" destination="YOF-DC-nwL" id="bjP-nX-9mC"/>
                         <outlet property="scheduleButton" destination="PL2-xz-3rj" id="3DV-c7-oyQ"/>
                         <outlet property="sundayButton" destination="g0J-3s-N11" id="W2C-Jj-oYO"/>
                         <outlet property="thumgImg" destination="Zsg-eR-mg4" id="Db3-Fi-94Q"/>
@@ -592,8 +593,9 @@
                                     <constraint firstAttribute="height" constant="28" id="Y3g-TH-LAP"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Schedule"/>
+                                    <segment title="All"/>
                                     <segment title="Practices"/>
+                                    <segment title="Schedule"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -1377,9 +1379,9 @@ GFIYVRhaAAAAAAAAAgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAAGFw
         <image name="zazen6" width="607" height="629"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="55e-yH-vMP"/>
-        <segue reference="WMR-Fm-4aB"/>
-        <segue reference="Dho-me-TYr"/>
+        <segue reference="HfS-Lm-yMo"/>
         <segue reference="ePM-BZ-dMj"/>
+        <segue reference="SoN-k4-np4"/>
+        <segue reference="si4-8i-z9Z"/>
     </inferredMetricsTieBreakers>
 </document>

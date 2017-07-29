@@ -12,7 +12,7 @@ import DLRadioButton
 import UserNotifications
 
 
-class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
   
 
   
@@ -34,6 +34,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var scheduleButton: DLRadioButton!
     @IBOutlet weak var practiceButton: DLRadioButton!
     @IBOutlet weak var toggleReminderButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     
     
     @IBOutlet weak var sundayButton: UIButton!
@@ -69,28 +70,37 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     var saturdayBool: Bool = false
     
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UNUserNotificationCenter.current().delegate = self
         
+        self.hideKeyboardOnTap(#selector(self.dismissKeyboard))
         
-        
-        
+        func saveButtonText () {
+            if practiceButton.isSelected == false && scheduleButton.isSelected == false {
+                saveButton.isHidden = true
+
+            }else{
+
+                saveButton.isHidden = true
+            }
+        }
+
+        saveButtonText()
+    
         itemTypeField.delegate = self
         timeView.isHidden = true
         thumgImg.isHidden = true
         hideButton.isHidden = true
         
         titleField.delegate = self
-        //detailsField.delegate = self
+        detailsField.delegate = self
         itemTypeField.delegate = self
         
-        
+        titleField.returnKeyType = .done
+        detailsField.returnKeyType = .done
+        itemTypeField.returnKeyType = .done
         
         
     self.navigationController?.setNavigationBarHidden(false, animated: true)
@@ -106,21 +116,9 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             loadItemData()
         }
         
-        
     }
     
     
-    
-//    func getDayOfWeek(_ today:String) -> Int? {
-//    let formatter  = DateFormatter()
-//    formatter.dateFormat = "yyyy-MM-dd"
-//    guard let todayDate = formatter.date(from: today) else { return nil }
-//    let myCalendar = Calendar(identifier: .gregorian)
-//    let weekDay = myCalendar.component(.weekday, from: todayDate)
-//    print(weekDay)
-//    return weekDay
-//    }
-
     
     func textFieldShouldReturn(_ titleField: UITextField) -> Bool {
         self.view.endEditing(true)
@@ -136,6 +134,22 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         self.view.endEditing(true)
         return true
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+        
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText     text: String) -> Bool {
+        if text == "\n"
+        {
+            detailsField.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
+    
     
     var alarm = Bool ()
     
@@ -260,38 +274,39 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     
-    @IBAction func timeShow(_ sender: Any) {
-        if timePicker.isHidden == true {
-            timePicker.isHidden = false
-        } else { timePicker.isHidden = true
-            
-        }
-    }
+//    @IBAction func timeShow(_ sender: Any) {
+//        if timePicker.isHidden == true {
+//            timePicker.isHidden = false
+//        } else { timePicker.isHidden = true
+//
+//        }
+//    }
     
     @IBAction func radioPractice(_ sender: Any) {
         hideButton.isHidden = false;
         thumgImg.isHidden = false;
         itemTypeField.text = "Practice"
         timeView.isHidden = true
+        saveButton.isHidden = false
         
     }
     
     @IBAction func radioSchedule(_ sender: Any) {
+         print(timePicker.isHidden)
+        
         if timePicker.isHidden == true {
+            
             timePicker.isHidden = false
             hideButton.isHidden = true
             timeView.isHidden = false
             itemTypeField.text = "Schedule"
+            saveButton.isHidden = false
+            
         } else {
-            timePicker.isHidden = true}
+            timePicker.isHidden = true
+            timeView.isHidden = true
         }
-    
-//        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-//        visualEffectView.frame = timeView.bounds
-//        timeView.addSubview(visualEffectView)
-    
-    
-    
+        }
     
     
     //Saving the data
@@ -538,7 +553,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             toggleReminderButton.setImage(imgOff, for: [])
             alarm = true
             if alarm == true {
-                print("True")
+                print("True Alarm")
             }
             
         } else {
@@ -547,7 +562,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
             toggleReminderButton.setImage(imgOn,for: [])
             alarm = false
             if alarm == false {
-                print("false")
+                print("false alarm")
             }
         }
         
@@ -564,6 +579,7 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         imagePicker.dismiss(animated: true, completion: nil)
     }
+    
     
     
     

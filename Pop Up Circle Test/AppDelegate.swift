@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.addCategory()
         
         return true
+        
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -168,6 +169,13 @@ extension CGPoint{
     }
 }
 
+extension UIViewController {
+    func hideKeyboardOnTap(_ selector: Selector) {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: selector)
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+}
 
 
 
