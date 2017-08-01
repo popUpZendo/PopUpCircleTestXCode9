@@ -292,17 +292,16 @@ class ItemDetailsVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     }
     
     @IBAction func radioSchedule(_ sender: Any) {
-         print(timePicker.isHidden)
-        if timePicker.isHidden == true {
+        print(timeView.isHidden)
+        
+        if timeView.isHidden {
             
-            timePicker.isHidden = false
             hideButton.isHidden = true
             timeView.isHidden = false
             itemTypeField.text = "Schedule"
             saveButton.isHidden = false
             
         } else {
-            timePicker.isHidden = true
             timeView.isHidden = true
         }
     }

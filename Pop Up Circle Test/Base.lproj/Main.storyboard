@@ -164,8 +164,8 @@
                                     <action selector="addImage:" destination="VrU-Oe-qKj" eventType="touchUpInside" id="rGb-YS-mVn"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Time" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeI-va-LOz" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
-                                <rect key="frame" x="117" y="38" width="235" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Time" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeI-va-LOz" customClass="CustomTextField" customModule="Pop_Up_Circle_Test" customModuleProvider="target">
+                                <rect key="frame" x="124" y="38" width="235" height="40"/>
                                 <color key="backgroundColor" red="0.98279976388617729" green="0.97805193893986719" blue="0.98754758883248728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dHd-6n-pGM"/>
@@ -311,8 +311,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Details..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0dh-cp-ly7">
-                                <rect key="frame" x="22" y="174" width="343" height="273"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Details..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0dh-cp-ly7">
+                                <rect key="frame" x="16" y="174" width="343" height="273"/>
                                 <color key="backgroundColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -414,7 +414,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlS-N6-MUZ" userLabel="Time View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlS-N6-MUZ" userLabel="Time View">
                                 <rect key="frame" x="56" y="233.5" width="263" height="200"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-d4-qkF">
@@ -918,14 +918,14 @@
                                     <barButtonItem title="Item" id="HzD-gF-J8a"/>
                                 </items>
                             </toolbar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5NW-w5-lko">
-                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5NW-w5-lko">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-EM-Imp">
-                                        <rect key="frame" x="0.0" y="47" width="375" height="2953"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-EM-Imp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3000"/>
                                         <subviews>
-                                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3O-0K-m45">
-                                                <rect key="frame" x="0.0" y="22" width="375" height="198"/>
+                                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3O-0K-m45">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="220" id="1rg-Mc-S53"/>
@@ -954,6 +954,14 @@
                                                     <outletCollection property="gestureRecognizers" destination="iIa-dd-lGC" appends="YES" id="7oM-QO-i62"/>
                                                 </connections>
                                             </webView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEL-0E-vKt">
+                                                <rect key="frame" x="164" y="336" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <segue destination="iEr-xJ-TUU" kind="show" id="WLS-EE-8w2"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1026,9 +1034,9 @@
         <image name="zazen6" width="607" height="629"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dho-me-TYr"/>
-        <segue reference="WMR-Fm-4aB"/>
+        <segue reference="si4-8i-z9Z"/>
         <segue reference="ePM-BZ-dMj"/>
-        <segue reference="ZCE-Am-bwg"/>
+        <segue reference="SoN-k4-np4"/>
+        <segue reference="HfS-Lm-yMo"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,21 +1,18 @@
 PODS:
-  - ActionSheetPicker-3.0 (2.2.0)
   - CHDayPicker (1.0.0)
   - DLRadioButton (1.4.9)
   - KDCircularProgress (1.5.2)
 
 DEPENDENCIES:
-  - ActionSheetPicker-3.0
   - CHDayPicker (~> 1.0)
   - DLRadioButton (~> 1.4)
   - KDCircularProgress
 
 SPEC CHECKSUMS:
-  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
   CHDayPicker: d56aa5be7786b4217c7a342a5d10fa91c0850989
   DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
   KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
 
-PODFILE CHECKSUM: 9779c8c6c7f5c9d0967059d875a357f8752b3a6a
+PODFILE CHECKSUM: d954f022ef78fdb8903b94f00efb0347aa3f3a3b
 
 COCOAPODS: 1.2.1

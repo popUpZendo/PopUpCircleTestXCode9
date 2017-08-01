@@ -7,171 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E3BFC96C6A7CCADAF3DA6C3C80F35EC /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = AC65B37E2EEE67DEC85D3D785239943B /* SWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1648AB9E52071D70CD79280AB21C94D1 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A059E11DBD4DE01AD7B77AB1DDBD9D7 /* ActionSheetDistancePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A0130E51AF422F68818416677EE6595 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB3CF52CA91E8032BF07DC68E5C434 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1B9108CEBB69F220A4F76E252F5AEA16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		246DD685C951FFF04D55232211F076CD /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35548986393297C6C49C0308637D9E /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2680FB2A9AAFE79796C23A20390CEF45 /* AbstractActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AAA68FBFA22009EC1656EBD8B725DD1 /* AbstractActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29C34B43AFA7A1D88AB188801C76E08C /* ActionSheetPicker-3.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B59973E038B6446AB9FD6B5DDAE6D1 /* ActionSheetPicker-3.0-dummy.m */; };
-		2E0BE453E33FE239593EDD9468B15913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3C8D2470783809376BA929A9603C21D9 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270B4BF17C074E9750BDD4837E170BE3 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		430E0A46B42F47FF79AE16168D1613E9 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CC98B004FD093D7D6B86C2C1CC5B5A /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4755A345DEF3BAF1EE89770F71874807 /* Pods-Pop Up Circle Test-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B9F405AEC1D8A6AD0D8C96F25B85CD /* Pods-Pop Up Circle Test-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E7E0B70C0D1CCD0AC694A99E8324ECD /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80808E8C4572AC727871FBA2ABF230FF /* DLRadioButton-dummy.m */; };
-		6C16BD3BCB1B65194E7CEA5CF15AD446 /* ActionSheetMultipleStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BFCE282E842377D15768D2A5E38E2E /* ActionSheetMultipleStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D4767AEF850FCB5D60036E059488F43 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9454B1970691C57B047604FB4160BC4 /* KDCircularProgress.swift */; };
-		82DB07E1965CC9FFA0340EDA2C5A05A0 /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 13530495B99BBDE830DBB3FEC6880E23 /* ActionSheetLocalePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83678861FC71A2BE986560E60D265F1C /* ActionSheetPicker-3.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E2316AC2AAB542163CB0238C892615 /* ActionSheetPicker-3.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84116DD709725E60919846D7B1AF714B /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D740FB30577FFAC32B4F021F024DC2F4 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EFB861570CEED522199C07FBE6B452B /* CHDayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1DCE1378EA0F1ABF016169AB1D749 /* CHDayPicker.swift */; };
-		8F2D8EC348F59816CFDEA65538E3E532 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0D39C227EB5B879CDBA26E82D3DCFC /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90E3389D33DD00DE304548BE9C52C69F /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B7C0A4763F9BB8B258B28786F88AA5 /* ActionSheetCustomPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AEC64FA01ACF92A6F4FF95FB44B4810 /* KDCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E991655C3803CC53CE5F48840A9AC8 /* KDCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B2B8491E6B1B8EA1C9ACD37341C726B /* ActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9102A2E0B18F8DCE2322A42A18CC1BA4 /* ActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B867960879FDDD089A9E41F027E13B9 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD182589A891C8F03F126FFD09A64A /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9BC276383ED044BB0926AFDFD73F928E /* ActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6280A8AE06B39F643148DF72FF89A972 /* ActionSheetDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2F74AC56E76F01E7A69BB8D3A7E3DB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		AA02DB0F590A6CDED08DA264898F32A6 /* CHDayPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E63A73918717C7258E1A895A9E627E /* CHDayPicker-dummy.m */; };
-		ACA2F75EB141EE3E441F5719E58F82DB /* CHDayPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48FC34F9B3D09AB455926CF103AE2B8E /* CHDayPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE84E0341C26A9B5C8E1501C8E8AAC8F /* ActionSheetCustomPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 684980ADA6F1D665D3478E9A05D45955 /* ActionSheetCustomPickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6988E28381FCC5D04082DD3969BD03F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		BDBFA441010D34FB51DC32F28314AD8D /* ActionSheetStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 968F4030B012EA312F2B28076BF37577 /* ActionSheetStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6CB72E223B27A0C2B06910EC0FADF67 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274636538B76ED120839D68997E79E /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CA068FC25E80824549668A53EC9379EC /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F7D2D82CCBA913AD89A757FE720091 /* DistancePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC838339C0E4BB6BB1B5E03D21CB3893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		D7360E28AA04F37AFD30777C02EF49C3 /* KDCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD90723790B281A36EE2716E711882A2 /* KDCircularProgress-dummy.m */; };
-		D9129CC5AC7C73C09C16227E985260C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		DA732A6C79E7252A25F23A1497ACD0FD /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B72B02F24FD663300C82150033570BF1 /* ActionSheetMultipleStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E049CE807DA7A012BA222DE64920C3D1 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AE43396185C664779B69F424BE85AD /* SWActionSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E187B1D5AA8A15FFCA230618C99EBA8F /* Pods-Pop Up Circle Test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A5EB017EB113CA5145499A0F0E11B2 /* Pods-Pop Up Circle Test-dummy.m */; };
-		E61ED7FAF083B75902728EB20AC4BD92 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F614579C904678F5D2FA632FE296F69 /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EF2F59EEA3194DFCFB39352F4DA16D76 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CC8FDD29C92B79F6E8D0178A52D6D9 /* DLRadioButton.m */; };
+		2E0BE453E33FE239593EDD9468B15913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		34286193439C315FC307CD4D72C605E6 /* Pods-Pop Up Circle Test-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B9F405AEC1D8A6AD0D8C96F25B85CD /* Pods-Pop Up Circle Test-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		522A5FE708B445CDB6C4AE4AA09A447C /* Pods-Pop Up Circle Test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A5EB017EB113CA5145499A0F0E11B2 /* Pods-Pop Up Circle Test-dummy.m */; };
+		5C6F8BFE606834BBAB9120731D287EFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5E7E0B70C0D1CCD0AC694A99E8324ECD /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 013552F3E5684068AFCA27A79077D81D /* DLRadioButton-dummy.m */; };
+		7D4767AEF850FCB5D60036E059488F43 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00C2042A3B2C5A7995133B153D2439 /* KDCircularProgress.swift */; };
+		84116DD709725E60919846D7B1AF714B /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D852A6D2E933CA5C568DAB2BE2C7063 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EFB861570CEED522199C07FBE6B452B /* CHDayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6421CBBBDE73C56B5CBE420B71C724 /* CHDayPicker.swift */; };
+		8F2D8EC348F59816CFDEA65538E3E532 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A287C14AB28A7BC4E4FF30DFD3B6EE2C /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AEC64FA01ACF92A6F4FF95FB44B4810 /* KDCircularProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0B7EDA9D38FAA33D919D61C5F25033 /* KDCircularProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA02DB0F590A6CDED08DA264898F32A6 /* CHDayPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBBA5983494F82B379492AE38013BD3 /* CHDayPicker-dummy.m */; };
+		ACA2F75EB141EE3E441F5719E58F82DB /* CHDayPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF5408FBCD08E8F0E099F117382A631 /* CHDayPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6988E28381FCC5D04082DD3969BD03F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D7360E28AA04F37AFD30777C02EF49C3 /* KDCircularProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DA6DC4CCE2F0639CA3BC65943756C5 /* KDCircularProgress-dummy.m */; };
+		D9129CC5AC7C73C09C16227E985260C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EF2F59EEA3194DFCFB39352F4DA16D76 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7453B4430BB099D93E9CFD4BB8D497 /* DLRadioButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		20FA408B2344D632200A523F58EBB8C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F6A77E2753C279F67F70C5C21D6FAE15;
-			remoteInfo = DLRadioButton;
-		};
-		44C0864111963AECDA841EE48DAED605 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C894DF0753D475C9BC8D7ED0648F0B06;
-			remoteInfo = CHDayPicker;
-		};
-		603291699D455E7610DC8236D507BEB1 /* PBXContainerItemProxy */ = {
+		10DED54E38056ED26615D892125A701F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 322428ECC8C5EC71F14C92233787C7AC;
 			remoteInfo = KDCircularProgress;
 		};
-		EACA6236018DC5EADB037DFC825B7FDC /* PBXContainerItemProxy */ = {
+		9D9D8A718EB0B3ECDEAC01603735D2EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 965699190112DDBD9B7864D091660DBC;
-			remoteInfo = "ActionSheetPicker-3.0";
+			remoteGlobalIDString = C894DF0753D475C9BC8D7ED0648F0B06;
+			remoteInfo = CHDayPicker;
+		};
+		FCDF27F9B8FAACB2C84FAFA133E82854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A77E2753C279F67F70C5C21D6FAE15;
+			remoteInfo = DLRadioButton;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01E63A73918717C7258E1A895A9E627E /* CHDayPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHDayPicker-dummy.m"; sourceTree = "<group>"; };
-		079A9A05AED1360D9C53989965100AB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08F7D2D82CCBA913AD89A757FE720091 /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		0082ABAD0B919F01FF42C77551B6EF59 /* Pods_Pop_Up_Circle_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pop_Up_Circle_Test.framework; path = "Pods-Pop Up Circle Test.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		013552F3E5684068AFCA27A79077D81D /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		024CE4D7C7929E43CBC97F83AA726761 /* CHDayPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHDayPicker-prefix.pch"; sourceTree = "<group>"; };
 		0914194DF549F839A197A557C4B5A496 /* Pods-Pop Up Circle Test-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pop Up Circle Test-frameworks.sh"; sourceTree = "<group>"; };
 		09B9F405AEC1D8A6AD0D8C96F25B85CD /* Pods-Pop Up Circle Test-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pop Up Circle Test-umbrella.h"; sourceTree = "<group>"; };
-		0A35548986393297C6C49C0308637D9E /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
-		13530495B99BBDE830DBB3FEC6880E23 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		0D852A6D2E933CA5C568DAB2BE2C7063 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		1405521E8F1E99F5D1097771CE39224E /* CHDayPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CHDayPicker.modulemap; sourceTree = "<group>"; };
 		143BBEA8BA8530B469FA9D99D2B0817C /* Pods-Pop Up Circle Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pop Up Circle Test.release.xcconfig"; sourceTree = "<group>"; };
-		1738640003615AFBFE6D157EF794CD6D /* CHDayPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHDayPicker.xcconfig; sourceTree = "<group>"; };
-		1B0D39C227EB5B879CDBA26E82D3DCFC /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
-		1F614579C904678F5D2FA632FE296F69 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
-		270B4BF17C074E9750BDD4837E170BE3 /* DistancePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
-		29E991655C3803CC53CE5F48840A9AC8 /* KDCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-umbrella.h"; sourceTree = "<group>"; };
-		2CE1DCE1378EA0F1ABF016169AB1D749 /* CHDayPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CHDayPicker.swift; path = CHDayPicker/Classes/CHDayPicker.swift; sourceTree = "<group>"; };
-		2F1435B22EC7FB1FA82562ACA03750B9 /* Pods_Pop_Up_Circle_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pop_Up_Circle_Test.framework; path = "Pods-Pop Up Circle Test.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		327FA3A8B5C8ADAD89DAD231C196D8BF /* ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
-		32B7C0A4763F9BB8B258B28786F88AA5 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		2A7746873C298FD76BC1A1969503FE39 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
+		2B0B7EDA9D38FAA33D919D61C5F25033 /* KDCircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-umbrella.h"; sourceTree = "<group>"; };
 		33DD0787B88BB318FC11985B6DA336B2 /* Pods-Pop Up Circle Test-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pop Up Circle Test-acknowledgements.plist"; sourceTree = "<group>"; };
-		34BACA0ACDEAC906E7B99E9CF80E5FF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BFFC01DEB21A956C5C2FE7EC841F2EB /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
 		3E399DA84AA8C7DF9DAB98CFDDB08D91 /* Pods-Pop Up Circle Test.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pop Up Circle Test.modulemap"; sourceTree = "<group>"; };
-		44B59973E038B6446AB9FD6B5DDAE6D1 /* ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
-		48FC34F9B3D09AB455926CF103AE2B8E /* CHDayPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHDayPicker-umbrella.h"; sourceTree = "<group>"; };
-		4AAA68FBFA22009EC1656EBD8B725DD1 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		3F2D0DCA0E3EE8E16C3CF3D3FC06FEC4 /* KDCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-prefix.pch"; sourceTree = "<group>"; };
+		40B98413EA2C4CEB824A6A83475CA35E /* CHDayPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHDayPicker.xcconfig; sourceTree = "<group>"; };
+		44DA6DC4CCE2F0639CA3BC65943756C5 /* KDCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDCircularProgress-dummy.m"; sourceTree = "<group>"; };
 		503832A0F94344540873646DD4864D73 /* Pods-Pop Up Circle Test-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pop Up Circle Test-acknowledgements.markdown"; sourceTree = "<group>"; };
-		54C02A4E1B32091BA6FDF09A06221D12 /* CHDayPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHDayPicker.framework; path = CHDayPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55274636538B76ED120839D68997E79E /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
-		5A059E11DBD4DE01AD7B77AB1DDBD9D7 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		526966196726E26CB862351EE115F18A /* KDCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDCircularProgress.xcconfig; sourceTree = "<group>"; };
 		5A7B7F55A707C2252BF141ACB0D69668 /* Pods-Pop Up Circle Test-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pop Up Circle Test-resources.sh"; sourceTree = "<group>"; };
-		6280A8AE06B39F643148DF72FF89A972 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
-		684980ADA6F1D665D3478E9A05D45955 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
-		6EA4601EB9BAC59FF9AE1FD9FED1FA4F /* KDCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KDCircularProgress.modulemap; sourceTree = "<group>"; };
-		71CC98B004FD093D7D6B86C2C1CC5B5A /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
-		7D8C388D67E4AB91535C13E0C724B4CC /* ActionSheetPicker-3.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.xcconfig"; sourceTree = "<group>"; };
-		80808E8C4572AC727871FBA2ABF230FF /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
-		9102A2E0B18F8DCE2322A42A18CC1BA4 /* ActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Pickers/ActionSheetPicker.h; sourceTree = "<group>"; };
+		5D54143BDC069EF6D5CC4DF37BF73515 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B66ACE0AAB04D21B1A0AD3FCF805098 /* KDCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KDCircularProgress.framework; path = KDCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7B3776A7123A4E47B5420C19DA5810 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		968F4030B012EA312F2B28076BF37577 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
 		9C608E0A20B1C5D4EE4F94901DDFFA6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A05B7B0B8B6695954019FEC81C05A36A /* ActionSheetPicker_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ActionSheetPicker_3_0.framework; path = "ActionSheetPicker-3.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D00C2042A3B2C5A7995133B153D2439 /* KDCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = KDCircularProgress/KDCircularProgress.swift; sourceTree = "<group>"; };
+		A287C14AB28A7BC4E4FF30DFD3B6EE2C /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
 		A3A5EB017EB113CA5145499A0F0E11B2 /* Pods-Pop Up Circle Test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pop Up Circle Test-dummy.m"; sourceTree = "<group>"; };
-		A620B1CE5A1344029E5051C27E63C058 /* KDCircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDCircularProgress-prefix.pch"; sourceTree = "<group>"; };
-		AC45210B1F040C321BDD778BB33B28CF /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
-		AC65B37E2EEE67DEC85D3D785239943B /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
-		AE98E673529478F84F97BF447AE5B560 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0E2316AC2AAB542163CB0238C892615 /* ActionSheetPicker-3.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-umbrella.h"; sourceTree = "<group>"; };
-		B1AE43396185C664779B69F424BE85AD /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B72B02F24FD663300C82150033570BF1 /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetMultipleStringPicker.m; path = Pickers/ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
-		BFFD182589A891C8F03F126FFD09A64A /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
-		C3BFCE282E842377D15768D2A5E38E2E /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetMultipleStringPicker.h; path = Pickers/ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
-		C77F5A264170A23E1F39DDA7757CB9E0 /* KDCircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KDCircularProgress.framework; path = KDCircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2A46601CFBEF3F078D887AB30FE07BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3CC8FDD29C92B79F6E8D0178A52D6D9 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
-		D740FB30577FFAC32B4F021F024DC2F4 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D9454B1970691C57B047604FB4160BC4 /* KDCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDCircularProgress.swift; path = KDCircularProgress/KDCircularProgress.swift; sourceTree = "<group>"; };
-		DC9EBCE02ADD1B09FEEF5E01EB545009 /* CHDayPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHDayPicker-prefix.pch"; sourceTree = "<group>"; };
-		DD2E9378EFB8138CE737959AC06418E1 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
+		AE7453B4430BB099D93E9CFD4BB8D497 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		BDF5408FBCD08E8F0E099F117382A631 /* CHDayPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHDayPicker-umbrella.h"; sourceTree = "<group>"; };
+		BE4D31DC629089E3EC3E2EF00FDEF349 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		CB85281D307E44FAE1772F534E76BECD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBBA5983494F82B379492AE38013BD3 /* CHDayPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHDayPicker-dummy.m"; sourceTree = "<group>"; };
+		D46BE4620AB087331CDCA53313C2B6DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D661AC21004957AC73AEBD14E737F79B /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48546B5D2A8E8742039EA5DADAECEEB /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
-		E8B51C0DB41B67CF899893B8F212E913 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9FB3CF52CA91E8032BF07DC68E5C434 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
-		F52D3D2E3CF04ACE62CF910B3BB3B71F /* KDCircularProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDCircularProgress.xcconfig; sourceTree = "<group>"; };
-		F6DB9512751DF747F1AE4BC37CA5ABE3 /* CHDayPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CHDayPicker.modulemap; sourceTree = "<group>"; };
-		F8B09A621153300C6ED38317B67560C6 /* ActionSheetPicker-3.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "ActionSheetPicker-3.0.modulemap"; sourceTree = "<group>"; };
-		FD90723790B281A36EE2716E711882A2 /* KDCircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDCircularProgress-dummy.m"; sourceTree = "<group>"; };
+		E8AFE0DC183780E2C95F4BBBE8D1B1FE /* CHDayPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHDayPicker.framework; path = CHDayPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6421CBBBDE73C56B5CBE420B71C724 /* CHDayPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CHDayPicker.swift; path = CHDayPicker/Classes/CHDayPicker.swift; sourceTree = "<group>"; };
+		F46D0981BEA381847A9D5DA1E0FF7DA0 /* KDCircularProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KDCircularProgress.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		032C9D87D4CD9ACC3B274A89AC850D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6F8BFE606834BBAB9120731D287EFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		444D49E17C8519E3ED22669F891F34C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D9129CC5AC7C73C09C16227E985260C2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5A5656CDF1BCF7EE6F8F9B303AF09346 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B9108CEBB69F220A4F76E252F5AEA16 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66076240C2ED6C56B870D99D6432B3F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC838339C0E4BB6BB1B5E03D21CB3893 /* Foundation.framework in Frameworks */,
-				A2F74AC56E76F01E7A69BB8D3A7E3DB8 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,56 +126,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12A85315A44CE2CEC02DD6AD4AB1EBEE /* DLRadioButton */ = {
+		17BF06DCE0C62B51C3C07BAD6A804142 /* KDCircularProgress */ = {
 			isa = PBXGroup;
 			children = (
-				1B0D39C227EB5B879CDBA26E82D3DCFC /* DLRadioButton.h */,
-				D3CC8FDD29C92B79F6E8D0178A52D6D9 /* DLRadioButton.m */,
-				DDBD4584089FC9CBCE4C81F6CEC3A5A2 /* Support Files */,
+				9D00C2042A3B2C5A7995133B153D2439 /* KDCircularProgress.swift */,
+				473EF0517172E43299A13477186D8021 /* Support Files */,
 			);
-			name = DLRadioButton;
-			path = DLRadioButton;
+			name = KDCircularProgress;
+			path = KDCircularProgress;
 			sourceTree = "<group>";
 		};
-		25C18B01007AAFE468DAF83EEDA6C343 /* Products */ = {
+		2F79D37D46E7386896BE5EDC45C77DBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A05B7B0B8B6695954019FEC81C05A36A /* ActionSheetPicker_3_0.framework */,
-				54C02A4E1B32091BA6FDF09A06221D12 /* CHDayPicker.framework */,
-				E8B51C0DB41B67CF899893B8F212E913 /* DLRadioButton.framework */,
-				C77F5A264170A23E1F39DDA7757CB9E0 /* KDCircularProgress.framework */,
-				2F1435B22EC7FB1FA82562ACA03750B9 /* Pods_Pop_Up_Circle_Test.framework */,
+				E8AFE0DC183780E2C95F4BBBE8D1B1FE /* CHDayPicker.framework */,
+				D661AC21004957AC73AEBD14E737F79B /* DLRadioButton.framework */,
+				7B66ACE0AAB04D21B1A0AD3FCF805098 /* KDCircularProgress.framework */,
+				0082ABAD0B919F01FF42C77551B6EF59 /* Pods_Pop_Up_Circle_Test.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		25F1A4E2F27F862C640E68B38336363C /* ActionSheetPicker-3.0 */ = {
+		3301B095FFEFCA12004EB16A05C39BFE /* CHDayPicker */ = {
 			isa = PBXGroup;
 			children = (
-				4AAA68FBFA22009EC1656EBD8B725DD1 /* AbstractActionSheetPicker.h */,
-				BFFD182589A891C8F03F126FFD09A64A /* AbstractActionSheetPicker.m */,
-				32B7C0A4763F9BB8B258B28786F88AA5 /* ActionSheetCustomPicker.h */,
-				1F614579C904678F5D2FA632FE296F69 /* ActionSheetCustomPicker.m */,
-				684980ADA6F1D665D3478E9A05D45955 /* ActionSheetCustomPickerDelegate.h */,
-				6280A8AE06B39F643148DF72FF89A972 /* ActionSheetDatePicker.h */,
-				E9FB3CF52CA91E8032BF07DC68E5C434 /* ActionSheetDatePicker.m */,
-				5A059E11DBD4DE01AD7B77AB1DDBD9D7 /* ActionSheetDistancePicker.h */,
-				0A35548986393297C6C49C0308637D9E /* ActionSheetDistancePicker.m */,
-				13530495B99BBDE830DBB3FEC6880E23 /* ActionSheetLocalePicker.h */,
-				71CC98B004FD093D7D6B86C2C1CC5B5A /* ActionSheetLocalePicker.m */,
-				C3BFCE282E842377D15768D2A5E38E2E /* ActionSheetMultipleStringPicker.h */,
-				B72B02F24FD663300C82150033570BF1 /* ActionSheetMultipleStringPicker.m */,
-				9102A2E0B18F8DCE2322A42A18CC1BA4 /* ActionSheetPicker.h */,
-				968F4030B012EA312F2B28076BF37577 /* ActionSheetStringPicker.h */,
-				55274636538B76ED120839D68997E79E /* ActionSheetStringPicker.m */,
-				08F7D2D82CCBA913AD89A757FE720091 /* DistancePickerView.h */,
-				270B4BF17C074E9750BDD4837E170BE3 /* DistancePickerView.m */,
-				AC65B37E2EEE67DEC85D3D785239943B /* SWActionSheet.h */,
-				B1AE43396185C664779B69F424BE85AD /* SWActionSheet.m */,
-				74E65B439B57AE8F49274AEE1092578B /* Support Files */,
+				EE6421CBBBDE73C56B5CBE420B71C724 /* CHDayPicker.swift */,
+				AF583AE4FF727DF8408B324F28B2D221 /* Support Files */,
 			);
-			name = "ActionSheetPicker-3.0";
-			path = "ActionSheetPicker-3.0";
+			name = CHDayPicker;
+			path = CHDayPicker;
 			sourceTree = "<group>";
 		};
 		3B3ECAAAD2FEF640F35FD4D034D1C597 /* Pods-Pop Up Circle Test */ = {
@@ -264,45 +175,43 @@
 			path = "Target Support Files/Pods-Pop Up Circle Test";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		473EF0517172E43299A13477186D8021 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		4CC18D1DCE5C59E4C0373BC51554A627 /* CHDayPicker */ = {
-			isa = PBXGroup;
-			children = (
-				2CE1DCE1378EA0F1ABF016169AB1D749 /* CHDayPicker.swift */,
-				B7AFD43FDFEF062C9976451C92AD7710 /* Support Files */,
-			);
-			name = CHDayPicker;
-			path = CHDayPicker;
-			sourceTree = "<group>";
-		};
-		74E65B439B57AE8F49274AEE1092578B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F8B09A621153300C6ED38317B67560C6 /* ActionSheetPicker-3.0.modulemap */,
-				7D8C388D67E4AB91535C13E0C724B4CC /* ActionSheetPicker-3.0.xcconfig */,
-				44B59973E038B6446AB9FD6B5DDAE6D1 /* ActionSheetPicker-3.0-dummy.m */,
-				327FA3A8B5C8ADAD89DAD231C196D8BF /* ActionSheetPicker-3.0-prefix.pch */,
-				B0E2316AC2AAB542163CB0238C892615 /* ActionSheetPicker-3.0-umbrella.h */,
-				079A9A05AED1360D9C53989965100AB8 /* Info.plist */,
+				5D54143BDC069EF6D5CC4DF37BF73515 /* Info.plist */,
+				F46D0981BEA381847A9D5DA1E0FF7DA0 /* KDCircularProgress.modulemap */,
+				526966196726E26CB862351EE115F18A /* KDCircularProgress.xcconfig */,
+				44DA6DC4CCE2F0639CA3BC65943756C5 /* KDCircularProgress-dummy.m */,
+				3F2D0DCA0E3EE8E16C3CF3D3FC06FEC4 /* KDCircularProgress-prefix.pch */,
+				2B0B7EDA9D38FAA33D919D61C5F25033 /* KDCircularProgress-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ActionSheetPicker-3.0";
+			path = "../Target Support Files/KDCircularProgress";
+			sourceTree = "<group>";
+		};
+		63E1CAA2248D1809BE0B0B24827B29FA /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				A287C14AB28A7BC4E4FF30DFD3B6EE2C /* DLRadioButton.h */,
+				AE7453B4430BB099D93E9CFD4BB8D497 /* DLRadioButton.m */,
+				7A026523072177CEC36C80F366D8AFE6 /* Support Files */,
+			);
+			name = DLRadioButton;
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		7A026523072177CEC36C80F366D8AFE6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A7746873C298FD76BC1A1969503FE39 /* DLRadioButton.modulemap */,
+				8E7B3776A7123A4E47B5420C19DA5810 /* DLRadioButton.xcconfig */,
+				013552F3E5684068AFCA27A79077D81D /* DLRadioButton-dummy.m */,
+				BE4D31DC629089E3EC3E2EF00FDEF349 /* DLRadioButton-prefix.pch */,
+				0D852A6D2E933CA5C568DAB2BE2C7063 /* DLRadioButton-umbrella.h */,
+				D46BE4620AB087331CDCA53313C2B6DF /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DLRadioButton";
 			sourceTree = "<group>";
 		};
 		7B57E46614BC677ACB0784AF92D08411 /* Targets Support Files */ = {
@@ -317,74 +226,51 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				A85986A041418386D8485AA69F123B7E /* Pods */,
-				25C18B01007AAFE468DAF83EEDA6C343 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FDE07D27D6806AD8D046216BF433C034 /* Pods */,
+				2F79D37D46E7386896BE5EDC45C77DBA /* Products */,
 				7B57E46614BC677ACB0784AF92D08411 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A85986A041418386D8485AA69F123B7E /* Pods */ = {
+		AF583AE4FF727DF8408B324F28B2D221 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				25F1A4E2F27F862C640E68B38336363C /* ActionSheetPicker-3.0 */,
-				4CC18D1DCE5C59E4C0373BC51554A627 /* CHDayPicker */,
-				12A85315A44CE2CEC02DD6AD4AB1EBEE /* DLRadioButton */,
-				F772D3441F8B89164A6D06F4DFED314B /* KDCircularProgress */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B7AFD43FDFEF062C9976451C92AD7710 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F6DB9512751DF747F1AE4BC37CA5ABE3 /* CHDayPicker.modulemap */,
-				1738640003615AFBFE6D157EF794CD6D /* CHDayPicker.xcconfig */,
-				01E63A73918717C7258E1A895A9E627E /* CHDayPicker-dummy.m */,
-				DC9EBCE02ADD1B09FEEF5E01EB545009 /* CHDayPicker-prefix.pch */,
-				48FC34F9B3D09AB455926CF103AE2B8E /* CHDayPicker-umbrella.h */,
-				AE98E673529478F84F97BF447AE5B560 /* Info.plist */,
+				1405521E8F1E99F5D1097771CE39224E /* CHDayPicker.modulemap */,
+				40B98413EA2C4CEB824A6A83475CA35E /* CHDayPicker.xcconfig */,
+				CDBBA5983494F82B379492AE38013BD3 /* CHDayPicker-dummy.m */,
+				024CE4D7C7929E43CBC97F83AA726761 /* CHDayPicker-prefix.pch */,
+				BDF5408FBCD08E8F0E099F117382A631 /* CHDayPicker-umbrella.h */,
+				CB85281D307E44FAE1772F534E76BECD /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CHDayPicker";
 			sourceTree = "<group>";
 		};
-		B86348343140B9267A3D14F36F94FB8E /* Support Files */ = {
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34BACA0ACDEAC906E7B99E9CF80E5FF4 /* Info.plist */,
-				6EA4601EB9BAC59FF9AE1FD9FED1FA4F /* KDCircularProgress.modulemap */,
-				F52D3D2E3CF04ACE62CF910B3BB3B71F /* KDCircularProgress.xcconfig */,
-				FD90723790B281A36EE2716E711882A2 /* KDCircularProgress-dummy.m */,
-				A620B1CE5A1344029E5051C27E63C058 /* KDCircularProgress-prefix.pch */,
-				29E991655C3803CC53CE5F48840A9AC8 /* KDCircularProgress-umbrella.h */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/KDCircularProgress";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDBD4584089FC9CBCE4C81F6CEC3A5A2 /* Support Files */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E9378EFB8138CE737959AC06418E1 /* DLRadioButton.modulemap */,
-				3BFFC01DEB21A956C5C2FE7EC841F2EB /* DLRadioButton.xcconfig */,
-				80808E8C4572AC727871FBA2ABF230FF /* DLRadioButton-dummy.m */,
-				AC45210B1F040C321BDD778BB33B28CF /* DLRadioButton-prefix.pch */,
-				D740FB30577FFAC32B4F021F024DC2F4 /* DLRadioButton-umbrella.h */,
-				D2A46601CFBEF3F078D887AB30FE07BB /* Info.plist */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DLRadioButton";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		F772D3441F8B89164A6D06F4DFED314B /* KDCircularProgress */ = {
+		FDE07D27D6806AD8D046216BF433C034 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D9454B1970691C57B047604FB4160BC4 /* KDCircularProgress.swift */,
-				B86348343140B9267A3D14F36F94FB8E /* Support Files */,
+				3301B095FFEFCA12004EB16A05C39BFE /* CHDayPicker */,
+				63E1CAA2248D1809BE0B0B24827B29FA /* DLRadioButton */,
+				17BF06DCE0C62B51C3C07BAD6A804142 /* KDCircularProgress */,
 			);
-			name = KDCircularProgress;
-			path = KDCircularProgress;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,30 +293,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AB23CC7711BE22B6D15C1E9F4BD6DC8 /* Headers */ = {
+		599353E9BCCD27D2450DD9CB48882AC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4755A345DEF3BAF1EE89770F71874807 /* Pods-Pop Up Circle Test-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7168AF4B49EE1459BCE8AC958F7EC526 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2680FB2A9AAFE79796C23A20390CEF45 /* AbstractActionSheetPicker.h in Headers */,
-				90E3389D33DD00DE304548BE9C52C69F /* ActionSheetCustomPicker.h in Headers */,
-				AE84E0341C26A9B5C8E1501C8E8AAC8F /* ActionSheetCustomPickerDelegate.h in Headers */,
-				9BC276383ED044BB0926AFDFD73F928E /* ActionSheetDatePicker.h in Headers */,
-				1648AB9E52071D70CD79280AB21C94D1 /* ActionSheetDistancePicker.h in Headers */,
-				82DB07E1965CC9FFA0340EDA2C5A05A0 /* ActionSheetLocalePicker.h in Headers */,
-				6C16BD3BCB1B65194E7CEA5CF15AD446 /* ActionSheetMultipleStringPicker.h in Headers */,
-				83678861FC71A2BE986560E60D265F1C /* ActionSheetPicker-3.0-umbrella.h in Headers */,
-				9B2B8491E6B1B8EA1C9ACD37341C726B /* ActionSheetPicker.h in Headers */,
-				BDBFA441010D34FB51DC32F28314AD8D /* ActionSheetStringPicker.h in Headers */,
-				CA068FC25E80824549668A53EC9379EC /* DistancePickerView.h in Headers */,
-				0E3BFC96C6A7CCADAF3DA6C3C80F35EC /* SWActionSheet.h in Headers */,
+				34286193439C315FC307CD4D72C605E6 /* Pods-Pop Up Circle Test-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,45 +326,27 @@
 			);
 			name = KDCircularProgress;
 			productName = KDCircularProgress;
-			productReference = C77F5A264170A23E1F39DDA7757CB9E0 /* KDCircularProgress.framework */;
+			productReference = 7B66ACE0AAB04D21B1A0AD3FCF805098 /* KDCircularProgress.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		37EC62FA9640CEA8405107DA6363FA2F /* Pods-Pop Up Circle Test */ = {
+		7BDAF4F729540CA2670F71350B62E45A /* Pods-Pop Up Circle Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFC12390315A4E0E322FB5E8716BF360 /* Build configuration list for PBXNativeTarget "Pods-Pop Up Circle Test" */;
+			buildConfigurationList = C5E7146DD6B0B1AF7EE30B660ADAFD8F /* Build configuration list for PBXNativeTarget "Pods-Pop Up Circle Test" */;
 			buildPhases = (
-				04F1175F613E87C50434DD53122CCF09 /* Sources */,
-				5A5656CDF1BCF7EE6F8F9B303AF09346 /* Frameworks */,
-				3AB23CC7711BE22B6D15C1E9F4BD6DC8 /* Headers */,
+				5FB27415658D0D4C134FE6CCEA8E2B3F /* Sources */,
+				032C9D87D4CD9ACC3B274A89AC850D6C /* Frameworks */,
+				599353E9BCCD27D2450DD9CB48882AC9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2DC151E8635F8637CF0FCE25C35DAAC9 /* PBXTargetDependency */,
-				089387E645179140CAB7C317297687C1 /* PBXTargetDependency */,
-				F9E17AC459EAF816B20DF865745D7D1D /* PBXTargetDependency */,
-				282AABBBA754D398BA35A6EDDD5E2367 /* PBXTargetDependency */,
+				96938F76BB1615574BC79AC6AE073B36 /* PBXTargetDependency */,
+				F685EF8D8C2B5EFE4290B492446793FE /* PBXTargetDependency */,
+				0194BCEAE7B7A5DF72E8EF4A81224543 /* PBXTargetDependency */,
 			);
 			name = "Pods-Pop Up Circle Test";
 			productName = "Pods-Pop Up Circle Test";
-			productReference = 2F1435B22EC7FB1FA82562ACA03750B9 /* Pods_Pop_Up_Circle_Test.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */;
-			buildPhases = (
-				93F271AD7E26CF5BCFADCFB7A504897D /* Sources */,
-				66076240C2ED6C56B870D99D6432B3F4 /* Frameworks */,
-				7168AF4B49EE1459BCE8AC958F7EC526 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ActionSheetPicker-3.0";
-			productName = "ActionSheetPicker-3.0";
-			productReference = A05B7B0B8B6695954019FEC81C05A36A /* ActionSheetPicker_3_0.framework */;
+			productReference = 0082ABAD0B919F01FF42C77551B6EF59 /* Pods_Pop_Up_Circle_Test.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C894DF0753D475C9BC8D7ED0648F0B06 /* CHDayPicker */ = {
@@ -514,7 +363,7 @@
 			);
 			name = CHDayPicker;
 			productName = CHDayPicker;
-			productReference = 54C02A4E1B32091BA6FDF09A06221D12 /* CHDayPicker.framework */;
+			productReference = E8AFE0DC183780E2C95F4BBBE8D1B1FE /* CHDayPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */ = {
@@ -531,7 +380,7 @@
 			);
 			name = DLRadioButton;
 			productName = DLRadioButton;
-			productReference = E8B51C0DB41B67CF899893B8F212E913 /* DLRadioButton.framework */;
+			productReference = D661AC21004957AC73AEBD14E737F79B /* DLRadioButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -551,28 +400,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 25C18B01007AAFE468DAF83EEDA6C343 /* Products */;
+			productRefGroup = 2F79D37D46E7386896BE5EDC45C77DBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */,
 				C894DF0753D475C9BC8D7ED0648F0B06 /* CHDayPicker */,
 				F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */,
 				322428ECC8C5EC71F14C92233787C7AC /* KDCircularProgress */,
-				37EC62FA9640CEA8405107DA6363FA2F /* Pods-Pop Up Circle Test */,
+				7BDAF4F729540CA2670F71350B62E45A /* Pods-Pop Up Circle Test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04F1175F613E87C50434DD53122CCF09 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E187B1D5AA8A15FFCA230618C99EBA8F /* Pods-Pop Up Circle Test-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		408B6F023A76EEF3CE517B0CC969FD34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,29 +422,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FB27415658D0D4C134FE6CCEA8E2B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522A5FE708B445CDB6C4AE4AA09A447C /* Pods-Pop Up Circle Test-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F67A4B4F56469850BF8A099A6E12AE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5E7E0B70C0D1CCD0AC694A99E8324ECD /* DLRadioButton-dummy.m in Sources */,
 				EF2F59EEA3194DFCFB39352F4DA16D76 /* DLRadioButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F271AD7E26CF5BCFADCFB7A504897D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B867960879FDDD089A9E41F027E13B9 /* AbstractActionSheetPicker.m in Sources */,
-				E61ED7FAF083B75902728EB20AC4BD92 /* ActionSheetCustomPicker.m in Sources */,
-				1A0130E51AF422F68818416677EE6595 /* ActionSheetDatePicker.m in Sources */,
-				246DD685C951FFF04D55232211F076CD /* ActionSheetDistancePicker.m in Sources */,
-				430E0A46B42F47FF79AE16168D1613E9 /* ActionSheetLocalePicker.m in Sources */,
-				DA732A6C79E7252A25F23A1497ACD0FD /* ActionSheetMultipleStringPicker.m in Sources */,
-				29C34B43AFA7A1D88AB188801C76E08C /* ActionSheetPicker-3.0-dummy.m in Sources */,
-				C6CB72E223B27A0C2B06910EC0FADF67 /* ActionSheetStringPicker.m in Sources */,
-				3C8D2470783809376BA929A9603C21D9 /* DistancePickerView.m in Sources */,
-				E049CE807DA7A012BA222DE64920C3D1 /* SWActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,36 +451,69 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		089387E645179140CAB7C317297687C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CHDayPicker;
-			target = C894DF0753D475C9BC8D7ED0648F0B06 /* CHDayPicker */;
-			targetProxy = 44C0864111963AECDA841EE48DAED605 /* PBXContainerItemProxy */;
-		};
-		282AABBBA754D398BA35A6EDDD5E2367 /* PBXTargetDependency */ = {
+		0194BCEAE7B7A5DF72E8EF4A81224543 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KDCircularProgress;
 			target = 322428ECC8C5EC71F14C92233787C7AC /* KDCircularProgress */;
-			targetProxy = 603291699D455E7610DC8236D507BEB1 /* PBXContainerItemProxy */;
+			targetProxy = 10DED54E38056ED26615D892125A701F /* PBXContainerItemProxy */;
 		};
-		2DC151E8635F8637CF0FCE25C35DAAC9 /* PBXTargetDependency */ = {
+		96938F76BB1615574BC79AC6AE073B36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "ActionSheetPicker-3.0";
-			target = 965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */;
-			targetProxy = EACA6236018DC5EADB037DFC825B7FDC /* PBXContainerItemProxy */;
+			name = CHDayPicker;
+			target = C894DF0753D475C9BC8D7ED0648F0B06 /* CHDayPicker */;
+			targetProxy = 9D9D8A718EB0B3ECDEAC01603735D2EC /* PBXContainerItemProxy */;
 		};
-		F9E17AC459EAF816B20DF865745D7D1D /* PBXTargetDependency */ = {
+		F685EF8D8C2B5EFE4290B492446793FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DLRadioButton;
 			target = F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */;
-			targetProxy = 20FA408B2344D632200A523F58EBB8C2 /* PBXContainerItemProxy */;
+			targetProxy = FCDF27F9B8FAACB2C84FAFA133E82854 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		04FB448DF03E5BF45A32EDD3C2804665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48546B5D2A8E8742039EA5DADAECEEB /* Pods-Pop Up Circle Test.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pop Up Circle Test/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pop_Up_Circle_Test;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1457A8631B049858038486315618F833 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BFFC01DEB21A956C5C2FE7EC841F2EB /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = 8E7B3776A7123A4E47B5420C19DA5810 /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -730,7 +594,7 @@
 		};
 		27B74B88F4D575AD3FFC1955853C5269 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F52D3D2E3CF04ACE62CF910B3BB3B71F /* KDCircularProgress.xcconfig */;
+			baseConfigurationReference = 526966196726E26CB862351EE115F18A /* KDCircularProgress.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -765,7 +629,7 @@
 		};
 		3DE03AA954ED8B5334EAFA2BA22C633E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1738640003615AFBFE6D157EF794CD6D /* CHDayPicker.xcconfig */;
+			baseConfigurationReference = 40B98413EA2C4CEB824A6A83475CA35E /* CHDayPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -798,47 +662,9 @@
 			};
 			name = Debug;
 		};
-		4F6CB8D1E13BB316CBC4C6AD41CCE768 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 143BBEA8BA8530B469FA9D99D2B0817C /* Pods-Pop Up Circle Test.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Pop Up Circle Test/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Pop_Up_Circle_Test;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		6D3D8B8E8ED06AC442275CAEF1DD8729 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1738640003615AFBFE6D157EF794CD6D /* CHDayPicker.xcconfig */;
+			baseConfigurationReference = 40B98413EA2C4CEB824A6A83475CA35E /* CHDayPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -916,7 +742,7 @@
 		};
 		70CB89E962178C29C09B95ED621FA938 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F52D3D2E3CF04ACE62CF910B3BB3B71F /* KDCircularProgress.xcconfig */;
+			baseConfigurationReference = 526966196726E26CB862351EE115F18A /* KDCircularProgress.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -950,7 +776,7 @@
 		};
 		858E8C16C859AF0A0F923A9093AD8419 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BFFC01DEB21A956C5C2FE7EC841F2EB /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = 8E7B3776A7123A4E47B5420C19DA5810 /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -981,81 +807,9 @@
 			};
 			name = Debug;
 		};
-		9370935A7350D416496730F0B5390392 /* Debug */ = {
+		F1A08A27B91736F00ADCB2A6CD1F52E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E48546B5D2A8E8742039EA5DADAECEEB /* Pods-Pop Up Circle Test.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Pop Up Circle Test/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Pop_Up_Circle_Test;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B4665781EC92C62C6771731BEC0CEEB7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D8C388D67E4AB91535C13E0C724B4CC /* ActionSheetPicker-3.0.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ActionSheetPicker_3_0;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F681578D57E3DE41219174EB22678D91 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D8C388D67E4AB91535C13E0C724B4CC /* ActionSheetPicker-3.0.xcconfig */;
+			baseConfigurationReference = 143BBEA8BA8530B469FA9D99D2B0817C /* Pods-Pop Up Circle Test.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1069,16 +823,21 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pop Up Circle Test/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ActionSheetPicker_3_0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pop_Up_Circle_Test;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1116,11 +875,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */ = {
+		C5E7146DD6B0B1AF7EE30B660ADAFD8F /* Build configuration list for PBXNativeTarget "Pods-Pop Up Circle Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4665781EC92C62C6771731BEC0CEEB7 /* Debug */,
-				F681578D57E3DE41219174EB22678D91 /* Release */,
+				04FB448DF03E5BF45A32EDD3C2804665 /* Debug */,
+				F1A08A27B91736F00ADCB2A6CD1F52E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1130,15 +889,6 @@
 			buildConfigurations = (
 				27B74B88F4D575AD3FFC1955853C5269 /* Debug */,
 				70CB89E962178C29C09B95ED621FA938 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFC12390315A4E0E322FB5E8716BF360 /* Build configuration list for PBXNativeTarget "Pods-Pop Up Circle Test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9370935A7350D416496730F0B5390392 /* Debug */,
-				4F6CB8D1E13BB316CBC4C6AD41CCE768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

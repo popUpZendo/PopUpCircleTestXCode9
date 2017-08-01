@@ -11,9 +11,5 @@ pod 'KDCircularProgress'
 pod 'DLRadioButton', '~> 1.4'
 pod 'CHDayPicker', '~> 1.0'
 
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
-pod 'ActionSheetPicker-3.0'
-
 
 end
