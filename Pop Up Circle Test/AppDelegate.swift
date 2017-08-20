@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 import UserNotifications
+import Firebase
+import FirebaseInstanceID
+//import FirebaseMessaging
 
 
 
@@ -35,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         self.addCategory()
+        
+        FirebaseApp.configure()
         
         return true
         
