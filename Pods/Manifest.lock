@@ -128,6 +128,7 @@ DEPENDENCIES:
   - DLRadioButton (~> 1.4)
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
   - Firebase/Messaging
   - FirebaseUI (~> 4.0)
   - GoogleSignIn
@@ -162,6 +163,6 @@ SPEC CHECKSUMS:
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
   TwitterKit: 97e729ceea041d174126235bf6ff67dcf37772d4
 
-PODFILE CHECKSUM: 3562579270f8a84a5d393b86fbd86a0fe52456c2
+PODFILE CHECKSUM: 70719e4783d9785293e0e9b182f0a65ba9e88860
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.1.1
