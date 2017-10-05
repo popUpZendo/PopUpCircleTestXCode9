@@ -27,6 +27,10 @@
 		D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D793B3581F1CD27D007708FC /* templeBell.mp3 */; };
 		D7AECA0B1F45185F007BA64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7AECA0A1F45185F007BA64F /* GoogleService-Info.plist */; };
 		D7B8D8B21F8568AB002DB434 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8B11F8568AB002DB434 /* Identifiers.swift */; };
+		D7B8D8B91F857317002DB434 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8B71F857317002DB434 /* ChannelVC.swift */; };
+		D7B8D8BA1F857317002DB434 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8B81F857317002DB434 /* ChatVC.swift */; };
+		D7B8D8BF1F858327002DB434 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8BE1F858327002DB434 /* SWRevealViewController.m */; };
+		D7B8D8C31F85A30B002DB434 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8C21F85A30B002DB434 /* GradientView.swift */; };
 		D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */; };
 		D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */; };
 		D7CC875E1F00BEB60089A806 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */; };
@@ -63,6 +67,12 @@
 		D793B3581F1CD27D007708FC /* templeBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = templeBell.mp3; path = ../../../Downloads/templeBell.mp3; sourceTree = "<group>"; };
 		D7AECA0A1F45185F007BA64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/BCDEC555-CFA2-4674-869C-56A0C13AD21B/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7B8D8B11F8568AB002DB434 /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiers.swift; path = ../../Identifiers.swift; sourceTree = "<group>"; };
+		D7B8D8B71F857317002DB434 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		D7B8D8B81F857317002DB434 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		D7B8D8BC1F858325002DB434 /* Pop Up Circle Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pop Up Circle Test-Bridging-Header.h"; sourceTree = "<group>"; };
+		D7B8D8BD1F858326002DB434 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		D7B8D8BE1F858327002DB434 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D7B8D8C21F85A30B002DB434 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D7CC87571F00BEB60089A806 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7CC87581F00BEB60089A806 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7CC875A1F00BEB60089A806 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 				D703D4AB1F0401DE00580685 /* Resources */,
 				D73011E01EFB33EA003D637A /* Model */,
 				D73011E11EFB33FA003D637A /* View */,
+				D7B8D8B31F8572DD002DB434 /* Supporting Files */,
 				D73011E21EFB3400003D637A /* Controller */,
 				D73011CB1EFB3381003D637A /* AppDelegate.swift */,
 				D73011D51EFB3381003D637A /* Assets.xcassets */,
@@ -175,6 +186,7 @@
 				D703D49B1F01ACB500580685 /* MaterialView.swift */,
 				D703D49C1F01ACB500580685 /* ItemCell.swift */,
 				D703D49D1F01ACB500580685 /* CustomTextField.swift */,
+				D7B8D8C21F85A30B002DB434 /* GradientView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,6 +194,8 @@
 		D73011E21EFB3400003D637A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D7B8D8B71F857317002DB434 /* ChannelVC.swift */,
+				D7B8D8B81F857317002DB434 /* ChatVC.swift */,
 				D7079F201F0611DD00026B21 /* VideoVC.swift */,
 				D7079F2A1F06B91100026B21 /* LearningVC.swift */,
 				D7CC87671F00BEFD0089A806 /* MainVC.swift */,
@@ -200,6 +214,16 @@
 				D7CC87621F00BEC50089A806 /* Store+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		D7B8D8B31F8572DD002DB434 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7B8D8BD1F858326002DB434 /* SWRevealViewController.h */,
+				D7B8D8BE1F858327002DB434 /* SWRevealViewController.m */,
+				D7B8D8BC1F858325002DB434 /* Pop Up Circle Test-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +262,7 @@
 					D73011C71EFB3381003D637A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 93HG3CWZZK;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -337,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B8D8BA1F857317002DB434 /* ChatVC.swift in Sources */,
 				D7E3F72B1F15857A00537EB1 /* Item+CoreDataProperties.swift in Sources */,
 				D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */,
 				D7079F251F06127500026B21 /* DharmaRock.swift in Sources */,
@@ -347,6 +372,7 @@
 				D703D49E1F01ACB500580685 /* MaterialView.swift in Sources */,
 				D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */,
 				D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */,
+				D7B8D8BF1F858327002DB434 /* SWRevealViewController.m in Sources */,
 				D7079F241F06127500026B21 /* DharmaCell.swift in Sources */,
 				D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */,
 				D703D4A21F01D11100580685 /* DreamLister.xcdatamodel in Sources */,
@@ -356,6 +382,8 @@
 				D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */,
 				D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */,
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
+				D7B8D8B91F857317002DB434 /* ChannelVC.swift in Sources */,
+				D7B8D8C31F85A30B002DB434 /* GradientView.swift in Sources */,
 				D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */,
 				D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */,
 			);
@@ -495,6 +523,7 @@
 			baseConfigurationReference = DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Pop Up Circle Test/Pop Up Circle Test.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 93HG3CWZZK;
@@ -605,6 +634,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pop Up Circle Test/Supporting Files/Pop Up Circle Test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
 			};
@@ -615,6 +646,7 @@
 			baseConfigurationReference = B75A63C4C7962CCF16EF68C3 /* Pods-Pop Up Circle Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Pop Up Circle Test/Pop Up Circle Test.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 93HG3CWZZK;
@@ -725,6 +757,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.popupzendo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pop Up Circle Test/Supporting Files/Pop Up Circle Test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 3.0;
