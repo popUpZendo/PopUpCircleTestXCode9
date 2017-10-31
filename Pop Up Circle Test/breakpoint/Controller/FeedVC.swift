@@ -11,11 +11,17 @@ import UIKit
 class FeedVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var menuBtn: UIButton!
     
     var messageArray = [Message]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
+        
         tableView.delegate = self
         tableView.dataSource = self
     }

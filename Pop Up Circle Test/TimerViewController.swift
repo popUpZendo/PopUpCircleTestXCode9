@@ -36,7 +36,9 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        backButton.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
         
         countDownLabel.isHidden = true
         UIApplication.shared.isIdleTimerDisabled = true
@@ -73,12 +75,13 @@ class TimerViewController: UIViewController {
     
    
     @IBAction func lightSwitch(_ sender: UISwipeGestureRecognizer) {
+        if self.view.backgroundColor != UIColor.darkGray{
+        
         self.view.backgroundColor = UIColor.darkGray
+        } else {
+        self.view.backgroundColor = UIColor.white
+        }
     }
-    
-    
-    
-    
     
     @IBAction func goBackToOneButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "unwindSegueToVC1", sender: self)

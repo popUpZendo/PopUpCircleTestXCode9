@@ -12,10 +12,16 @@ class GroupsVC: UIViewController {
 
     @IBOutlet weak var groupsTableView: UITableView!
     
+    @IBOutlet weak var menuBtn: UIButton!
     var groupsArray = [Group]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
+        
         groupsTableView.delegate = self
         groupsTableView.dataSource = self
     }

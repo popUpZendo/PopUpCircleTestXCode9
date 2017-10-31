@@ -11,6 +11,7 @@ import UIKit
 class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var menuBtn: UIButton!
     
     
     var dharmaRocks = [DharmaRock]()
@@ -20,6 +21,10 @@ class LearningVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
      
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
         
         let p1 = DharmaRock(imageURL: "https://i.ytimg.com/vi/fGCo_wx97mo/hqdefault.jpg?custom=true&w=336&h=188&stc=true&jpg444=true&jpgq=90&sp=68&sigh=xopfv2vIENsZG4NMuyBZ0MxAE24", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fGCo_wx97mo\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "This is Water", details: "What is Zen in real life terms?", contentURL: "http://americablog.com/2015/05/this-is-water-what-david-foster-wallace-wanted-us-to-think-about.html")
         let p2 = DharmaRock(imageURL: "https://i.ytimg.com/vi/vbLEf4HR74E/hqdefault.jpg?custom=true&w=336&h=188&stc=true&jpg444=true&jpgq=90&sp=68&sigh=xopfv2vIENsZG4NMuyBZ0MxAE24", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vbLEf4HR74E\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "The Habits of Happiness", details: "A simple practice that can change a life", contentURL: "http://www.thewayofmeditation.com.au/blog/worlds-happiest-man/")

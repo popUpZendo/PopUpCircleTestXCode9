@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.addCategory()
         
         FirebaseApp.configure()
+        Database.database().isPersistenceEnabled = true
         
         if Auth.auth().currentUser == nil {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)

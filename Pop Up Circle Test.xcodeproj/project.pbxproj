@@ -19,14 +19,16 @@
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
 		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
-		D73011D61EFB3381003D637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73011D51EFB3381003D637A /* Assets.xcassets */; };
 		D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011D71EFB3381003D637A /* LaunchScreen.storyboard */; };
 		D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F71EFC1E70003D637A /* zazenBell3.mp3 */; };
 		D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */; };
-		D76938281F1FA14700EE83A2 /* LovelyBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76938271F1FA14600EE83A2 /* LovelyBell.mp3 */; };
+		D74464041FA8DE580081D6BF /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74464031FA8DE580081D6BF /* Identifiers.swift */; };
+		D744640A1FA8E2890081D6BF /* LovelyBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D74464091FA8E2890081D6BF /* LovelyBell.mp3 */; };
+		D7541F671F8E8F5E0096FDA8 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7541F661F8E8F5E0096FDA8 /* StorageService.swift */; };
+		D7541F691F8E90FB0096FDA8 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7541F681F8E90FB0096FDA8 /* PostService.swift */; };
+		D764DD201F9FC1770039B121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D764DD1F1F9FC1760039B121 /* Assets.xcassets */; };
 		D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D793B3581F1CD27D007708FC /* templeBell.mp3 */; };
 		D7AECA0B1F45185F007BA64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7AECA0A1F45185F007BA64F /* GoogleService-Info.plist */; };
-		D7B8D8B21F8568AB002DB434 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8B11F8568AB002DB434 /* Identifiers.swift */; };
 		D7B8D8B91F857317002DB434 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8B71F857317002DB434 /* ChannelVC.swift */; };
 		D7B8D8BA1F857317002DB434 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8B81F857317002DB434 /* ChatVC.swift */; };
 		D7B8D8BF1F858327002DB434 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8BE1F858327002DB434 /* SWRevealViewController.m */; };
@@ -61,6 +63,7 @@
 		D7CC876A1F00BEFD0089A806 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC87681F00BEFD0089A806 /* ItemDetailsVC.swift */; };
 		D7E3F7291F15856100537EB1 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3F7281F15856000537EB1 /* Item+CoreDataClass.swift */; };
 		D7E3F72B1F15857A00537EB1 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3F72A1F15857A00537EB1 /* Item+CoreDataProperties.swift */; };
+		D7EB74781F8701CF00498F78 /* Buddha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EB74771F8701CF00498F78 /* Buddha.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,15 +81,17 @@
 		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73011CD1EFB3381003D637A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		D73011D01EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D73011D51EFB3381003D637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73011D81EFB3381003D637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73011DA1EFB3381003D637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73011F71EFC1E70003D637A /* zazenBell3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell3.mp3; sourceTree = "<group>"; };
 		D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zazenBell1.mp3; sourceTree = "<group>"; };
-		D76938271F1FA14600EE83A2 /* LovelyBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = LovelyBell.mp3; path = "../../Om Design/Pop Up Zendo/Sound/LovelyBell.mp3"; sourceTree = "<group>"; };
+		D74464031FA8DE580081D6BF /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		D74464091FA8E2890081D6BF /* LovelyBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = LovelyBell.mp3; path = "../../../Documents/Pop Up Zendo/Sound/LovelyBell.mp3"; sourceTree = "<group>"; };
+		D7541F661F8E8F5E0096FDA8 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		D7541F681F8E90FB0096FDA8 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		D764DD1F1F9FC1760039B121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D793B3581F1CD27D007708FC /* templeBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = templeBell.mp3; path = ../../../Downloads/templeBell.mp3; sourceTree = "<group>"; };
 		D7AECA0A1F45185F007BA64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/BCDEC555-CFA2-4674-869C-56A0C13AD21B/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D7B8D8B11F8568AB002DB434 /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiers.swift; path = ../../Identifiers.swift; sourceTree = "<group>"; };
 		D7B8D8B71F857317002DB434 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		D7B8D8B81F857317002DB434 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		D7B8D8BC1F858325002DB434 /* Pop Up Circle Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pop Up Circle Test-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -124,6 +129,7 @@
 		D7E3F7261F15696F00537EB1 /* Pop Up Circle Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pop Up Circle Test.entitlements"; sourceTree = "<group>"; };
 		D7E3F7281F15856000537EB1 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D7E3F72A1F15857A00537EB1 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D7EB74771F8701CF00498F78 /* Buddha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buddha.swift; sourceTree = "<group>"; };
 		DE80D793CE7B03509F2A6603 /* Pods-Pop Up Circle Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pop Up Circle Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pop Up Circle Test/Pods-Pop Up Circle Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				D73011F91EFC1E8C003D637A /* zazenBell1.mp3 */,
+				D74464091FA8E2890081D6BF /* LovelyBell.mp3 */,
 				D73011F71EFC1E70003D637A /* zazenBell3.mp3 */,
-				D76938271F1FA14600EE83A2 /* LovelyBell.mp3 */,
 				D793B3581F1CD27D007708FC /* templeBell.mp3 */,
 			);
 			name = Resources;
@@ -188,6 +194,7 @@
 		D73011CA1EFB3381003D637A /* Pop Up Circle Test */ = {
 			isa = PBXGroup;
 			children = (
+				D764DD1F1F9FC1760039B121 /* Assets.xcassets */,
 				D7E3F7261F15696F00537EB1 /* Pop Up Circle Test.entitlements */,
 				D7B8D8C41F86761A002DB434 /* breakpoint */,
 				D703D4AB1F0401DE00580685 /* Resources */,
@@ -196,7 +203,6 @@
 				D7B8D8B31F8572DD002DB434 /* Supporting Files */,
 				D73011E21EFB3400003D637A /* Controller */,
 				D73011CB1EFB3381003D637A /* AppDelegate.swift */,
-				D73011D51EFB3381003D637A /* Assets.xcassets */,
 				D73011CF1EFB3381003D637A /* Main.storyboard */,
 				D73011D71EFB3381003D637A /* LaunchScreen.storyboard */,
 				D73011DA1EFB3381003D637A /* Info.plist */,
@@ -221,7 +227,7 @@
 		D73011E11EFB33FA003D637A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D7B8D8B11F8568AB002DB434 /* Identifiers.swift */,
+				D74464031FA8DE580081D6BF /* Identifiers.swift */,
 				D7079F221F06127500026B21 /* DharmaCell.swift */,
 				D7079F231F06127500026B21 /* DharmaRock.swift */,
 				D703D49B1F01ACB500580685 /* MaterialView.swift */,
@@ -308,6 +314,7 @@
 			children = (
 				D7B8D8D21F86761A002DB434 /* Group.swift */,
 				D7B8D8D31F86761A002DB434 /* Message.swift */,
+				D7EB74771F8701CF00498F78 /* Buddha.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +324,8 @@
 			children = (
 				D7B8D8D51F86761A002DB434 /* AuthService.swift */,
 				D7B8D8D61F86761A002DB434 /* DataService.swift */,
+				D7541F661F8E8F5E0096FDA8 /* StorageService.swift */,
+				D7541F681F8E90FB0096FDA8 /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -407,10 +416,10 @@
 				D7AECA0B1F45185F007BA64F /* GoogleService-Info.plist in Resources */,
 				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
 				D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */,
-				D73011D61EFB3381003D637A /* Assets.xcassets in Resources */,
 				D793B3591F1CD27D007708FC /* templeBell.mp3 in Resources */,
 				D73011D11EFB3381003D637A /* Main.storyboard in Resources */,
-				D76938281F1FA14700EE83A2 /* LovelyBell.mp3 in Resources */,
+				D744640A1FA8E2890081D6BF /* LovelyBell.mp3 in Resources */,
+				D764DD201F9FC1770039B121 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +484,6 @@
 				D7079F251F06127500026B21 /* DharmaRock.swift in Sources */,
 				D7B8D8E31F86761B002DB434 /* GroupsVC.swift in Sources */,
 				D7079F211F0611DD00026B21 /* VideoVC.swift in Sources */,
-				D7B8D8B21F8568AB002DB434 /* Identifiers.swift in Sources */,
 				D7B8D8E71F86761B002DB434 /* UIViewExt.swift in Sources */,
 				D7B8D8E51F86761B002DB434 /* MeVC.swift in Sources */,
 				D7B8D8DE1F86761B002DB434 /* AuthVC.swift in Sources */,
@@ -488,6 +496,7 @@
 				D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */,
 				D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */,
 				D7B8D8BF1F858327002DB434 /* SWRevealViewController.m in Sources */,
+				D7541F691F8E90FB0096FDA8 /* PostService.swift in Sources */,
 				D7B8D8E11F86761B002DB434 /* FeedVC.swift in Sources */,
 				D7079F241F06127500026B21 /* DharmaCell.swift in Sources */,
 				D7B8D8ED1F86761B002DB434 /* GroupCell.swift in Sources */,
@@ -500,8 +509,10 @@
 				D7CC87691F00BEFD0089A806 /* MainVC.swift in Sources */,
 				D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */,
 				D7B8D8EA1F86761B002DB434 /* AuthService.swift in Sources */,
+				D7EB74781F8701CF00498F78 /* Buddha.swift in Sources */,
 				D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */,
 				D7B8D8EB1F86761B002DB434 /* DataService.swift in Sources */,
+				D74464041FA8DE580081D6BF /* Identifiers.swift in Sources */,
 				D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */,
 				D7B8D8E81F86761B002DB434 /* Group.swift in Sources */,
 				D7B8D8E91F86761B002DB434 /* Message.swift in Sources */,
@@ -509,6 +520,7 @@
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
 				D7B8D8E41F86761B002DB434 /* LoginVC.swift in Sources */,
 				D7B8D8B91F857317002DB434 /* ChannelVC.swift in Sources */,
+				D7541F671F8E8F5E0096FDA8 /* StorageService.swift in Sources */,
 				D7B8D8C31F85A30B002DB434 /* GradientView.swift in Sources */,
 				D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */,
 				D7B8D8EF1F86761B002DB434 /* InsetTextField.swift in Sources */,

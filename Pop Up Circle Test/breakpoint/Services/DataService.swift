@@ -18,6 +18,7 @@ class DataService {
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_GROUPS = DB_BASE.child("groups")
     private var _REF_FEED = DB_BASE.child("feed")
+    private var _REF_BUDDHA = DB_BASE.child("Buddha")
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
@@ -33,6 +34,10 @@ class DataService {
     
     var REF_FEED: DatabaseReference {
         return _REF_FEED
+    }
+    
+    var REF_BUDDHA: DatabaseReference {
+        return _REF_BUDDHA
     }
     
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
@@ -59,6 +64,17 @@ class DataService {
             sendComplete(true)
         }
     }
+    
+    func uploadBuddha(withMessage message: String, forUID uid: String, withBuddhaKey buddhaKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+        if buddhaKey != nil {
+            REF_BUDDHA.child(buddhaKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            sendComplete(true)
+        } else {
+            REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            sendComplete(true)
+        }
+    }
+    
     
     func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()) {
         var messageArray = [Message]()
@@ -155,6 +171,24 @@ class DataService {
         handler(groupsArray)
         }
     }
+    
+//    func getBuddha(handler: @escaping (_ buddhaArray: [Buddha]) -> ()) {
+//        var buddhaArray = [Buddha]()
+//        REF_BUDDHA.observeSingleEvent(of: .value) { (buddhaSnapshot) in
+//            guard let buddhaSnapshot = buddhaSnapshot.children.allObjects as? [DataSnapshot] else { return}
+//            for buddha in buddhaSnapshot {
+//                let memberArray = buddha.childSnapshot(forPath: "members").value as! [String]
+//                if buddhaArray.contains((Auth.auth().currentUser?.uid)!) {
+//                    let name = buddha.childSnapshot(forPath: "name").value as! String
+//                    let popUpGroup = buddha.childSnapshot(forPath: "popUpGroup").value as! String
+//                    let buddha = Buddha(name: name, city: city, key: key, temple: temple, popUpGroup: popUpGroup, teacher: teacher, practice: practice)
+//                    buddhaArray.append(buddha)
+//                }
+//            }
+//            handler(buddhaArray)
+//        }
+//    }
+//
 }
 
 
