@@ -1,0 +1,399 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GroupCell"
+provides-nominal:
+- "18Pop_Up_Circle_Test9GroupCellC"
+provides-member:
+- ["18Pop_Up_Circle_Test9GroupCellC", ""]
+provides-dynamic-lookup:
+- "configureCell"
+- "groupDescLbl"
+- "groupTitleLbl"
+- "memberCountLbl"
+depends-top-level:
+- "AssignmentPrecedence"
+- "GroupCell"
+- "Int"
+- "String"
+- !private "StringLiteralType"
+- "UILabel"
+- "UITableViewCell"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So15CALayerDelegateP", "groupDescLbl"]
+- !private ["So15CALayerDelegateP", "groupTitleLbl"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "memberCountLbl"]
+- !private ["So15CALayerDelegateP", "text"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "groupDescLbl"]
+- !private ["s7CVarArgP", "groupTitleLbl"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "memberCountLbl"]
+- !private ["s7CVarArgP", "text"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "groupDescLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "groupTitleLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "memberCountLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "groupDescLbl"]
+- !private ["s23CustomStringConvertibleP", "groupTitleLbl"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "memberCountLbl"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "groupDescLbl"]
+- !private ["s9EquatableP", "groupTitleLbl"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "memberCountLbl"]
+- !private ["s9EquatableP", "text"]
+- ["s9EquatableP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "Int"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "String"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "UILabel"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "configureCell"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "deinit"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "groupDescLbl"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "groupTitleLbl"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "init"]
+- ["18Pop_Up_Circle_Test9GroupCellC", "memberCountLbl"]
+- !private ["s8HashableP", "groupDescLbl"]
+- !private ["s8HashableP", "groupTitleLbl"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "memberCountLbl"]
+- !private ["s8HashableP", "text"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "groupDescLbl"]
+- !private ["So8NSCodingP", "groupTitleLbl"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "memberCountLbl"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "configureCell"]
+- ["So8NSObjectC", "groupDescLbl"]
+- ["So8NSObjectC", "groupTitleLbl"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "memberCountLbl"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So16NSObjectProtocolP", "groupDescLbl"]
+- !private ["So16NSObjectProtocolP", "groupTitleLbl"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "memberCountLbl"]
+- !private ["So16NSObjectProtocolP", "text"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "groupDescLbl"]
+- !private ["So29UIAccessibilityIdentificationP", "groupTitleLbl"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "memberCountLbl"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "groupDescLbl"]
+- !private ["So12UIAppearanceP", "groupTitleLbl"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "memberCountLbl"]
+- !private ["So12UIAppearanceP", "text"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "groupDescLbl"]
+- !private ["So21UIAppearanceContainerP", "groupTitleLbl"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "memberCountLbl"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "groupDescLbl"]
+- !private ["So17UICoordinateSpaceP", "groupTitleLbl"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "memberCountLbl"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "groupDescLbl"]
+- !private ["So13UIDynamicItemP", "groupTitleLbl"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "memberCountLbl"]
+- !private ["So13UIDynamicItemP", "text"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "groupDescLbl"]
+- !private ["So18UIFocusEnvironmentP", "groupTitleLbl"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "memberCountLbl"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "groupDescLbl"]
+- !private ["So11UIFocusItemP", "groupTitleLbl"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "memberCountLbl"]
+- !private ["So11UIFocusItemP", "text"]
+- ["So11UIFocusItemP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "groupDescLbl"]
+- !private ["So27UIGestureRecognizerDelegateP", "groupTitleLbl"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "memberCountLbl"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "groupDescLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "groupTitleLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "memberCountLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "configureCell"]
+- ["So11UIResponderC", "groupDescLbl"]
+- ["So11UIResponderC", "groupTitleLbl"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "memberCountLbl"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "groupDescLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "groupTitleLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "memberCountLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So15UITableViewCellC", "Int"]
+- ["So15UITableViewCellC", "String"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "configureCell"]
+- ["So15UITableViewCellC", "groupDescLbl"]
+- ["So15UITableViewCellC", "groupTitleLbl"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "memberCountLbl"]
+- ["So15UITableViewCellC", ""]
+- !private ["So18UITraitEnvironmentP", "groupDescLbl"]
+- !private ["So18UITraitEnvironmentP", "groupTitleLbl"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "memberCountLbl"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "Int"]
+- ["So6UIViewC", "String"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "configureCell"]
+- ["So6UIViewC", "groupDescLbl"]
+- ["So6UIViewC", "groupTitleLbl"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "memberCountLbl"]
+- !private ["So6UIViewC", "text"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "groupDescLbl"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "groupTitleLbl"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "memberCountLbl"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "groupDescLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "groupTitleLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "memberCountLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "18Pop_Up_Circle_Test9GroupCellC"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "s23_BidirectionalIndexableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules/KDCircularProgress.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pop Up Circle Test/Supporting Files/Pop Up Circle Test-Bridging-Header.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pop Up Circle Test/Supporting Files/SWRevealViewController.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-Swift.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "76a9b371e773e1d6ca73b2278c8d0d60"

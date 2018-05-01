@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Protobuf</string>
+	<string>FirebaseCore</string>
+	<string>Bolts</string>
+	<string>libkern</string>
+	<string>FirebaseStorage</string>
+	<string>ImageIO</string>
+	<string>StoreKit</string>
+	<string>FirebaseDatabase</string>
+	<string>GTMSessionFetcherOSX</string>
+	<string>Firebase</string>
+	<string>SafariServices</string>
+	<string>mach</string>
+	<string>AVFoundation</string>
+	<string>FirebaseMessaging</string>
+	<string>GoogleMobileAds</string>
+	<string>MobileCoreServices</string>
+	<string>WatchKit</string>
+	<string>FirebaseInstanceID</string>
+	<string>CoreText</string>
+	<string>AdSupport</string>
+	<string>FBSDKLoginKit</string>
+	<string>FirebaseAuth</string>
+	<string>SDWebImage</string>
+	<string>FirebaseInvites</string>
+	<string>AppKit</string>
+	<string>FBSDKCoreKit</string>
+	<string>CoreFoundation</string>
+	<string>FirebaseAppIndexing</string>
+	<string>Cocoa</string>
+	<string>FirebasePerformance</string>
+	<string>Accounts</string>
+	<string>CoreData</string>
+	<string>KDCircularProgress</string>
+	<string>CommonCrypto</string>
+	<string>FirebaseRemoteConfig</string>
+	<string>DLRadioButton</string>
+	<string>FirebaseCrash</string>
+	<string>GTMSessionFetcher</string>
+	<string>AudioToolbox</string>
+	<string>QuartzCore</string>
+	<string>SystemConfiguration</string>
+	<string>FirebaseAnalytics</string>
+	<string>Security</string>
+	<string>CoreGraphics</string>
+	<string>GTMSessionFetcherIOS</string>
+	<string>objc</string>
+	<string>FirebaseDynamicLinks</string>
+	<string>UserNotifications</string>
+	<string>UIKit</string>
+	<string>CoreTelephony</string>
+	<string>Foundation</string>
+	<string>sys</string>
+</array>
+</plist>

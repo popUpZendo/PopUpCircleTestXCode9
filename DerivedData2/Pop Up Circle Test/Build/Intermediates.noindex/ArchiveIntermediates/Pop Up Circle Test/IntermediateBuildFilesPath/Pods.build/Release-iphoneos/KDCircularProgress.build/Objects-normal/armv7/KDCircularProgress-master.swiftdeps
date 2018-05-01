@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "3902a81d74f28d9e6ae2ecc8a1bc2c37"
+build_time: [1522205537, 407149000]
+inputs:
+  "/Users/josephhall/Desktop/Code/PopUpCircleTestXCode9 copy/Pods/KDCircularProgress/KDCircularProgress/KDCircularProgress.swift": [9223372036, 854775807]

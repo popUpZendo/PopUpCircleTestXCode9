@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6F815BCBF7497B5644EE56327100D64A17CA68C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6F815BCBF7497B5644EE56327100D64A17CA68C6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0DF017AE-3416-42B7-8609-8131718A3899",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6F815BCBF7497B5644EE56327100D64A17CA68C6" : "PopUpCircleTestXCode9%20copy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Pop Up Circle Test",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Pop Up Circle Test.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/popUpZendo\/PopUpCircleTestXCode9",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F815BCBF7497B5644EE56327100D64A17CA68C6"
+    }
+  ]
+}
