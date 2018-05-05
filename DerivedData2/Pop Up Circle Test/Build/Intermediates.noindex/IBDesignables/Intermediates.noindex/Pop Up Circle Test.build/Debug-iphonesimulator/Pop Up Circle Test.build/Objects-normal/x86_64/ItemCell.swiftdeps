@@ -22,6 +22,7 @@ depends-top-level:
 - "UILabel"
 - "UITableViewCell"
 depends-member:
+- ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "details"]
 - !private ["So15CALayerDelegateP", "eTime"]
 - !private ["So15CALayerDelegateP", "image"]
@@ -30,7 +31,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "thumb"]
 - !private ["So15CALayerDelegateP", "title"]
-- ["So15CALayerDelegateP", ""]
+- ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "details"]
 - !private ["s7CVarArgP", "eTime"]
 - !private ["s7CVarArgP", "image"]
@@ -41,7 +42,7 @@ depends-member:
 - !private ["s7CVarArgP", "time"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "toImage"]
-- ["s7CVarArgP", ""]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "details"]
 - !private ["s28CustomDebugStringConvertibleP", "eTime"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
@@ -52,7 +53,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "time"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "toImage"]
-- ["s28CustomDebugStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "details"]
 - !private ["s23CustomStringConvertibleP", "eTime"]
 - !private ["s23CustomStringConvertibleP", "image"]
@@ -63,7 +64,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "time"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "toImage"]
-- ["s23CustomStringConvertibleP", ""]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "details"]
 - !private ["s9EquatableP", "eTime"]
 - !private ["s9EquatableP", "image"]
@@ -74,7 +75,7 @@ depends-member:
 - !private ["s9EquatableP", "time"]
 - !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "toImage"]
-- ["s9EquatableP", ""]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "details"]
 - !private ["s8HashableP", "eTime"]
 - !private ["s8HashableP", "image"]
@@ -85,7 +86,6 @@ depends-member:
 - !private ["s8HashableP", "time"]
 - !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "toImage"]
-- ["s8HashableP", ""]
 - !private ["18Pop_Up_Circle_Test5ImageC", "image"]
 - !private ["18Pop_Up_Circle_Test4ItemC", "details"]
 - !private ["18Pop_Up_Circle_Test4ItemC", "location"]
@@ -104,6 +104,7 @@ depends-member:
 - ["18Pop_Up_Circle_Test8ItemCellC", "location"]
 - ["18Pop_Up_Circle_Test8ItemCellC", "thumb"]
 - ["18Pop_Up_Circle_Test8ItemCellC", "title"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "details"]
 - !private ["So8NSCodingP", "eTime"]
 - !private ["So8NSCodingP", "image"]
@@ -112,7 +113,6 @@ depends-member:
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "thumb"]
 - !private ["So8NSCodingP", "title"]
-- ["So8NSCodingP", ""]
 - !private ["So20NSFetchRequestResultP", "details"]
 - !private ["So20NSFetchRequestResultP", "image"]
 - !private ["So20NSFetchRequestResultP", "location"]
@@ -140,6 +140,7 @@ depends-member:
 - !private ["So8NSObjectC", "time"]
 - ["So8NSObjectC", "title"]
 - !private ["So8NSObjectC", "toImage"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "details"]
 - !private ["So16NSObjectProtocolP", "eTime"]
 - !private ["So16NSObjectProtocolP", "image"]
@@ -150,8 +151,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "time"]
 - !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "toImage"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "details"]
 - !private ["So29UIAccessibilityIdentificationP", "eTime"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
@@ -160,7 +161,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "thumb"]
 - !private ["So29UIAccessibilityIdentificationP", "title"]
-- ["So29UIAccessibilityIdentificationP", ""]
+- ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "details"]
 - !private ["So12UIAppearanceP", "eTime"]
 - !private ["So12UIAppearanceP", "image"]
@@ -169,7 +170,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "thumb"]
 - !private ["So12UIAppearanceP", "title"]
-- ["So12UIAppearanceP", ""]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "details"]
 - !private ["So21UIAppearanceContainerP", "eTime"]
 - !private ["So21UIAppearanceContainerP", "image"]
@@ -178,8 +179,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "thumb"]
 - !private ["So21UIAppearanceContainerP", "title"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "details"]
 - !private ["So17UICoordinateSpaceP", "eTime"]
 - !private ["So17UICoordinateSpaceP", "image"]
@@ -188,7 +189,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "thumb"]
 - !private ["So17UICoordinateSpaceP", "title"]
-- ["So17UICoordinateSpaceP", ""]
+- ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "details"]
 - !private ["So13UIDynamicItemP", "eTime"]
 - !private ["So13UIDynamicItemP", "image"]
@@ -197,7 +198,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "thumb"]
 - !private ["So13UIDynamicItemP", "title"]
-- ["So13UIDynamicItemP", ""]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "details"]
 - !private ["So18UIFocusEnvironmentP", "eTime"]
 - !private ["So18UIFocusEnvironmentP", "image"]
@@ -206,7 +207,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "thumb"]
 - !private ["So18UIFocusEnvironmentP", "title"]
-- ["So18UIFocusEnvironmentP", ""]
+- ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "details"]
 - !private ["So11UIFocusItemP", "eTime"]
 - !private ["So11UIFocusItemP", "image"]
@@ -215,16 +216,16 @@ depends-member:
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "thumb"]
 - !private ["So11UIFocusItemP", "title"]
-- ["So11UIFocusItemP", ""]
+- ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "details"]
 - !private ["So27UIGestureRecognizerDelegateP", "eTime"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "location"]
 - !private ["So27UIGestureRecognizerDelegateP", "thumb"]
 - !private ["So27UIGestureRecognizerDelegateP", "title"]
-- ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So7UILabelC", "text"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "details"]
 - !private ["So30UIPasteConfigurationSupportingP", "eTime"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
@@ -233,7 +234,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "thumb"]
 - !private ["So30UIPasteConfigurationSupportingP", "title"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Item"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIImageView"]
@@ -247,6 +247,7 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "thumb"]
 - ["So11UIResponderC", "title"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "details"]
 - !private ["So30UIResponderStandardEditActionsP", "eTime"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
@@ -255,11 +256,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "thumb"]
 - !private ["So30UIResponderStandardEditActionsP", "title"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - ["So15UITableViewCellC", "Item"]
 - !private ["So15UITableViewCellC", "UIImage"]
 - ["So15UITableViewCellC", "UIImageView"]
 - ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "configureCell"]
 - ["So15UITableViewCellC", "details"]
 - ["So15UITableViewCellC", "eTime"]
@@ -267,7 +268,7 @@ depends-member:
 - ["So15UITableViewCellC", "location"]
 - ["So15UITableViewCellC", "thumb"]
 - ["So15UITableViewCellC", "title"]
-- ["So15UITableViewCellC", ""]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "details"]
 - !private ["So18UITraitEnvironmentP", "eTime"]
 - !private ["So18UITraitEnvironmentP", "image"]
@@ -276,7 +277,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "thumb"]
 - !private ["So18UITraitEnvironmentP", "title"]
-- ["So18UITraitEnvironmentP", ""]
 - ["So6UIViewC", "Item"]
 - !private ["So6UIViewC", "UIImage"]
 - ["So6UIViewC", "UIImageView"]
@@ -290,6 +290,7 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "thumb"]
 - ["So6UIViewC", "title"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "details"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "eTime"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
@@ -298,7 +299,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "thumb"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "title"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "details"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "eTime"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
@@ -309,7 +310,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "time"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toImage"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
@@ -446,4 +446,18 @@ depends-external:
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
-interface-hash: "5e5f1a7913e008f202a66fe51ff6b8b5"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "bddfd60bd35bd98d3dc5002eddfc37bf"

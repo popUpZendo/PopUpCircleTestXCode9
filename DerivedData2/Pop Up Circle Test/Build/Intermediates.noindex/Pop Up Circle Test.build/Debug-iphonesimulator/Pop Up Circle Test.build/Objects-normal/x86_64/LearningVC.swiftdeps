@@ -49,6 +49,7 @@ depends-member:
 - ["s7CVarArgP", "DharmaRock"]
 - !private ["s7CVarArgP", "SWRevealViewController"]
 - !private ["s7CVarArgP", "UITableViewCell"]
+- ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addTarget"]
 - !private ["s7CVarArgP", "append"]
@@ -94,7 +95,6 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
@@ -105,6 +105,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "DharmaRock"]
 - !private ["s28CustomDebugStringConvertibleP", "SWRevealViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
@@ -151,7 +152,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
@@ -161,6 +161,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "DharmaRock"]
 - !private ["s23CustomStringConvertibleP", "SWRevealViewController"]
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "addTarget"]
 - !private ["s23CustomStringConvertibleP", "append"]
@@ -207,7 +208,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
 - ["s9DecodableP", "init"]
@@ -223,8 +223,11 @@ depends-member:
 - ["s9EquatableP", "DharmaRock"]
 - !private ["s9EquatableP", "SWRevealViewController"]
 - !private ["s9EquatableP", "UITableViewCell"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "addGestureRecognizer"]
 - !private ["s9EquatableP", "addTarget"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "dataSource"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "dequeueReusableCell"]
@@ -233,7 +236,7 @@ depends-member:
 - !private ["s9EquatableP", "dharmaRocks"]
 - ["s9EquatableP", "indexPathForPreferredFocusedView"]
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "menuBtn"]
 - !private ["s9EquatableP", "navigationController"]
 - ["s9EquatableP", "numberOfSections"]
@@ -259,6 +262,7 @@ depends-member:
 - ["s9EquatableP", "sectionIndexTitles"]
 - ["s9EquatableP", "sectionIndexTitlesForTableView"]
 - !private ["s9EquatableP", "setNavigationBarHidden"]
+- !private ["s9EquatableP", "subscript"]
 - ["s9EquatableP", "tableView"]
 - !private ["s9EquatableP", "tapGestureRecognizer"]
 - !private ["s9EquatableP", "touchUpInside"]
@@ -267,7 +271,6 @@ depends-member:
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -280,6 +283,7 @@ depends-member:
 - ["s8HashableP", "DharmaRock"]
 - !private ["s8HashableP", "SWRevealViewController"]
 - !private ["s8HashableP", "UITableViewCell"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "addGestureRecognizer"]
 - !private ["s8HashableP", "addTarget"]
 - !private ["s8HashableP", "dataSource"]
@@ -323,7 +327,6 @@ depends-member:
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
-- ["s8HashableP", ""]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["18Pop_Up_Circle_Test10LearningVCC", "DharmaCell"]
 - ["18Pop_Up_Circle_Test10LearningVCC", "DharmaRock"]
@@ -377,6 +380,7 @@ depends-member:
 - ["So8NSCodingP", "DharmaRock"]
 - !private ["So8NSCodingP", "SWRevealViewController"]
 - !private ["So8NSCodingP", "UITableViewCell"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "addTarget"]
 - !private ["So8NSCodingP", "dataSource"]
@@ -418,11 +422,10 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
-- ["So8NSCodingP", ""]
-- !private ["So9NSCopyingP", "init"]
 - ["So26NSExtensionRequestHandlingP", "DharmaRock"]
 - !private ["So26NSExtensionRequestHandlingP", "SWRevealViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "dharmaRock"]
 - !private ["So26NSExtensionRequestHandlingP", "dharmaRocks"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
@@ -458,10 +461,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
-- ["So26NSExtensionRequestHandlingP", ""]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "DharmaCell"]
 - ["So8NSObjectC", "DharmaRock"]
 - ["So8NSObjectC", "IndexPath"]
@@ -518,6 +517,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "DharmaRock"]
 - !private ["So16NSObjectProtocolP", "SWRevealViewController"]
 - !private ["So16NSObjectProtocolP", "UITableViewCell"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "addTarget"]
 - !private ["So16NSObjectProtocolP", "dataSource"]
@@ -560,9 +560,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "touchUpInside"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "count"]
@@ -606,6 +603,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "DharmaRock"]
 - !private ["So21UIAppearanceContainerP", "SWRevealViewController"]
 - !private ["So21UIAppearanceContainerP", "UITableViewCell"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
@@ -647,11 +645,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "addTarget"]
 - ["So18UIContentContainerP", "DharmaRock"]
 - !private ["So18UIContentContainerP", "SWRevealViewController"]
 - !private ["So18UIContentContainerP", "UITableViewCell"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "dharmaRock"]
 - !private ["So18UIContentContainerP", "dharmaRocks"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
@@ -687,7 +685,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
-- ["So18UIContentContainerP", ""]
 - !private ["So9UIControlC", "addTarget"]
 - !private ["SC15UIControlEventsV", "touchUpInside"]
 - !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
@@ -710,6 +707,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "DharmaRock"]
 - !private ["So18UIFocusEnvironmentP", "SWRevealViewController"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewCell"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
@@ -751,7 +749,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "dataSource"]
@@ -765,6 +762,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "DharmaRock"]
 - !private ["So30UIPasteConfigurationSupportingP", "SWRevealViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
@@ -806,7 +804,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "DharmaCell"]
 - ["So11UIResponderC", "DharmaRock"]
 - ["So11UIResponderC", "IndexPath"]
@@ -862,6 +859,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "DharmaRock"]
 - !private ["So30UIResponderStandardEditActionsP", "SWRevealViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
@@ -903,13 +901,13 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "dataSource"]
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - ["So20UIScrollViewDelegateP", "DharmaRock"]
 - !private ["So20UIScrollViewDelegateP", "SWRevealViewController"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewCell"]
+- ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "dharmaRocks"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
@@ -938,7 +936,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "view"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
-- ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
@@ -946,6 +943,7 @@ depends-member:
 - ["So16UIStateRestoringP", "DharmaRock"]
 - !private ["So16UIStateRestoringP", "SWRevealViewController"]
 - !private ["So16UIStateRestoringP", "UITableViewCell"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "dharmaRock"]
 - !private ["So16UIStateRestoringP", "dharmaRocks"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
@@ -981,7 +979,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So11UITableViewC", "dataSource"]
 - !private ["So11UITableViewC", "delegate"]
@@ -991,6 +988,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "DharmaRock"]
 - !private ["So21UITableViewDataSourceP", "SWRevealViewController"]
 - !private ["So21UITableViewDataSourceP", "UITableViewCell"]
+- ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "dharmaRocks"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
@@ -1019,10 +1017,10 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "view"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
-- ["So21UITableViewDataSourceP", ""]
 - ["So19UITableViewDelegateP", "DharmaRock"]
 - !private ["So19UITableViewDelegateP", "SWRevealViewController"]
 - !private ["So19UITableViewDelegateP", "UITableViewCell"]
+- ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "dharmaRocks"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
@@ -1051,10 +1049,10 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "view"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
-- ["So19UITableViewDelegateP", ""]
 - ["So18UITraitEnvironmentP", "DharmaRock"]
 - !private ["So18UITraitEnvironmentP", "SWRevealViewController"]
 - !private ["So18UITraitEnvironmentP", "UITableViewCell"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
@@ -1096,7 +1094,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "addTarget"]
 - !private ["So6UIViewC", "dataSource"]
@@ -1114,6 +1111,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - !private ["So16UIViewControllerC", "VideoVC"]
+- ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "dharmaRock"]
 - ["So16UIViewControllerC", "dharmaRocks"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
@@ -1150,17 +1148,11 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
-- ["So16UIViewControllerC", ""]
 - !private ["18Pop_Up_Circle_Test7VideoVCC", "dharmaRock"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "row"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
@@ -1177,20 +1169,10 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "count"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "row"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "count"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "row"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DharmaRock"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SWRevealViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
@@ -1233,26 +1215,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "count"]
-- ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "row"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "row"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
@@ -1281,15 +1248,9 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - "s17MutableCollectionP"
 - "So8NSCodingP"
-- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s9OptionSetP"
 - "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
@@ -1334,7 +1295,6 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "18Pop_Up_Circle_Test7VideoVCC"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -1342,14 +1302,8 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1452,8 +1406,18 @@ depends-external:
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "3840e36e76f46bac033cda739dfed7fa"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "e28af4e31259e3c3c88561afce92022a"

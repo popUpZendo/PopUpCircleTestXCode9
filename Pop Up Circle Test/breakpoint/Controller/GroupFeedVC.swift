@@ -25,7 +25,7 @@ class GroupFeedVC: UIViewController {
     func initData(forGroup group: Group) {
         self.group = group
     }
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sendButtonView.bindToKeyboard()
@@ -58,7 +58,8 @@ class GroupFeedVC: UIViewController {
         if messageTextField.text != "" {
             messageTextField.isEnabled = false
             sendBtn.isEnabled = false
-            DataService.instance.uploadPost(withMessage: messageTextField.text!, forUID: Auth.auth().currentUser!.uid, withGroupKey: group?.key, sendComplete: { (complete) in
+            
+            DataService.instance.uploadPost(withMessage: messageTextField.text!, forUID: Auth.auth().currentUser!.uid, withGroupKey: group?.key, withConversationKey: nil, sendComplete: { (complete) in
                 if complete {
                     self.messageTextField.text = ""
                     self.messageTextField.isEnabled = true
@@ -86,8 +87,10 @@ extension GroupFeedVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "groupFeedCell", for: indexPath) as? GroupFeedCell else  { return UITableViewCell() }
         let message = groupMessages[indexPath.row]
         
+        
+        
         DataService.instance.getUsername(forUID: message.senderId) { (email) in
-            cell.configureCell(profileImage: UIImage(named: "defaultProfileImage")!, email: email, content: message.content)
+            cell.configureCell(profile_image: UIImage(named: "defaultProfileImage")!, email: email!, content: message.content, senderId: message.senderId)
         }
         return cell
     }

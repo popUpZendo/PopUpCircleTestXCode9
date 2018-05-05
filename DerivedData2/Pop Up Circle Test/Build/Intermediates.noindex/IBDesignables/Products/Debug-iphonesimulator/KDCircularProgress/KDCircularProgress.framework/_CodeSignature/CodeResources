@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KDCircularProgress-Swift.h</key>
 		<data>
-		u2oKm5VW8xCgV9Fmss5NgZzep3s=
+		LHiczR3Tgr6tazrOMnLvevYmNng=
 		</data>
 		<key>Headers/KDCircularProgress-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rGt60hwqP+bXkMJPyRFuYd5SJQk=
+		3334rcVXn6VfRAWQPT2jzhpvVV8=
 		</data>
 		<key>Modules/KDCircularProgress.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		fooyYlbAqVSDppvSvvNIqOOZi2E=
+		w/51/N2bz1Hp3603vOVNhBt+i68=
 		</data>
 		<key>Modules/KDCircularProgress.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Tsqnh9paNanvcu6l4Gp8CnDI3zQ=
+		viqYINXY0WFjCBgGlPrtpNMisPg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u2oKm5VW8xCgV9Fmss5NgZzep3s=
+			LHiczR3Tgr6tazrOMnLvevYmNng=
 			</data>
 			<key>hash2</key>
 			<data>
-			He8c3VqnXOxAvthYz5SYw5+YHdetugjmlbofSuKETLA=
+			seKCeZATKOHuUL88vn1pVrmRSEkWL4q2pz2IpF0H07g=
 			</data>
 		</dict>
 		<key>Headers/KDCircularProgress-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fooyYlbAqVSDppvSvvNIqOOZi2E=
+			w/51/N2bz1Hp3603vOVNhBt+i68=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pyt636d9ao7e0rQETnEoTnEDbB1JvaTbtiwkEwNHOrg=
+			fzoAo9vFNQhQET9zERjn1qA0iNMVXD+9FLBjEqXqDnE=
 			</data>
 		</dict>
 		<key>Modules/KDCircularProgress.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tsqnh9paNanvcu6l4Gp8CnDI3zQ=
+			viqYINXY0WFjCBgGlPrtpNMisPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			QK85FTqpR8VIv7YVCbQBj9VPiYgmNj/XaQ+U4NhD/Nw=
+			7JO1MTuCupLRQyniRQxyGpNyWl+cRQRsj04i0obOVfY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

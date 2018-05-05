@@ -136,6 +136,8 @@ depends-member:
 - !private ["s7CVarArgP", "UNNotificationAction"]
 - !private ["s7CVarArgP", "UNNotificationCategory"]
 - !private ["s7CVarArgP", "UNUserNotificationCenter"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "actionIdentifier"]
 - !private ["s7CVarArgP", "addCategory"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
@@ -184,7 +186,6 @@ depends-member:
 - !private ["s7CVarArgP", "view"]
 - ["s7CVarArgP", "viewContext"]
 - ["s7CVarArgP", "window"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
@@ -198,6 +199,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UNNotificationAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UNNotificationCategory"]
 - !private ["s28CustomDebugStringConvertibleP", "UNUserNotificationCenter"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "actionIdentifier"]
 - !private ["s28CustomDebugStringConvertibleP", "addCategory"]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
@@ -246,7 +248,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - ["s28CustomDebugStringConvertibleP", "viewContext"]
 - ["s28CustomDebugStringConvertibleP", "window"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -262,6 +263,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UNNotificationAction"]
 - !private ["s23CustomStringConvertibleP", "UNNotificationCategory"]
 - !private ["s23CustomStringConvertibleP", "UNUserNotificationCenter"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "actionIdentifier"]
 - !private ["s23CustomStringConvertibleP", "addCategory"]
@@ -311,7 +313,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "view"]
 - ["s23CustomStringConvertibleP", "viewContext"]
 - ["s23CustomStringConvertibleP", "window"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["So8DatabaseC", "database"]
 - !private ["So8DatabaseC", "isPersistenceEnabled"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
@@ -329,6 +330,7 @@ depends-member:
 - !private ["s9EquatableP", "UNNotificationAction"]
 - !private ["s9EquatableP", "UNNotificationCategory"]
 - !private ["s9EquatableP", "UNUserNotificationCenter"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "actionIdentifier"]
 - !private ["s9EquatableP", "addCategory"]
@@ -381,7 +383,6 @@ depends-member:
 - !private ["s9EquatableP", "view"]
 - ["s9EquatableP", "viewContext"]
 - ["s9EquatableP", "window"]
-- ["s9EquatableP", ""]
 - !private ["s5ErrorP", "userInfo"]
 - !private ["s25ExpressibleByArrayLiteralP", "alert"]
 - !private ["s25ExpressibleByArrayLiteralP", "foreground"]
@@ -402,6 +403,7 @@ depends-member:
 - !private ["s8HashableP", "UNNotificationAction"]
 - !private ["s8HashableP", "UNNotificationCategory"]
 - !private ["s8HashableP", "UNUserNotificationCenter"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "actionIdentifier"]
 - !private ["s8HashableP", "addCategory"]
@@ -451,7 +453,6 @@ depends-member:
 - !private ["s8HashableP", "view"]
 - ["s8HashableP", "viewContext"]
 - ["s8HashableP", "window"]
-- ["s8HashableP", ""]
 - !private ["18Pop_Up_Circle_Test11IdentifiersV", "cancelAction"]
 - !private ["18Pop_Up_Circle_Test11IdentifiersV", "reminderCategory"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -481,13 +482,10 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So9NSLockingP", "hasChanges"]
 - !private ["So9NSLockingP", "save"]
 - !private ["So22NSManagedObjectContextC", "hasChanges"]
 - !private ["So22NSManagedObjectContextC", "save"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Bundle"]
@@ -570,6 +568,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UNNotificationAction"]
 - !private ["So16NSObjectProtocolP", "UNNotificationCategory"]
 - !private ["So16NSObjectProtocolP", "UNUserNotificationCenter"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "actionIdentifier"]
 - !private ["So16NSObjectProtocolP", "addCategory"]
 - !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
@@ -618,7 +617,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "view"]
 - ["So16NSObjectProtocolP", "viewContext"]
 - ["So16NSObjectProtocolP", "window"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So21NSPersistentContainerC", "init"]
 - !private ["So21NSPersistentContainerC", "loadPersistentStores"]
 - ["So21NSPersistentContainerC", "viewContext"]
@@ -628,7 +626,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "notification"]
 - !private ["So14NSSecureCodingP", "request"]
 - !private ["So14NSSecureCodingP", "userInfo"]
-- !private ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "alert"]
 - !private ["s9OptionSetP", "foreground"]
 - !private ["s9OptionSetP", "sound"]
@@ -669,6 +666,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "UNNotificationAction"]
 - !private ["So21UIApplicationDelegateP", "UNNotificationCategory"]
 - !private ["So21UIApplicationDelegateP", "UNUserNotificationCenter"]
+- ["So21UIApplicationDelegateP", ""]
 - !private ["So21UIApplicationDelegateP", "addCategory"]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -688,7 +686,6 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "saveContext"]
 - ["So21UIApplicationDelegateP", "userNotificationCenter"]
 - ["So21UIApplicationDelegateP", "window"]
-- ["So21UIApplicationDelegateP", ""]
 - !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "view"]
@@ -720,6 +717,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UNNotificationAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UNNotificationCategory"]
 - !private ["So30UIPasteConfigurationSupportingP", "UNUserNotificationCenter"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addCategory"]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - ["So30UIPasteConfigurationSupportingP", "application"]
@@ -747,7 +745,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "userNotificationCenter"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Bundle"]
@@ -769,6 +766,7 @@ depends-member:
 - ["So11UIResponderC", "UNNotificationResponse"]
 - ["So11UIResponderC", "UNUserNotificationCenter"]
 - ["So11UIResponderC", "Void"]
+- ["So11UIResponderC", ""]
 - ["So11UIResponderC", "addCategory"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - ["So11UIResponderC", "application"]
@@ -798,7 +796,6 @@ depends-member:
 - ["So11UIResponderC", "userNotificationCenter"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "window"]
-- ["So11UIResponderC", ""]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
@@ -810,6 +807,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UNNotificationAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UNNotificationCategory"]
 - !private ["So30UIResponderStandardEditActionsP", "UNUserNotificationCenter"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addCategory"]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - ["So30UIResponderStandardEditActionsP", "application"]
@@ -837,7 +835,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "userNotificationCenter"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - ["So30UIResponderStandardEditActionsP", "window"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "view"]
@@ -886,6 +883,7 @@ depends-member:
 - !private ["So32UNUserNotificationCenterDelegateP", "UNNotificationAction"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UNNotificationCategory"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UNUserNotificationCenter"]
+- ["So32UNUserNotificationCenterDelegateP", ""]
 - !private ["So32UNUserNotificationCenterDelegateP", "addCategory"]
 - ["So32UNUserNotificationCenterDelegateP", "application"]
 - ["So32UNUserNotificationCenterDelegateP", "applicationDidBecomeActive"]
@@ -905,8 +903,6 @@ depends-member:
 - !private ["So32UNUserNotificationCenterDelegateP", "saveContext"]
 - ["So32UNUserNotificationCenterDelegateP", "userNotificationCenter"]
 - ["So32UNUserNotificationCenterDelegateP", "window"]
-- ["So32UNUserNotificationCenterDelegateP", ""]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
@@ -916,9 +912,6 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
@@ -930,6 +923,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UNNotificationAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UNNotificationCategory"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UNUserNotificationCenter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "actionIdentifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addCategory"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
@@ -978,10 +972,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "18Pop_Up_Circle_Test11AppDelegateC"
@@ -1019,16 +1011,12 @@ depends-nominal:
 - !private "So9NSCopyingP"
 - !private "So7NSErrorC"
 - !private "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - !private "So9NSLockingP"
 - !private "So22NSManagedObjectContextC"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - "So21NSPersistentContainerC"
 - !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s9OptionSetP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
@@ -1070,7 +1058,6 @@ depends-nominal:
 - !private "So22UNNotificationResponseC"
 - !private "So24UNUserNotificationCenterC"
 - "So32UNUserNotificationCenterDelegateP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -1078,12 +1065,8 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1186,8 +1169,18 @@ depends-external:
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "e34f2a78d28a9c3efd8ae917e951c3cc"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "e5d8d935c6eeb74ad34aedb5b3bdef8b"

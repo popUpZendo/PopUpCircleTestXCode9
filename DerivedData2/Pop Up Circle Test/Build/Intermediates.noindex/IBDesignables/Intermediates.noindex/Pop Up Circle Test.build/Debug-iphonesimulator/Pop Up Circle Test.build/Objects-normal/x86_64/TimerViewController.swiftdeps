@@ -118,6 +118,8 @@ depends-member:
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "URL"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "addTarget"]
@@ -171,7 +173,6 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "white"]
 - !private ["s7CVarArgP", "zazen"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "now"]
@@ -189,6 +190,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
@@ -244,7 +246,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - !private ["s28CustomDebugStringConvertibleP", "zazen"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "seconds"]
@@ -268,6 +269,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "URL"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
@@ -322,7 +324,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s23CustomStringConvertibleP", "zazen"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "seconds"]
@@ -354,6 +355,7 @@ depends-member:
 - !private ["s9EquatableP", "UIApplication"]
 - !private ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "URL"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addGestureRecognizer"]
 - !private ["s9EquatableP", "addSubview"]
@@ -413,7 +415,6 @@ depends-member:
 - !private ["s9EquatableP", "x"]
 - !private ["s9EquatableP", "y"]
 - !private ["s9EquatableP", "zazen"]
-- ["s9EquatableP", ""]
 - !private ["s5ErrorP", "debugDescription"]
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -440,6 +441,7 @@ depends-member:
 - !private ["s8HashableP", "UIApplication"]
 - !private ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "URL"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addGestureRecognizer"]
 - !private ["s8HashableP", "addSubview"]
@@ -495,7 +497,6 @@ depends-member:
 - !private ["s8HashableP", "viewDidLoad"]
 - !private ["s8HashableP", "white"]
 - !private ["s8HashableP", "zazen"]
-- ["s8HashableP", ""]
 - !private ["Si", "init"]
 - !private ["18KDCircularProgressAAC", "animate"]
 - !private ["18KDCircularProgressAAC", "center"]
@@ -529,6 +530,7 @@ depends-member:
 - !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "URL"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "addTarget"]
@@ -572,7 +574,6 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "white"]
 - !private ["So8NSCodingP", "zazen"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "darkGray"]
 - !private ["So9NSCopyingP", "debugDescription"]
@@ -592,6 +593,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "backButton"]
 - !private ["So26NSExtensionRequestHandlingP", "btnSound"]
 - !private ["So26NSExtensionRequestHandlingP", "countDownLabel"]
@@ -611,7 +613,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "zazen"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderReadingP", "darkGray"]
 - !private ["So21NSItemProviderReadingP", "init"]
@@ -620,7 +621,6 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "darkGray"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "white"]
-- !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "AVAudioPlayer"]
 - ["So8NSObjectC", "AnyObject"]
 - !private ["So8NSObjectC", "Bundle"]
@@ -711,6 +711,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIApplication"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "URL"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "addSubview"]
 - !private ["So16NSObjectProtocolP", "addTarget"]
@@ -763,13 +764,11 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "white"]
 - !private ["So16NSObjectProtocolP", "zazen"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "darkGray"]
 - !private ["So14NSSecureCodingP", "debugDescription"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["So8NSStringC", "init"]
 - !private ["s7NumericP", "init"]
 - !private ["s7NumericP", "seconds"]
 - !private ["So9OS_objectC", "asyncAfter"]
@@ -890,6 +889,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "URL"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
@@ -929,7 +929,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "zazen"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So13UIApplicationC", "isIdleTimerDisabled"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So8UIButtonC", "addTarget"]
@@ -951,6 +950,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "URL"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "backButton"]
 - !private ["So18UIContentContainerP", "btnSound"]
 - !private ["So18UIContentContainerP", "countDownLabel"]
@@ -970,7 +970,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "zazen"]
-- ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "isHidden"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "addTarget"]
@@ -1032,6 +1031,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "URL"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
@@ -1071,7 +1071,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "zazen"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "addTarget"]
@@ -1109,6 +1108,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "URL"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
@@ -1150,7 +1150,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "zazen"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "AVAudioPlayer"]
 - ["So11UIResponderC", "AnyObject"]
 - !private ["So11UIResponderC", "Bundle"]
@@ -1230,6 +1229,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "URL"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
@@ -1271,7 +1271,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "zazen"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So8UISliderC", "isHidden"]
 - !private ["So8UISliderC", "value"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
@@ -1289,6 +1288,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "URL"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "backButton"]
 - !private ["So16UIStateRestoringP", "btnSound"]
 - !private ["So16UIStateRestoringP", "countDownLabel"]
@@ -1308,7 +1308,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "zazen"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So18UITraitEnvironmentP", "AVAudioPlayer"]
 - !private ["So18UITraitEnvironmentP", "Bundle"]
 - !private ["So18UITraitEnvironmentP", "CGPoint"]
@@ -1322,6 +1321,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "URL"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "addTarget"]
@@ -1361,7 +1361,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "zazen"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "addTarget"]
@@ -1403,6 +1402,7 @@ depends-member:
 - ["So16UIViewControllerC", "UISlider"]
 - ["So16UIViewControllerC", "UISwipeGestureRecognizer"]
 - !private ["So16UIViewControllerC", "URL"]
+- ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "animateButtonTapped"]
 - ["So16UIViewControllerC", "backButton"]
 - ["So16UIViewControllerC", "btnSound"]
@@ -1427,9 +1427,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "zazen"]
-- ["So16UIViewControllerC", ""]
 - !private ["10Foundation3URLV", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s15_CVarArgAlignedP", "seconds"]
@@ -1471,9 +1469,6 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioPlayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
@@ -1487,6 +1482,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
@@ -1539,15 +1535,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zazen"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "seconds"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "seconds"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "So13AVAudioPlayerC"
@@ -1597,11 +1589,9 @@ depends-nominal:
 - "So26NSExtensionRequestHandlingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s7NumericP"
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
@@ -1646,7 +1636,6 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "10Foundation3URLV"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -1661,13 +1650,8 @@ depends-nominal:
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1770,4 +1754,18 @@ depends-external:
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
-interface-hash: "176d4e1b14c56fe07d99639f4e549cd3"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "ffa0a3b4bf387ebbd1345ef3bf464b1d"

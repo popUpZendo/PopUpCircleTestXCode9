@@ -32,7 +32,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
-- !private "CALayer"
+- "CALayer"
 - !private "CGFloat"
 - "CGRect"
 - "CHDayPicker"
@@ -41,7 +41,7 @@ depends-top-level:
 - "NSCoder"
 - "String"
 - "StringLiteralType"
-- !private "UIButton"
+- "UIButton"
 - "UIColor"
 - !private "UIControlEvents"
 - !private "UIControlState"
@@ -84,6 +84,7 @@ depends-member:
 - ["So15CALayerDelegateP", "UIColor"]
 - !private ["So15CALayerDelegateP", "UIControlEvents"]
 - !private ["So15CALayerDelegateP", "UIControlState"]
+- ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "bounds"]
@@ -112,7 +113,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "singleSelection"]
 - !private ["So15CALayerDelegateP", "tag"]
 - !private ["So15CALayerDelegateP", "titleColor"]
-- ["So15CALayerDelegateP", ""]
 - !private ["So13CAMediaTimingP", "addSublayer"]
 - !private ["So13CAMediaTimingP", "backgroundColor"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
@@ -125,9 +125,9 @@ depends-member:
 - !private ["SC6CGRectV", "width"]
 - !private ["SC6CGSizeV", "height"]
 - !private ["SC6CGSizeV", "width"]
-- !private ["11CHDayPickerAAC", "AnyObject"]
+- ["11CHDayPickerAAC", "AnyObject"]
 - ["11CHDayPickerAAC", "Bool"]
-- !private ["11CHDayPickerAAC", "CALayer"]
+- ["11CHDayPickerAAC", "CALayer"]
 - !private ["11CHDayPickerAAC", "CGFloat"]
 - ["11CHDayPickerAAC", "CGRect"]
 - ["11CHDayPickerAAC", "CHButton"]
@@ -135,8 +135,8 @@ depends-member:
 - ["11CHDayPickerAAC", "CHDayPickerDelegate"]
 - ["11CHDayPickerAAC", "Int"]
 - ["11CHDayPickerAAC", "NSCoder"]
-- !private ["11CHDayPickerAAC", "String"]
-- !private ["11CHDayPickerAAC", "UIButton"]
+- ["11CHDayPickerAAC", "String"]
+- ["11CHDayPickerAAC", "UIButton"]
 - ["11CHDayPickerAAC", "UIColor"]
 - !private ["11CHDayPickerAAC", "UIControlEvents"]
 - !private ["11CHDayPickerAAC", "UIControlState"]
@@ -178,6 +178,8 @@ depends-member:
 - ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIControlEvents"]
 - !private ["s7CVarArgP", "UIControlState"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addSublayer"]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "addTarget"]
@@ -219,7 +221,6 @@ depends-member:
 - !private ["s7CVarArgP", "tag"]
 - !private ["s7CVarArgP", "titleColor"]
 - ["s7CVarArgP", "white"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "button"]
 - !private ["s10CollectionP", "count"]
@@ -240,6 +241,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIControlEvents"]
 - !private ["s28CustomDebugStringConvertibleP", "UIControlState"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addSublayer"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
@@ -287,7 +289,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "titleColor"]
 - ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -316,6 +317,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIControlEvents"]
 - !private ["s23CustomStringConvertibleP", "UIControlState"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addSublayer"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
@@ -361,7 +363,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "tag"]
 - !private ["s23CustomStringConvertibleP", "titleColor"]
 - ["s23CustomStringConvertibleP", "white"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
@@ -393,23 +394,29 @@ depends-member:
 - ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "UIControlEvents"]
 - !private ["s9EquatableP", "UIControlState"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addSublayer"]
 - !private ["s9EquatableP", "addSubview"]
 - !private ["s9EquatableP", "addTarget"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "backgroundColor"]
 - ["s9EquatableP", "black"]
 - !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "button"]
 - !private ["s9EquatableP", "cgColor"]
 - ["s9EquatableP", "clear"]
 - !private ["s9EquatableP", "configureButton"]
 - !private ["s9EquatableP", "configureLayer"]
 - !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "daysButton"]
 - !private ["s9EquatableP", "daysLabel"]
 - !private ["s9EquatableP", "defaultSelectedDay"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "deselectDayAtPosition"]
+- !private ["s9EquatableP", "enumerated"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "frame"]
 - !private ["s9EquatableP", "height"]
 - ["s9EquatableP", "init"]
@@ -418,10 +425,13 @@ depends-member:
 - !private ["s9EquatableP", "min"]
 - !private ["s9EquatableP", "normal"]
 - !private ["s9EquatableP", "prepareForInterfaceBuilder"]
+- !private ["s9EquatableP", "removeAll"]
 - !private ["s9EquatableP", "removeFromSuperview"]
 - !private ["s9EquatableP", "selectDay"]
 - !private ["s9EquatableP", "selectDayAtPosition"]
+- !private ["s9EquatableP", "selected"]
 - !private ["s9EquatableP", "selectedBackgroundColor"]
+- !private ["s9EquatableP", "selectedLayer"]
 - !private ["s9EquatableP", "selectedTitleColor"]
 - !private ["s9EquatableP", "setInActive"]
 - !private ["s9EquatableP", "setTitle"]
@@ -429,12 +439,12 @@ depends-member:
 - !private ["s9EquatableP", "setupView"]
 - !private ["s9EquatableP", "singleSelection"]
 - !private ["s9EquatableP", "size"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "tag"]
 - !private ["s9EquatableP", "titleColor"]
 - !private ["s9EquatableP", "touchUpInside"]
 - ["s9EquatableP", "white"]
 - !private ["s9EquatableP", "width"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "button"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -462,6 +472,7 @@ depends-member:
 - ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "UIControlEvents"]
 - !private ["s8HashableP", "UIControlState"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addSublayer"]
 - !private ["s8HashableP", "addSubview"]
@@ -498,7 +509,6 @@ depends-member:
 - !private ["s8HashableP", "tag"]
 - !private ["s8HashableP", "titleColor"]
 - ["s8HashableP", "white"]
-- ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
@@ -520,6 +530,7 @@ depends-member:
 - ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIControlEvents"]
 - !private ["So8NSCodingP", "UIControlState"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addSublayer"]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "addTarget"]
@@ -537,7 +548,7 @@ depends-member:
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "deselectDayAtPosition"]
 - !private ["So8NSCodingP", "frame"]
-- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "layoutSubviews"]
 - !private ["So8NSCodingP", "min"]
@@ -555,26 +566,21 @@ depends-member:
 - !private ["So8NSCodingP", "tag"]
 - !private ["So8NSCodingP", "titleColor"]
 - ["So8NSCodingP", "white"]
-- ["So8NSCodingP", ""]
 - ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "cgColor"]
 - ["So9NSCopyingP", "clear"]
-- ["So9NSCopyingP", "init"]
 - ["So9NSCopyingP", "white"]
 - ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
 - ["So21NSItemProviderReadingP", "clear"]
-- ["So21NSItemProviderReadingP", "init"]
 - ["So21NSItemProviderReadingP", "white"]
 - ["So21NSItemProviderWritingP", "black"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
 - ["So21NSItemProviderWritingP", "clear"]
-- ["So21NSItemProviderWritingP", "init"]
 - ["So21NSItemProviderWritingP", "white"]
-- ["So16NSMutableCopyingP", "init"]
-- !private ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "AnyObject"]
 - ["So8NSObjectC", "Bool"]
-- !private ["So8NSObjectC", "CALayer"]
+- ["So8NSObjectC", "CALayer"]
 - !private ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "CHButton"]
@@ -582,8 +588,8 @@ depends-member:
 - ["So8NSObjectC", "CHDayPickerDelegate"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "NSCoder"]
-- !private ["So8NSObjectC", "String"]
-- !private ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UIControlEvents"]
 - !private ["So8NSObjectC", "UIControlState"]
@@ -633,6 +639,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "UIControlEvents"]
 - !private ["So16NSObjectProtocolP", "UIControlState"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addSublayer"]
 - !private ["So16NSObjectProtocolP", "addSubview"]
 - !private ["So16NSObjectProtocolP", "addTarget"]
@@ -650,7 +657,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "delegate"]
 - !private ["So16NSObjectProtocolP", "deselectDayAtPosition"]
 - !private ["So16NSObjectProtocolP", "frame"]
-- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "layoutSubviews"]
 - !private ["So16NSObjectProtocolP", "min"]
@@ -668,7 +675,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "tag"]
 - !private ["So16NSObjectProtocolP", "titleColor"]
 - ["So16NSObjectProtocolP", "white"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "addSublayer"]
 - !private ["So14NSSecureCodingP", "backgroundColor"]
 - ["So14NSSecureCodingP", "black"]
@@ -676,9 +682,8 @@ depends-member:
 - ["So14NSSecureCodingP", "clear"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
 - !private ["So14NSSecureCodingP", "frame"]
-- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
 - ["So14NSSecureCodingP", "white"]
-- ["So8NSStringC", "init"]
 - !private ["s7NumericP", "init"]
 - !private ["s9OptionSetP", "normal"]
 - !private ["s9OptionSetP", "touchUpInside"]
@@ -738,6 +743,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "UIColor"]
 - !private ["So29UIAccessibilityIdentificationP", "UIControlEvents"]
 - !private ["So29UIAccessibilityIdentificationP", "UIControlState"]
+- ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "addTarget"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
@@ -766,7 +772,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "singleSelection"]
 - !private ["So29UIAccessibilityIdentificationP", "tag"]
 - !private ["So29UIAccessibilityIdentificationP", "titleColor"]
-- ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So12UIAppearanceP", "CALayer"]
 - !private ["So12UIAppearanceP", "CGFloat"]
 - !private ["So12UIAppearanceP", "CGRect"]
@@ -776,6 +781,7 @@ depends-member:
 - ["So12UIAppearanceP", "UIColor"]
 - !private ["So12UIAppearanceP", "UIControlEvents"]
 - !private ["So12UIAppearanceP", "UIControlState"]
+- ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "addSubview"]
 - !private ["So12UIAppearanceP", "addTarget"]
 - !private ["So12UIAppearanceP", "bounds"]
@@ -804,7 +810,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "singleSelection"]
 - !private ["So12UIAppearanceP", "tag"]
 - !private ["So12UIAppearanceP", "titleColor"]
-- ["So12UIAppearanceP", ""]
 - !private ["So21UIAppearanceContainerP", "CALayer"]
 - !private ["So21UIAppearanceContainerP", "CGFloat"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
@@ -814,6 +819,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIControlEvents"]
 - !private ["So21UIAppearanceContainerP", "UIControlState"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "bounds"]
@@ -842,7 +848,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "singleSelection"]
 - !private ["So21UIAppearanceContainerP", "tag"]
 - !private ["So21UIAppearanceContainerP", "titleColor"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "addTarget"]
 - !private ["So8UIButtonC", "frame"]
 - !private ["So8UIButtonC", "init"]
@@ -874,6 +879,7 @@ depends-member:
 - ["So17UICoordinateSpaceP", "UIColor"]
 - !private ["So17UICoordinateSpaceP", "UIControlEvents"]
 - !private ["So17UICoordinateSpaceP", "UIControlState"]
+- ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
 - !private ["So17UICoordinateSpaceP", "addTarget"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
@@ -902,7 +908,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "singleSelection"]
 - !private ["So17UICoordinateSpaceP", "tag"]
 - !private ["So17UICoordinateSpaceP", "titleColor"]
-- ["So17UICoordinateSpaceP", ""]
 - !private ["So13UIDynamicItemP", "CALayer"]
 - !private ["So13UIDynamicItemP", "CGFloat"]
 - !private ["So13UIDynamicItemP", "CGRect"]
@@ -912,6 +917,7 @@ depends-member:
 - ["So13UIDynamicItemP", "UIColor"]
 - !private ["So13UIDynamicItemP", "UIControlEvents"]
 - !private ["So13UIDynamicItemP", "UIControlState"]
+- ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "addSubview"]
 - !private ["So13UIDynamicItemP", "addTarget"]
 - !private ["So13UIDynamicItemP", "bounds"]
@@ -940,7 +946,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "singleSelection"]
 - !private ["So13UIDynamicItemP", "tag"]
 - !private ["So13UIDynamicItemP", "titleColor"]
-- ["So13UIDynamicItemP", ""]
 - !private ["So18UIFocusEnvironmentP", "CALayer"]
 - !private ["So18UIFocusEnvironmentP", "CGFloat"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
@@ -950,6 +955,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIControlEvents"]
 - !private ["So18UIFocusEnvironmentP", "UIControlState"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
@@ -978,7 +984,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "singleSelection"]
 - !private ["So18UIFocusEnvironmentP", "tag"]
 - !private ["So18UIFocusEnvironmentP", "titleColor"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "CALayer"]
 - !private ["So11UIFocusItemP", "CGFloat"]
 - !private ["So11UIFocusItemP", "CGRect"]
@@ -988,6 +993,7 @@ depends-member:
 - ["So11UIFocusItemP", "UIColor"]
 - !private ["So11UIFocusItemP", "UIControlEvents"]
 - !private ["So11UIFocusItemP", "UIControlState"]
+- ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "bounds"]
@@ -1016,7 +1022,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "singleSelection"]
 - !private ["So11UIFocusItemP", "tag"]
 - !private ["So11UIFocusItemP", "titleColor"]
-- ["So11UIFocusItemP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "CALayer"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
@@ -1026,6 +1031,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIControlEvents"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIControlState"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
@@ -1054,10 +1060,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "singleSelection"]
 - !private ["So30UIPasteConfigurationSupportingP", "tag"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleColor"]
-- ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So11UIResponderC", "AnyObject"]
+- ["So11UIResponderC", "AnyObject"]
 - ["So11UIResponderC", "Bool"]
-- !private ["So11UIResponderC", "CALayer"]
+- ["So11UIResponderC", "CALayer"]
 - !private ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "CGRect"]
 - ["So11UIResponderC", "CHButton"]
@@ -1065,8 +1070,8 @@ depends-member:
 - ["So11UIResponderC", "CHDayPickerDelegate"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "NSCoder"]
-- !private ["So11UIResponderC", "String"]
-- !private ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UIControlEvents"]
 - !private ["So11UIResponderC", "UIControlState"]
@@ -1109,6 +1114,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIControlEvents"]
 - !private ["So30UIResponderStandardEditActionsP", "UIControlState"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
@@ -1137,7 +1143,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "singleSelection"]
 - !private ["So30UIResponderStandardEditActionsP", "tag"]
 - !private ["So30UIResponderStandardEditActionsP", "titleColor"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "frame"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
@@ -1155,6 +1160,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIControlEvents"]
 - !private ["So18UITraitEnvironmentP", "UIControlState"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
@@ -1183,10 +1189,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "singleSelection"]
 - !private ["So18UITraitEnvironmentP", "tag"]
 - !private ["So18UITraitEnvironmentP", "titleColor"]
-- ["So18UITraitEnvironmentP", ""]
-- !private ["So6UIViewC", "AnyObject"]
+- ["So6UIViewC", "AnyObject"]
 - ["So6UIViewC", "Bool"]
-- !private ["So6UIViewC", "CALayer"]
+- ["So6UIViewC", "CALayer"]
 - !private ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "CHButton"]
@@ -1194,11 +1199,12 @@ depends-member:
 - ["So6UIViewC", "CHDayPickerDelegate"]
 - ["So6UIViewC", "Int"]
 - ["So6UIViewC", "NSCoder"]
-- !private ["So6UIViewC", "String"]
-- !private ["So6UIViewC", "UIButton"]
+- ["So6UIViewC", "String"]
+- ["So6UIViewC", "UIButton"]
 - ["So6UIViewC", "UIColor"]
 - !private ["So6UIViewC", "UIControlEvents"]
 - !private ["So6UIViewC", "UIControlState"]
+- ["So6UIViewC", ""]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "addTarget"]
 - !private ["So6UIViewC", "bounds"]
@@ -1229,7 +1235,6 @@ depends-member:
 - ["So6UIViewC", "singleSelection"]
 - !private ["So6UIViewC", "tag"]
 - ["So6UIViewC", "titleColor"]
-- ["So6UIViewC", ""]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "button"]
 - !private ["s14_ArrayProtocolP", "count"]
@@ -1239,16 +1244,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "selected"]
 - !private ["s14_ArrayProtocolP", "selectedLayer"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "button"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "enumerated"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "removeAll"]
-- !private ["s23_BidirectionalIndexableP", "selected"]
-- !private ["s23_BidirectionalIndexableP", "selectedLayer"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CALayer"]
@@ -1260,6 +1255,7 @@ depends-member:
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIControlEvents"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIControlState"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
@@ -1288,7 +1284,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "singleSelection"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tag"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleColor"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "button"]
 - !private ["s24_DestructorSafeContainerP", "count"]
@@ -1308,27 +1303,6 @@ depends-member:
 - ["s26_ExpressibleByColorLiteralP", "clear"]
 - ["s26_ExpressibleByColorLiteralP", "white"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "button"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "enumerated"]
-- !private ["s10_IndexableP", "forEach"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "removeAll"]
-- !private ["s10_IndexableP", "selected"]
-- !private ["s10_IndexableP", "selectedLayer"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "button"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "enumerated"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "removeAll"]
-- !private ["s14_IndexableBaseP", "selected"]
-- !private ["s14_IndexableBaseP", "selectedLayer"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CALayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
@@ -1338,6 +1312,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIControlEvents"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIControlState"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSublayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
@@ -1355,7 +1330,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deselectDayAtPosition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layoutSubviews"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "min"]
@@ -1373,16 +1348,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tag"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "white"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "button"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "enumerated"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "removeAll"]
-- !private ["s17_MutableIndexableP", "selected"]
-- !private ["s17_MutableIndexableP", "selectedLayer"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -1394,26 +1359,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "button"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "enumerated"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "removeAll"]
-- !private ["s22_RandomAccessIndexableP", "selected"]
-- !private ["s22_RandomAccessIndexableP", "selectedLayer"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "button"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "enumerated"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "removeAll"]
-- !private ["s26_RangeReplaceableIndexableP", "selected"]
-- !private ["s26_RangeReplaceableIndexableP", "selectedLayer"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
-- !private ["s11_StrideableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
@@ -1455,11 +1400,9 @@ depends-nominal:
 - "So9NSCopyingP"
 - "So21NSItemProviderReadingP"
 - "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - "So14NSSecureCodingP"
-- "So8NSStringC"
 - !private "s7NumericP"
 - !private "s9OptionSetP"
 - !private "s22RandomAccessCollectionP"
@@ -1493,7 +1436,6 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - "So6UIViewC"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -1505,15 +1447,8 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s26_ExpressibleByColorLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 - !private "tag"
@@ -1533,14 +1468,14 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target Support Files/CHDayPicker/CHDayPicker-umbrella.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CHDayPicker.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "c699fcb2df640ab284172df233e271e8"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "4fb90e1a9c8d6bcb5851a5a842523b8a"

@@ -2,8 +2,8 @@
 //  DataService.swift
 //  breakpoint
 //
-//  Created by Caleb Stultz on 7/22/17.
-//  Copyright © 2017 Caleb Stultz. All rights reserved.
+//  Created by Joseph Hall on 4/22/17.
+//  Copyright © 2017 Joseph Hall. All rights reserved.
 //
 
 import Foundation
@@ -19,6 +19,8 @@ class DataService {
     private var _REF_GROUPS = DB_BASE.child("groups")
     private var _REF_FEED = DB_BASE.child("feed")
     private var _REF_BUDDHA = DB_BASE.child("Buddha")
+    private var _REF_BODHI = DB_BASE.child("bodhi")
+    private var _REF_CONVERSATION = DB_BASE.child("conversation")
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
@@ -40,22 +42,42 @@ class DataService {
         return _REF_BUDDHA
     }
     
+    var REF_BODHI: DatabaseReference {
+        return _REF_BODHI
+    }
+    
+    var REF_CONVERSATION: DatabaseReference {
+        return _REF_CONVERSATION
+    }
+    
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
-    func getUsername(forUID uid: String, handler: @escaping (_ username: String) -> ()) {
+    
+    func getUsername(forUID uid: String, handler: @escaping (_ username: String?) -> ()) {
         REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
             guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
             for user in userSnapshot {
                 if user.key == uid {
-                    handler(user.childSnapshot(forPath: "email").value as! String)
+                    handler(user.childSnapshot(forPath: "username").value as? String ?? "defaultValue")
                 }
             }
         }
     }
     
-    func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+    func getPic(forUID uid: String, handler: @escaping (_ pic: String) -> ()) {
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                if user.key == uid {
+                    handler(user.childSnapshot(forPath: "pic").value as! String)
+                }
+            }
+        }
+    }
+    
+    func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, withConversationKey conversationKey: String?,sendComplete: @escaping (_ status: Bool) -> ()) {
         if groupKey != nil {
             REF_GROUPS.child(groupKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
@@ -63,11 +85,8 @@ class DataService {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
         }
-    }
-    
-    func uploadBuddha(withMessage message: String, forUID uid: String, withBuddhaKey buddhaKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
-        if buddhaKey != nil {
-            REF_BUDDHA.child(buddhaKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
+        if conversationKey != nil {
+            REF_CONVERSATION.child(conversationKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendComplete(true)
         } else {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
@@ -75,6 +94,16 @@ class DataService {
         }
     }
     
+    
+    func uploadBodhi(withName name: String, withPopUpGroup popUpGroup: String, withCity city: String, withState state: String, withTemple temple: String, withTeacher teacher: String, withPractice practice: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+        if bodhiKey != nil {
+            REF_BODHI.child(bodhiKey!).child("profile").childByAutoId().setValue(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice, "senderId": uid])
+            sendComplete(true)
+        } else {
+            REF_BODHI.child(uid).setValue(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice,"senderId": uid])
+            sendComplete(true)
+        }
+    }
     
     func getAllFeedMessages(handler: @escaping (_ messages: [Message]) -> ()) {
         var messageArray = [Message]()
@@ -84,11 +113,38 @@ class DataService {
             for message in feedMessageSnapshot {
                 let content = message.childSnapshot(forPath: "content").value as! String
                 let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                //let pic = message.childSnapshot(forPath: "pic").value as! String
                 let message = Message(content: content, senderId: senderId)
                 messageArray.append(message)
             }
             
             handler(messageArray)
+        }
+    }
+    
+    
+    
+    func getAllBodhi(handler: @escaping (_ bodhi: [Bodhi]) -> ()) {
+        var bodhiArray = [Bodhi]()
+        REF_BODHI.observeSingleEvent(of: .value) { (bodhiSnapshot) in
+            guard let bodhiSnapshot = bodhiSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for bodhi in bodhiSnapshot {
+                let name = bodhi.childSnapshot(forPath: "Name").value as! String
+                let popUpGroup = bodhi.childSnapshot(forPath: "PopUpGroup").value as! String
+                let city = bodhi.childSnapshot(forPath: "City").value as! String
+                let state = bodhi.childSnapshot(forPath: "State").value as! String
+                let temple = bodhi.childSnapshot(forPath: "Temple").value as! String
+                let teacher = bodhi.childSnapshot(forPath: "Teacher").value as! String
+                let practice = bodhi.childSnapshot(forPath: "Practice").value as! String
+                let senderId = bodhi.childSnapshot(forPath: "senderId").value as! String
+                //let key = bodhi.childSnapshot(forPath: "key").value as! String
+                let bodhi = Bodhi(name: name, popUpGroup: popUpGroup, city: city, state: state, temple: temple, teacher: teacher, practice: practice, senderId: senderId, key: bodhi.key)
+                bodhiArray.append(bodhi)
+                print(bodhiArray)
+            }
+            
+            handler(bodhiArray)
         }
     }
     
@@ -103,6 +159,20 @@ class DataService {
                 groupMessageArray.append(groupMessage)
             }
             handler(groupMessageArray)
+        }
+    }
+    
+    func getConversation(desiredConversation: Conversation, handler: @escaping (_ messagesArray: [Message]) -> ()) {
+        var conversationMessageArray = [Message]()
+        REF_CONVERSATION.child(desiredConversation.key).child("messages").observeSingleEvent(of: .value) { (conversationMessageSnapshot) in
+            guard let conversationMessageSnapshot = conversationMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for conversationMessage in conversationMessageSnapshot {
+                let content = conversationMessage.childSnapshot(forPath: "content").value as! String
+                let senderId = conversationMessage.childSnapshot(forPath: "senderId").value as! String
+                let conversationMessage = Message(content: content, senderId: senderId)
+                conversationMessageArray.append(conversationMessage)
+            }
+            handler(conversationMessageArray)
         }
     }
     
@@ -121,6 +191,7 @@ class DataService {
         }
     }
     
+    
     func getIds(forUsernames usernames: [String], handler: @escaping (_ uidArray: [String]) -> ()) {
         REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
             var idArray = [String]()
@@ -135,6 +206,8 @@ class DataService {
         }
     }
     
+    
+    
     func getEmailsFor(group: Group, handler: @escaping (_ emailArray: [String]) -> ()) {
         var emailArray = [String]()
         REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
@@ -145,12 +218,48 @@ class DataService {
                     emailArray.append(email)
                 }
             }
-        handler(emailArray)
+            handler(emailArray)
+        }
+    }
+    
+    func getEmailsForConversation(conversation: Conversation, handler: @escaping (_ emailArray: [String]) -> ()) {
+        var emailArray = [String]()
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                if conversation.conversationMembers.contains(user.key) {
+                    let email = user.childSnapshot(forPath: "email").value as! String
+                    emailArray.append(email)
+                }
+            }
+            handler(emailArray)
+        }
+    }
+    
+    func createConversation(withTitle title: String, forUserIds ids: [String], handler: @escaping (_ conversationCreated: Bool) -> ()) {
+        REF_CONVERSATION.childByAutoId().updateChildValues(["title": title, "members": ids])
+        //    need to add code here for slow internet: if successful connection true else error
+        handler(true)
+    }
+    
+    func getAllConversations(handler: @escaping (_ conversationsArray: [Conversation]) -> ()) {
+        var conversationsArray = [Conversation]()
+        REF_CONVERSATION.observeSingleEvent(of: .value) { (conversationSnapshot) in
+            guard let conversationSnapshot = conversationSnapshot.children.allObjects as? [DataSnapshot] else { return}
+            for conversation in conversationSnapshot {
+                let memberArray = conversation.childSnapshot(forPath: "members").value as! [String]
+                if memberArray.contains((Auth.auth().currentUser?.uid)!) {
+                    let title = conversation.childSnapshot(forPath: "title").value as! String
+                    let conversation = Conversation(conversationTitle: title, key: conversation.key, conversationMembers: memberArray, conversationMemberCount: memberArray.count)
+                    conversationsArray.append(conversation)
+                }
+            }
+            handler(conversationsArray)
         }
     }
     
     func createGroup(withTitle title: String, andDescription description: String, forUserIds ids: [String], handler: @escaping (_ groupCreated: Bool) -> ()) {
-    REF_GROUPS.childByAutoId().updateChildValues(["title": title, "description": description, "members": ids])
+        REF_GROUPS.childByAutoId().updateChildValues(["title": title, "description": description, "members": ids])
         //    need to add code here for slow internet: if successful connection true else error
         handler(true)
     }
@@ -159,36 +268,36 @@ class DataService {
         var groupsArray = [Group]()
         REF_GROUPS.observeSingleEvent(of: .value) { (groupSnapshot) in
             guard let groupSnapshot = groupSnapshot.children.allObjects as? [DataSnapshot] else { return}
-                for group in groupSnapshot {
-                   let memberArray = group.childSnapshot(forPath: "members").value as! [String]
-                    if memberArray.contains((Auth.auth().currentUser?.uid)!) {
-                        let title = group.childSnapshot(forPath: "title").value as! String
-                        let description = group.childSnapshot(forPath: "description").value as! String
-                        let group = Group(title: title, description: description, key: group.key, members: memberArray, memberCount: memberArray.count)
-                        groupsArray.append(group)
+            for group in groupSnapshot {
+                let memberArray = group.childSnapshot(forPath: "members").value as! [String]
+                if memberArray.contains((Auth.auth().currentUser?.uid)!) {
+                    let title = group.childSnapshot(forPath: "title").value as! String
+                    let description = group.childSnapshot(forPath: "description").value as! String
+                    let group = Group(title: title, description: description, key: group.key, members: memberArray, memberCount: memberArray.count)
+                    groupsArray.append(group)
                 }
             }
-        handler(groupsArray)
+            handler(groupsArray)
         }
     }
     
-//    func getBuddha(handler: @escaping (_ buddhaArray: [Buddha]) -> ()) {
-//        var buddhaArray = [Buddha]()
-//        REF_BUDDHA.observeSingleEvent(of: .value) { (buddhaSnapshot) in
-//            guard let buddhaSnapshot = buddhaSnapshot.children.allObjects as? [DataSnapshot] else { return}
-//            for buddha in buddhaSnapshot {
-//                let memberArray = buddha.childSnapshot(forPath: "members").value as! [String]
-//                if buddhaArray.contains((Auth.auth().currentUser?.uid)!) {
-//                    let name = buddha.childSnapshot(forPath: "name").value as! String
-//                    let popUpGroup = buddha.childSnapshot(forPath: "popUpGroup").value as! String
-//                    let buddha = Buddha(name: name, city: city, key: key, temple: temple, popUpGroup: popUpGroup, teacher: teacher, practice: practice)
-//                    buddhaArray.append(buddha)
-//                }
-//            }
-//            handler(buddhaArray)
-//        }
-//    }
-//
+    //    func getBuddha(handler: @escaping (_ buddhaArray: [Buddha]) -> ()) {
+    //        var buddhaArray = [Buddha]()
+    //        REF_BUDDHA.observeSingleEvent(of: .value) { (buddhaSnapshot) in
+    //            guard let buddhaSnapshot = buddhaSnapshot.children.allObjects as? [DataSnapshot] else { return}
+    //            for buddha in buddhaSnapshot {
+    //                let memberArray = buddha.childSnapshot(forPath: "members").value as! [String]
+    //                if buddhaArray.contains((Auth.auth().currentUser?.uid)!) {
+    //                    let name = buddha.childSnapshot(forPath: "name").value as! String
+    //                    let popUpGroup = buddha.childSnapshot(forPath: "popUpGroup").value as! String
+    //                    let buddha = Buddha(name: name, city: city, key: key, temple: temple, popUpGroup: popUpGroup, teacher: teacher, practice: practice)
+    //                    buddhaArray.append(buddha)
+    //                }
+    //            }
+    //            handler(buddhaArray)
+    //        }
+    //    }
+    //
 }
 
 

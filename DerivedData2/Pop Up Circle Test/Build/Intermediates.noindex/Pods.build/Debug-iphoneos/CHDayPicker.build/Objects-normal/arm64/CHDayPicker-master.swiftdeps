@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "700a40b805ef038408cb8500251eb4e1"
-build_time: [1522504955, 420204000]
-inputs:
-  "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/CHDayPicker/CHDayPicker/Classes/CHDayPicker.swift": !dirty [1499791572, 0]

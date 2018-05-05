@@ -16,6 +16,12 @@
 		D7079F241F06127500026B21 /* DharmaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F221F06127500026B21 /* DharmaCell.swift */; };
 		D7079F251F06127500026B21 /* DharmaRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F231F06127500026B21 /* DharmaRock.swift */; };
 		D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F2A1F06B91100026B21 /* LearningVC.swift */; };
+		D7237B37209CD6580070430D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7237B36209CD6570070430D /* LoginVC.swift */; };
+		D7237B3B209E11220070430D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D7237B39209E11210070430D /* Contents.json */; };
+		D7237B3C209E11220070430D /* amanda-flavell-21988.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7237B3A209E11210070430D /* amanda-flavell-21988.jpg */; };
+		D7237B40209E157D0070430D /* ic_google.png in Resources */ = {isa = PBXBuildFile; fileRef = D7237B3E209E157C0070430D /* ic_google.png */; };
+		D7237B41209E157D0070430D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D7237B3F209E157C0070430D /* Contents.json */; };
+		D7237B43209E47750070430D /* CreateConversationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7237B42209E47750070430D /* CreateConversationVC.swift */; };
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
 		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
@@ -45,6 +51,17 @@
 		D7541F671F8E8F5E0096FDA8 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7541F661F8E8F5E0096FDA8 /* StorageService.swift */; };
 		D7541F691F8E90FB0096FDA8 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7541F681F8E90FB0096FDA8 /* PostService.swift */; };
 		D764DD201F9FC1770039B121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D764DD1F1F9FC1760039B121 /* Assets.xcassets */; };
+		D76E0F4320992B2200B70AD5 /* Bodhi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F4220992B2200B70AD5 /* Bodhi.swift */; };
+		D76E0F4520992F0E00B70AD5 /* profileZen.png in Resources */ = {isa = PBXBuildFile; fileRef = D76E0F4420992F0E00B70AD5 /* profileZen.png */; };
+		D76E0F472099471200B70AD5 /* FirebaseHacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F462099471200B70AD5 /* FirebaseHacks.swift */; };
+		D76E0F4B209A4A6700B70AD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F48209A4A6600B70AD5 /* ProfileVC.swift */; };
+		D76E0F4C209A4A6700B70AD5 /* SanghaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F49209A4A6700B70AD5 /* SanghaCell.swift */; };
+		D76E0F4D209A4A6700B70AD5 /* SanghaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F4A209A4A6700B70AD5 /* SanghaVC.swift */; };
+		D76E0F4F209A5FD000B70AD5 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F4E209A5FD000B70AD5 /* Conversation.swift */; };
+		D76E0F55209A6BE500B70AD5 /* ConversationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F54209A6BE500B70AD5 /* ConversationsVC.swift */; };
+		D76E0F57209A72E400B70AD5 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F56209A72E400B70AD5 /* ConversationCell.swift */; };
+		D76E0F59209A734D00B70AD5 /* ConversationFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F58209A734D00B70AD5 /* ConversationFeedCell.swift */; };
+		D76E0F5D209A751400B70AD5 /* ConversationFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E0F5C209A751400B70AD5 /* ConversationFeedVC.swift */; };
 		D7A8D0D3206AF1EC00DD45AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7A8D0D2206AF1EC00DD45AB /* GoogleService-Info.plist */; };
 		D7A8D0D5206AF3DA00DD45AB /* templeBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7A8D0D4206AF3DA00DD45AB /* templeBell.mp3 */; };
 		D7A8D0D7206AF48000DD45AB /* LovelyBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7A8D0D6206AF48000DD45AB /* LovelyBell.mp3 */; };
@@ -52,13 +69,11 @@
 		D7B8D8BA1F857317002DB434 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8B81F857317002DB434 /* ChatVC.swift */; };
 		D7B8D8BF1F858327002DB434 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8BE1F858327002DB434 /* SWRevealViewController.m */; };
 		D7B8D8C31F85A30B002DB434 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8C21F85A30B002DB434 /* GradientView.swift */; };
-		D7B8D8DE1F86761B002DB434 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8C61F86761A002DB434 /* AuthVC.swift */; };
 		D7B8D8DF1F86761B002DB434 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8C71F86761A002DB434 /* CreateGroupsVC.swift */; };
 		D7B8D8E01F86761B002DB434 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8C81F86761A002DB434 /* CreatePostVC.swift */; };
 		D7B8D8E11F86761B002DB434 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8C91F86761A002DB434 /* FeedVC.swift */; };
 		D7B8D8E21F86761B002DB434 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8CA1F86761A002DB434 /* GroupFeedVC.swift */; };
 		D7B8D8E31F86761B002DB434 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8CB1F86761A002DB434 /* GroupsVC.swift */; };
-		D7B8D8E41F86761B002DB434 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8CC1F86761A002DB434 /* LoginVC.swift */; };
 		D7B8D8E51F86761B002DB434 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8CD1F86761A002DB434 /* MeVC.swift */; };
 		D7B8D8E61F86761B002DB434 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8CF1F86761A002DB434 /* UIViewControllerExt.swift */; };
 		D7B8D8E71F86761B002DB434 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D8D01F86761A002DB434 /* UIViewExt.swift */; };
@@ -96,6 +111,12 @@
 		D7079F221F06127500026B21 /* DharmaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaCell.swift; sourceTree = "<group>"; };
 		D7079F231F06127500026B21 /* DharmaRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaRock.swift; sourceTree = "<group>"; };
 		D7079F2A1F06B91100026B21 /* LearningVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
+		D7237B36209CD6570070430D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = "Pop Up Circle Test/LoginVC.swift"; sourceTree = SOURCE_ROOT; };
+		D7237B39209E11210070430D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		D7237B3A209E11210070430D /* amanda-flavell-21988.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amanda-flavell-21988.jpg"; sourceTree = "<group>"; };
+		D7237B3E209E157C0070430D /* ic_google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_google.png; sourceTree = "<group>"; };
+		D7237B3F209E157C0070430D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		D7237B42209E47750070430D /* CreateConversationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConversationVC.swift; sourceTree = "<group>"; };
 		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73011CD1EFB3381003D637A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +148,17 @@
 		D7541F661F8E8F5E0096FDA8 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D7541F681F8E90FB0096FDA8 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		D764DD1F1F9FC1760039B121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D76E0F4220992B2200B70AD5 /* Bodhi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bodhi.swift; sourceTree = "<group>"; };
+		D76E0F4420992F0E00B70AD5 /* profileZen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profileZen.png; path = Assets.xcassets/profileZen.png; sourceTree = "<group>"; };
+		D76E0F462099471200B70AD5 /* FirebaseHacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHacks.swift; sourceTree = "<group>"; };
+		D76E0F48209A4A6600B70AD5 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = "Pop Up Circle Test/ProfileVC.swift"; sourceTree = SOURCE_ROOT; };
+		D76E0F49209A4A6700B70AD5 /* SanghaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SanghaCell.swift; path = "Pop Up Circle Test/breakpoint/View/SanghaCell.swift"; sourceTree = SOURCE_ROOT; };
+		D76E0F4A209A4A6700B70AD5 /* SanghaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SanghaVC.swift; path = "Pop Up Circle Test/SanghaVC.swift"; sourceTree = SOURCE_ROOT; };
+		D76E0F4E209A5FD000B70AD5 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		D76E0F54209A6BE500B70AD5 /* ConversationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsVC.swift; sourceTree = "<group>"; };
+		D76E0F56209A72E400B70AD5 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		D76E0F58209A734D00B70AD5 /* ConversationFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationFeedCell.swift; sourceTree = "<group>"; };
+		D76E0F5C209A751400B70AD5 /* ConversationFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationFeedVC.swift; sourceTree = "<group>"; };
 		D7A8D0D2206AF1EC00DD45AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7A8D0D4206AF3DA00DD45AB /* templeBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = templeBell.mp3; sourceTree = "<group>"; };
 		D7A8D0D6206AF48000DD45AB /* LovelyBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LovelyBell.mp3; sourceTree = "<group>"; };
@@ -136,13 +168,11 @@
 		D7B8D8BD1F858326002DB434 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D7B8D8BE1F858327002DB434 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D7B8D8C21F85A30B002DB434 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		D7B8D8C61F86761A002DB434 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		D7B8D8C71F86761A002DB434 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		D7B8D8C81F86761A002DB434 /* CreatePostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		D7B8D8C91F86761A002DB434 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		D7B8D8CA1F86761A002DB434 /* GroupFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		D7B8D8CB1F86761A002DB434 /* GroupsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
-		D7B8D8CC1F86761A002DB434 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		D7B8D8CD1F86761A002DB434 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		D7B8D8CF1F86761A002DB434 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		D7B8D8D01F86761A002DB434 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
@@ -211,6 +241,26 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		D7237B38209E11210070430D /* amanda-flavell-21988.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				D7237B39209E11210070430D /* Contents.json */,
+				D7237B3A209E11210070430D /* amanda-flavell-21988.jpg */,
+			);
+			name = "amanda-flavell-21988.imageset";
+			path = "Assets.xcassets/amanda-flavell-21988.imageset";
+			sourceTree = "<group>";
+		};
+		D7237B3D209E157C0070430D /* ic_google.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				D7237B3E209E157C0070430D /* ic_google.png */,
+				D7237B3F209E157C0070430D /* Contents.json */,
+			);
+			name = ic_google.imageset;
+			path = Assets.xcassets/ic_google.imageset;
+			sourceTree = "<group>";
+		};
 		D73011BF1EFB3381003D637A = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +284,9 @@
 			children = (
 				D7A8D0D2206AF1EC00DD45AB /* GoogleService-Info.plist */,
 				D764DD1F1F9FC1760039B121 /* Assets.xcassets */,
+				D7237B3D209E157C0070430D /* ic_google.imageset */,
+				D7237B38209E11210070430D /* amanda-flavell-21988.imageset */,
+				D76E0F4420992F0E00B70AD5 /* profileZen.png */,
 				D7372A8D1FA903620056AB31 /* AppIcon.appiconset */,
 				D7E3F7261F15696F00537EB1 /* Pop Up Circle Test.entitlements */,
 				D7B8D8C41F86761A002DB434 /* breakpoint */,
@@ -341,11 +394,11 @@
 		D7B8D8C41F86761A002DB434 /* breakpoint */ = {
 			isa = PBXGroup;
 			children = (
-				D7B8D8C51F86761A002DB434 /* Controller */,
 				D7B8D8CE1F86761A002DB434 /* Extensions */,
-				D7B8D8D11F86761A002DB434 /* Model */,
 				D7B8D8D41F86761A002DB434 /* Services */,
+				D7B8D8D11F86761A002DB434 /* Model */,
 				D7B8D8D71F86761A002DB434 /* View */,
+				D7B8D8C51F86761A002DB434 /* Controller */,
 			);
 			path = breakpoint;
 			sourceTree = "<group>";
@@ -353,13 +406,17 @@
 		D7B8D8C51F86761A002DB434 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D7B8D8C61F86761A002DB434 /* AuthVC.swift */,
+				D7237B36209CD6570070430D /* LoginVC.swift */,
+				D76E0F48209A4A6600B70AD5 /* ProfileVC.swift */,
+				D76E0F4A209A4A6700B70AD5 /* SanghaVC.swift */,
+				D7237B42209E47750070430D /* CreateConversationVC.swift */,
 				D7B8D8C71F86761A002DB434 /* CreateGroupsVC.swift */,
 				D7B8D8C81F86761A002DB434 /* CreatePostVC.swift */,
 				D7B8D8C91F86761A002DB434 /* FeedVC.swift */,
+				D76E0F5C209A751400B70AD5 /* ConversationFeedVC.swift */,
+				D76E0F54209A6BE500B70AD5 /* ConversationsVC.swift */,
 				D7B8D8CA1F86761A002DB434 /* GroupFeedVC.swift */,
 				D7B8D8CB1F86761A002DB434 /* GroupsVC.swift */,
-				D7B8D8CC1F86761A002DB434 /* LoginVC.swift */,
 				D7B8D8CD1F86761A002DB434 /* MeVC.swift */,
 			);
 			path = Controller;
@@ -377,9 +434,11 @@
 		D7B8D8D11F86761A002DB434 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D76E0F4220992B2200B70AD5 /* Bodhi.swift */,
 				D7B8D8D21F86761A002DB434 /* Group.swift */,
 				D7B8D8D31F86761A002DB434 /* Message.swift */,
 				D7EB74771F8701CF00498F78 /* Buddha.swift */,
+				D76E0F4E209A5FD000B70AD5 /* Conversation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -387,6 +446,7 @@
 		D7B8D8D41F86761A002DB434 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D76E0F462099471200B70AD5 /* FirebaseHacks.swift */,
 				D7B8D8D51F86761A002DB434 /* AuthService.swift */,
 				D7B8D8D61F86761A002DB434 /* DataService.swift */,
 				D7541F661F8E8F5E0096FDA8 /* StorageService.swift */,
@@ -399,9 +459,12 @@
 			isa = PBXGroup;
 			children = (
 				D7B8D8D81F86761A002DB434 /* FeedCell.swift */,
+				D76E0F56209A72E400B70AD5 /* ConversationCell.swift */,
+				D76E0F58209A734D00B70AD5 /* ConversationFeedCell.swift */,
 				D7B8D8D91F86761A002DB434 /* GroupCell.swift */,
 				D7B8D8DA1F86761A002DB434 /* GroupFeedCell.swift */,
 				D7B8D8DB1F86761A002DB434 /* InsetTextField.swift */,
+				D76E0F49209A4A6700B70AD5 /* SanghaCell.swift */,
 				D7B8D8DC1F86761A002DB434 /* ShadowView.swift */,
 				D7B8D8DD1F86761A002DB434 /* UserCell.swift */,
 			);
@@ -480,6 +543,7 @@
 				D73011F81EFC1E70003D637A /* zazenBell3.mp3 in Resources */,
 				D7372AA41FA903620056AB31 /* Icon-App-20x20@2x.png in Resources */,
 				D7372AAD1FA903620056AB31 /* Icon-App-40x40@2x.png in Resources */,
+				D7237B41209E157D0070430D /* Contents.json in Resources */,
 				D7372AA11FA903620056AB31 /* Contents.json in Resources */,
 				D7372AA81FA903620056AB31 /* Icon-App-29x29@2x.png in Resources */,
 				D7372AB31FA903620056AB31 /* marketing1024.png in Resources */,
@@ -488,6 +552,8 @@
 				D7372AB21FA903620056AB31 /* Icon-App-83.5x83.5@2x.png in Resources */,
 				D7372AAC1FA903620056AB31 /* Icon-App-40x40@2x-1.png in Resources */,
 				D7372AA71FA903620056AB31 /* Icon-App-29x29@2x-1.png in Resources */,
+				D7237B3C209E11220070430D /* amanda-flavell-21988.jpg in Resources */,
+				D7237B3B209E11220070430D /* Contents.json in Resources */,
 				D7372AA31FA903620056AB31 /* Icon-App-20x20@2x-1.png in Resources */,
 				D7A8D0D3206AF1EC00DD45AB /* GoogleService-Info.plist in Resources */,
 				D73011D91EFB3381003D637A /* LaunchScreen.storyboard in Resources */,
@@ -496,6 +562,8 @@
 				D7372AA61FA903620056AB31 /* Icon-App-29x29@1x.png in Resources */,
 				D73011FA1EFC1E8C003D637A /* zazenBell1.mp3 in Resources */,
 				D7372AA51FA903620056AB31 /* Icon-App-20x20@3x.png in Resources */,
+				D76E0F4520992F0E00B70AD5 /* profileZen.png in Resources */,
+				D7237B40209E157D0070430D /* ic_google.png in Resources */,
 				D73011D11EFB3381003D637A /* Main.storyboard in Resources */,
 				D7372AAB1FA903620056AB31 /* Icon-App-40x40@1x.png in Resources */,
 				D7A8D0D5206AF3DA00DD45AB /* templeBell.mp3 in Resources */,
@@ -569,17 +637,19 @@
 				D7B8D8E31F86761B002DB434 /* GroupsVC.swift in Sources */,
 				D7079F211F0611DD00026B21 /* VideoVC.swift in Sources */,
 				D7B8D8E71F86761B002DB434 /* UIViewExt.swift in Sources */,
+				D76E0F4D209A4A6700B70AD5 /* SanghaVC.swift in Sources */,
 				D7B8D8E51F86761B002DB434 /* MeVC.swift in Sources */,
-				D7B8D8DE1F86761B002DB434 /* AuthVC.swift in Sources */,
 				D7CC875E1F00BEB60089A806 /* Store+CoreDataClass.swift in Sources */,
 				D7B8D8E61F86761B002DB434 /* UIViewControllerExt.swift in Sources */,
 				D7B8D8F01F86761B002DB434 /* ShadowView.swift in Sources */,
 				D7B8D8E01F86761B002DB434 /* CreatePostVC.swift in Sources */,
+				D76E0F4C209A4A6700B70AD5 /* SanghaCell.swift in Sources */,
 				D7E3F7291F15856100537EB1 /* Item+CoreDataClass.swift in Sources */,
 				D703D49E1F01ACB500580685 /* MaterialView.swift in Sources */,
 				D703D49F1F01ACB500580685 /* ItemCell.swift in Sources */,
 				D7CC875C1F00BEB60089A806 /* ItemType+CoreDataClass.swift in Sources */,
 				D7B8D8BF1F858327002DB434 /* SWRevealViewController.m in Sources */,
+				D76E0F57209A72E400B70AD5 /* ConversationCell.swift in Sources */,
 				D7541F691F8E90FB0096FDA8 /* PostService.swift in Sources */,
 				D7B8D8E11F86761B002DB434 /* FeedVC.swift in Sources */,
 				D7079F241F06127500026B21 /* DharmaCell.swift in Sources */,
@@ -590,24 +660,32 @@
 				D7B8D8EC1F86761B002DB434 /* FeedCell.swift in Sources */,
 				D7CC875B1F00BEB60089A806 /* Image+CoreDataClass.swift in Sources */,
 				D703D4A21F01D11100580685 /* DreamLister.xcdatamodel in Sources */,
+				D76E0F4F209A5FD000B70AD5 /* Conversation.swift in Sources */,
 				D7CC87691F00BEFD0089A806 /* MainVC.swift in Sources */,
 				D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */,
+				D76E0F4B209A4A6700B70AD5 /* ProfileVC.swift in Sources */,
+				D76E0F59209A734D00B70AD5 /* ConversationFeedCell.swift in Sources */,
+				D7237B37209CD6580070430D /* LoginVC.swift in Sources */,
 				D7B8D8EA1F86761B002DB434 /* AuthService.swift in Sources */,
 				D7EB74781F8701CF00498F78 /* Buddha.swift in Sources */,
 				D7CC87661F00BEC50089A806 /* Store+CoreDataProperties.swift in Sources */,
+				D7237B43209E47750070430D /* CreateConversationVC.swift in Sources */,
 				D7B8D8EB1F86761B002DB434 /* DataService.swift in Sources */,
 				D74464041FA8DE580081D6BF /* Identifiers.swift in Sources */,
+				D76E0F55209A6BE500B70AD5 /* ConversationsVC.swift in Sources */,
 				D7CC87631F00BEC50089A806 /* ItemType+CoreDataProperties.swift in Sources */,
 				D7B8D8E81F86761B002DB434 /* Group.swift in Sources */,
+				D76E0F472099471200B70AD5 /* FirebaseHacks.swift in Sources */,
+				D76E0F5D209A751400B70AD5 /* ConversationFeedVC.swift in Sources */,
 				D7B8D8E91F86761B002DB434 /* Message.swift in Sources */,
 				D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */,
 				D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */,
-				D7B8D8E41F86761B002DB434 /* LoginVC.swift in Sources */,
 				D7B8D8B91F857317002DB434 /* ChannelVC.swift in Sources */,
 				D7541F671F8E8F5E0096FDA8 /* StorageService.swift in Sources */,
 				D7B8D8C31F85A30B002DB434 /* GradientView.swift in Sources */,
 				D7CC87641F00BEC50089A806 /* Image+CoreDataProperties.swift in Sources */,
 				D7B8D8EF1F86761B002DB434 /* InsetTextField.swift in Sources */,
+				D76E0F4320992B2200B70AD5 /* Bodhi.swift in Sources */,
 				D7B8D8DF1F86761B002DB434 /* CreateGroupsVC.swift in Sources */,
 				D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */,
 			);

@@ -33,7 +33,7 @@ class FeedVC: UIViewController {
             self.tableView.reloadData()
         }
     }
-
+    
 }
 
 extension FeedVC: UITableViewDelegate, UITableViewDataSource {
@@ -50,9 +50,11 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         let image = UIImage(named: "defaultProfileImage")
         let message = messageArray[indexPath.row]
         
-        DataService.instance.getUsername(forUID: message.senderId) { (returnedUsername) in
-            cell.configureCell(profileImage: image!, email: returnedUsername, content: message.content)
+        DataService.instance.getUsername(forUID: message.senderId) { (email) in
+            cell.configureCell(profile_image: UIImage(named: "defaultProfileImage")!, email: email!, content: message.content, senderId: message.senderId)
         }
         return cell
     }
 }
+
+

@@ -73,6 +73,8 @@ depends-member:
 - ["s7CVarArgP", "Message"]
 - !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UITableViewCell"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "bindToKeyboard"]
 - !private ["s7CVarArgP", "configureCell"]
@@ -122,7 +124,6 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewWillAppear"]
-- ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "joined"]
@@ -136,6 +137,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "Message"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "bindToKeyboard"]
 - !private ["s28CustomDebugStringConvertibleP", "configureCell"]
@@ -186,7 +188,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -201,6 +202,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "Message"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "bindToKeyboard"]
@@ -252,7 +254,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["SC13DataEventTypeO", "value"]
 - !private ["18Pop_Up_Circle_Test11DataServiceC", "REF_GROUPS"]
 - !private ["18Pop_Up_Circle_Test11DataServiceC", "getAllMessagesFor"]
@@ -280,10 +281,12 @@ depends-member:
 - ["s9EquatableP", "Message"]
 - !private ["s9EquatableP", "UIImage"]
 - !private ["s9EquatableP", "UITableViewCell"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "bindToKeyboard"]
 - !private ["s9EquatableP", "configureCell"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "currentUser"]
 - !private ["s9EquatableP", "dataSource"]
 - !private ["s9EquatableP", "delegate"]
@@ -294,8 +297,9 @@ depends-member:
 - !private ["s9EquatableP", "groupTitleLbl"]
 - ["s9EquatableP", "indexPathForPreferredFocusedView"]
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isEnabled"]
+- !private ["s9EquatableP", "joined"]
 - !private ["s9EquatableP", "membersLbl"]
 - !private ["s9EquatableP", "messageTextField"]
 - !private ["s9EquatableP", "none"]
@@ -322,6 +326,7 @@ depends-member:
 - ["s9EquatableP", "sectionIndexTitlesForTableView"]
 - !private ["s9EquatableP", "sendBtn"]
 - !private ["s9EquatableP", "sendButtonView"]
+- !private ["s9EquatableP", "subscript"]
 - ["s9EquatableP", "tableView"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "uid"]
@@ -330,7 +335,6 @@ depends-member:
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
 - !private ["s9EquatableP", "viewWillAppear"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "joined"]
@@ -401,6 +405,7 @@ depends-member:
 - ["s8HashableP", "Message"]
 - !private ["s8HashableP", "UIImage"]
 - !private ["s8HashableP", "UITableViewCell"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "bindToKeyboard"]
@@ -451,7 +456,6 @@ depends-member:
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
 - !private ["s8HashableP", "viewWillAppear"]
-- ["s8HashableP", ""]
 - !private ["10Foundation9IndexPathV", "init"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["18Pop_Up_Circle_Test14InsetTextFieldC", "deinit"]
@@ -473,6 +477,7 @@ depends-member:
 - ["So8NSCodingP", "Message"]
 - !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UITableViewCell"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "bindToKeyboard"]
 - !private ["So8NSCodingP", "configureCell"]
 - !private ["So8NSCodingP", "dataSource"]
@@ -515,14 +520,13 @@ depends-member:
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "viewWillAppear"]
-- ["So8NSCodingP", ""]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "DataService"]
 - !private ["So26NSExtensionRequestHandlingP", "IndexPath"]
 - ["So26NSExtensionRequestHandlingP", "Message"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "dismissDetail"]
 - !private ["So26NSExtensionRequestHandlingP", "group"]
 - !private ["So26NSExtensionRequestHandlingP", "groupMessages"]
@@ -556,10 +560,8 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "DataService"]
@@ -630,6 +632,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "Message"]
 - !private ["So16NSObjectProtocolP", "UIImage"]
 - !private ["So16NSObjectProtocolP", "UITableViewCell"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "bindToKeyboard"]
 - !private ["So16NSObjectProtocolP", "configureCell"]
@@ -676,9 +679,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - !private ["So16NSObjectProtocolP", "viewWillAppear"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "joined"]
@@ -728,6 +729,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "Message"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UITableViewCell"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "bindToKeyboard"]
 - !private ["So21UIAppearanceContainerP", "configureCell"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
@@ -770,7 +772,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So8UIButtonC", "isEnabled"]
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "DataService"]
@@ -778,6 +779,7 @@ depends-member:
 - ["So18UIContentContainerP", "Message"]
 - !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UITableViewCell"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "dismissDetail"]
 - !private ["So18UIContentContainerP", "group"]
 - !private ["So18UIContentContainerP", "groupMessages"]
@@ -811,7 +813,6 @@ depends-member:
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
-- ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "isEnabled"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "isEnabled"]
@@ -847,6 +848,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "Message"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewCell"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "bindToKeyboard"]
 - !private ["So18UIFocusEnvironmentP", "configureCell"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
@@ -889,7 +891,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "bindToKeyboard"]
 - !private ["So11UIFocusItemP", "configureCell"]
 - !private ["So11UIFocusItemP", "dataSource"]
@@ -913,6 +914,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "Message"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "bindToKeyboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
@@ -955,7 +957,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "DataService"]
@@ -1022,6 +1023,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "Message"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "bindToKeyboard"]
 - !private ["So30UIResponderStandardEditActionsP", "configureCell"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
@@ -1064,7 +1066,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "dataSource"]
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
@@ -1076,6 +1077,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "Message"]
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewCell"]
+- ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "dismissDetail"]
 - !private ["So20UIScrollViewDelegateP", "group"]
 - !private ["So20UIScrollViewDelegateP", "groupMessages"]
@@ -1106,7 +1108,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "tableView"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
-- ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
@@ -1119,6 +1120,7 @@ depends-member:
 - ["So16UIStateRestoringP", "Message"]
 - !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UITableViewCell"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "dismissDetail"]
 - !private ["So16UIStateRestoringP", "group"]
 - !private ["So16UIStateRestoringP", "groupMessages"]
@@ -1152,7 +1154,6 @@ depends-member:
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So11UITableViewC", "dataSource"]
 - !private ["So11UITableViewC", "delegate"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
@@ -1166,6 +1167,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "Message"]
 - !private ["So21UITableViewDataSourceP", "UIImage"]
 - !private ["So21UITableViewDataSourceP", "UITableViewCell"]
+- ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "dismissDetail"]
 - !private ["So21UITableViewDataSourceP", "group"]
 - !private ["So21UITableViewDataSourceP", "groupMessages"]
@@ -1196,13 +1198,13 @@ depends-member:
 - ["So21UITableViewDataSourceP", "tableView"]
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
-- ["So21UITableViewDataSourceP", ""]
 - !private ["So19UITableViewDelegateP", "Auth"]
 - !private ["So19UITableViewDelegateP", "DataService"]
 - !private ["So19UITableViewDelegateP", "IndexPath"]
 - ["So19UITableViewDelegateP", "Message"]
 - !private ["So19UITableViewDelegateP", "UIImage"]
 - !private ["So19UITableViewDelegateP", "UITableViewCell"]
+- ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "dismissDetail"]
 - !private ["So19UITableViewDelegateP", "group"]
 - !private ["So19UITableViewDelegateP", "groupMessages"]
@@ -1233,7 +1235,6 @@ depends-member:
 - ["So19UITableViewDelegateP", "tableView"]
 - ["So19UITableViewDelegateP", "viewForZooming"]
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
-- ["So19UITableViewDelegateP", ""]
 - !private ["SC25UITableViewScrollPositionO", "none"]
 - !private ["So15UITextDraggableP", "isEnabled"]
 - !private ["So15UITextDraggableP", "text"]
@@ -1253,6 +1254,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "Message"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UITableViewCell"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "bindToKeyboard"]
 - !private ["So18UITraitEnvironmentP", "configureCell"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
@@ -1295,7 +1297,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "bindToKeyboard"]
 - !private ["So6UIViewC", "configureCell"]
 - !private ["So6UIViewC", "dataSource"]
@@ -1322,6 +1323,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", "UIView"]
+- ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "backBtnWasPressed"]
 - !private ["So16UIViewControllerC", "dismissDetail"]
 - ["So16UIViewControllerC", "group"]
@@ -1357,18 +1359,12 @@ depends-member:
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", "viewWillAppear"]
-- ["So16UIViewControllerC", ""]
 - !private ["So4UserC", "uid"]
 - !private ["So8UserInfoP", "uid"]
 - !private ["s14_ArrayProtocolP", "count"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "joined"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "joined"]
-- !private ["s23_BidirectionalIndexableP", "row"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bindToKeyboard"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "configureCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
@@ -1390,23 +1386,13 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "count"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "joined"]
-- !private ["s10_IndexableP", "row"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "count"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "joined"]
-- !private ["s14_IndexableBaseP", "row"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DataService"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Message"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bindToKeyboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configureCell"]
@@ -1453,27 +1439,12 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "count"]
-- ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "joined"]
-- !private ["s17_MutableIndexableP", "row"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "joined"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "joined"]
-- !private ["s22_RandomAccessIndexableP", "row"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "joined"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
@@ -1511,15 +1482,12 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - "s17MutableCollectionP"
 - "So8NSCodingP"
-- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
@@ -1571,7 +1539,6 @@ depends-nominal:
 - !private "So4UserC"
 - !private "So8UserInfoP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1581,14 +1548,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1691,8 +1652,18 @@ depends-external:
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "eb73eba0d7dd1ec98178a9a3af037182"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "595b790bd70b9fad61caf9a035ce1a16"

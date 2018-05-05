@@ -1,9 +1,9 @@
 //
 //  Group.swift
-//  breakpoint
+//  PopUpZendo
 //
 //  Created by Joseph Hall on 9/23/17.
-//  Copyright © 2017 Caleb Stultz. All rights reserved.
+//  Copyright © 2017 Joseph Hall. All rights reserved.
 //
 
 import Foundation

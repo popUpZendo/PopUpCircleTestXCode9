@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CHDayPicker-Swift.h</key>
 		<data>
-		NLczk8nLngy2eAa0BA5HxamSij4=
+		v2X4O5I+uyg/62uUny/Pr2ZRU0I=
 		</data>
 		<key>Headers/CHDayPicker-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sTPDvFIEjmwI0BljfJ1MdFuV3DY=
+		hyy2M9p5qnxWVB97CrjYpiZNhhM=
 		</data>
 		<key>Modules/CHDayPicker.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		fooyYlbAqVSDppvSvvNIqOOZi2E=
+		w/51/N2bz1Hp3603vOVNhBt+i68=
 		</data>
 		<key>Modules/CHDayPicker.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Hd6zQSiygn2RujooWa0w/ZTzlmU=
+		tZhijc0Ub+kiwsp4EsL6KnHCehk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NLczk8nLngy2eAa0BA5HxamSij4=
+			v2X4O5I+uyg/62uUny/Pr2ZRU0I=
 			</data>
 			<key>hash2</key>
 			<data>
-			zdeexXbom/LajiUj/T6Q/r6Xx9nvorgTxB/ropRquiU=
+			p57SbvS16kmFisUU0C0ylgNjRLWj2V1TYISJyl3vFWU=
 			</data>
 		</dict>
 		<key>Headers/CHDayPicker-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fooyYlbAqVSDppvSvvNIqOOZi2E=
+			w/51/N2bz1Hp3603vOVNhBt+i68=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pyt636d9ao7e0rQETnEoTnEDbB1JvaTbtiwkEwNHOrg=
+			fzoAo9vFNQhQET9zERjn1qA0iNMVXD+9FLBjEqXqDnE=
 			</data>
 		</dict>
 		<key>Modules/CHDayPicker.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hd6zQSiygn2RujooWa0w/ZTzlmU=
+			tZhijc0Ub+kiwsp4EsL6KnHCehk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lj19YEaYMNonbNbdF4VljqfDK0UPxrhC7s7co0S4L1c=
+			yJeXYklsgIw6+0i2/stesWIiBb5taPJnv+s/i4SZbQg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

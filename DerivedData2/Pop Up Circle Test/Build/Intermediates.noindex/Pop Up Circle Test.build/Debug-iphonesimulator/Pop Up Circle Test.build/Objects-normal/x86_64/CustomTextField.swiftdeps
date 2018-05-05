@@ -43,6 +43,7 @@ depends-member:
 - !private ["So7CALayerC", "masksToBounds"]
 - ["So15CALayerDelegateP", "UIColor"]
 - ["So15CALayerDelegateP", "UIFont"]
+- ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "fontCol"]
 - !private ["So15CALayerDelegateP", "init"]
@@ -50,7 +51,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "tintCol"]
 - !private ["So15CALayerDelegateP", "tintColor"]
-- ["So15CALayerDelegateP", ""]
 - !private ["So13CAMediaTimingP", "borderColor"]
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
@@ -60,6 +60,7 @@ depends-member:
 - !private ["s7CVarArgP", "CGFloat"]
 - ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", "UIFont"]
+- ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "assert"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "borderColor"]
@@ -73,12 +74,12 @@ depends-member:
 - !private ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "tintCol"]
 - !private ["s7CVarArgP", "tintColor"]
-- ["s7CVarArgP", ""]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", "UIFont"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "assert"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "borderColor"]
@@ -93,7 +94,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
 - !private ["s28CustomDebugStringConvertibleP", "tintCol"]
 - !private ["s28CustomDebugStringConvertibleP", "tintColor"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "insetBy"]
 - ["s17CustomReflectableP", "init"]
@@ -101,6 +101,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "CGFloat"]
 - ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", "UIFont"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "assert"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "borderColor"]
@@ -114,7 +115,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "textColor"]
 - !private ["s23CustomStringConvertibleP", "tintCol"]
 - !private ["s23CustomStringConvertibleP", "tintColor"]
-- ["s23CustomStringConvertibleP", ""]
 - ["18Pop_Up_Circle_Test15CustomTextFieldC", "CGRect"]
 - ["18Pop_Up_Circle_Test15CustomTextFieldC", "UIColor"]
 - ["18Pop_Up_Circle_Test15CustomTextFieldC", "UIFont"]
@@ -138,6 +138,7 @@ depends-member:
 - !private ["s9EquatableP", "CGFloat"]
 - ["s9EquatableP", "UIColor"]
 - ["s9EquatableP", "UIFont"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "assert"]
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "borderColor"]
@@ -152,7 +153,6 @@ depends-member:
 - !private ["s9EquatableP", "textColor"]
 - !private ["s9EquatableP", "tintCol"]
 - !private ["s9EquatableP", "tintColor"]
-- ["s9EquatableP", ""]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
@@ -162,6 +162,7 @@ depends-member:
 - !private ["s8HashableP", "CGFloat"]
 - ["s8HashableP", "UIColor"]
 - ["s8HashableP", "UIFont"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "assert"]
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "borderColor"]
@@ -175,12 +176,12 @@ depends-member:
 - !private ["s8HashableP", "textColor"]
 - !private ["s8HashableP", "tintCol"]
 - !private ["s8HashableP", "tintColor"]
-- ["s8HashableP", ""]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "CGFloat"]
 - ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", "UIFont"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "assert"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "borderColor"]
@@ -194,7 +195,6 @@ depends-member:
 - !private ["So8NSCodingP", "textColor"]
 - !private ["So8NSCodingP", "tintCol"]
 - !private ["So8NSCodingP", "tintColor"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "CGFloat"]
 - !private ["So9NSCopyingP", "assert"]
 - !private ["So9NSCopyingP", "cgColor"]
@@ -207,7 +207,6 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "assert"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
 - ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "Int"]
@@ -234,6 +233,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "CGFloat"]
 - ["So16NSObjectProtocolP", "UIColor"]
 - ["So16NSObjectProtocolP", "UIFont"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "assert"]
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "borderColor"]
@@ -247,7 +247,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "textColor"]
 - !private ["So16NSObjectProtocolP", "tintCol"]
 - !private ["So16NSObjectProtocolP", "tintColor"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "CGFloat"]
 - !private ["So14NSSecureCodingP", "assert"]
 - !private ["So14NSSecureCodingP", "borderColor"]
@@ -256,7 +255,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "cornerRadius"]
 - ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "masksToBounds"]
-- ["So8NSStringC", "init"]
 - !private ["s7NumericP", "init"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - ["s8SequenceP", "init"]
@@ -269,6 +267,7 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - ["So29UIAccessibilityIdentificationP", "UIColor"]
 - ["So29UIAccessibilityIdentificationP", "UIFont"]
+- ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "fontCol"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
@@ -276,9 +275,9 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "textColor"]
 - !private ["So29UIAccessibilityIdentificationP", "tintCol"]
 - !private ["So29UIAccessibilityIdentificationP", "tintColor"]
-- ["So29UIAccessibilityIdentificationP", ""]
 - ["So12UIAppearanceP", "UIColor"]
 - ["So12UIAppearanceP", "UIFont"]
+- ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "fontCol"]
 - !private ["So12UIAppearanceP", "init"]
@@ -286,9 +285,9 @@ depends-member:
 - !private ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "tintCol"]
 - !private ["So12UIAppearanceP", "tintColor"]
-- ["So12UIAppearanceP", ""]
 - ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", "UIFont"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "fontCol"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -296,7 +295,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "textColor"]
 - !private ["So21UIAppearanceContainerP", "tintCol"]
 - !private ["So21UIAppearanceContainerP", "tintColor"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So7UIColorC", "CGFloat"]
 - ["So7UIColorC", "Int"]
 - !private ["So7UIColorC", "assert"]
@@ -304,6 +302,7 @@ depends-member:
 - ["So7UIColorC", "init"]
 - ["So30UIContentSizeCategoryAdjustingP", "UIColor"]
 - ["So30UIContentSizeCategoryAdjustingP", "UIFont"]
+- ["So30UIContentSizeCategoryAdjustingP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "backgroundColor"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "fontCol"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "init"]
@@ -311,7 +310,6 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "tintCol"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "tintColor"]
-- ["So30UIContentSizeCategoryAdjustingP", ""]
 - ["So9UIControlC", "CGRect"]
 - ["So9UIControlC", "UIColor"]
 - ["So9UIControlC", "UIFont"]
@@ -329,6 +327,7 @@ depends-member:
 - !private ["So9UIControlC", "tintColor"]
 - ["So17UICoordinateSpaceP", "UIColor"]
 - ["So17UICoordinateSpaceP", "UIFont"]
+- ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "fontCol"]
 - !private ["So17UICoordinateSpaceP", "init"]
@@ -336,9 +335,9 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "textColor"]
 - !private ["So17UICoordinateSpaceP", "tintCol"]
 - !private ["So17UICoordinateSpaceP", "tintColor"]
-- ["So17UICoordinateSpaceP", ""]
 - ["So13UIDynamicItemP", "UIColor"]
 - ["So13UIDynamicItemP", "UIFont"]
+- ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "fontCol"]
 - !private ["So13UIDynamicItemP", "init"]
@@ -346,9 +345,9 @@ depends-member:
 - !private ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "tintCol"]
 - !private ["So13UIDynamicItemP", "tintColor"]
-- ["So13UIDynamicItemP", ""]
 - ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", "UIFont"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "fontCol"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -356,9 +355,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "textColor"]
 - !private ["So18UIFocusEnvironmentP", "tintCol"]
 - !private ["So18UIFocusEnvironmentP", "tintColor"]
-- ["So18UIFocusEnvironmentP", ""]
 - ["So11UIFocusItemP", "UIColor"]
 - ["So11UIFocusItemP", "UIFont"]
+- ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "fontCol"]
 - !private ["So11UIFocusItemP", "init"]
@@ -366,10 +365,10 @@ depends-member:
 - !private ["So11UIFocusItemP", "textColor"]
 - !private ["So11UIFocusItemP", "tintCol"]
 - !private ["So11UIFocusItemP", "tintColor"]
-- ["So11UIFocusItemP", ""]
 - ["So6UIFontC", "init"]
 - ["So10UIKeyInputP", "UIColor"]
 - ["So10UIKeyInputP", "UIFont"]
+- ["So10UIKeyInputP", ""]
 - !private ["So10UIKeyInputP", "backgroundColor"]
 - !private ["So10UIKeyInputP", "fontCol"]
 - !private ["So10UIKeyInputP", "init"]
@@ -377,9 +376,9 @@ depends-member:
 - !private ["So10UIKeyInputP", "textColor"]
 - !private ["So10UIKeyInputP", "tintCol"]
 - !private ["So10UIKeyInputP", "tintColor"]
-- ["So10UIKeyInputP", ""]
 - ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", "UIFont"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "fontCol"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -387,7 +386,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "tintCol"]
 - !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "CGRect"]
 - ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIFont"]
@@ -405,6 +403,7 @@ depends-member:
 - !private ["So11UIResponderC", "tintColor"]
 - ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", "UIFont"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "fontCol"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -412,9 +411,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textColor"]
 - !private ["So30UIResponderStandardEditActionsP", "tintCol"]
 - !private ["So30UIResponderStandardEditActionsP", "tintColor"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - ["So15UITextDraggableP", "UIColor"]
 - ["So15UITextDraggableP", "UIFont"]
+- ["So15UITextDraggableP", ""]
 - !private ["So15UITextDraggableP", "backgroundColor"]
 - !private ["So15UITextDraggableP", "fontCol"]
 - !private ["So15UITextDraggableP", "init"]
@@ -422,9 +421,9 @@ depends-member:
 - !private ["So15UITextDraggableP", "textColor"]
 - !private ["So15UITextDraggableP", "tintCol"]
 - !private ["So15UITextDraggableP", "tintColor"]
-- ["So15UITextDraggableP", ""]
 - ["So15UITextDroppableP", "UIColor"]
 - ["So15UITextDroppableP", "UIFont"]
+- ["So15UITextDroppableP", ""]
 - !private ["So15UITextDroppableP", "backgroundColor"]
 - !private ["So15UITextDroppableP", "fontCol"]
 - !private ["So15UITextDroppableP", "init"]
@@ -432,10 +431,10 @@ depends-member:
 - !private ["So15UITextDroppableP", "textColor"]
 - !private ["So15UITextDroppableP", "tintCol"]
 - !private ["So15UITextDroppableP", "tintColor"]
-- ["So15UITextDroppableP", ""]
 - ["So11UITextFieldC", "CGRect"]
 - ["So11UITextFieldC", "UIColor"]
 - ["So11UITextFieldC", "UIFont"]
+- ["So11UITextFieldC", ""]
 - !private ["So11UITextFieldC", "backgroundColor"]
 - ["So11UITextFieldC", "draw"]
 - ["So11UITextFieldC", "editingRect"]
@@ -448,9 +447,9 @@ depends-member:
 - ["So11UITextFieldC", "textRect"]
 - ["So11UITextFieldC", "tintCol"]
 - !private ["So11UITextFieldC", "tintColor"]
-- ["So11UITextFieldC", ""]
 - ["So11UITextInputP", "UIColor"]
 - ["So11UITextInputP", "UIFont"]
+- ["So11UITextInputP", ""]
 - !private ["So11UITextInputP", "backgroundColor"]
 - !private ["So11UITextInputP", "fontCol"]
 - !private ["So11UITextInputP", "init"]
@@ -458,9 +457,9 @@ depends-member:
 - !private ["So11UITextInputP", "textColor"]
 - !private ["So11UITextInputP", "tintCol"]
 - !private ["So11UITextInputP", "tintColor"]
-- ["So11UITextInputP", ""]
 - ["So17UITextInputTraitsP", "UIColor"]
 - ["So17UITextInputTraitsP", "UIFont"]
+- ["So17UITextInputTraitsP", ""]
 - !private ["So17UITextInputTraitsP", "backgroundColor"]
 - !private ["So17UITextInputTraitsP", "fontCol"]
 - !private ["So17UITextInputTraitsP", "init"]
@@ -468,9 +467,9 @@ depends-member:
 - !private ["So17UITextInputTraitsP", "textColor"]
 - !private ["So17UITextInputTraitsP", "tintCol"]
 - !private ["So17UITextInputTraitsP", "tintColor"]
-- ["So17UITextInputTraitsP", ""]
 - ["So34UITextPasteConfigurationSupportingP", "UIColor"]
 - ["So34UITextPasteConfigurationSupportingP", "UIFont"]
+- ["So34UITextPasteConfigurationSupportingP", ""]
 - !private ["So34UITextPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So34UITextPasteConfigurationSupportingP", "fontCol"]
 - !private ["So34UITextPasteConfigurationSupportingP", "init"]
@@ -478,9 +477,9 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "textColor"]
 - !private ["So34UITextPasteConfigurationSupportingP", "tintCol"]
 - !private ["So34UITextPasteConfigurationSupportingP", "tintColor"]
-- ["So34UITextPasteConfigurationSupportingP", ""]
 - ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", "UIFont"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "fontCol"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -488,7 +487,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "tintCol"]
 - !private ["So18UITraitEnvironmentP", "tintColor"]
-- ["So18UITraitEnvironmentP", ""]
 - ["So6UIViewC", "CGRect"]
 - ["So6UIViewC", "UIColor"]
 - ["So6UIViewC", "UIFont"]
@@ -504,11 +502,11 @@ depends-member:
 - ["So6UIViewC", "textRect"]
 - ["So6UIViewC", "tintCol"]
 - !private ["So6UIViewC", "tintColor"]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "UIFont"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "fontCol"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
@@ -516,7 +514,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tintCol"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tintColor"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -526,12 +523,10 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - ["s26_ExpressibleByColorLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "assert"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderColor"]
@@ -545,11 +540,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tintCol"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "insetBy"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
@@ -583,11 +575,9 @@ depends-nominal:
 - "So9NSCopyingP"
 - "So21NSItemProviderReadingP"
 - "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - "So14NSSecureCodingP"
-- "So8NSStringC"
 - !private "s7NumericP"
 - "s26RangeReplaceableCollectionP"
 - "s8SequenceP"
@@ -621,7 +611,6 @@ depends-nominal:
 - "So34UITextPasteConfigurationSupportingP"
 - "So18UITraitEnvironmentP"
 - "So6UIViewC"
-- "s23_BidirectionalIndexableP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
@@ -631,13 +620,8 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s26_ExpressibleByColorLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -740,8 +724,18 @@ depends-external:
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "782ae58b98f9b92d1625de6defa8deb4"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "454720992ffc63898586f27a6a47e874"

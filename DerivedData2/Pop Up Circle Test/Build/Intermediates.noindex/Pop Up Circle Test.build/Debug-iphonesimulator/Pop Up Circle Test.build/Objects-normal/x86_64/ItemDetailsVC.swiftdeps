@@ -180,6 +180,8 @@ depends-member:
 - !private ["s7CVarArgP", "UNNotificationRequest"]
 - !private ["s7CVarArgP", "UNNotificationSound"]
 - !private ["s7CVarArgP", "UNUserNotificationCenter"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "actionIdentifier"]
 - !private ["s7CVarArgP", "ad"]
 - !private ["s7CVarArgP", "add"]
@@ -307,7 +309,6 @@ depends-member:
 - !private ["s7CVarArgP", "wednesdayBool"]
 - !private ["s7CVarArgP", "wednesdayButton"]
 - !private ["s7CVarArgP", "weekdays"]
-- ["s7CVarArgP", ""]
 - !private ["10Foundation8CalendarV", "current"]
 - !private ["10Foundation8CalendarV", "dateComponents"]
 - ["s10CollectionP", "init"]
@@ -340,6 +341,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UNNotificationRequest"]
 - !private ["s28CustomDebugStringConvertibleP", "UNNotificationSound"]
 - !private ["s28CustomDebugStringConvertibleP", "UNUserNotificationCenter"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "actionIdentifier"]
 - !private ["s28CustomDebugStringConvertibleP", "ad"]
 - !private ["s28CustomDebugStringConvertibleP", "add"]
@@ -468,7 +470,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "wednesdayBool"]
 - !private ["s28CustomDebugStringConvertibleP", "wednesdayButton"]
 - !private ["s28CustomDebugStringConvertibleP", "weekdays"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "localizedUserNotificationString"]
@@ -501,6 +502,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UNNotificationRequest"]
 - !private ["s23CustomStringConvertibleP", "UNNotificationSound"]
 - !private ["s23CustomStringConvertibleP", "UNUserNotificationCenter"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "actionIdentifier"]
 - !private ["s23CustomStringConvertibleP", "ad"]
@@ -630,7 +632,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "wednesdayBool"]
 - !private ["s23CustomStringConvertibleP", "wednesdayButton"]
 - !private ["s23CustomStringConvertibleP", "weekdays"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["18Pop_Up_Circle_Test15CustomTextFieldC", "deinit"]
 - !private ["18Pop_Up_Circle_Test15CustomTextFieldC", "delegate"]
 - !private ["18Pop_Up_Circle_Test15CustomTextFieldC", "returnKeyType"]
@@ -676,6 +677,7 @@ depends-member:
 - !private ["s9EquatableP", "UNNotificationRequest"]
 - !private ["s9EquatableP", "UNNotificationSound"]
 - !private ["s9EquatableP", "UNUserNotificationCenter"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "actionIdentifier"]
 - !private ["s9EquatableP", "ad"]
@@ -767,6 +769,7 @@ depends-member:
 - !private ["s9EquatableP", "short"]
 - !private ["s9EquatableP", "sound"]
 - !private ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "sunday"]
 - !private ["s9EquatableP", "sundayBool"]
 - !private ["s9EquatableP", "sundayButton"]
@@ -812,7 +815,6 @@ depends-member:
 - !private ["s9EquatableP", "wednesdayBool"]
 - !private ["s9EquatableP", "wednesdayButton"]
 - !private ["s9EquatableP", "weekdays"]
-- ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "alert"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "sound"]
@@ -855,6 +857,7 @@ depends-member:
 - !private ["s8HashableP", "UNNotificationRequest"]
 - !private ["s8HashableP", "UNNotificationSound"]
 - !private ["s8HashableP", "UNUserNotificationCenter"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "actionIdentifier"]
 - !private ["s8HashableP", "ad"]
@@ -991,7 +994,6 @@ depends-member:
 - !private ["s8HashableP", "wednesdayBool"]
 - !private ["s8HashableP", "wednesdayButton"]
 - !private ["s8HashableP", "weekdays"]
-- ["s8HashableP", ""]
 - !private ["18Pop_Up_Circle_Test5ImageC", "image"]
 - !private ["18Pop_Up_Circle_Test5ImageC", "init"]
 - !private ["18Pop_Up_Circle_Test4ItemC", "bell"]
@@ -1187,6 +1189,7 @@ depends-member:
 - !private ["So8NSCodingP", "UNNotificationRequest"]
 - !private ["So8NSCodingP", "UNNotificationSound"]
 - !private ["So8NSCodingP", "UNUserNotificationCenter"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "actionIdentifier"]
 - !private ["So8NSCodingP", "ad"]
 - !private ["So8NSCodingP", "addAction"]
@@ -1296,7 +1299,6 @@ depends-member:
 - !private ["So8NSCodingP", "wednesdayBool"]
 - !private ["So8NSCodingP", "wednesdayButton"]
 - !private ["So8NSCodingP", "weekdays"]
-- ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "Style"]
 - !private ["So9NSCopyingP", "actionIdentifier"]
 - !private ["So9NSCopyingP", "body"]
@@ -1330,6 +1332,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UNNotificationRequest"]
 - !private ["So26NSExtensionRequestHandlingP", "UNNotificationSound"]
 - !private ["So26NSExtensionRequestHandlingP", "UNUserNotificationCenter"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "ad"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "alarm"]
@@ -1418,7 +1421,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "wednesdayBool"]
 - !private ["So26NSExtensionRequestHandlingP", "wednesdayButton"]
 - !private ["So26NSExtensionRequestHandlingP", "weekdays"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So20NSFetchRequestResultP", "bell"]
 - !private ["So20NSFetchRequestResultP", "details"]
 - !private ["So20NSFetchRequestResultP", "eventTime"]
@@ -1460,7 +1462,7 @@ depends-member:
 - !private ["So15NSManagedObjectC", "wednesday"]
 - !private ["So22NSManagedObjectContextC", "delete"]
 - !private ["So16NSMutableCopyingP", "body"]
-- ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "localizedUserNotificationString"]
 - !private ["So16NSMutableCopyingP", "sound"]
 - !private ["So16NSMutableCopyingP", "title"]
@@ -1679,6 +1681,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UNNotificationRequest"]
 - !private ["So16NSObjectProtocolP", "UNNotificationSound"]
 - !private ["So16NSObjectProtocolP", "UNUserNotificationCenter"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "actionIdentifier"]
 - !private ["So16NSObjectProtocolP", "ad"]
 - !private ["So16NSObjectProtocolP", "add"]
@@ -1805,14 +1808,12 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "wednesdayBool"]
 - !private ["So16NSObjectProtocolP", "wednesdayButton"]
 - !private ["So16NSObjectProtocolP", "weekdays"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "actionIdentifier"]
 - !private ["So14NSSecureCodingP", "body"]
 - ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "localizedUserNotificationString"]
 - !private ["So14NSSecureCodingP", "sound"]
 - !private ["So14NSSecureCodingP", "title"]
-- ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "localizedUserNotificationString"]
 - !private ["s9OptionSetP", "alert"]
 - !private ["s9OptionSetP", "sound"]
@@ -1895,6 +1896,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UNNotificationRequest"]
 - !private ["So21UIAppearanceContainerP", "UNNotificationSound"]
 - !private ["So21UIAppearanceContainerP", "UNUserNotificationCenter"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "ad"]
 - !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
@@ -1994,7 +1996,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "wednesdayBool"]
 - !private ["So21UIAppearanceContainerP", "wednesdayButton"]
 - !private ["So21UIAppearanceContainerP", "weekdays"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIApplicationDelegateP", "saveContext"]
 - !private ["So15UIBarButtonItemC", "init"]
 - !private ["SC20UIBarButtonItemStyleO", "plain"]
@@ -2026,6 +2027,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UNNotificationRequest"]
 - !private ["So18UIContentContainerP", "UNNotificationSound"]
 - !private ["So18UIContentContainerP", "UNUserNotificationCenter"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "ad"]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "alarm"]
@@ -2114,7 +2116,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "wednesdayBool"]
 - !private ["So18UIContentContainerP", "wednesdayButton"]
 - !private ["So18UIContentContainerP", "weekdays"]
-- ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "delegate"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "returnKeyType"]
@@ -2174,6 +2175,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UNNotificationRequest"]
 - !private ["So18UIFocusEnvironmentP", "UNNotificationSound"]
 - !private ["So18UIFocusEnvironmentP", "UNUserNotificationCenter"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "ad"]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
@@ -2273,7 +2275,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "wednesdayBool"]
 - !private ["So18UIFocusEnvironmentP", "wednesdayButton"]
 - !private ["So18UIFocusEnvironmentP", "weekdays"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "date"]
 - !private ["So11UIFocusItemP", "delegate"]
@@ -2314,6 +2315,7 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "UNNotificationRequest"]
 - !private ["So31UIImagePickerControllerDelegateP", "UNNotificationSound"]
 - !private ["So31UIImagePickerControllerDelegateP", "UNUserNotificationCenter"]
+- ["So31UIImagePickerControllerDelegateP", ""]
 - !private ["So31UIImagePickerControllerDelegateP", "ad"]
 - !private ["So31UIImagePickerControllerDelegateP", "alarm"]
 - !private ["So31UIImagePickerControllerDelegateP", "context"]
@@ -2394,7 +2396,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "wednesdayBool"]
 - !private ["So31UIImagePickerControllerDelegateP", "wednesdayButton"]
 - !private ["So31UIImagePickerControllerDelegateP", "weekdays"]
-- ["So31UIImagePickerControllerDelegateP", ""]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So11UIImageViewC", "isHidden"]
 - ["So39UIItemProviderPresentationSizeProvidingP", "init"]
@@ -2432,6 +2433,7 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "UNNotificationRequest"]
 - !private ["So30UINavigationControllerDelegateP", "UNNotificationSound"]
 - !private ["So30UINavigationControllerDelegateP", "UNUserNotificationCenter"]
+- ["So30UINavigationControllerDelegateP", ""]
 - !private ["So30UINavigationControllerDelegateP", "ad"]
 - !private ["So30UINavigationControllerDelegateP", "alarm"]
 - !private ["So30UINavigationControllerDelegateP", "context"]
@@ -2512,7 +2514,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "wednesdayBool"]
 - !private ["So30UINavigationControllerDelegateP", "wednesdayButton"]
 - !private ["So30UINavigationControllerDelegateP", "weekdays"]
-- ["So30UINavigationControllerDelegateP", ""]
 - !private ["So16UINavigationItemC", "backBarButtonItem"]
 - ["So30UIPasteConfigurationSupportingP", "Bool"]
 - !private ["So30UIPasteConfigurationSupportingP", "Calendar"]
@@ -2537,6 +2538,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UNNotificationRequest"]
 - !private ["So30UIPasteConfigurationSupportingP", "UNNotificationSound"]
 - !private ["So30UIPasteConfigurationSupportingP", "UNUserNotificationCenter"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "ad"]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
@@ -2637,7 +2639,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "wednesdayBool"]
 - !private ["So30UIPasteConfigurationSupportingP", "wednesdayButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "weekdays"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "AnyObject"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Calendar"]
@@ -2825,6 +2826,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UNNotificationRequest"]
 - !private ["So30UIResponderStandardEditActionsP", "UNNotificationSound"]
 - !private ["So30UIResponderStandardEditActionsP", "UNUserNotificationCenter"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "ad"]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
@@ -2925,7 +2927,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "wednesdayBool"]
 - !private ["So30UIResponderStandardEditActionsP", "wednesdayButton"]
 - !private ["So30UIResponderStandardEditActionsP", "weekdays"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["SC15UIReturnKeyTypeO", "done"]
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "resignFirstResponder"]
@@ -2954,6 +2955,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UNNotificationRequest"]
 - !private ["So20UIScrollViewDelegateP", "UNNotificationSound"]
 - !private ["So20UIScrollViewDelegateP", "UNUserNotificationCenter"]
+- ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "ad"]
 - !private ["So20UIScrollViewDelegateP", "alarm"]
 - !private ["So20UIScrollViewDelegateP", "context"]
@@ -3034,7 +3036,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "wednesdayBool"]
 - !private ["So20UIScrollViewDelegateP", "wednesdayButton"]
 - !private ["So20UIScrollViewDelegateP", "weekdays"]
-- ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
@@ -3063,6 +3064,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UNNotificationRequest"]
 - !private ["So16UIStateRestoringP", "UNNotificationSound"]
 - !private ["So16UIStateRestoringP", "UNUserNotificationCenter"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "ad"]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "alarm"]
@@ -3151,7 +3153,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "wednesdayBool"]
 - !private ["So16UIStateRestoringP", "wednesdayButton"]
 - !private ["So16UIStateRestoringP", "weekdays"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So22UITapGestureRecognizerC", "init"]
 - !private ["So15UITextDraggableP", "delegate"]
 - !private ["So15UITextDraggableP", "resignFirstResponder"]
@@ -3187,6 +3188,7 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "UNNotificationRequest"]
 - !private ["So19UITextFieldDelegateP", "UNNotificationSound"]
 - !private ["So19UITextFieldDelegateP", "UNUserNotificationCenter"]
+- ["So19UITextFieldDelegateP", ""]
 - !private ["So19UITextFieldDelegateP", "ad"]
 - !private ["So19UITextFieldDelegateP", "alarm"]
 - !private ["So19UITextFieldDelegateP", "context"]
@@ -3267,7 +3269,6 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "wednesdayBool"]
 - !private ["So19UITextFieldDelegateP", "wednesdayButton"]
 - !private ["So19UITextFieldDelegateP", "weekdays"]
-- ["So19UITextFieldDelegateP", ""]
 - !private ["So11UITextInputP", "delegate"]
 - !private ["So11UITextInputP", "resignFirstResponder"]
 - !private ["So11UITextInputP", "returnKeyType"]
@@ -3307,6 +3308,7 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "UNNotificationRequest"]
 - !private ["So18UITextViewDelegateP", "UNNotificationSound"]
 - !private ["So18UITextViewDelegateP", "UNUserNotificationCenter"]
+- ["So18UITextViewDelegateP", ""]
 - !private ["So18UITextViewDelegateP", "ad"]
 - !private ["So18UITextViewDelegateP", "alarm"]
 - !private ["So18UITextViewDelegateP", "context"]
@@ -3387,7 +3389,6 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "wednesdayBool"]
 - !private ["So18UITextViewDelegateP", "wednesdayButton"]
 - !private ["So18UITextViewDelegateP", "weekdays"]
-- ["So18UITextViewDelegateP", ""]
 - ["So18UITraitEnvironmentP", "Bool"]
 - !private ["So18UITraitEnvironmentP", "Calendar"]
 - ["So18UITraitEnvironmentP", "DateFormatter"]
@@ -3411,6 +3412,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UNNotificationRequest"]
 - !private ["So18UITraitEnvironmentP", "UNNotificationSound"]
 - !private ["So18UITraitEnvironmentP", "UNUserNotificationCenter"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "ad"]
 - !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
@@ -3510,7 +3512,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "wednesdayBool"]
 - !private ["So18UITraitEnvironmentP", "wednesdayButton"]
 - !private ["So18UITraitEnvironmentP", "weekdays"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "date"]
 - !private ["So6UIViewC", "delegate"]
@@ -3562,6 +3563,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "UNNotificationSound"]
 - ["So16UIViewControllerC", "UNUserNotificationCenter"]
 - ["So16UIViewControllerC", "Void"]
+- ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "ad"]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "addImage"]
@@ -3675,7 +3677,6 @@ depends-member:
 - ["So16UIViewControllerC", "wednesdayPressed"]
 - ["So16UIViewControllerC", "weekdays"]
 - ["So16UIViewControllerC", "weekdays_list"]
-- ["So16UIViewControllerC", ""]
 - !private ["So29UNCalendarNotificationTriggerC", "init"]
 - !private ["So28UNMutableNotificationContentC", "body"]
 - !private ["So28UNMutableNotificationContentC", "init"]
@@ -3717,6 +3718,7 @@ depends-member:
 - !private ["So32UNUserNotificationCenterDelegateP", "UNNotificationRequest"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UNNotificationSound"]
 - !private ["So32UNUserNotificationCenterDelegateP", "UNUserNotificationCenter"]
+- ["So32UNUserNotificationCenterDelegateP", ""]
 - !private ["So32UNUserNotificationCenterDelegateP", "ad"]
 - !private ["So32UNUserNotificationCenterDelegateP", "alarm"]
 - !private ["So32UNUserNotificationCenterDelegateP", "context"]
@@ -3798,11 +3800,8 @@ depends-member:
 - !private ["So32UNUserNotificationCenterDelegateP", "wednesdayBool"]
 - !private ["So32UNUserNotificationCenterDelegateP", "wednesdayButton"]
 - !private ["So32UNUserNotificationCenterDelegateP", "weekdays"]
-- ["So32UNUserNotificationCenterDelegateP", ""]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "date"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
@@ -3825,12 +3824,7 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s26_ExpressibleByImageLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "localizedUserNotificationString"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Bool"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
@@ -3855,6 +3849,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UNNotificationRequest"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UNNotificationSound"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UNUserNotificationCenter"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "actionIdentifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "add"]
@@ -3981,20 +3976,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "wednesdayBool"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "wednesdayButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "weekdays"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation14_MutableBoxingP", "current"]
 - !private ["10Foundation14_MutableBoxingP", "dateComponents"]
-- ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "current"]
 - !private ["s21_ObjectiveCBridgeableP", "dateComponents"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "18Pop_Up_Circle_Test11AppDelegateC"
@@ -4041,11 +4029,11 @@ depends-nominal:
 - !private "So9NSLockingP"
 - !private "So15NSManagedObjectC"
 - !private "So22NSManagedObjectContextC"
-- "So16NSMutableCopyingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - "So14NSSecureCodingP"
-- "So8NSStringC"
+- !private "So8NSStringC"
 - !private "s9OptionSetP"
 - "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
@@ -4123,7 +4111,6 @@ depends-nominal:
 - !private "So24UNUserNotificationCenterC"
 - "So32UNUserNotificationCenterDelegateP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -4133,15 +4120,10 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s26_ExpressibleByImageLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation14_MutableBoxingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -4244,8 +4226,18 @@ depends-external:
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphonesimulator/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "0838e0c71650a4b25b0bb728753362da"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "7da1e653382250f17b71984bebd1925b"
