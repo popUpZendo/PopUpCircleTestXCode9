@@ -2,7 +2,7 @@
 //  Entity+CoreDataClass.swift
 //  
 //
-//  Created by Joseph Hall on 5/5/18.
+//  Created by Joseph Hall on 5/6/18.
 //
 //  This file was automatically generated and should not be edited.
 //
