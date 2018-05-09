@@ -17,6 +17,7 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var sendButtonView: UIView!
     @IBOutlet weak var messageTextField: InsetTextField!
     @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet var mainView: UIView!
     
     
     var group: Group?
@@ -28,9 +29,13 @@ class GroupFeedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendButtonView.bindToKeyboard()
+        mainView.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    deinit {
+        mainView.unbindFromKeyboard()
     }
     
     override func viewWillAppear(_ animated: Bool) {

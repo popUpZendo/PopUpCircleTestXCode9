@@ -30,6 +30,7 @@ class ConversationsVC: UIViewController {
         DataService.instance.REF_CONVERSATION.observe(.value) { (snapshot) in
             DataService.instance.getAllConversations { (returnedConversationsArray) in
                 self.conversationsArray = returnedConversationsArray
+                //let conversationTitle = returnedConversationsArray.members.value
                 self.conversationsTableView.reloadData()
             }
         }

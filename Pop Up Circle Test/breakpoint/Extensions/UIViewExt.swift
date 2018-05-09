@@ -13,6 +13,10 @@ extension UIView {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
+    func unbindFromKeyboard(){
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+    }
+    
     @objc func keyboardWillChange(_ notification: NSNotification) {
         
         let duration = notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! Double
@@ -26,4 +30,5 @@ extension UIView {
         }, completion: nil)
     }
 }
+
 

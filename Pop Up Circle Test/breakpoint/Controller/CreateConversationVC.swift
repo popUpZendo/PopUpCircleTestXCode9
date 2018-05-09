@@ -56,6 +56,8 @@ class CreateConversationVC: UIViewController {
                 var userIds = idsArray
                 userIds.append((Auth.auth().currentUser?.uid)!)
                 
+                print (self.chosenUserArray)
+                
                 DataService.instance.createConversation(withTitle: self.titleTextField.text!, forUserIds: userIds, handler: { (conversationCreated) in
                     if conversationCreated {
                         self.dismiss(animated: true, completion: nil)

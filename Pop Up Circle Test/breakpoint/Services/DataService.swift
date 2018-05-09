@@ -176,6 +176,34 @@ class DataService {
         }
     }
     
+    
+//    func getConversationMembers(desiredConversation: Conversation, handler: @escaping (_ conversationMembersArray: [Conversation]) -> ()) {
+//        var conversationMessageArray = [Conversation]()
+//
+////        self.ref?
+////            .child("data")
+////            .child("success")
+////            .child(userID!)
+////            .observeSingleEvent(of: .value, with: { (snapshot) in
+////                if let data = snapshot.value as? [String: Any] {
+////                    let keys = Array(data.keys)
+////                    let values = Array(data.values)
+////                    ... // Your code here
+////                }
+////            }
+//
+//
+//        REF_CONVERSATION.child(desiredConversation.key).child("members").observeSingleEvent(of: .value) { (conversationMembersSnapshot) in
+//
+//            guard let conversationMembersSnapshot = conversationMembersSnapshot.children.allObjects as? [DataSnapshot] else { return }
+//            for conversationMembers in conversationMembersSnapshot {
+//                 let members = conversationMembers.childSnapshot(forPath: "members").value as! String
+//                conversationMessageArray.append(conversationMembers)
+//            }
+//            handler(conversationMembersArray)
+//        }
+//    }
+    
     func getEmail(forSearchQuery query: String, handler: @escaping (_ emailArray: [String]) -> ()) {
         var emailArray = [String] ()
         REF_USERS.observe(.value) { (userSnapshot) in
@@ -243,13 +271,36 @@ class DataService {
     }
     
     func getAllConversations(handler: @escaping (_ conversationsArray: [Conversation]) -> ()) {
+        var partner = [""]
+        var title: String = ""
+        var partnerName = ""
+        
         var conversationsArray = [Conversation]()
         REF_CONVERSATION.observeSingleEvent(of: .value) { (conversationSnapshot) in
             guard let conversationSnapshot = conversationSnapshot.children.allObjects as? [DataSnapshot] else { return}
             for conversation in conversationSnapshot {
                 let memberArray = conversation.childSnapshot(forPath: "members").value as! [String]
+                partner = memberArray.filter {$0 != (Auth.auth().currentUser?.uid)!}
                 if memberArray.contains((Auth.auth().currentUser?.uid)!) {
-                    let title = conversation.childSnapshot(forPath: "title").value as! String
+                    
+                    let newPartner = (String(describing: partner))
+                    title = newPartner.replacingOccurrences(of: "[\\[\\]\\^+<>\"]", with: "", options: .regularExpression, range: nil)
+                
+                        databaseRef.child("bodhi").child(title).observeSingleEvent(of: .value, with: { (snapshot) in
+                            
+                            if let bodhiDict = snapshot.value as? [String: AnyObject]
+                            {
+                                
+                                partnerName = (bodhiDict["Name"] as! String)
+                                    print ("partnerName returned from firebase: \(partnerName)")
+                                // Point A:This prints "Sandy"
+                            }
+                        })
+                    
+                    print ("partnerName: \(partnerName)")
+                    // This prints nothing but if I add partnerName = "Sandy", then the function complete
+                    title = partnerName
+                    print ("new title: \(title)")
                     let conversation = Conversation(conversationTitle: title, key: conversation.key, conversationMembers: memberArray, conversationMemberCount: memberArray.count)
                     conversationsArray.append(conversation)
                 }
@@ -281,23 +332,6 @@ class DataService {
         }
     }
     
-    //    func getBuddha(handler: @escaping (_ buddhaArray: [Buddha]) -> ()) {
-    //        var buddhaArray = [Buddha]()
-    //        REF_BUDDHA.observeSingleEvent(of: .value) { (buddhaSnapshot) in
-    //            guard let buddhaSnapshot = buddhaSnapshot.children.allObjects as? [DataSnapshot] else { return}
-    //            for buddha in buddhaSnapshot {
-    //                let memberArray = buddha.childSnapshot(forPath: "members").value as! [String]
-    //                if buddhaArray.contains((Auth.auth().currentUser?.uid)!) {
-    //                    let name = buddha.childSnapshot(forPath: "name").value as! String
-    //                    let popUpGroup = buddha.childSnapshot(forPath: "popUpGroup").value as! String
-    //                    let buddha = Buddha(name: name, city: city, key: key, temple: temple, popUpGroup: popUpGroup, teacher: teacher, practice: practice)
-    //                    buddhaArray.append(buddha)
-    //                }
-    //            }
-    //            handler(buddhaArray)
-    //        }
-    //    }
-    //
 }
 
 

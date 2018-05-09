@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/KDCircularProgress.build/unextended-module.modulemap',
+    }]
+  }]
+}

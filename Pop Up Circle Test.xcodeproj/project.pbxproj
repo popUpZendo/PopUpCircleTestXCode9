@@ -22,6 +22,7 @@
 		D7237B40209E157D0070430D /* ic_google.png in Resources */ = {isa = PBXBuildFile; fileRef = D7237B3E209E157C0070430D /* ic_google.png */; };
 		D7237B41209E157D0070430D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D7237B3F209E157C0070430D /* Contents.json */; };
 		D7237B43209E47750070430D /* CreateConversationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7237B42209E47750070430D /* CreateConversationVC.swift */; };
+		D7237B47209E800A0070430D /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = D7237B46209E80080070430D /* Group.png */; };
 		D73011CC1EFB3381003D637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CB1EFB3381003D637A /* AppDelegate.swift */; };
 		D73011CE1EFB3381003D637A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73011CD1EFB3381003D637A /* TimerViewController.swift */; };
 		D73011D11EFB3381003D637A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73011CF1EFB3381003D637A /* Main.storyboard */; };
@@ -117,6 +118,7 @@
 		D7237B3E209E157C0070430D /* ic_google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_google.png; sourceTree = "<group>"; };
 		D7237B3F209E157C0070430D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		D7237B42209E47750070430D /* CreateConversationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConversationVC.swift; sourceTree = "<group>"; };
+		D7237B46209E80080070430D /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Group.png; path = Assets.xcassets/Group.png; sourceTree = "<group>"; };
 		D73011C81EFB3381003D637A /* Pop Up Circle Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop Up Circle Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73011CB1EFB3381003D637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73011CD1EFB3381003D637A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			children = (
 				D7A8D0D2206AF1EC00DD45AB /* GoogleService-Info.plist */,
 				D764DD1F1F9FC1760039B121 /* Assets.xcassets */,
+				D7237B46209E80080070430D /* Group.png */,
 				D7237B3D209E157C0070430D /* ic_google.imageset */,
 				D7237B38209E11210070430D /* amanda-flavell-21988.imageset */,
 				D76E0F4420992F0E00B70AD5 /* profileZen.png */,
@@ -568,6 +571,7 @@
 				D7372AAB1FA903620056AB31 /* Icon-App-40x40@1x.png in Resources */,
 				D7A8D0D5206AF3DA00DD45AB /* templeBell.mp3 in Resources */,
 				D764DD201F9FC1770039B121 /* Assets.xcassets in Resources */,
+				D7237B47209E800A0070430D /* Group.png in Resources */,
 				D7372AAF1FA903620056AB31 /* Icon-App-60x60@3x.png in Resources */,
 				D7372AAA1FA903620056AB31 /* Icon-App-29x29@3x.png in Resources */,
 				D7A8D0D7206AF48000DD45AB /* LovelyBell.mp3 in Resources */,

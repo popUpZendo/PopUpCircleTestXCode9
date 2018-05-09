@@ -1,0 +1,564 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VideoVC"
+provides-nominal:
+- "18Pop_Up_Circle_Test7VideoVCC"
+provides-member:
+- ["18Pop_Up_Circle_Test7VideoVCC", ""]
+provides-dynamic-lookup:
+- "details"
+- "didReceiveMemoryWarning"
+- "titleLbl"
+- "viewDidLoad"
+- "webView"
+- "webView2"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "DharmaRock"
+- "UILabel"
+- "UIViewController"
+- "UIWebView"
+- !private "URL"
+- !private "URLRequest"
+- "VideoVC"
+depends-member:
+- !private ["So15CALayerDelegateP", "loadHTMLString"]
+- !private ["So15CALayerDelegateP", "loadRequest"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "URL"]
+- !private ["s7CVarArgP", "URLRequest"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_dharmaRock"]
+- !private ["s7CVarArgP", "details"]
+- !private ["s7CVarArgP", "dharmaRock"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "loadHTMLString"]
+- !private ["s7CVarArgP", "loadRequest"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "setNavigationBarHidden"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "titleLbl"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "webView"]
+- !private ["s7CVarArgP", "webView2"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- !private ["s28CustomDebugStringConvertibleP", "URLRequest"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "_dharmaRock"]
+- !private ["s28CustomDebugStringConvertibleP", "details"]
+- !private ["s28CustomDebugStringConvertibleP", "dharmaRock"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "loadHTMLString"]
+- !private ["s28CustomDebugStringConvertibleP", "loadRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "setNavigationBarHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "titleLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "webView"]
+- !private ["s28CustomDebugStringConvertibleP", "webView2"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- !private ["s23CustomStringConvertibleP", "URLRequest"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_dharmaRock"]
+- !private ["s23CustomStringConvertibleP", "details"]
+- !private ["s23CustomStringConvertibleP", "dharmaRock"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "loadHTMLString"]
+- !private ["s23CustomStringConvertibleP", "loadRequest"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "setNavigationBarHidden"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "titleLbl"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "webView"]
+- !private ["s23CustomStringConvertibleP", "webView2"]
+- !private ["s9DecodableP", "init"]
+- !private ["18Pop_Up_Circle_Test10DharmaRockC", "contentURL"]
+- !private ["18Pop_Up_Circle_Test10DharmaRockC", "details"]
+- !private ["18Pop_Up_Circle_Test10DharmaRockC", "videoTitle"]
+- !private ["18Pop_Up_Circle_Test10DharmaRockC", "videoURL"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "URL"]
+- !private ["s9EquatableP", "URLRequest"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_dharmaRock"]
+- !private ["s9EquatableP", "details"]
+- !private ["s9EquatableP", "dharmaRock"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "loadHTMLString"]
+- !private ["s9EquatableP", "loadRequest"]
+- !private ["s9EquatableP", "navigationController"]
+- !private ["s9EquatableP", "setNavigationBarHidden"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "titleLbl"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "webView"]
+- !private ["s9EquatableP", "webView2"]
+- !private ["s8HashableP", "URL"]
+- !private ["s8HashableP", "URLRequest"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_dharmaRock"]
+- !private ["s8HashableP", "details"]
+- !private ["s8HashableP", "dharmaRock"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "loadHTMLString"]
+- !private ["s8HashableP", "loadRequest"]
+- !private ["s8HashableP", "navigationController"]
+- !private ["s8HashableP", "setNavigationBarHidden"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "titleLbl"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "webView"]
+- !private ["s8HashableP", "webView2"]
+- !private ["So8NSCodingP", "URL"]
+- !private ["So8NSCodingP", "URLRequest"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "_dharmaRock"]
+- !private ["So8NSCodingP", "details"]
+- !private ["So8NSCodingP", "dharmaRock"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "loadHTMLString"]
+- !private ["So8NSCodingP", "loadRequest"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "setNavigationBarHidden"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "titleLbl"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "webView"]
+- !private ["So8NSCodingP", "webView2"]
+- !private ["So26NSExtensionRequestHandlingP", "URL"]
+- !private ["So26NSExtensionRequestHandlingP", "URLRequest"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "_dharmaRock"]
+- !private ["So26NSExtensionRequestHandlingP", "details"]
+- !private ["So26NSExtensionRequestHandlingP", "dharmaRock"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "setNavigationBarHidden"]
+- !private ["So26NSExtensionRequestHandlingP", "titleLbl"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "webView"]
+- !private ["So26NSExtensionRequestHandlingP", "webView2"]
+- ["So8NSObjectC", "DharmaRock"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIWebView"]
+- !private ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "URLRequest"]
+- ["So8NSObjectC", "_dharmaRock"]
+- ["So8NSObjectC", "details"]
+- ["So8NSObjectC", "dharmaRock"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "loadHTMLString"]
+- !private ["So8NSObjectC", "loadRequest"]
+- !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "setNavigationBarHidden"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "titleLbl"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "webView"]
+- ["So8NSObjectC", "webView2"]
+- !private ["So16NSObjectProtocolP", "URL"]
+- !private ["So16NSObjectProtocolP", "URLRequest"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "_dharmaRock"]
+- !private ["So16NSObjectProtocolP", "details"]
+- !private ["So16NSObjectProtocolP", "dharmaRock"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "loadHTMLString"]
+- !private ["So16NSObjectProtocolP", "loadRequest"]
+- !private ["So16NSObjectProtocolP", "navigationController"]
+- !private ["So16NSObjectProtocolP", "setNavigationBarHidden"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "titleLbl"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "webView"]
+- !private ["So16NSObjectProtocolP", "webView2"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "loadHTMLString"]
+- !private ["So29UIAccessibilityIdentificationP", "loadRequest"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "loadHTMLString"]
+- !private ["So12UIAppearanceP", "loadRequest"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "URL"]
+- !private ["So21UIAppearanceContainerP", "URLRequest"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "_dharmaRock"]
+- !private ["So21UIAppearanceContainerP", "details"]
+- !private ["So21UIAppearanceContainerP", "dharmaRock"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "loadHTMLString"]
+- !private ["So21UIAppearanceContainerP", "loadRequest"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "setNavigationBarHidden"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "titleLbl"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "webView"]
+- !private ["So21UIAppearanceContainerP", "webView2"]
+- !private ["So18UIContentContainerP", "URL"]
+- !private ["So18UIContentContainerP", "URLRequest"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "_dharmaRock"]
+- !private ["So18UIContentContainerP", "details"]
+- !private ["So18UIContentContainerP", "dharmaRock"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "setNavigationBarHidden"]
+- !private ["So18UIContentContainerP", "titleLbl"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "webView"]
+- !private ["So18UIContentContainerP", "webView2"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "loadHTMLString"]
+- !private ["So17UICoordinateSpaceP", "loadRequest"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "loadHTMLString"]
+- !private ["So13UIDynamicItemP", "loadRequest"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "URL"]
+- !private ["So18UIFocusEnvironmentP", "URLRequest"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "_dharmaRock"]
+- !private ["So18UIFocusEnvironmentP", "details"]
+- !private ["So18UIFocusEnvironmentP", "dharmaRock"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "loadHTMLString"]
+- !private ["So18UIFocusEnvironmentP", "loadRequest"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "setNavigationBarHidden"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "titleLbl"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "webView"]
+- !private ["So18UIFocusEnvironmentP", "webView2"]
+- !private ["So11UIFocusItemP", "loadHTMLString"]
+- !private ["So11UIFocusItemP", "loadRequest"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So22UINavigationControllerC", "setNavigationBarHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "URL"]
+- !private ["So30UIPasteConfigurationSupportingP", "URLRequest"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "_dharmaRock"]
+- !private ["So30UIPasteConfigurationSupportingP", "details"]
+- !private ["So30UIPasteConfigurationSupportingP", "dharmaRock"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "loadHTMLString"]
+- !private ["So30UIPasteConfigurationSupportingP", "loadRequest"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "setNavigationBarHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "webView"]
+- !private ["So30UIPasteConfigurationSupportingP", "webView2"]
+- ["So11UIResponderC", "DharmaRock"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIWebView"]
+- !private ["So11UIResponderC", "URL"]
+- !private ["So11UIResponderC", "URLRequest"]
+- ["So11UIResponderC", "_dharmaRock"]
+- ["So11UIResponderC", "details"]
+- ["So11UIResponderC", "dharmaRock"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "loadHTMLString"]
+- !private ["So11UIResponderC", "loadRequest"]
+- !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "setNavigationBarHidden"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "titleLbl"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "webView"]
+- ["So11UIResponderC", "webView2"]
+- !private ["So30UIResponderStandardEditActionsP", "URL"]
+- !private ["So30UIResponderStandardEditActionsP", "URLRequest"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "_dharmaRock"]
+- !private ["So30UIResponderStandardEditActionsP", "details"]
+- !private ["So30UIResponderStandardEditActionsP", "dharmaRock"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "loadHTMLString"]
+- !private ["So30UIResponderStandardEditActionsP", "loadRequest"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "setNavigationBarHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "titleLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "webView"]
+- !private ["So30UIResponderStandardEditActionsP", "webView2"]
+- !private ["So20UIScrollViewDelegateP", "loadHTMLString"]
+- !private ["So20UIScrollViewDelegateP", "loadRequest"]
+- !private ["So16UIStateRestoringP", "URL"]
+- !private ["So16UIStateRestoringP", "URLRequest"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "_dharmaRock"]
+- !private ["So16UIStateRestoringP", "details"]
+- !private ["So16UIStateRestoringP", "dharmaRock"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "setNavigationBarHidden"]
+- !private ["So16UIStateRestoringP", "titleLbl"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "webView"]
+- !private ["So16UIStateRestoringP", "webView2"]
+- !private ["So18UITraitEnvironmentP", "URL"]
+- !private ["So18UITraitEnvironmentP", "URLRequest"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "_dharmaRock"]
+- !private ["So18UITraitEnvironmentP", "details"]
+- !private ["So18UITraitEnvironmentP", "dharmaRock"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "loadHTMLString"]
+- !private ["So18UITraitEnvironmentP", "loadRequest"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "setNavigationBarHidden"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "titleLbl"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "webView"]
+- !private ["So18UITraitEnvironmentP", "webView2"]
+- !private ["So6UIViewC", "loadHTMLString"]
+- !private ["So6UIViewC", "loadRequest"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "DharmaRock"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UIWebView"]
+- !private ["So16UIViewControllerC", "URL"]
+- !private ["So16UIViewControllerC", "URLRequest"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "_dharmaRock"]
+- ["So16UIViewControllerC", "details"]
+- ["So16UIViewControllerC", "dharmaRock"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "setNavigationBarHidden"]
+- ["So16UIViewControllerC", "titleLbl"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "webView"]
+- ["So16UIViewControllerC", "webView2"]
+- !private ["So9UIWebViewC", "loadHTMLString"]
+- !private ["So9UIWebViewC", "loadRequest"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["10Foundation10URLRequestV", "init"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "DharmaRock"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "UILabel"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "UIWebView"]
+- !private ["18Pop_Up_Circle_Test7VideoVCC", "URL"]
+- !private ["18Pop_Up_Circle_Test7VideoVCC", "URLRequest"]
+- !private ["18Pop_Up_Circle_Test7VideoVCC", "_dharmaRock"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "deinit"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "details"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "dharmaRock"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "didReceiveMemoryWarning"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "init"]
+- !private ["18Pop_Up_Circle_Test7VideoVCC", "navigationController"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "titleLbl"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "viewDidLoad"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "webView"]
+- ["18Pop_Up_Circle_Test7VideoVCC", "webView2"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "loadHTMLString"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "loadRequest"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLRequest"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "_dharmaRock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "details"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dharmaRock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadHTMLString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNavigationBarHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "webView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "webView2"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "18Pop_Up_Circle_Test10DharmaRockC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So7UILabelC"
+- !private "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So9UIWebViewC"
+- !private "10Foundation3URLV"
+- !private "10Foundation10URLRequestV"
+- "18Pop_Up_Circle_Test7VideoVCC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules/KDCircularProgress.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/Pop Up Circle Test-Bridging-Header.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/SWRevealViewController.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-Swift.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "0740bde023147ef43fd65a3494795a81"

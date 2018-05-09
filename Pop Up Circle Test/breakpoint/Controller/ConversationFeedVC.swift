@@ -17,6 +17,7 @@ class ConversationFeedVC: UIViewController {
     @IBOutlet weak var sendButtonView: UIView!
     @IBOutlet weak var messageTextField: InsetTextField!
     @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet var mainView: UIView!
     
     
     var conversation: Conversation?
@@ -28,9 +29,19 @@ class ConversationFeedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendButtonView.bindToKeyboard()
+        mainView.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    deinit {
+        //sendButtonView.unBindFromKeyboard()
+        mainView.unbindFromKeyboard()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.messageTextField.resignFirstResponder()
+        return true
     }
     
     override func viewWillAppear(_ animated: Bool) {
