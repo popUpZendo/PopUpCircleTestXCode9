@@ -54,7 +54,7 @@ class Bodhi {
     var key: String {
         return _key
     }
-    
+
     
     init(name: String, popUpGroup: String, city: String, state: String, temple: String, teacher: String, practice: String, senderId: String, key: String) {
         self._name = name

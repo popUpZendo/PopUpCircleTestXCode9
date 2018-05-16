@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation
 import KDCircularProgress
-import CoreData
+//import CoreData
+import Firebase
 
 
 
@@ -19,6 +20,8 @@ class TimerViewController: UIViewController {
     var progress: KDCircularProgress!
     var btnSound: AVAudioPlayer!
     var zazen: Double = 60
+    let defaults = UserDefaults.standard
+    let durationSlide = "durationSlide"
     //var timer = 60
     
     
@@ -30,21 +33,25 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var darkMode: UIImageView!
     @IBOutlet weak var backButton: UIButton!
     
-   
+    @IBOutlet weak var timerButton: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        if let durationSlide = defaults.value(forKey: durationSlide) {
+            slider.value = durationSlide as! Float
+            durationSliderValueChanged(slider)
+        }
         backButton.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
         
         countDownLabel.isHidden = true
-        UIApplication.shared.isIdleTimerDisabled = true
+                UIApplication.shared.isIdleTimerDisabled = true
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        
         
         view.backgroundColor = UIColor(white: 1.00, alpha: 1.0)
         
@@ -55,8 +62,9 @@ class TimerViewController: UIViewController {
         progress.clockwise = true
         progress.gradientRotateSpeed = 2
         progress.roundedCorners = true
-        progress.glowMode = .forward
+        progress.glowMode = .constant
         progress.glowAmount = 0.3
+        progress.trackColor = UIColor.darkGray
         progress.set(colors: UIColor.black)
         progress.center = CGPoint(x: view.center.x, y: view.center.y - 80)
         view.addSubview(progress)
@@ -71,12 +79,14 @@ class TimerViewController: UIViewController {
         } catch let err as NSError {
             print(err.debugDescription)
         }
+        self.view.bringSubview(toFront: self.timerButton)
+        
     }
     
    
     @IBAction func lightSwitch(_ sender: UISwipeGestureRecognizer) {
         if self.view.backgroundColor != UIColor.darkGray{
-        
+
         self.view.backgroundColor = UIColor.darkGray
         } else {
         self.view.backgroundColor = UIColor.white
@@ -84,6 +94,7 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func goBackToOneButtonTapped(_ sender: Any) {
+        
         performSegue(withIdentifier: "unwindSegueToVC1", sender: self)
     }
 
@@ -92,6 +103,18 @@ class TimerViewController: UIViewController {
         label.text = String(Int(sender.value))
         zazen = Double(Int(sender.value))
     }
+ 
+    
+    
+    @IBAction func durationSliderValueChanged(_ sender: UISlider) {
+            zazen = Double(Int(sender.value))
+            let currentValue = Int(sender.value)
+            label.text = "\(currentValue)"
+        
+        defaults.set(sender.value, forKey: durationSlide)
+            print ("currentValue \(currentValue)")
+    }
+    
     
     
     @IBAction func animateButtonTapped(_ sender: AnyObject){
@@ -140,5 +163,37 @@ class TimerViewController: UIViewController {
     }
 }
     
+    func goBack () {
+        var duration = label.text
+        let date = Date();
+        var isoformatter = ISO8601DateFormatter.init()
+        let timeStr = isoformatter.string(from: date)
+        // "2016-11-01T21:14:33Z"
+        
+        // Generete Date from string that being generated
+        //var dateFromString = isoformatter.date(from: timeStr)
+        // "Nov 2, 2016, 5:14 AM" <-- valid Date
+        
+        
+        DataService.instance.uploadZazen(withDate: timeStr, withDuration: duration!, forUID: (Auth.auth().currentUser?.uid)!, withKey: nil, sendComplete: { (isComplete) in
+            if isComplete {
+                //self.sendBtn.isEnabled = true
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                //self.sendBtn.isEnabled = true
+                print("There was an error!")
+            }
+        })
+    }
+    
+    func shareZazen() {
+        
+    }
+    
+    @IBAction func goBackButton(_ sender: Any) {
+            goBack()
+    }
+    
+
     
 }

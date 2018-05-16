@@ -5,10 +5,10 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTask.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFCancellationToken.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFGeneric.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/Bolts.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFExecutor.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/iOS/BFAppLink.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h \

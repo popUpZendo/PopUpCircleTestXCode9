@@ -58,13 +58,13 @@
         },
         {
           'type': 'file',
-          'name': "BFMeasurementEvent.h",
-          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/iOS/BFMeasurementEvent.h"
+          'name': "BFGeneric.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFGeneric.h"
         },
         {
           'type': 'file',
-          'name': "BFTask+Exceptions.h",
-          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h"
+          'name': "BFMeasurementEvent.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/iOS/BFMeasurementEvent.h"
         },
         {
           'type': 'file',
@@ -306,6 +306,21 @@
       'contents': [
         {
           'type': 'file',
+          'name': "FBSDKDeviceLoginCodeInfo.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKDeviceLoginManager.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "FBSDKDeviceLoginManagerResult.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManagerResult.h"
+        },
+        {
+          'type': 'file',
           'name': "FBSDKLoginButton.h",
           'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginButton.h"
         },
@@ -359,6 +374,487 @@
           'type': 'file',
           'name': "module.modulemap",
           'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FBSDKLoginKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRActionCodeSettings.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRActionCodeSettings.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAdditionalUserInfo.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAdditionalUserInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuth.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthAPNSTokenType.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthCredential.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthDataResult.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthDataResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthErrors.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthSettings.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthSettings.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthTokenResult.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthTokenResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAuthUIDelegate.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthUIDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIREmailAuthProvider.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIREmailAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRFacebookAuthProvider.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFacebookAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGitHubAuthProvider.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGitHubAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRGoogleAuthProvider.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRGoogleAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROAuthProvider.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneAuthCredential.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthCredential.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRPhoneAuthProvider.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRTwitterAuthProvider.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRTwitterAuthProvider.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUser.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUser.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUserInfo.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUserInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRUserMetadata.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRUserMetadata.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth-Swift.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth-umbrella.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target Support Files/FirebaseAuth/FirebaseAuth-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuth.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuth.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseAuthVersion.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseAuth.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRAnalyticsConfiguration.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Public/FIRAnalyticsConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRApp.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Public/FIRApp.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRConfiguration.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Public/FIRConfiguration.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLoggerLevel.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Public/FIRLoggerLevel.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROptions.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Public/FIROptions.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore-Swift.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore-umbrella.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target Support Files/FirebaseCore/FirebaseCore-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseCore.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Public/FirebaseCore.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRAnalyticsConfiguration+Internal.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRAnalyticsConfiguration+Internal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAppAssociationRegistration.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRAppAssociationRegistration.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAppEnvironmentUtil.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/third_party/FIRAppEnvironmentUtil.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRAppInternal.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRAppInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRBundleUtil.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRBundleUtil.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRErrorCode.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRErrorCode.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRErrors.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRErrors.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRLogger.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMutableDictionary.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRMutableDictionary.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRNetwork.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRNetwork.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRNetworkConstants.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRNetworkConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRNetworkLoggerProtocol.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRNetworkLoggerProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRNetworkMessageCode.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRNetworkMessageCode.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRNetworkURLSession.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRNetworkURLSession.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIROptionsInternal.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIROptionsInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRReachabilityChecker+Internal.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRReachabilityChecker+Internal.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRReachabilityChecker.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRReachabilityChecker.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRVersion.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Firebase/Core/Private/FIRVersion.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRDataEventType.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDataSnapshot.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabase.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseQuery.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRDatabaseReference.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseReference.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRMutableData.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRMutableData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRServerValue.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRServerValue.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRTransactionResult.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FIRTransactionResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-Swift.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase-umbrella.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target Support Files/FirebaseDatabase/FirebaseDatabase-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseDatabase.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Firebase/Database/Public/FirebaseDatabase.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseDatabase.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRMessaging.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Firebase/Messaging/Public/FIRMessaging.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseMessaging-Swift.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseMessaging-umbrella.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target Support Files/FirebaseMessaging/FirebaseMessaging-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseMessaging.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Firebase/Messaging/Public/FirebaseMessaging.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseMessaging.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FIRStorage.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorage.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageConstants.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageDownloadTask.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageDownloadTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageMetadata.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageMetadata.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageObservableTask.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageObservableTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageReference.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageReference.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageTask.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageTaskSnapshot.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageTaskSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FIRStorageUploadTask.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FIRStorageUploadTask.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseStorage-Swift.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseStorage-umbrella.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target Support Files/FirebaseStorage/FirebaseStorage-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseStorage.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Firebase/Storage/Public/FirebaseStorage.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseStorage.build/module.modulemap"
         }
       ]
     },
@@ -557,6 +1053,33 @@
           'type': 'file',
           'name': "module.modulemap",
           'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/KDCircularProgress.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/Pods_OneSignalNotificationServiceExtension.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-OneSignalNotificationServiceExtension-umbrella.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_OneSignalNotificationServiceExtension-Swift.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/Pods_OneSignalNotificationServiceExtension.framework/Headers/Pods_OneSignalNotificationServiceExtension-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/Pods_OneSignalNotificationServiceExtension.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Pods-OneSignalNotificationServiceExtension.build/module.modulemap"
         }
       ]
     },
@@ -810,6 +1333,11 @@
       'contents': [
         {
           'type': 'file',
+          'name': "NSButton+WebCache.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/NSButton+WebCache.h"
+        },
+        {
+          'type': 'file',
           'name': "NSData+ImageContentType.h",
           'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h"
         },
@@ -817,6 +1345,11 @@
           'type': 'file',
           'name': "NSImage+WebCache.h",
           'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/NSImage+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDAnimatedImageRep.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDAnimatedImageRep.h"
         },
         {
           'type': 'file',
@@ -840,13 +1373,23 @@
         },
         {
           'type': 'file',
-          'name': "SDWebImageCompat.h",
-          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h"
+          'name': "SDWebImageCoder.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageCoder.h"
         },
         {
           'type': 'file',
-          'name': "SDWebImageDecoder.h",
-          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.h"
+          'name': "SDWebImageCoderHelper.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageCoderHelper.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageCodersManager.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageCodersManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageCompat.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h"
         },
         {
           'type': 'file',
@@ -857,6 +1400,21 @@
           'type': 'file',
           'name': "SDWebImageDownloaderOperation.h",
           'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageFrame.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageFrame.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageGIFCoder.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageGIFCoder.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageImageIOCoder.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageImageIOCoder.h"
         },
         {
           'type': 'file',
@@ -875,8 +1433,18 @@
         },
         {
           'type': 'file',
+          'name': "SDWebImageTransition.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageTransition.h"
+        },
+        {
+          'type': 'file',
           'name': "UIButton+WebCache.h",
           'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+ForceDecode.h",
+          'external-contents': "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/UIImage+ForceDecode.h"
         },
         {
           'type': 'file',

@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "edc7c9ea915f68fd9377d65e6897c447"
+build_time: [1526491049, 213829000]
+inputs:
+  "/Users/josephhall/Desktop/Code/PopUpCircleTest/OneSignalNotificationServiceExtension/NotificationService.swift": [1525908953, 0]

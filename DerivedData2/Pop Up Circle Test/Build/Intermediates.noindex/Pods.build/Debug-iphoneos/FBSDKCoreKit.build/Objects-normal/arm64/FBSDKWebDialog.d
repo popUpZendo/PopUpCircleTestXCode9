@@ -9,6 +9,7 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDynamicFrameworkLoader.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKLogger.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKTypeUtility.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialogView.h

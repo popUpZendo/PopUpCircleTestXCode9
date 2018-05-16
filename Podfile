@@ -19,7 +19,10 @@ pod 'TwitterKit' , '2.7'
 pod 'FirebaseUI', '~> 4.0' 
 pod 'GoogleSignIn'
 
+pod 'OneSignal', '>= 2.6.2', '< 3.0'
+end
 
-
-
+target 'OneSignalNotificationServiceExtension' do
+  use_frameworks!
+  pod 'OneSignal', '>= 2.5.2', '< 3.0'
 end

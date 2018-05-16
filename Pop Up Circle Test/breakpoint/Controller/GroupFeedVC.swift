@@ -32,11 +32,14 @@ class GroupFeedVC: UIViewController {
         mainView.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
+        self.mainView.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     
     deinit {
         mainView.unbindFromKeyboard()
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

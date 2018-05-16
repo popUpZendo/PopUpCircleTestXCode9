@@ -164,8 +164,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
-@import UserNotifications;
 @import Foundation;
+@import FirebaseMessaging;
+@import UserNotifications;
 @import CoreGraphics;
 @import CoreData;
 @import ObjectiveC;
@@ -193,7 +194,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC18Pop_Up_Circle_Test11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic, readonly, copy) NSString * _Nonnull gcmMessageIDKey SWIFT_DEPRECATED_OBJC("Swift property 'AppDelegate.gcmMessageIDKey' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (void)application:(UIApplication * _Nonnull)application didReceiveRemoteNotification:(NSDictionary * _Nonnull)userInfo fetchCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
+- (void)application:(UIApplication * _Nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError * _Nonnull)error;
+- (void)application:(UIApplication * _Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * _Nonnull)deviceToken;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -205,22 +210,35 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UNUserNotificationCenter;
-@class UNNotificationResponse;
-@class UNNotification;
+@class FIRMessaging;
+@class FIRMessagingRemoteMessage;
 
-@interface AppDelegate (SWIFT_EXTENSION(Pop_Up_Circle_Test)) <UNUserNotificationCenterDelegate>
-- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
-- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+@interface AppDelegate (SWIFT_EXTENSION(Pop_Up_Circle_Test)) <FIRMessagingDelegate>
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didRefreshRegistrationToken:(NSString * _Nonnull)fcmToken SWIFT_DEPRECATED_OBJC("Swift method 'AppDelegate.messaging(_:didRefreshRegistrationToken:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveMessage:(FIRMessagingRemoteMessage * _Nonnull)remoteMessage;
 @end
 
+@class UNUserNotificationCenter;
+@class UNNotification;
+@class UNNotificationResponse;
+
+SWIFT_AVAILABILITY(ios,introduced=10)
+@interface AppDelegate (SWIFT_EXTENSION(Pop_Up_Circle_Test)) <UNUserNotificationCenterDelegate>
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+@end
+
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC18Pop_Up_Circle_Test9ChannelVC")
 @interface ChannelVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profile_image;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (IBAction)logoutButton:(id _Nonnull)sender;
+- (void)setupProfile SWIFT_DEPRECATED_OBJC("Swift method 'ChannelVC.setupProfile()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)logout SWIFT_DEPRECATED_OBJC("Swift method 'ChannelVC.logout()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -247,7 +265,6 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test16ConversationCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 @class UIImage;
 
 SWIFT_CLASS("_TtC18Pop_Up_Circle_Test20ConversationFeedCell")
@@ -269,6 +286,8 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test20ConversationFeedCell")
 
 SWIFT_CLASS("_TtC18Pop_Up_Circle_Test18ConversationFeedVC")
 @interface ConversationFeedVC : UIViewController
+@property (nonatomic, copy) NSString * _Nonnull sender SWIFT_DEPRECATED_OBJC("Swift property 'ConversationFeedVC.sender' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, copy) NSString * _Nonnull myName SWIFT_DEPRECATED_OBJC("Swift property 'ConversationFeedVC.myName' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified membersLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified conversationTitleLbl;
@@ -375,27 +394,6 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test14CreateGroupsVC")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
-@class UITextView;
-
-SWIFT_CLASS("_TtC18Pop_Up_Circle_Test12CreatePostVC")
-@interface CreatePostVC : UIViewController
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImage;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLbl;
-@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified sendBtn;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (IBAction)sendBtnWasPressed:(id _Nonnull)sender;
-- (IBAction)closeBtnWasPressed:(id _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface CreatePostVC (SWIFT_EXTENSION(Pop_Up_Circle_Test)) <UITextViewDelegate>
-- (void)textViewDidBeginEditing:(UITextView * _Nonnull)textView;
-@end
-
 @class UIColor;
 @class UIFont;
 
@@ -444,24 +442,6 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test8FeedCell")
 - (void)setupProfile SWIFT_DEPRECATED_OBJC("Swift method 'FeedCell.setupProfile()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC18Pop_Up_Circle_Test6FeedVC")
-@interface FeedVC : UIViewController
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified menuBtn;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface FeedVC (SWIFT_EXTENSION(Pop_Up_Circle_Test)) <UITableViewDataSource, UITableViewDelegate>
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -624,6 +604,7 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test8ItemCell")
 
 @class UISwitch;
 @class UIDatePicker;
+@class UITextView;
 @class DLRadioButton;
 @class NSDateFormatter;
 @class UIImagePickerController;
@@ -812,12 +793,13 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test4MeVC")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified practiceField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified keyField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified uploadImageButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified testBtn;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified mainView;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker SWIFT_DEPRECATED_OBJC("Swift property 'MeVC.imagePicker' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (void)viewDidLoad;
+- (BOOL)textFieldShouldReturnWithTextField:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'MeVC.textFieldShouldReturn(textField:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (void)viewWillAppear:(BOOL)animated;
-- (IBAction)testBtnPressed:(id _Nonnull)sender;
 - (IBAction)sendBtnWasPressed:(id _Nonnull)sender;
+- (IBAction)dismiss:(id _Nonnull)sender;
 - (void)setupProfile SWIFT_DEPRECATED_OBJC("Swift method 'MeVC.setupProfile()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (IBAction)profileWasTappedWithSender:(id _Nonnull)sender;
 - (void)setUpProfileText SWIFT_DEPRECATED_OBJC("Swift method 'MeVC.setUpProfileText()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
@@ -849,10 +831,8 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test9ProfileVC")
 - (void)viewDidLoad;
 - (IBAction)uploadImageButton:(id _Nonnull)sender;
 - (IBAction)saveChanges:(id _Nonnull)sender;
-- (IBAction)logoutButton:(id _Nonnull)sender;
 - (void)setUpProfileText SWIFT_DEPRECATED_OBJC("Swift method 'ProfileVC.setUpProfileText()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (void)setupProfile SWIFT_DEPRECATED_OBJC("Swift method 'ProfileVC.setupProfile()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
-- (void)logout SWIFT_DEPRECATED_OBJC("Swift method 'ProfileVC.logout()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)saveChanges SWIFT_DEPRECATED_OBJC("Swift method 'ProfileVC.saveChanges()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
@@ -927,8 +907,22 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test5Store")
 @property (nonatomic, strong) NSSet * _Nullable toItem;
 @end
 
+
+SWIFT_CLASS("_TtC18Pop_Up_Circle_Test9Test_Area")
+@interface Test_Area : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified playerIDLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified getIDButton;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified playerIDTextField;
+- (void)viewDidLoad;
+- (IBAction)getNumberPressed:(id _Nonnull)sender;
+- (IBAction)sendMessage:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class KDCircularProgress;
 @class AVAudioPlayer;
+@class NSUserDefaults;
 @class UISlider;
 @class UISwipeGestureRecognizer;
 
@@ -937,17 +931,24 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test19TimerViewController")
 @property (nonatomic, strong) KDCircularProgress * _Null_unspecified progress SWIFT_DEPRECATED_OBJC("Swift property 'TimerViewController.progress' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, strong) AVAudioPlayer * _Null_unspecified btnSound SWIFT_DEPRECATED_OBJC("Swift property 'TimerViewController.btnSound' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic) double zazen SWIFT_DEPRECATED_OBJC("Swift property 'TimerViewController.zazen' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull defaults SWIFT_DEPRECATED_OBJC("Swift property 'TimerViewController.defaults' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, readonly, copy) NSString * _Nonnull durationSlide SWIFT_DEPRECATED_OBJC("Swift property 'TimerViewController.durationSlide' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified countDownLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified slider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sliderValue;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified darkMode;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified timerButton;
 - (void)viewDidLoad;
 - (IBAction)lightSwitch:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (IBAction)goBackToOneButtonTapped:(id _Nonnull)sender;
 - (IBAction)sliderChanged:(UISlider * _Nonnull)sender;
+- (IBAction)durationSliderValueChanged:(UISlider * _Nonnull)sender;
 - (IBAction)animateButtonTapped:(id _Nonnull)sender;
+- (void)goBack SWIFT_DEPRECATED_OBJC("Swift method 'TimerViewController.goBack()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)shareZazen SWIFT_DEPRECATED_OBJC("Swift method 'TimerViewController.shareZazen()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (IBAction)goBackButton:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

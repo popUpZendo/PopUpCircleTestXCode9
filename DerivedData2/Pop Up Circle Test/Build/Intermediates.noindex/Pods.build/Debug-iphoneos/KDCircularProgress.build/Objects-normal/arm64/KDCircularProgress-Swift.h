@@ -200,7 +200,6 @@ SWIFT_CLASS("_TtC18KDCircularProgress18KDCircularProgress")
 @property (nonatomic) CGFloat trackThickness;
 @property (nonatomic, strong) UIColor * _Nonnull trackColor;
 @property (nonatomic, strong) UIColor * _Nullable progressInsideFillColor;
-@property (nonatomic, copy) NSArray<UIColor *> * _Nonnull progressColors;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)awakeFromNib;

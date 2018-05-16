@@ -27,6 +27,10 @@ class CreateConversationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
+        
         tableView.delegate = self
         tableView.dataSource = self
         emailSearchTextField.delegate = self

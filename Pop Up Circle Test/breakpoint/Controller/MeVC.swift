@@ -1,9 +1,9 @@
 //
-//  MeVC.swift
+//  LoginVC.swift
 //  breakpoint
 //
-//  Created by Caleb Stultz on 7/24/17.
-//  Copyright © 2017 Caleb Stultz. All rights reserved.
+//  Created by Joseph Hall on 7/24/17.
+//  Copyright © 2017 Joseph Hall. All rights reserved.
 //
 
 import UIKit
@@ -28,8 +28,8 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     @IBOutlet weak var practiceField: UITextField!
     @IBOutlet weak var keyField: UITextField!
     @IBOutlet weak var uploadImageButton: UIButton!
+    @IBOutlet var mainView: UIView!
     
-    @IBOutlet weak var testBtn: UIButton!
     
     let imagePicker = UIImagePickerController()
     
@@ -42,7 +42,11 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
         imagePicker.delegate = self
         nameField.delegate = self
         popUpGroupField.delegate = self
+        mainView.bindToKeyboard()
+        //tableView.delegate = self
+        //tableView.dataSource = self
         
+        self.mainView.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         
         
         //        if Auth.auth().currentUser?.uid == nil{
@@ -59,18 +63,26 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
         self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
     }
     
+    
+    deinit {
+        //sendButtonView.unBindFromKeyboard()
+        mainView.unbindFromKeyboard()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //self.messageTextField.resignFirstResponder()
+        return true
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.emailLbl.text = Auth.auth().currentUser?.email
         
     }
     
-    // Function to test
-    @IBAction func testBtnPressed(_ sender: Any) {
-    }
-    
-    
     @IBAction func sendBtnWasPressed(_ sender: Any) {
+        saveChanges()
+        
         if nameField.text != nil
             && nameField.text != nil
             && popUpGroupField != nil
@@ -92,7 +104,13 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                 }
             })
         }
+        
     }
+    
+    @IBAction func dismiss(_ sender: Any) {
+dismiss(animated: false, completion: nil)    }
+    
+    
     func setupProfile(){
         
         

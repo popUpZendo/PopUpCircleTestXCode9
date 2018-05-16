@@ -8,11 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 - "cityField"
 - "databaseRef"
+- "dismiss"
 - "emailLbl"
 - "imagePicker"
 - "imagePickerController"
 - "imagePickerControllerDidCancel"
 - "keyField"
+- "mainView"
 - "menuBtn"
 - "nameField"
 - "nameLbl"
@@ -29,8 +31,7 @@ provides-dynamic-lookup:
 - "storageRef"
 - "teacherField"
 - "templeField"
-- "testBtn"
-- "testBtnPressed"
+- "textFieldShouldReturn"
 - "uploadImageButton"
 - "viewDidLoad"
 - "viewWillAppear"
@@ -65,9 +66,11 @@ depends-top-level:
 - "UIImageView"
 - "UILabel"
 - "UINavigationControllerDelegate"
+- !private "UITapGestureRecognizer"
 - "UITextField"
 - "UITextFieldDelegate"
 - "UITextView"
+- "UIView"
 - "UIViewController"
 - !private "URL"
 - !private "URLSession"
@@ -81,13 +84,16 @@ depends-member:
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "addTarget"]
+- !private ["So15CALayerDelegateP", "bindToKeyboard"]
 - !private ["So15CALayerDelegateP", "clipsToBounds"]
 - !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "endEditing"]
 - !private ["So15CALayerDelegateP", "frame"]
 - !private ["So15CALayerDelegateP", "image"]
 - !private ["So15CALayerDelegateP", "isEnabled"]
 - !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "unbindFromKeyboard"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["SC6CGRectV", "size"]
 - !private ["SC6CGSizeV", "width"]
@@ -102,6 +108,8 @@ depends-member:
 - !private ["s7CVarArgP", "UIImagePNGRepresentation"]
 - ["s7CVarArgP", "UIImagePickerController"]
 - !private ["s7CVarArgP", "UIImagePickerControllerSourceType"]
+- !private ["s7CVarArgP", "UITapGestureRecognizer"]
+- !private ["s7CVarArgP", "UIView"]
 - !private ["s7CVarArgP", "URL"]
 - !private ["s7CVarArgP", "URLSession"]
 - ["s7CVarArgP", ""]
@@ -111,6 +119,7 @@ depends-member:
 - !private ["s7CVarArgP", "allowsEditing"]
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "bindToKeyboard"]
 - !private ["s7CVarArgP", "child"]
 - !private ["s7CVarArgP", "cityField"]
 - !private ["s7CVarArgP", "clipsToBounds"]
@@ -124,6 +133,7 @@ depends-member:
 - !private ["s7CVarArgP", "downloadURL"]
 - !private ["s7CVarArgP", "email"]
 - !private ["s7CVarArgP", "emailLbl"]
+- !private ["s7CVarArgP", "endEditing"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imagePicker"]
@@ -133,6 +143,7 @@ depends-member:
 - !private ["s7CVarArgP", "isEnabled"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "mainView"]
 - !private ["s7CVarArgP", "menuBtn"]
 - !private ["s7CVarArgP", "nameField"]
 - ["s7CVarArgP", "navigationController"]
@@ -150,6 +161,7 @@ depends-member:
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "revealToggle"]
 - !private ["s7CVarArgP", "revealViewController"]
+- !private ["s7CVarArgP", "saveChanges"]
 - !private ["s7CVarArgP", "sendBtn"]
 - !private ["s7CVarArgP", "setUpProfileText"]
 - !private ["s7CVarArgP", "setupProfile"]
@@ -171,6 +183,7 @@ depends-member:
 - ["s7CVarArgP", "textFieldShouldEndEditing"]
 - ["s7CVarArgP", "textFieldShouldReturn"]
 - !private ["s7CVarArgP", "uid"]
+- !private ["s7CVarArgP", "unbindFromKeyboard"]
 - !private ["s7CVarArgP", "updateChildValues"]
 - !private ["s7CVarArgP", "uuidString"]
 - !private ["s7CVarArgP", "value"]
@@ -191,6 +204,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePNGRepresentation"]
 - ["s28CustomDebugStringConvertibleP", "UIImagePickerController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePickerControllerSourceType"]
+- !private ["s28CustomDebugStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
 - !private ["s28CustomDebugStringConvertibleP", "URLSession"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -200,6 +215,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "allowsEditing"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "bindToKeyboard"]
 - !private ["s28CustomDebugStringConvertibleP", "child"]
 - !private ["s28CustomDebugStringConvertibleP", "cityField"]
 - !private ["s28CustomDebugStringConvertibleP", "clipsToBounds"]
@@ -213,6 +229,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "downloadURL"]
 - !private ["s28CustomDebugStringConvertibleP", "email"]
 - !private ["s28CustomDebugStringConvertibleP", "emailLbl"]
+- !private ["s28CustomDebugStringConvertibleP", "endEditing"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imagePicker"]
@@ -222,6 +239,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "mainView"]
 - !private ["s28CustomDebugStringConvertibleP", "menuBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "nameField"]
 - ["s28CustomDebugStringConvertibleP", "navigationController"]
@@ -239,6 +257,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "revealToggle"]
 - !private ["s28CustomDebugStringConvertibleP", "revealViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "saveChanges"]
 - !private ["s28CustomDebugStringConvertibleP", "sendBtn"]
 - !private ["s28CustomDebugStringConvertibleP", "setUpProfileText"]
 - !private ["s28CustomDebugStringConvertibleP", "setupProfile"]
@@ -261,6 +280,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
+- !private ["s28CustomDebugStringConvertibleP", "unbindFromKeyboard"]
 - !private ["s28CustomDebugStringConvertibleP", "updateChildValues"]
 - !private ["s28CustomDebugStringConvertibleP", "uuidString"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
@@ -289,6 +309,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIImagePNGRepresentation"]
 - ["s23CustomStringConvertibleP", "UIImagePickerController"]
 - !private ["s23CustomStringConvertibleP", "UIImagePickerControllerSourceType"]
+- !private ["s23CustomStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "UIView"]
 - !private ["s23CustomStringConvertibleP", "URL"]
 - !private ["s23CustomStringConvertibleP", "URLSession"]
 - ["s23CustomStringConvertibleP", ""]
@@ -299,6 +321,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "allowsEditing"]
 - !private ["s23CustomStringConvertibleP", "async"]
 - !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "bindToKeyboard"]
 - !private ["s23CustomStringConvertibleP", "child"]
 - !private ["s23CustomStringConvertibleP", "cityField"]
 - !private ["s23CustomStringConvertibleP", "clipsToBounds"]
@@ -312,6 +335,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "downloadURL"]
 - !private ["s23CustomStringConvertibleP", "email"]
 - !private ["s23CustomStringConvertibleP", "emailLbl"]
+- !private ["s23CustomStringConvertibleP", "endEditing"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "imagePicker"]
@@ -321,6 +345,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isEnabled"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "mainView"]
 - !private ["s23CustomStringConvertibleP", "menuBtn"]
 - !private ["s23CustomStringConvertibleP", "nameField"]
 - ["s23CustomStringConvertibleP", "navigationController"]
@@ -338,6 +363,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "revealToggle"]
 - !private ["s23CustomStringConvertibleP", "revealViewController"]
+- !private ["s23CustomStringConvertibleP", "saveChanges"]
 - !private ["s23CustomStringConvertibleP", "sendBtn"]
 - !private ["s23CustomStringConvertibleP", "setUpProfileText"]
 - !private ["s23CustomStringConvertibleP", "setupProfile"]
@@ -359,6 +385,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "textFieldShouldEndEditing"]
 - ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
 - !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["s23CustomStringConvertibleP", "unbindFromKeyboard"]
 - !private ["s23CustomStringConvertibleP", "updateChildValues"]
 - !private ["s23CustomStringConvertibleP", "uuidString"]
 - !private ["s23CustomStringConvertibleP", "value"]
@@ -405,6 +432,8 @@ depends-member:
 - !private ["s9EquatableP", "UIImagePNGRepresentation"]
 - ["s9EquatableP", "UIImagePickerController"]
 - !private ["s9EquatableP", "UIImagePickerControllerSourceType"]
+- !private ["s9EquatableP", "UITapGestureRecognizer"]
+- !private ["s9EquatableP", "UIView"]
 - !private ["s9EquatableP", "URL"]
 - !private ["s9EquatableP", "URLSession"]
 - ["s9EquatableP", ""]
@@ -415,6 +444,7 @@ depends-member:
 - !private ["s9EquatableP", "allowsEditing"]
 - !private ["s9EquatableP", "async"]
 - !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "bindToKeyboard"]
 - !private ["s9EquatableP", "child"]
 - !private ["s9EquatableP", "cityField"]
 - !private ["s9EquatableP", "clipsToBounds"]
@@ -428,6 +458,7 @@ depends-member:
 - !private ["s9EquatableP", "downloadURL"]
 - !private ["s9EquatableP", "email"]
 - !private ["s9EquatableP", "emailLbl"]
+- !private ["s9EquatableP", "endEditing"]
 - !private ["s9EquatableP", "frame"]
 - !private ["s9EquatableP", "image"]
 - !private ["s9EquatableP", "imagePicker"]
@@ -437,6 +468,7 @@ depends-member:
 - !private ["s9EquatableP", "isEnabled"]
 - !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "mainView"]
 - !private ["s9EquatableP", "menuBtn"]
 - !private ["s9EquatableP", "nameField"]
 - ["s9EquatableP", "navigationController"]
@@ -455,6 +487,7 @@ depends-member:
 - !private ["s9EquatableP", "resume"]
 - !private ["s9EquatableP", "revealToggle"]
 - !private ["s9EquatableP", "revealViewController"]
+- !private ["s9EquatableP", "saveChanges"]
 - !private ["s9EquatableP", "sendBtn"]
 - !private ["s9EquatableP", "setUpProfileText"]
 - !private ["s9EquatableP", "setupProfile"]
@@ -478,6 +511,7 @@ depends-member:
 - ["s9EquatableP", "textFieldShouldReturn"]
 - !private ["s9EquatableP", "touchUpInside"]
 - !private ["s9EquatableP", "uid"]
+- !private ["s9EquatableP", "unbindFromKeyboard"]
 - !private ["s9EquatableP", "updateChildValues"]
 - !private ["s9EquatableP", "uuidString"]
 - !private ["s9EquatableP", "value"]
@@ -503,6 +537,8 @@ depends-member:
 - !private ["s8HashableP", "UIImagePNGRepresentation"]
 - ["s8HashableP", "UIImagePickerController"]
 - !private ["s8HashableP", "UIImagePickerControllerSourceType"]
+- !private ["s8HashableP", "UITapGestureRecognizer"]
+- !private ["s8HashableP", "UIView"]
 - !private ["s8HashableP", "URL"]
 - !private ["s8HashableP", "URLSession"]
 - ["s8HashableP", ""]
@@ -513,6 +549,7 @@ depends-member:
 - !private ["s8HashableP", "allowsEditing"]
 - !private ["s8HashableP", "async"]
 - !private ["s8HashableP", "auth"]
+- !private ["s8HashableP", "bindToKeyboard"]
 - !private ["s8HashableP", "child"]
 - !private ["s8HashableP", "cityField"]
 - !private ["s8HashableP", "clipsToBounds"]
@@ -526,6 +563,7 @@ depends-member:
 - !private ["s8HashableP", "downloadURL"]
 - !private ["s8HashableP", "email"]
 - !private ["s8HashableP", "emailLbl"]
+- !private ["s8HashableP", "endEditing"]
 - !private ["s8HashableP", "frame"]
 - !private ["s8HashableP", "image"]
 - !private ["s8HashableP", "imagePicker"]
@@ -535,6 +573,7 @@ depends-member:
 - !private ["s8HashableP", "isEnabled"]
 - !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "mainView"]
 - !private ["s8HashableP", "menuBtn"]
 - !private ["s8HashableP", "nameField"]
 - ["s8HashableP", "navigationController"]
@@ -553,6 +592,7 @@ depends-member:
 - !private ["s8HashableP", "resume"]
 - !private ["s8HashableP", "revealToggle"]
 - !private ["s8HashableP", "revealViewController"]
+- !private ["s8HashableP", "saveChanges"]
 - !private ["s8HashableP", "sendBtn"]
 - !private ["s8HashableP", "setUpProfileText"]
 - !private ["s8HashableP", "setupProfile"]
@@ -574,6 +614,7 @@ depends-member:
 - ["s8HashableP", "textFieldShouldEndEditing"]
 - ["s8HashableP", "textFieldShouldReturn"]
 - !private ["s8HashableP", "uid"]
+- !private ["s8HashableP", "unbindFromKeyboard"]
 - !private ["s8HashableP", "updateChildValues"]
 - !private ["s8HashableP", "uuidString"]
 - !private ["s8HashableP", "value"]
@@ -600,20 +641,23 @@ depends-member:
 - !private ["18Pop_Up_Circle_Test4MeVCC", "UIImagePickerControllerSourceType"]
 - ["18Pop_Up_Circle_Test4MeVCC", "UIImageView"]
 - ["18Pop_Up_Circle_Test4MeVCC", "UILabel"]
+- !private ["18Pop_Up_Circle_Test4MeVCC", "UITapGestureRecognizer"]
 - ["18Pop_Up_Circle_Test4MeVCC", "UITextField"]
 - ["18Pop_Up_Circle_Test4MeVCC", "UITextView"]
+- ["18Pop_Up_Circle_Test4MeVCC", "UIView"]
 - !private ["18Pop_Up_Circle_Test4MeVCC", "URL"]
 - !private ["18Pop_Up_Circle_Test4MeVCC", "URLSession"]
 - ["18Pop_Up_Circle_Test4MeVCC", "cityField"]
 - ["18Pop_Up_Circle_Test4MeVCC", "databaseRef"]
 - ["18Pop_Up_Circle_Test4MeVCC", "deinit"]
-- !private ["18Pop_Up_Circle_Test4MeVCC", "dismiss"]
+- ["18Pop_Up_Circle_Test4MeVCC", "dismiss"]
 - ["18Pop_Up_Circle_Test4MeVCC", "emailLbl"]
 - ["18Pop_Up_Circle_Test4MeVCC", "imagePicker"]
 - ["18Pop_Up_Circle_Test4MeVCC", "imagePickerController"]
 - ["18Pop_Up_Circle_Test4MeVCC", "imagePickerControllerDidCancel"]
 - ["18Pop_Up_Circle_Test4MeVCC", "init"]
 - ["18Pop_Up_Circle_Test4MeVCC", "keyField"]
+- ["18Pop_Up_Circle_Test4MeVCC", "mainView"]
 - ["18Pop_Up_Circle_Test4MeVCC", "menuBtn"]
 - ["18Pop_Up_Circle_Test4MeVCC", "nameField"]
 - ["18Pop_Up_Circle_Test4MeVCC", "nameLbl"]
@@ -636,8 +680,6 @@ depends-member:
 - ["18Pop_Up_Circle_Test4MeVCC", "storageRef"]
 - ["18Pop_Up_Circle_Test4MeVCC", "teacherField"]
 - ["18Pop_Up_Circle_Test4MeVCC", "templeField"]
-- ["18Pop_Up_Circle_Test4MeVCC", "testBtn"]
-- ["18Pop_Up_Circle_Test4MeVCC", "testBtnPressed"]
 - ["18Pop_Up_Circle_Test4MeVCC", "textField"]
 - ["18Pop_Up_Circle_Test4MeVCC", "textFieldDidBeginEditing"]
 - ["18Pop_Up_Circle_Test4MeVCC", "textFieldDidEndEditing"]
@@ -662,12 +704,15 @@ depends-member:
 - !private ["So8NSCodingP", "UIImagePNGRepresentation"]
 - ["So8NSCodingP", "UIImagePickerController"]
 - !private ["So8NSCodingP", "UIImagePickerControllerSourceType"]
+- !private ["So8NSCodingP", "UITapGestureRecognizer"]
+- !private ["So8NSCodingP", "UIView"]
 - !private ["So8NSCodingP", "URL"]
 - !private ["So8NSCodingP", "URLSession"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "addTarget"]
 - !private ["So8NSCodingP", "allowsEditing"]
+- !private ["So8NSCodingP", "bindToKeyboard"]
 - !private ["So8NSCodingP", "cityField"]
 - !private ["So8NSCodingP", "clipsToBounds"]
 - !private ["So8NSCodingP", "cornerRadius"]
@@ -675,6 +720,7 @@ depends-member:
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "emailLbl"]
+- !private ["So8NSCodingP", "endEditing"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imagePicker"]
@@ -683,6 +729,7 @@ depends-member:
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isEnabled"]
 - !private ["So8NSCodingP", "layer"]
+- !private ["So8NSCodingP", "mainView"]
 - !private ["So8NSCodingP", "menuBtn"]
 - !private ["So8NSCodingP", "nameField"]
 - ["So8NSCodingP", "navigationController"]
@@ -696,6 +743,7 @@ depends-member:
 - !private ["So8NSCodingP", "profile_image"]
 - !private ["So8NSCodingP", "revealToggle"]
 - !private ["So8NSCodingP", "revealViewController"]
+- !private ["So8NSCodingP", "saveChanges"]
 - !private ["So8NSCodingP", "sendBtn"]
 - !private ["So8NSCodingP", "setUpProfileText"]
 - !private ["So8NSCodingP", "setupProfile"]
@@ -714,6 +762,7 @@ depends-member:
 - ["So8NSCodingP", "textFieldShouldClear"]
 - ["So8NSCodingP", "textFieldShouldEndEditing"]
 - ["So8NSCodingP", "textFieldShouldReturn"]
+- !private ["So8NSCodingP", "unbindFromKeyboard"]
 - !private ["So8NSCodingP", "uuidString"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -734,6 +783,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIImagePNGRepresentation"]
 - ["So26NSExtensionRequestHandlingP", "UIImagePickerController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImagePickerControllerSourceType"]
+- !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
+- !private ["So26NSExtensionRequestHandlingP", "UIView"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "URLSession"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -747,6 +798,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "imagePickerController"]
 - ["So26NSExtensionRequestHandlingP", "imagePickerControllerDidCancel"]
 - ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "mainView"]
 - !private ["So26NSExtensionRequestHandlingP", "menuBtn"]
 - !private ["So26NSExtensionRequestHandlingP", "nameField"]
 - ["So26NSExtensionRequestHandlingP", "navigationController"]
@@ -760,6 +812,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "profile_image"]
 - !private ["So26NSExtensionRequestHandlingP", "revealToggle"]
 - !private ["So26NSExtensionRequestHandlingP", "revealViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "saveChanges"]
 - !private ["So26NSExtensionRequestHandlingP", "sendBtn"]
 - !private ["So26NSExtensionRequestHandlingP", "setUpProfileText"]
 - !private ["So26NSExtensionRequestHandlingP", "setupProfile"]
@@ -802,8 +855,10 @@ depends-member:
 - !private ["So8NSObjectC", "UIImagePickerControllerSourceType"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "UITapGestureRecognizer"]
 - ["So8NSObjectC", "UITextField"]
 - ["So8NSObjectC", "UITextView"]
+- ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "URLSession"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
@@ -811,6 +866,7 @@ depends-member:
 - !private ["So8NSObjectC", "allowsEditing"]
 - !private ["So8NSObjectC", "async"]
 - !private ["So8NSObjectC", "auth"]
+- !private ["So8NSObjectC", "bindToKeyboard"]
 - !private ["So8NSObjectC", "child"]
 - ["So8NSObjectC", "cityField"]
 - !private ["So8NSObjectC", "clipsToBounds"]
@@ -820,10 +876,11 @@ depends-member:
 - ["So8NSObjectC", "database"]
 - ["So8NSObjectC", "databaseRef"]
 - !private ["So8NSObjectC", "delegate"]
-- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "downloadURL"]
 - !private ["So8NSObjectC", "email"]
 - ["So8NSObjectC", "emailLbl"]
+- !private ["So8NSObjectC", "endEditing"]
 - !private ["So8NSObjectC", "frame"]
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "imagePicker"]
@@ -834,6 +891,7 @@ depends-member:
 - ["So8NSObjectC", "keyField"]
 - !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "mainView"]
 - ["So8NSObjectC", "menuBtn"]
 - ["So8NSObjectC", "nameField"]
 - ["So8NSObjectC", "nameLbl"]
@@ -867,8 +925,6 @@ depends-member:
 - !private ["So8NSObjectC", "tapGestureRecognizer"]
 - ["So8NSObjectC", "teacherField"]
 - ["So8NSObjectC", "templeField"]
-- ["So8NSObjectC", "testBtn"]
-- ["So8NSObjectC", "testBtnPressed"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textField"]
 - ["So8NSObjectC", "textFieldDidBeginEditing"]
@@ -879,6 +935,7 @@ depends-member:
 - ["So8NSObjectC", "textFieldShouldReturn"]
 - ["So8NSObjectC", "textViewDidBeginEditing"]
 - !private ["So8NSObjectC", "uid"]
+- !private ["So8NSObjectC", "unbindFromKeyboard"]
 - !private ["So8NSObjectC", "updateChildValues"]
 - ["So8NSObjectC", "uploadImageButton"]
 - !private ["So8NSObjectC", "uuidString"]
@@ -897,6 +954,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIImagePNGRepresentation"]
 - ["So16NSObjectProtocolP", "UIImagePickerController"]
 - !private ["So16NSObjectProtocolP", "UIImagePickerControllerSourceType"]
+- !private ["So16NSObjectProtocolP", "UITapGestureRecognizer"]
+- !private ["So16NSObjectProtocolP", "UIView"]
 - !private ["So16NSObjectProtocolP", "URL"]
 - !private ["So16NSObjectProtocolP", "URLSession"]
 - ["So16NSObjectProtocolP", ""]
@@ -905,6 +964,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "allowsEditing"]
 - !private ["So16NSObjectProtocolP", "async"]
 - !private ["So16NSObjectProtocolP", "auth"]
+- !private ["So16NSObjectProtocolP", "bindToKeyboard"]
 - !private ["So16NSObjectProtocolP", "child"]
 - !private ["So16NSObjectProtocolP", "cityField"]
 - !private ["So16NSObjectProtocolP", "clipsToBounds"]
@@ -918,6 +978,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "downloadURL"]
 - !private ["So16NSObjectProtocolP", "email"]
 - !private ["So16NSObjectProtocolP", "emailLbl"]
+- !private ["So16NSObjectProtocolP", "endEditing"]
 - !private ["So16NSObjectProtocolP", "frame"]
 - !private ["So16NSObjectProtocolP", "image"]
 - !private ["So16NSObjectProtocolP", "imagePicker"]
@@ -927,6 +988,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "isEnabled"]
 - !private ["So16NSObjectProtocolP", "layer"]
 - !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "mainView"]
 - !private ["So16NSObjectProtocolP", "menuBtn"]
 - !private ["So16NSObjectProtocolP", "nameField"]
 - ["So16NSObjectProtocolP", "navigationController"]
@@ -944,6 +1006,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "resume"]
 - !private ["So16NSObjectProtocolP", "revealToggle"]
 - !private ["So16NSObjectProtocolP", "revealViewController"]
+- !private ["So16NSObjectProtocolP", "saveChanges"]
 - !private ["So16NSObjectProtocolP", "sendBtn"]
 - !private ["So16NSObjectProtocolP", "setUpProfileText"]
 - !private ["So16NSObjectProtocolP", "setupProfile"]
@@ -965,6 +1028,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "textFieldShouldEndEditing"]
 - ["So16NSObjectProtocolP", "textFieldShouldReturn"]
 - !private ["So16NSObjectProtocolP", "uid"]
+- !private ["So16NSObjectProtocolP", "unbindFromKeyboard"]
 - !private ["So16NSObjectProtocolP", "updateChildValues"]
 - !private ["So16NSObjectProtocolP", "uuidString"]
 - !private ["So16NSObjectProtocolP", "value"]
@@ -1010,23 +1074,29 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
 - !private ["So29UIAccessibilityIdentificationP", "addTarget"]
+- !private ["So29UIAccessibilityIdentificationP", "bindToKeyboard"]
 - !private ["So29UIAccessibilityIdentificationP", "clipsToBounds"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "endEditing"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "isEnabled"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "unbindFromKeyboard"]
 - !private ["So12UIAppearanceP", "addGestureRecognizer"]
 - !private ["So12UIAppearanceP", "addTarget"]
+- !private ["So12UIAppearanceP", "bindToKeyboard"]
 - !private ["So12UIAppearanceP", "clipsToBounds"]
 - !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "endEditing"]
 - !private ["So12UIAppearanceP", "frame"]
 - !private ["So12UIAppearanceP", "image"]
 - !private ["So12UIAppearanceP", "isEnabled"]
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "unbindFromKeyboard"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "DataService"]
 - ["So21UIAppearanceContainerP", "Database"]
@@ -1038,18 +1108,22 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIImagePNGRepresentation"]
 - ["So21UIAppearanceContainerP", "UIImagePickerController"]
 - !private ["So21UIAppearanceContainerP", "UIImagePickerControllerSourceType"]
+- !private ["So21UIAppearanceContainerP", "UITapGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "UIView"]
 - !private ["So21UIAppearanceContainerP", "URL"]
 - !private ["So21UIAppearanceContainerP", "URLSession"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "allowsEditing"]
+- !private ["So21UIAppearanceContainerP", "bindToKeyboard"]
 - !private ["So21UIAppearanceContainerP", "cityField"]
 - !private ["So21UIAppearanceContainerP", "clipsToBounds"]
 - !private ["So21UIAppearanceContainerP", "databaseRef"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "emailLbl"]
+- !private ["So21UIAppearanceContainerP", "endEditing"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "imagePicker"]
@@ -1058,6 +1132,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isEnabled"]
 - !private ["So21UIAppearanceContainerP", "layer"]
+- !private ["So21UIAppearanceContainerP", "mainView"]
 - !private ["So21UIAppearanceContainerP", "menuBtn"]
 - !private ["So21UIAppearanceContainerP", "nameField"]
 - ["So21UIAppearanceContainerP", "navigationController"]
@@ -1071,6 +1146,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "profile_image"]
 - !private ["So21UIAppearanceContainerP", "revealToggle"]
 - !private ["So21UIAppearanceContainerP", "revealViewController"]
+- !private ["So21UIAppearanceContainerP", "saveChanges"]
 - !private ["So21UIAppearanceContainerP", "sendBtn"]
 - !private ["So21UIAppearanceContainerP", "setUpProfileText"]
 - !private ["So21UIAppearanceContainerP", "setupProfile"]
@@ -1088,6 +1164,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "textFieldShouldClear"]
 - ["So21UIAppearanceContainerP", "textFieldShouldEndEditing"]
 - ["So21UIAppearanceContainerP", "textFieldShouldReturn"]
+- !private ["So21UIAppearanceContainerP", "unbindFromKeyboard"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
@@ -1104,6 +1181,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIImagePNGRepresentation"]
 - ["So18UIContentContainerP", "UIImagePickerController"]
 - !private ["So18UIContentContainerP", "UIImagePickerControllerSourceType"]
+- !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
+- !private ["So18UIContentContainerP", "UIView"]
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "URLSession"]
 - ["So18UIContentContainerP", ""]
@@ -1117,6 +1196,7 @@ depends-member:
 - ["So18UIContentContainerP", "imagePickerController"]
 - ["So18UIContentContainerP", "imagePickerControllerDidCancel"]
 - ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "mainView"]
 - !private ["So18UIContentContainerP", "menuBtn"]
 - !private ["So18UIContentContainerP", "nameField"]
 - ["So18UIContentContainerP", "navigationController"]
@@ -1130,6 +1210,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "profile_image"]
 - !private ["So18UIContentContainerP", "revealToggle"]
 - !private ["So18UIContentContainerP", "revealViewController"]
+- !private ["So18UIContentContainerP", "saveChanges"]
 - !private ["So18UIContentContainerP", "sendBtn"]
 - !private ["So18UIContentContainerP", "setUpProfileText"]
 - !private ["So18UIContentContainerP", "setupProfile"]
@@ -1158,22 +1239,28 @@ depends-member:
 - !private ["SC15UIControlEventsV", "touchUpInside"]
 - !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
 - !private ["So17UICoordinateSpaceP", "addTarget"]
+- !private ["So17UICoordinateSpaceP", "bindToKeyboard"]
 - !private ["So17UICoordinateSpaceP", "clipsToBounds"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "endEditing"]
 - !private ["So17UICoordinateSpaceP", "frame"]
 - !private ["So17UICoordinateSpaceP", "image"]
 - !private ["So17UICoordinateSpaceP", "isEnabled"]
 - !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "unbindFromKeyboard"]
 - !private ["So13UIDynamicItemP", "addGestureRecognizer"]
 - !private ["So13UIDynamicItemP", "addTarget"]
+- !private ["So13UIDynamicItemP", "bindToKeyboard"]
 - !private ["So13UIDynamicItemP", "clipsToBounds"]
 - !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "endEditing"]
 - !private ["So13UIDynamicItemP", "frame"]
 - !private ["So13UIDynamicItemP", "image"]
 - !private ["So13UIDynamicItemP", "isEnabled"]
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "unbindFromKeyboard"]
 - !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "DataService"]
 - ["So18UIFocusEnvironmentP", "Database"]
@@ -1185,18 +1272,22 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIImagePNGRepresentation"]
 - ["So18UIFocusEnvironmentP", "UIImagePickerController"]
 - !private ["So18UIFocusEnvironmentP", "UIImagePickerControllerSourceType"]
+- !private ["So18UIFocusEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "UIView"]
 - !private ["So18UIFocusEnvironmentP", "URL"]
 - !private ["So18UIFocusEnvironmentP", "URLSession"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "allowsEditing"]
+- !private ["So18UIFocusEnvironmentP", "bindToKeyboard"]
 - !private ["So18UIFocusEnvironmentP", "cityField"]
 - !private ["So18UIFocusEnvironmentP", "clipsToBounds"]
 - !private ["So18UIFocusEnvironmentP", "databaseRef"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "emailLbl"]
+- !private ["So18UIFocusEnvironmentP", "endEditing"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "imagePicker"]
@@ -1205,6 +1296,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isEnabled"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "mainView"]
 - !private ["So18UIFocusEnvironmentP", "menuBtn"]
 - !private ["So18UIFocusEnvironmentP", "nameField"]
 - ["So18UIFocusEnvironmentP", "navigationController"]
@@ -1218,6 +1310,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "profile_image"]
 - !private ["So18UIFocusEnvironmentP", "revealToggle"]
 - !private ["So18UIFocusEnvironmentP", "revealViewController"]
+- !private ["So18UIFocusEnvironmentP", "saveChanges"]
 - !private ["So18UIFocusEnvironmentP", "sendBtn"]
 - !private ["So18UIFocusEnvironmentP", "setUpProfileText"]
 - !private ["So18UIFocusEnvironmentP", "setupProfile"]
@@ -1235,18 +1328,23 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "textFieldShouldClear"]
 - ["So18UIFocusEnvironmentP", "textFieldShouldEndEditing"]
 - ["So18UIFocusEnvironmentP", "textFieldShouldReturn"]
+- !private ["So18UIFocusEnvironmentP", "unbindFromKeyboard"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "addTarget"]
+- !private ["So11UIFocusItemP", "bindToKeyboard"]
 - !private ["So11UIFocusItemP", "clipsToBounds"]
 - !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "endEditing"]
 - !private ["So11UIFocusItemP", "frame"]
 - !private ["So11UIFocusItemP", "image"]
 - !private ["So11UIFocusItemP", "isEnabled"]
 - !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "unbindFromKeyboard"]
+- !private ["So19UIGestureRecognizerC", "init"]
 - !private ["So7UIImageC", "init"]
 - !private ["So23UIImagePickerControllerC", "allowsEditing"]
 - !private ["So23UIImagePickerControllerC", "delegate"]
@@ -1263,6 +1361,8 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "UIImagePNGRepresentation"]
 - ["So31UIImagePickerControllerDelegateP", "UIImagePickerController"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImagePickerControllerSourceType"]
+- !private ["So31UIImagePickerControllerDelegateP", "UITapGestureRecognizer"]
+- !private ["So31UIImagePickerControllerDelegateP", "UIView"]
 - !private ["So31UIImagePickerControllerDelegateP", "URL"]
 - !private ["So31UIImagePickerControllerDelegateP", "URLSession"]
 - ["So31UIImagePickerControllerDelegateP", ""]
@@ -1273,6 +1373,7 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "imagePicker"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerController"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerControllerDidCancel"]
+- !private ["So31UIImagePickerControllerDelegateP", "mainView"]
 - !private ["So31UIImagePickerControllerDelegateP", "menuBtn"]
 - !private ["So31UIImagePickerControllerDelegateP", "nameField"]
 - ["So31UIImagePickerControllerDelegateP", "navigationController"]
@@ -1284,6 +1385,7 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "print"]
 - !private ["So31UIImagePickerControllerDelegateP", "profile_image"]
 - !private ["So31UIImagePickerControllerDelegateP", "revealViewController"]
+- !private ["So31UIImagePickerControllerDelegateP", "saveChanges"]
 - !private ["So31UIImagePickerControllerDelegateP", "sendBtn"]
 - !private ["So31UIImagePickerControllerDelegateP", "setUpProfileText"]
 - !private ["So31UIImagePickerControllerDelegateP", "setupProfile"]
@@ -1323,6 +1425,8 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "UIImagePNGRepresentation"]
 - ["So30UINavigationControllerDelegateP", "UIImagePickerController"]
 - !private ["So30UINavigationControllerDelegateP", "UIImagePickerControllerSourceType"]
+- !private ["So30UINavigationControllerDelegateP", "UITapGestureRecognizer"]
+- !private ["So30UINavigationControllerDelegateP", "UIView"]
 - !private ["So30UINavigationControllerDelegateP", "URL"]
 - !private ["So30UINavigationControllerDelegateP", "URLSession"]
 - ["So30UINavigationControllerDelegateP", ""]
@@ -1333,6 +1437,7 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "imagePicker"]
 - ["So30UINavigationControllerDelegateP", "imagePickerController"]
 - ["So30UINavigationControllerDelegateP", "imagePickerControllerDidCancel"]
+- !private ["So30UINavigationControllerDelegateP", "mainView"]
 - !private ["So30UINavigationControllerDelegateP", "menuBtn"]
 - !private ["So30UINavigationControllerDelegateP", "nameField"]
 - ["So30UINavigationControllerDelegateP", "navigationController"]
@@ -1344,6 +1449,7 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "print"]
 - !private ["So30UINavigationControllerDelegateP", "profile_image"]
 - !private ["So30UINavigationControllerDelegateP", "revealViewController"]
+- !private ["So30UINavigationControllerDelegateP", "saveChanges"]
 - !private ["So30UINavigationControllerDelegateP", "sendBtn"]
 - !private ["So30UINavigationControllerDelegateP", "setUpProfileText"]
 - !private ["So30UINavigationControllerDelegateP", "setupProfile"]
@@ -1370,18 +1476,22 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIImagePNGRepresentation"]
 - ["So30UIPasteConfigurationSupportingP", "UIImagePickerController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImagePickerControllerSourceType"]
+- !private ["So30UIPasteConfigurationSupportingP", "UITapGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIView"]
 - !private ["So30UIPasteConfigurationSupportingP", "URL"]
 - !private ["So30UIPasteConfigurationSupportingP", "URLSession"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "allowsEditing"]
+- !private ["So30UIPasteConfigurationSupportingP", "bindToKeyboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "cityField"]
 - !private ["So30UIPasteConfigurationSupportingP", "clipsToBounds"]
 - !private ["So30UIPasteConfigurationSupportingP", "databaseRef"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "emailLbl"]
+- !private ["So30UIPasteConfigurationSupportingP", "endEditing"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "imagePicker"]
@@ -1390,6 +1500,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isEnabled"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "mainView"]
 - !private ["So30UIPasteConfigurationSupportingP", "menuBtn"]
 - !private ["So30UIPasteConfigurationSupportingP", "nameField"]
 - ["So30UIPasteConfigurationSupportingP", "navigationController"]
@@ -1403,6 +1514,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "profile_image"]
 - !private ["So30UIPasteConfigurationSupportingP", "revealToggle"]
 - !private ["So30UIPasteConfigurationSupportingP", "revealViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "saveChanges"]
 - !private ["So30UIPasteConfigurationSupportingP", "sendBtn"]
 - !private ["So30UIPasteConfigurationSupportingP", "setUpProfileText"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupProfile"]
@@ -1420,6 +1532,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "textFieldShouldClear"]
 - ["So30UIPasteConfigurationSupportingP", "textFieldShouldEndEditing"]
 - ["So30UIPasteConfigurationSupportingP", "textFieldShouldReturn"]
+- !private ["So30UIPasteConfigurationSupportingP", "unbindFromKeyboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
@@ -1441,19 +1554,23 @@ depends-member:
 - !private ["So11UIResponderC", "UIImagePickerControllerSourceType"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
+- !private ["So11UIResponderC", "UITapGestureRecognizer"]
 - ["So11UIResponderC", "UITextField"]
 - ["So11UIResponderC", "UITextView"]
+- ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "URL"]
 - !private ["So11UIResponderC", "URLSession"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "addTarget"]
 - !private ["So11UIResponderC", "allowsEditing"]
+- !private ["So11UIResponderC", "bindToKeyboard"]
 - ["So11UIResponderC", "cityField"]
 - !private ["So11UIResponderC", "clipsToBounds"]
 - ["So11UIResponderC", "databaseRef"]
 - !private ["So11UIResponderC", "delegate"]
-- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "dismiss"]
 - ["So11UIResponderC", "emailLbl"]
+- !private ["So11UIResponderC", "endEditing"]
 - !private ["So11UIResponderC", "frame"]
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "imagePicker"]
@@ -1463,6 +1580,7 @@ depends-member:
 - !private ["So11UIResponderC", "isEnabled"]
 - ["So11UIResponderC", "keyField"]
 - !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "mainView"]
 - ["So11UIResponderC", "menuBtn"]
 - ["So11UIResponderC", "nameField"]
 - ["So11UIResponderC", "nameLbl"]
@@ -1489,8 +1607,6 @@ depends-member:
 - !private ["So11UIResponderC", "tapGestureRecognizer"]
 - ["So11UIResponderC", "teacherField"]
 - ["So11UIResponderC", "templeField"]
-- ["So11UIResponderC", "testBtn"]
-- ["So11UIResponderC", "testBtnPressed"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "textField"]
 - ["So11UIResponderC", "textFieldDidBeginEditing"]
@@ -1500,6 +1616,7 @@ depends-member:
 - ["So11UIResponderC", "textFieldShouldEndEditing"]
 - ["So11UIResponderC", "textFieldShouldReturn"]
 - ["So11UIResponderC", "textViewDidBeginEditing"]
+- !private ["So11UIResponderC", "unbindFromKeyboard"]
 - ["So11UIResponderC", "uploadImageButton"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -1515,18 +1632,22 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIImagePNGRepresentation"]
 - ["So30UIResponderStandardEditActionsP", "UIImagePickerController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImagePickerControllerSourceType"]
+- !private ["So30UIResponderStandardEditActionsP", "UITapGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "UIView"]
 - !private ["So30UIResponderStandardEditActionsP", "URL"]
 - !private ["So30UIResponderStandardEditActionsP", "URLSession"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "allowsEditing"]
+- !private ["So30UIResponderStandardEditActionsP", "bindToKeyboard"]
 - !private ["So30UIResponderStandardEditActionsP", "cityField"]
 - !private ["So30UIResponderStandardEditActionsP", "clipsToBounds"]
 - !private ["So30UIResponderStandardEditActionsP", "databaseRef"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "emailLbl"]
+- !private ["So30UIResponderStandardEditActionsP", "endEditing"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "imagePicker"]
@@ -1535,6 +1656,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isEnabled"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "mainView"]
 - !private ["So30UIResponderStandardEditActionsP", "menuBtn"]
 - !private ["So30UIResponderStandardEditActionsP", "nameField"]
 - ["So30UIResponderStandardEditActionsP", "navigationController"]
@@ -1548,6 +1670,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "profile_image"]
 - !private ["So30UIResponderStandardEditActionsP", "revealToggle"]
 - !private ["So30UIResponderStandardEditActionsP", "revealViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "saveChanges"]
 - !private ["So30UIResponderStandardEditActionsP", "sendBtn"]
 - !private ["So30UIResponderStandardEditActionsP", "setUpProfileText"]
 - !private ["So30UIResponderStandardEditActionsP", "setupProfile"]
@@ -1565,6 +1688,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "textFieldShouldClear"]
 - ["So30UIResponderStandardEditActionsP", "textFieldShouldEndEditing"]
 - ["So30UIResponderStandardEditActionsP", "textFieldShouldReturn"]
+- !private ["So30UIResponderStandardEditActionsP", "unbindFromKeyboard"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
@@ -1582,6 +1706,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIImagePNGRepresentation"]
 - ["So16UIStateRestoringP", "UIImagePickerController"]
 - !private ["So16UIStateRestoringP", "UIImagePickerControllerSourceType"]
+- !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
+- !private ["So16UIStateRestoringP", "UIView"]
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "URLSession"]
 - ["So16UIStateRestoringP", ""]
@@ -1595,6 +1721,7 @@ depends-member:
 - ["So16UIStateRestoringP", "imagePickerController"]
 - ["So16UIStateRestoringP", "imagePickerControllerDidCancel"]
 - ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "mainView"]
 - !private ["So16UIStateRestoringP", "menuBtn"]
 - !private ["So16UIStateRestoringP", "nameField"]
 - ["So16UIStateRestoringP", "navigationController"]
@@ -1608,6 +1735,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "profile_image"]
 - !private ["So16UIStateRestoringP", "revealToggle"]
 - !private ["So16UIStateRestoringP", "revealViewController"]
+- !private ["So16UIStateRestoringP", "saveChanges"]
 - !private ["So16UIStateRestoringP", "sendBtn"]
 - !private ["So16UIStateRestoringP", "setUpProfileText"]
 - !private ["So16UIStateRestoringP", "setupProfile"]
@@ -1627,6 +1755,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
+- !private ["So22UITapGestureRecognizerC", "init"]
 - !private ["So15UITextDraggableP", "delegate"]
 - !private ["So15UITextDraggableP", "text"]
 - !private ["So15UITextDroppableP", "delegate"]
@@ -1644,6 +1773,8 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "UIImagePNGRepresentation"]
 - ["So19UITextFieldDelegateP", "UIImagePickerController"]
 - !private ["So19UITextFieldDelegateP", "UIImagePickerControllerSourceType"]
+- !private ["So19UITextFieldDelegateP", "UITapGestureRecognizer"]
+- !private ["So19UITextFieldDelegateP", "UIView"]
 - !private ["So19UITextFieldDelegateP", "URL"]
 - !private ["So19UITextFieldDelegateP", "URLSession"]
 - ["So19UITextFieldDelegateP", ""]
@@ -1654,6 +1785,7 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "imagePicker"]
 - ["So19UITextFieldDelegateP", "imagePickerController"]
 - ["So19UITextFieldDelegateP", "imagePickerControllerDidCancel"]
+- !private ["So19UITextFieldDelegateP", "mainView"]
 - !private ["So19UITextFieldDelegateP", "menuBtn"]
 - !private ["So19UITextFieldDelegateP", "nameField"]
 - ["So19UITextFieldDelegateP", "navigationController"]
@@ -1665,6 +1797,7 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "print"]
 - !private ["So19UITextFieldDelegateP", "profile_image"]
 - !private ["So19UITextFieldDelegateP", "revealViewController"]
+- !private ["So19UITextFieldDelegateP", "saveChanges"]
 - !private ["So19UITextFieldDelegateP", "sendBtn"]
 - !private ["So19UITextFieldDelegateP", "setUpProfileText"]
 - !private ["So19UITextFieldDelegateP", "setupProfile"]
@@ -1698,18 +1831,22 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIImagePNGRepresentation"]
 - ["So18UITraitEnvironmentP", "UIImagePickerController"]
 - !private ["So18UITraitEnvironmentP", "UIImagePickerControllerSourceType"]
+- !private ["So18UITraitEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "UIView"]
 - !private ["So18UITraitEnvironmentP", "URL"]
 - !private ["So18UITraitEnvironmentP", "URLSession"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "allowsEditing"]
+- !private ["So18UITraitEnvironmentP", "bindToKeyboard"]
 - !private ["So18UITraitEnvironmentP", "cityField"]
 - !private ["So18UITraitEnvironmentP", "clipsToBounds"]
 - !private ["So18UITraitEnvironmentP", "databaseRef"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "emailLbl"]
+- !private ["So18UITraitEnvironmentP", "endEditing"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "imagePicker"]
@@ -1718,6 +1855,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isEnabled"]
 - !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So18UITraitEnvironmentP", "mainView"]
 - !private ["So18UITraitEnvironmentP", "menuBtn"]
 - !private ["So18UITraitEnvironmentP", "nameField"]
 - ["So18UITraitEnvironmentP", "navigationController"]
@@ -1731,6 +1869,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "profile_image"]
 - !private ["So18UITraitEnvironmentP", "revealToggle"]
 - !private ["So18UITraitEnvironmentP", "revealViewController"]
+- !private ["So18UITraitEnvironmentP", "saveChanges"]
 - !private ["So18UITraitEnvironmentP", "sendBtn"]
 - !private ["So18UITraitEnvironmentP", "setUpProfileText"]
 - !private ["So18UITraitEnvironmentP", "setupProfile"]
@@ -1748,18 +1887,22 @@ depends-member:
 - ["So18UITraitEnvironmentP", "textFieldShouldClear"]
 - ["So18UITraitEnvironmentP", "textFieldShouldEndEditing"]
 - ["So18UITraitEnvironmentP", "textFieldShouldReturn"]
+- !private ["So18UITraitEnvironmentP", "unbindFromKeyboard"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "addTarget"]
+- !private ["So6UIViewC", "bindToKeyboard"]
 - !private ["So6UIViewC", "clipsToBounds"]
 - !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "endEditing"]
 - !private ["So6UIViewC", "frame"]
 - !private ["So6UIViewC", "image"]
 - !private ["So6UIViewC", "isEnabled"]
 - !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "unbindFromKeyboard"]
 - !private ["So16UIViewControllerC", "AnyObject"]
 - !private ["So16UIViewControllerC", "Auth"]
 - ["So16UIViewControllerC", "Bool"]
@@ -1778,8 +1921,10 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIImagePickerControllerSourceType"]
 - ["So16UIViewControllerC", "UIImageView"]
 - ["So16UIViewControllerC", "UILabel"]
+- !private ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - ["So16UIViewControllerC", "UITextField"]
 - ["So16UIViewControllerC", "UITextView"]
+- ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "URLSession"]
 - ["So16UIViewControllerC", ""]
@@ -1787,13 +1932,14 @@ depends-member:
 - ["So16UIViewControllerC", "cityField"]
 - ["So16UIViewControllerC", "databaseRef"]
 - !private ["So16UIViewControllerC", "delegate"]
-- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "emailLbl"]
 - ["So16UIViewControllerC", "imagePicker"]
 - ["So16UIViewControllerC", "imagePickerController"]
 - ["So16UIViewControllerC", "imagePickerControllerDidCancel"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "keyField"]
+- ["So16UIViewControllerC", "mainView"]
 - ["So16UIViewControllerC", "menuBtn"]
 - ["So16UIViewControllerC", "nameField"]
 - ["So16UIViewControllerC", "nameLbl"]
@@ -1820,8 +1966,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "tapGestureRecognizer"]
 - ["So16UIViewControllerC", "teacherField"]
 - ["So16UIViewControllerC", "templeField"]
-- ["So16UIViewControllerC", "testBtn"]
-- ["So16UIViewControllerC", "testBtnPressed"]
 - ["So16UIViewControllerC", "textField"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
 - ["So16UIViewControllerC", "textFieldDidEndEditing"]
@@ -1846,13 +1990,16 @@ depends-member:
 - !private ["So8UserInfoP", "uid"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bindToKeyboard"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "clipsToBounds"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "endEditing"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isEnabled"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "unbindFromKeyboard"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -1875,6 +2022,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePNGRepresentation"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerControllerSourceType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UITapGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URLSession"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -1883,6 +2032,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "allowsEditing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bindToKeyboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cityField"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clipsToBounds"]
@@ -1896,6 +2046,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "downloadURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "emailLbl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imagePicker"]
@@ -1905,6 +2056,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mainView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "menuBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "nameField"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
@@ -1922,6 +2074,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "revealToggle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "revealViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "saveChanges"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sendBtn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setUpProfileText"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupProfile"]
@@ -1943,6 +2096,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldEndEditing"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unbindFromKeyboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateChildValues"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uuidString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
@@ -2036,6 +2190,7 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
+- !private "So19UIGestureRecognizerC"
 - !private "So7UIImageC"
 - "So23UIImagePickerControllerC"
 - "So31UIImagePickerControllerDelegateP"
@@ -2052,6 +2207,7 @@ depends-nominal:
 - !private "So12UIScrollViewC"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
+- !private "So22UITapGestureRecognizerC"
 - !private "So15UITextDraggableP"
 - !private "So15UITextDroppableP"
 - !private "So11UITextFieldC"
@@ -2105,81 +2261,87 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton-umbrella.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-umbrella.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Headers/Fabric.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/Pop Up Circle Test-Bridging-Header.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/SWRevealViewController.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Headers/FABAttributes.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-Swift.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
@@ -2197,4 +2359,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "2aee5547660a57fe8d7d5a786914cbfc"
+interface-hash: "e563328d1ea5e9a64ba2129e1ab47f85"

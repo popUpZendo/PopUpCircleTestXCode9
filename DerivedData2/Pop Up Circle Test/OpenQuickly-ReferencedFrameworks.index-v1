@@ -12,7 +12,11 @@
 	<string>FirebaseDatabase</string>
 	<string>GTMSessionFetcherOSX</string>
 	<string>Firebase</string>
+	<string>CoreServices</string>
+	<string>FirebaseFunctions</string>
+	<string>FirebaseMLVisionTextModel</string>
 	<string>SafariServices</string>
+	<string>FirebaseMLModelInterpreter</string>
 	<string>mach</string>
 	<string>AVFoundation</string>
 	<string>FirebaseMessaging</string>
@@ -22,28 +26,35 @@
 	<string>FirebaseInstanceID</string>
 	<string>CoreText</string>
 	<string>AdSupport</string>
+	<string>FirebaseMLVisionFaceModel</string>
 	<string>FBSDKLoginKit</string>
-	<string>FirebaseAuth</string>
 	<string>SDWebImage</string>
-	<string>FirebaseInvites</string>
+	<string>FirebaseMLVisionLabelModel</string>
 	<string>AppKit</string>
 	<string>FBSDKCoreKit</string>
+	<string>FirebaseAuth</string>
+	<string>FirebaseInvites</string>
+	<string>OneSignal</string>
 	<string>CoreFoundation</string>
-	<string>FirebaseAppIndexing</string>
 	<string>Cocoa</string>
 	<string>FirebasePerformance</string>
+	<string>Crashlytics</string>
 	<string>Accounts</string>
 	<string>CoreData</string>
+	<string>netinet</string>
 	<string>KDCircularProgress</string>
 	<string>CommonCrypto</string>
 	<string>FirebaseRemoteConfig</string>
 	<string>DLRadioButton</string>
-	<string>FirebaseCrash</string>
+	<string>unicode</string>
+	<string>FirebaseMLVision</string>
+	<string>GoogleToolboxForMac</string>
 	<string>GTMSessionFetcher</string>
-	<string>AudioToolbox</string>
 	<string>QuartzCore</string>
+	<string>FirebaseCrash</string>
 	<string>SystemConfiguration</string>
 	<string>FirebaseAnalytics</string>
+	<string>AudioToolbox</string>
 	<string>Security</string>
 	<string>CoreGraphics</string>
 	<string>GTMSessionFetcherIOS</string>
@@ -51,8 +62,11 @@
 	<string>FirebaseDynamicLinks</string>
 	<string>UserNotifications</string>
 	<string>UIKit</string>
+	<string>Fabric</string>
 	<string>CoreTelephony</string>
+	<string>FirebaseMLVisionBarcodeModel</string>
 	<string>Foundation</string>
 	<string>sys</string>
+	<string>FirebaseFirestore</string>
 </array>
 </plist>

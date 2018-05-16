@@ -13,6 +13,7 @@ class Conversation {
     private var _key: String
     private var _conversationMemberCount: Int
     private var _conversationMembers: [String]
+    private var _partnerName: String
     
     var conversationTitle: String {
         return _conversationTitle
@@ -30,11 +31,16 @@ class Conversation {
         return _conversationMembers
     }
     
-    init(conversationTitle: String, key: String, conversationMembers: [String], conversationMemberCount:Int) {
+    var partnerName: String {
+        return _partnerName
+    }
+    
+    init(conversationTitle: String, key: String, conversationMembers: [String], conversationMemberCount:Int, partnerName: String) {
         self._conversationTitle = conversationTitle
         self._key = key
         self._conversationMembers = conversationMembers
         self._conversationMemberCount = conversationMemberCount
+        self._partnerName = partnerName
     }
     
 }

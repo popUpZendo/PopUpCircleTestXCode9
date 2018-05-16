@@ -7,7 +7,7 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/Bolts.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTask.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFGeneric.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFExecutor.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h \
@@ -22,16 +22,14 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/iOS/BFAppLinkNavigation.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/iOS/BFAppLink.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target\ Support\ Files/Bolts/Bolts-umbrella.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequest+Internal.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequest+Internal.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequest.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKLogger.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSettings+Internal.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCache.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCaching.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h

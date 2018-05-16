@@ -10,4 +10,5 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDImageCache.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDImageCacheConfig.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/UIView+WebCache.h
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/UIView+WebCache.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageTransition.h

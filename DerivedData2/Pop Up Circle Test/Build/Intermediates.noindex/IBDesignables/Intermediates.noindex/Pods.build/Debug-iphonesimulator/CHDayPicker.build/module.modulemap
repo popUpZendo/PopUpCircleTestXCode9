@@ -1,0 +1,11 @@
+framework module CHDayPicker {
+  umbrella header "CHDayPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CHDayPicker.Swift {
+    header "CHDayPicker-Swift.h"
+    requires objc
+}

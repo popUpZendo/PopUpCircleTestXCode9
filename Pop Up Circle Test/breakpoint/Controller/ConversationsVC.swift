@@ -23,6 +23,7 @@ class ConversationsVC: UIViewController {
         
         conversationsTableView.delegate = self
         conversationsTableView.dataSource = self
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -30,12 +31,14 @@ class ConversationsVC: UIViewController {
         DataService.instance.REF_CONVERSATION.observe(.value) { (snapshot) in
             DataService.instance.getAllConversations { (returnedConversationsArray) in
                 self.conversationsArray = returnedConversationsArray
+                //print ("this is the \(self.returnedConversationsArray)")
                 //let conversationTitle = returnedConversationsArray.members.value
                 self.conversationsTableView.reloadData()
             }
         }
     }
 }
+
 extension ConversationsVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -4,4 +4,7 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Target\ Support\ Files/SDWebImage/SDWebImage-prefix.pch \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/UIImage+GIF.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageGIFCoder.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/SDWebImageCoder.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/SDWebImage/SDWebImage/NSImage+WebCache.h

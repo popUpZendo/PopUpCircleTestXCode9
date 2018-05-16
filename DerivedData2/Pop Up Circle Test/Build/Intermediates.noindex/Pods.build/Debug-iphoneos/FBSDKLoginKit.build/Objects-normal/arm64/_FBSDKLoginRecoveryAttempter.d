@@ -9,7 +9,7 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/Bolts.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTaskCompletionSource.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTask.h \
-  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFTask+Exceptions.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFGeneric.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFExecutor.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFCancellationTokenSource.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Bolts/Bolts/Common/BFCancellationTokenRegistration.h \
@@ -78,6 +78,7 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKImageDownloader.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKLogger.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSettings+Internal.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKTypeUtility.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequest+Internal.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestConnection+Internal.h \
@@ -97,6 +98,9 @@ dependencies: \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKLogo.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginKit+Internal.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginCodeInfo.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManager.h \
+  /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKDeviceLoginManagerResult.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginButton.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManager.h \
   /Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/FBSDKTooltipView.h \

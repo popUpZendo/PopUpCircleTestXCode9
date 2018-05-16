@@ -30,10 +30,6 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         
         
-        if Auth.auth().currentUser?.uid == nil{
-            logout()
-        }
-        
         setupProfile()
         setUpProfileText()
         
@@ -53,9 +49,7 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         saveChanges()
         dismiss(animated: true, completion: nil)
     }
-    @IBAction func logoutButton(_ sender: Any) {
-        logout()
-    }
+    
     
     // app is not logging in new users.  I think this is the cause of the crash below.
     
@@ -122,11 +116,7 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             })
         }
     }
-    func logout(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = storyboard.instantiateViewController(withIdentifier: "AuthVC")
-        present(loginViewController, animated: true, completion: nil)
-    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
 
         var selectedImageFromPicker: UIImage?

@@ -10,8 +10,6 @@ provides-dynamic-lookup:
 - "databaseRef"
 - "imagePickerController"
 - "imagePickerControllerDidCancel"
-- "logout"
-- "logoutButton"
 - "popUpGroupLbl"
 - "practiceLbl"
 - "profile_image"
@@ -28,7 +26,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
 - !private "/"
-- !private "=="
 - !private "??"
 - !private "AnyObject"
 - "AssignmentPrecedence"
@@ -52,7 +49,6 @@ depends-top-level:
 - "UIImageView"
 - "UILabel"
 - "UINavigationControllerDelegate"
-- !private "UIStoryboard"
 - "UIViewController"
 - !private "URL"
 - !private "URLSession"
@@ -81,7 +77,6 @@ depends-member:
 - !private ["s7CVarArgP", "UIImagePNGRepresentation"]
 - !private ["s7CVarArgP", "UIImagePickerController"]
 - !private ["s7CVarArgP", "UIImagePickerControllerSourceType"]
-- !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "URL"]
 - !private ["s7CVarArgP", "URLSession"]
 - ["s7CVarArgP", ""]
@@ -105,9 +100,7 @@ depends-member:
 - ["s7CVarArgP", "imagePickerController"]
 - ["s7CVarArgP", "imagePickerControllerDidCancel"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "layer"]
-- !private ["s7CVarArgP", "logout"]
 - !private ["s7CVarArgP", "main"]
 - ["s7CVarArgP", "navigationController"]
 - ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -151,7 +144,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePNGRepresentation"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePickerController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePickerControllerSourceType"]
-- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
 - !private ["s28CustomDebugStringConvertibleP", "URLSession"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -175,9 +167,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "imagePickerController"]
 - ["s28CustomDebugStringConvertibleP", "imagePickerControllerDidCancel"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
-- !private ["s28CustomDebugStringConvertibleP", "logout"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - ["s28CustomDebugStringConvertibleP", "navigationController"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -230,7 +220,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIImagePNGRepresentation"]
 - !private ["s23CustomStringConvertibleP", "UIImagePickerController"]
 - !private ["s23CustomStringConvertibleP", "UIImagePickerControllerSourceType"]
-- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "URL"]
 - !private ["s23CustomStringConvertibleP", "URLSession"]
 - ["s23CustomStringConvertibleP", ""]
@@ -255,9 +244,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "imagePickerController"]
 - ["s23CustomStringConvertibleP", "imagePickerControllerDidCancel"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "layer"]
-- !private ["s23CustomStringConvertibleP", "logout"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - ["s23CustomStringConvertibleP", "navigationController"]
 - ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -325,7 +312,6 @@ depends-member:
 - !private ["s9EquatableP", "UIImagePNGRepresentation"]
 - !private ["s9EquatableP", "UIImagePickerController"]
 - !private ["s9EquatableP", "UIImagePickerControllerSourceType"]
-- !private ["s9EquatableP", "UIStoryboard"]
 - !private ["s9EquatableP", "URL"]
 - !private ["s9EquatableP", "URLSession"]
 - ["s9EquatableP", ""]
@@ -350,9 +336,7 @@ depends-member:
 - ["s9EquatableP", "imagePickerController"]
 - ["s9EquatableP", "imagePickerControllerDidCancel"]
 - !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "instantiateViewController"]
 - !private ["s9EquatableP", "layer"]
-- !private ["s9EquatableP", "logout"]
 - !private ["s9EquatableP", "main"]
 - ["s9EquatableP", "navigationController"]
 - ["s9EquatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -402,7 +386,6 @@ depends-member:
 - !private ["s8HashableP", "UIImagePNGRepresentation"]
 - !private ["s8HashableP", "UIImagePickerController"]
 - !private ["s8HashableP", "UIImagePickerControllerSourceType"]
-- !private ["s8HashableP", "UIStoryboard"]
 - !private ["s8HashableP", "URL"]
 - !private ["s8HashableP", "URLSession"]
 - ["s8HashableP", ""]
@@ -427,9 +410,7 @@ depends-member:
 - ["s8HashableP", "imagePickerController"]
 - ["s8HashableP", "imagePickerControllerDidCancel"]
 - !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "instantiateViewController"]
 - !private ["s8HashableP", "layer"]
-- !private ["s8HashableP", "logout"]
 - !private ["s8HashableP", "main"]
 - ["s8HashableP", "navigationController"]
 - ["s8HashableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -474,7 +455,6 @@ depends-member:
 - !private ["So8NSCodingP", "UIImagePNGRepresentation"]
 - !private ["So8NSCodingP", "UIImagePickerController"]
 - !private ["So8NSCodingP", "UIImagePickerControllerSourceType"]
-- !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "URL"]
 - !private ["So8NSCodingP", "URLSession"]
 - ["So8NSCodingP", ""]
@@ -491,7 +471,6 @@ depends-member:
 - ["So8NSCodingP", "imagePickerControllerDidCancel"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
-- !private ["So8NSCodingP", "logout"]
 - ["So8NSCodingP", "navigationController"]
 - ["So8NSCodingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So8NSCodingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -527,7 +506,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIImagePNGRepresentation"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImagePickerController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImagePickerControllerSourceType"]
-- !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "URLSession"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -539,7 +517,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "imagePickerController"]
 - ["So26NSExtensionRequestHandlingP", "imagePickerControllerDidCancel"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "logout"]
 - ["So26NSExtensionRequestHandlingP", "navigationController"]
 - ["So26NSExtensionRequestHandlingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So26NSExtensionRequestHandlingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -577,7 +554,6 @@ depends-member:
 - !private ["So8NSObjectC", "UIImagePickerControllerSourceType"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
-- !private ["So8NSObjectC", "UIStoryboard"]
 - !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "URLSession"]
 - !private ["So8NSObjectC", "allowsEditing"]
@@ -599,10 +575,7 @@ depends-member:
 - ["So8NSObjectC", "imagePickerController"]
 - ["So8NSObjectC", "imagePickerControllerDidCancel"]
 - ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "instantiateViewController"]
 - !private ["So8NSObjectC", "layer"]
-- ["So8NSObjectC", "logout"]
-- ["So8NSObjectC", "logoutButton"]
 - !private ["So8NSObjectC", "main"]
 - ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -644,7 +617,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIImagePNGRepresentation"]
 - !private ["So16NSObjectProtocolP", "UIImagePickerController"]
 - !private ["So16NSObjectProtocolP", "UIImagePickerControllerSourceType"]
-- !private ["So16NSObjectProtocolP", "UIStoryboard"]
 - !private ["So16NSObjectProtocolP", "URL"]
 - !private ["So16NSObjectProtocolP", "URLSession"]
 - ["So16NSObjectProtocolP", ""]
@@ -667,9 +639,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "imagePickerController"]
 - ["So16NSObjectProtocolP", "imagePickerControllerDidCancel"]
 - !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "instantiateViewController"]
 - !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "logout"]
 - !private ["So16NSObjectProtocolP", "main"]
 - ["So16NSObjectProtocolP", "navigationController"]
 - ["So16NSObjectProtocolP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -723,7 +693,6 @@ depends-member:
 - !private ["18Pop_Up_Circle_Test9ProfileVCC", "UIImagePickerControllerSourceType"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "UIImageView"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "UILabel"]
-- !private ["18Pop_Up_Circle_Test9ProfileVCC", "UIStoryboard"]
 - !private ["18Pop_Up_Circle_Test9ProfileVCC", "URL"]
 - !private ["18Pop_Up_Circle_Test9ProfileVCC", "URLSession"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "cityLbl"]
@@ -733,8 +702,6 @@ depends-member:
 - ["18Pop_Up_Circle_Test9ProfileVCC", "imagePickerController"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "imagePickerControllerDidCancel"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "init"]
-- ["18Pop_Up_Circle_Test9ProfileVCC", "logout"]
-- ["18Pop_Up_Circle_Test9ProfileVCC", "logoutButton"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "navigationController"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["18Pop_Up_Circle_Test9ProfileVCC", "navigationControllerSupportedInterfaceOrientations"]
@@ -794,7 +761,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIImagePNGRepresentation"]
 - !private ["So21UIAppearanceContainerP", "UIImagePickerController"]
 - !private ["So21UIAppearanceContainerP", "UIImagePickerControllerSourceType"]
-- !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "URL"]
 - !private ["So21UIAppearanceContainerP", "URLSession"]
 - ["So21UIAppearanceContainerP", ""]
@@ -810,7 +776,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "imagePickerControllerDidCancel"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
-- !private ["So21UIAppearanceContainerP", "logout"]
 - ["So21UIAppearanceContainerP", "navigationController"]
 - ["So21UIAppearanceContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So21UIAppearanceContainerP", "navigationControllerSupportedInterfaceOrientations"]
@@ -839,7 +804,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIImagePNGRepresentation"]
 - !private ["So18UIContentContainerP", "UIImagePickerController"]
 - !private ["So18UIContentContainerP", "UIImagePickerControllerSourceType"]
-- !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "URLSession"]
 - ["So18UIContentContainerP", ""]
@@ -851,7 +815,6 @@ depends-member:
 - ["So18UIContentContainerP", "imagePickerController"]
 - ["So18UIContentContainerP", "imagePickerControllerDidCancel"]
 - !private ["So18UIContentContainerP", "init"]
-- !private ["So18UIContentContainerP", "logout"]
 - ["So18UIContentContainerP", "navigationController"]
 - ["So18UIContentContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UIContentContainerP", "navigationControllerSupportedInterfaceOrientations"]
@@ -890,7 +853,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIImagePNGRepresentation"]
 - !private ["So18UIFocusEnvironmentP", "UIImagePickerController"]
 - !private ["So18UIFocusEnvironmentP", "UIImagePickerControllerSourceType"]
-- !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "URL"]
 - !private ["So18UIFocusEnvironmentP", "URLSession"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -906,7 +868,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "imagePickerControllerDidCancel"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
-- !private ["So18UIFocusEnvironmentP", "logout"]
 - ["So18UIFocusEnvironmentP", "navigationController"]
 - ["So18UIFocusEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UIFocusEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
@@ -945,7 +906,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "UIImagePNGRepresentation"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImagePickerController"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImagePickerControllerSourceType"]
-- !private ["So31UIImagePickerControllerDelegateP", "UIStoryboard"]
 - !private ["So31UIImagePickerControllerDelegateP", "URL"]
 - !private ["So31UIImagePickerControllerDelegateP", "URLSession"]
 - ["So31UIImagePickerControllerDelegateP", ""]
@@ -954,7 +914,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "dismiss"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerController"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerControllerDidCancel"]
-- !private ["So31UIImagePickerControllerDelegateP", "logout"]
 - ["So31UIImagePickerControllerDelegateP", "navigationController"]
 - ["So31UIImagePickerControllerDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So31UIImagePickerControllerDelegateP", "navigationControllerSupportedInterfaceOrientations"]
@@ -991,7 +950,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "UIImagePNGRepresentation"]
 - !private ["So30UINavigationControllerDelegateP", "UIImagePickerController"]
 - !private ["So30UINavigationControllerDelegateP", "UIImagePickerControllerSourceType"]
-- !private ["So30UINavigationControllerDelegateP", "UIStoryboard"]
 - !private ["So30UINavigationControllerDelegateP", "URL"]
 - !private ["So30UINavigationControllerDelegateP", "URLSession"]
 - ["So30UINavigationControllerDelegateP", ""]
@@ -1000,7 +958,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "dismiss"]
 - ["So30UINavigationControllerDelegateP", "imagePickerController"]
 - ["So30UINavigationControllerDelegateP", "imagePickerControllerDidCancel"]
-- !private ["So30UINavigationControllerDelegateP", "logout"]
 - ["So30UINavigationControllerDelegateP", "navigationController"]
 - ["So30UINavigationControllerDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UINavigationControllerDelegateP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1026,7 +983,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIImagePNGRepresentation"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImagePickerController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImagePickerControllerSourceType"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "URL"]
 - !private ["So30UIPasteConfigurationSupportingP", "URLSession"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -1042,7 +998,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "imagePickerControllerDidCancel"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
-- !private ["So30UIPasteConfigurationSupportingP", "logout"]
 - ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1076,7 +1031,6 @@ depends-member:
 - !private ["So11UIResponderC", "UIImagePickerControllerSourceType"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
-- !private ["So11UIResponderC", "UIStoryboard"]
 - !private ["So11UIResponderC", "URL"]
 - !private ["So11UIResponderC", "URLSession"]
 - !private ["So11UIResponderC", "allowsEditing"]
@@ -1091,8 +1045,6 @@ depends-member:
 - ["So11UIResponderC", "imagePickerControllerDidCancel"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
-- ["So11UIResponderC", "logout"]
-- ["So11UIResponderC", "logoutButton"]
 - ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
@@ -1122,7 +1074,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIImagePNGRepresentation"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImagePickerController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImagePickerControllerSourceType"]
-- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "URL"]
 - !private ["So30UIResponderStandardEditActionsP", "URLSession"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -1138,7 +1089,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "imagePickerControllerDidCancel"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
-- !private ["So30UIResponderStandardEditActionsP", "logout"]
 - ["So30UIResponderStandardEditActionsP", "navigationController"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1167,7 +1117,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIImagePNGRepresentation"]
 - !private ["So16UIStateRestoringP", "UIImagePickerController"]
 - !private ["So16UIStateRestoringP", "UIImagePickerControllerSourceType"]
-- !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "URLSession"]
 - ["So16UIStateRestoringP", ""]
@@ -1179,7 +1128,6 @@ depends-member:
 - ["So16UIStateRestoringP", "imagePickerController"]
 - ["So16UIStateRestoringP", "imagePickerControllerDidCancel"]
 - !private ["So16UIStateRestoringP", "init"]
-- !private ["So16UIStateRestoringP", "logout"]
 - ["So16UIStateRestoringP", "navigationController"]
 - ["So16UIStateRestoringP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16UIStateRestoringP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1198,8 +1146,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "templeLbl"]
 - !private ["So16UIStateRestoringP", "usernameLabel"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
-- !private ["So12UIStoryboardC", "init"]
-- !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
 - ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
@@ -1209,7 +1155,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIImagePNGRepresentation"]
 - !private ["So18UITraitEnvironmentP", "UIImagePickerController"]
 - !private ["So18UITraitEnvironmentP", "UIImagePickerControllerSourceType"]
-- !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "URL"]
 - !private ["So18UITraitEnvironmentP", "URLSession"]
 - ["So18UITraitEnvironmentP", ""]
@@ -1225,7 +1170,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "imagePickerControllerDidCancel"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
-- !private ["So18UITraitEnvironmentP", "logout"]
 - ["So18UITraitEnvironmentP", "navigationController"]
 - ["So18UITraitEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UITraitEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1264,7 +1208,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIImagePickerControllerSourceType"]
 - ["So16UIViewControllerC", "UIImageView"]
 - ["So16UIViewControllerC", "UILabel"]
-- !private ["So16UIViewControllerC", "UIStoryboard"]
 - !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "URLSession"]
 - ["So16UIViewControllerC", ""]
@@ -1276,8 +1219,6 @@ depends-member:
 - ["So16UIViewControllerC", "imagePickerController"]
 - ["So16UIViewControllerC", "imagePickerControllerDidCancel"]
 - ["So16UIViewControllerC", "init"]
-- ["So16UIViewControllerC", "logout"]
-- ["So16UIViewControllerC", "logoutButton"]
 - ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16UIViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
@@ -1330,7 +1271,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePNGRepresentation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerControllerSourceType"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URLSession"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -1353,9 +1293,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "imagePickerController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "imagePickerControllerDidCancel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "logout"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -1479,7 +1417,6 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So16UIStateRestoringP"
-- !private "So12UIStoryboardC"
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
@@ -1525,81 +1462,87 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton-umbrella.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-umbrella.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Headers/Fabric.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/Pop Up Circle Test-Bridging-Header.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/SWRevealViewController.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Headers/FABAttributes.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-Swift.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
@@ -1617,4 +1560,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "da12f717dd1a09a900b3ab8e4589a179"
+interface-hash: "bf484445c6a2d3559a6c3aed414ebf8e"

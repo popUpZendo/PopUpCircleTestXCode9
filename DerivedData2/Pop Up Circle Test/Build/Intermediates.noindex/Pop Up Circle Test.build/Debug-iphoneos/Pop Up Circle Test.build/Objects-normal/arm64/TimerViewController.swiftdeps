@@ -11,13 +11,20 @@ provides-dynamic-lookup:
 - "btnSound"
 - "countDownLabel"
 - "darkMode"
+- "defaults"
+- "durationSlide"
+- "durationSliderValueChanged"
+- "goBack"
+- "goBackButton"
 - "goBackToOneButtonTapped"
 - "label"
 - "lightSwitch"
 - "progress"
+- "shareZazen"
 - "slider"
 - "sliderChanged"
 - "sliderValue"
+- "timerButton"
 - "viewDidLoad"
 - "zazen"
 depends-top-level:
@@ -29,18 +36,24 @@ depends-top-level:
 - "AVAudioPlayer"
 - "AnyObject"
 - "AssignmentPrecedence"
+- !private "Auth"
 - !private "BooleanLiteralType"
 - !private "Bundle"
 - !private "CGPoint"
 - !private "CGRect"
+- "CastingPrecedence"
+- !private "DataService"
+- !private "Date"
 - !private "DispatchQueue"
 - "Double"
+- !private "Float"
+- !private "ISO8601DateFormatter"
 - !private "Int"
 - "KDCircularProgress"
 - !private "NSError"
 - !private "SWRevealViewController"
 - !private "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "TimerViewController"
 - !private "UIApplication"
 - "UIButton"
@@ -51,6 +64,7 @@ depends-top-level:
 - "UISwipeGestureRecognizer"
 - "UIViewController"
 - !private "URL"
+- "UserDefaults"
 - !private "print"
 - !private "||"
 depends-member:
@@ -59,7 +73,9 @@ depends-member:
 - !private ["So13AVAudioPlayerC", "play"]
 - !private ["So13AVAudioPlayerC", "prepareToPlay"]
 - !private ["So13AVAudioPlayerC", "stop"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So4AuthC", "auth"]
+- !private ["So4AuthC", "currentUser"]
+- ["s23BidirectionalCollectionP", "init"]
 - !private ["s19BinaryFloatingPointP", "init"]
 - !private ["s19BinaryFloatingPointP", "seconds"]
 - !private ["s13BinaryIntegerP", "init"]
@@ -79,12 +95,14 @@ depends-member:
 - !private ["So19CAAnimationDelegateP", "set"]
 - !private ["So19CAAnimationDelegateP", "startAngle"]
 - !private ["So19CAAnimationDelegateP", "stopAnimation"]
+- !private ["So19CAAnimationDelegateP", "trackColor"]
 - !private ["So19CAAnimationDelegateP", "trackThickness"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "animate"]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "bringSubview"]
 - !private ["So15CALayerDelegateP", "center"]
 - !private ["So15CALayerDelegateP", "clockwise"]
 - !private ["So15CALayerDelegateP", "glowAmount"]
@@ -99,6 +117,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "startAngle"]
 - !private ["So15CALayerDelegateP", "stopAnimation"]
 - !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "trackColor"]
 - !private ["So15CALayerDelegateP", "trackThickness"]
 - !private ["So15CALayerDelegateP", "value"]
 - !private ["SC7CGPointV", "init"]
@@ -106,11 +125,15 @@ depends-member:
 - !private ["SC7CGPointV", "y"]
 - !private ["SC6CGRectV", "init"]
 - !private ["s7CVarArgP", "AVAudioPlayer"]
+- !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "Bundle"]
 - !private ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "DataService"]
+- !private ["s7CVarArgP", "Date"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "ISO8601DateFormatter"]
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "KDCircularProgress"]
 - !private ["s7CVarArgP", "SWRevealViewController"]
@@ -118,6 +141,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "URL"]
+- ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
@@ -125,19 +149,27 @@ depends-member:
 - !private ["s7CVarArgP", "addTarget"]
 - !private ["s7CVarArgP", "animate"]
 - !private ["s7CVarArgP", "asyncAfter"]
+- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "backButton"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "bringSubview"]
 - !private ["s7CVarArgP", "btnSound"]
 - !private ["s7CVarArgP", "center"]
 - !private ["s7CVarArgP", "clockwise"]
 - !private ["s7CVarArgP", "countDownLabel"]
+- !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "darkGray"]
 - !private ["s7CVarArgP", "debugDescription"]
+- !private ["s7CVarArgP", "defaults"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "durationSlide"]
+- !private ["s7CVarArgP", "durationSliderValueChanged"]
 - !private ["s7CVarArgP", "glowAmount"]
 - !private ["s7CVarArgP", "glowMode"]
+- !private ["s7CVarArgP", "goBack"]
 - !private ["s7CVarArgP", "gradientRotateSpeed"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isAnimating"]
 - !private ["s7CVarArgP", "isHidden"]
 - !private ["s7CVarArgP", "isIdleTimerDisabled"]
@@ -162,27 +194,36 @@ depends-member:
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "slider"]
 - !private ["s7CVarArgP", "sliderValue"]
+- ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "startAngle"]
 - !private ["s7CVarArgP", "stop"]
 - !private ["s7CVarArgP", "stopAnimation"]
+- !private ["s7CVarArgP", "string"]
 - !private ["s7CVarArgP", "tapGestureRecognizer"]
 - !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "timerButton"]
+- !private ["s7CVarArgP", "trackColor"]
 - !private ["s7CVarArgP", "trackThickness"]
+- !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "white"]
 - !private ["s7CVarArgP", "zazen"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "init"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "now"]
 - !private ["s10ComparableP", "seconds"]
 - !private ["s28CustomDebugStringConvertibleP", "AVAudioPlayer"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "Bundle"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "DataService"]
+- !private ["s28CustomDebugStringConvertibleP", "Date"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "ISO8601DateFormatter"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "KDCircularProgress"]
 - !private ["s28CustomDebugStringConvertibleP", "SWRevealViewController"]
@@ -190,25 +231,34 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "URL"]
+- ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
 - !private ["s28CustomDebugStringConvertibleP", "asyncAfter"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "backButton"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "bringSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "btnSound"]
 - !private ["s28CustomDebugStringConvertibleP", "center"]
 - !private ["s28CustomDebugStringConvertibleP", "clockwise"]
 - !private ["s28CustomDebugStringConvertibleP", "countDownLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "darkGray"]
 - !private ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "defaults"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "durationSlide"]
+- !private ["s28CustomDebugStringConvertibleP", "durationSliderValueChanged"]
 - !private ["s28CustomDebugStringConvertibleP", "glowAmount"]
 - !private ["s28CustomDebugStringConvertibleP", "glowMode"]
+- !private ["s28CustomDebugStringConvertibleP", "goBack"]
 - !private ["s28CustomDebugStringConvertibleP", "gradientRotateSpeed"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isAnimating"]
 - !private ["s28CustomDebugStringConvertibleP", "isHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "isIdleTimerDisabled"]
@@ -233,12 +283,17 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "slider"]
 - !private ["s28CustomDebugStringConvertibleP", "sliderValue"]
+- ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "startAngle"]
 - !private ["s28CustomDebugStringConvertibleP", "stop"]
 - !private ["s28CustomDebugStringConvertibleP", "stopAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
 - !private ["s28CustomDebugStringConvertibleP", "tapGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "timerButton"]
+- !private ["s28CustomDebugStringConvertibleP", "trackColor"]
 - !private ["s28CustomDebugStringConvertibleP", "trackThickness"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
@@ -247,21 +302,25 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - !private ["s28CustomDebugStringConvertibleP", "zazen"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "seconds"]
 - !private ["s29CustomPlaygroundQuickLookableP", "x"]
 - !private ["s29CustomPlaygroundQuickLookableP", "y"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "seconds"]
 - !private ["s17CustomReflectableP", "x"]
 - !private ["s17CustomReflectableP", "y"]
 - !private ["s23CustomStringConvertibleP", "AVAudioPlayer"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
 - !private ["s23CustomStringConvertibleP", "CGPoint"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "DataService"]
+- !private ["s23CustomStringConvertibleP", "Date"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "ISO8601DateFormatter"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "KDCircularProgress"]
 - !private ["s23CustomStringConvertibleP", "SWRevealViewController"]
@@ -269,6 +328,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "URL"]
+- ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
@@ -276,19 +336,27 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addTarget"]
 - !private ["s23CustomStringConvertibleP", "animate"]
 - !private ["s23CustomStringConvertibleP", "asyncAfter"]
+- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "backButton"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "bringSubview"]
 - !private ["s23CustomStringConvertibleP", "btnSound"]
 - !private ["s23CustomStringConvertibleP", "center"]
 - !private ["s23CustomStringConvertibleP", "clockwise"]
 - !private ["s23CustomStringConvertibleP", "countDownLabel"]
+- !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "darkGray"]
 - !private ["s23CustomStringConvertibleP", "debugDescription"]
+- !private ["s23CustomStringConvertibleP", "defaults"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "durationSlide"]
+- !private ["s23CustomStringConvertibleP", "durationSliderValueChanged"]
 - !private ["s23CustomStringConvertibleP", "glowAmount"]
 - !private ["s23CustomStringConvertibleP", "glowMode"]
+- !private ["s23CustomStringConvertibleP", "goBack"]
 - !private ["s23CustomStringConvertibleP", "gradientRotateSpeed"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isAnimating"]
 - !private ["s23CustomStringConvertibleP", "isHidden"]
 - !private ["s23CustomStringConvertibleP", "isIdleTimerDisabled"]
@@ -313,19 +381,27 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "slider"]
 - !private ["s23CustomStringConvertibleP", "sliderValue"]
+- ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "startAngle"]
 - !private ["s23CustomStringConvertibleP", "stop"]
 - !private ["s23CustomStringConvertibleP", "stopAnimation"]
+- !private ["s23CustomStringConvertibleP", "string"]
 - !private ["s23CustomStringConvertibleP", "tapGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "timerButton"]
+- !private ["s23CustomStringConvertibleP", "trackColor"]
 - !private ["s23CustomStringConvertibleP", "trackThickness"]
+- !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s23CustomStringConvertibleP", "zazen"]
+- !private ["18Pop_Up_Circle_Test11DataServiceC", "instance"]
+- !private ["18Pop_Up_Circle_Test11DataServiceC", "uploadZazen"]
+- !private ["10Foundation4DateV", "init"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "init"]
+- ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "seconds"]
 - !private ["s9DecodableP", "x"]
 - !private ["s9DecodableP", "y"]
@@ -338,16 +414,20 @@ depends-member:
 - !private ["Sd", "init"]
 - !private ["Sd", "seconds"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "init"]
+- ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "seconds"]
 - !private ["s9EncodableP", "x"]
 - !private ["s9EncodableP", "y"]
 - !private ["s9EquatableP", "AVAudioPlayer"]
+- !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "Bundle"]
 - !private ["s9EquatableP", "CGPoint"]
 - !private ["s9EquatableP", "CGRect"]
+- !private ["s9EquatableP", "DataService"]
+- !private ["s9EquatableP", "Date"]
 - !private ["s9EquatableP", "DispatchQueue"]
 - !private ["s9EquatableP", "Double"]
+- !private ["s9EquatableP", "ISO8601DateFormatter"]
 - !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "KDCircularProgress"]
 - !private ["s9EquatableP", "SWRevealViewController"]
@@ -355,6 +435,7 @@ depends-member:
 - !private ["s9EquatableP", "UIApplication"]
 - !private ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "URL"]
+- ["s9EquatableP", "UserDefaults"]
 - ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addGestureRecognizer"]
@@ -362,20 +443,28 @@ depends-member:
 - !private ["s9EquatableP", "addTarget"]
 - !private ["s9EquatableP", "animate"]
 - !private ["s9EquatableP", "asyncAfter"]
+- !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "backButton"]
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "black"]
+- !private ["s9EquatableP", "bringSubview"]
 - !private ["s9EquatableP", "btnSound"]
 - !private ["s9EquatableP", "center"]
 - !private ["s9EquatableP", "clockwise"]
+- !private ["s9EquatableP", "constant"]
 - !private ["s9EquatableP", "countDownLabel"]
+- !private ["s9EquatableP", "currentUser"]
 - !private ["s9EquatableP", "darkGray"]
 - !private ["s9EquatableP", "debugDescription"]
-- !private ["s9EquatableP", "forward"]
+- !private ["s9EquatableP", "defaults"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "durationSlide"]
+- !private ["s9EquatableP", "durationSliderValueChanged"]
 - !private ["s9EquatableP", "glowAmount"]
 - !private ["s9EquatableP", "glowMode"]
+- !private ["s9EquatableP", "goBack"]
 - !private ["s9EquatableP", "gradientRotateSpeed"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isAnimating"]
 - !private ["s9EquatableP", "isHidden"]
 - !private ["s9EquatableP", "isIdleTimerDisabled"]
@@ -401,13 +490,18 @@ depends-member:
 - !private ["s9EquatableP", "shared"]
 - !private ["s9EquatableP", "slider"]
 - !private ["s9EquatableP", "sliderValue"]
+- ["s9EquatableP", "standard"]
 - !private ["s9EquatableP", "startAngle"]
 - !private ["s9EquatableP", "stop"]
 - !private ["s9EquatableP", "stopAnimation"]
+- !private ["s9EquatableP", "string"]
 - !private ["s9EquatableP", "tapGestureRecognizer"]
 - !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "timerButton"]
 - !private ["s9EquatableP", "touchUpInside"]
+- !private ["s9EquatableP", "trackColor"]
 - !private ["s9EquatableP", "trackThickness"]
+- !private ["s9EquatableP", "uid"]
 - !private ["s9EquatableP", "value"]
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidLoad"]
@@ -418,22 +512,28 @@ depends-member:
 - !private ["s5ErrorP", "debugDescription"]
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "seconds"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "seconds"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["s13FloatingPointP", "init"]
 - !private ["s13FloatingPointP", "seconds"]
+- !private ["So9FormatterC", "init"]
+- !private ["So9FormatterC", "string"]
 - !private ["s8HashableP", "AVAudioPlayer"]
+- !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "Bundle"]
 - !private ["s8HashableP", "CGPoint"]
 - !private ["s8HashableP", "CGRect"]
+- !private ["s8HashableP", "DataService"]
+- !private ["s8HashableP", "Date"]
 - !private ["s8HashableP", "DispatchQueue"]
 - !private ["s8HashableP", "Double"]
+- !private ["s8HashableP", "ISO8601DateFormatter"]
 - !private ["s8HashableP", "Int"]
 - !private ["s8HashableP", "KDCircularProgress"]
 - !private ["s8HashableP", "SWRevealViewController"]
@@ -441,6 +541,7 @@ depends-member:
 - !private ["s8HashableP", "UIApplication"]
 - !private ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "URL"]
+- ["s8HashableP", "UserDefaults"]
 - ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addGestureRecognizer"]
@@ -448,20 +549,28 @@ depends-member:
 - !private ["s8HashableP", "addTarget"]
 - !private ["s8HashableP", "animate"]
 - !private ["s8HashableP", "asyncAfter"]
+- !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "backButton"]
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "black"]
+- !private ["s8HashableP", "bringSubview"]
 - !private ["s8HashableP", "btnSound"]
 - !private ["s8HashableP", "center"]
 - !private ["s8HashableP", "clockwise"]
+- !private ["s8HashableP", "constant"]
 - !private ["s8HashableP", "countDownLabel"]
+- !private ["s8HashableP", "currentUser"]
 - !private ["s8HashableP", "darkGray"]
 - !private ["s8HashableP", "debugDescription"]
-- !private ["s8HashableP", "forward"]
+- !private ["s8HashableP", "defaults"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "durationSlide"]
+- !private ["s8HashableP", "durationSliderValueChanged"]
 - !private ["s8HashableP", "glowAmount"]
 - !private ["s8HashableP", "glowMode"]
+- !private ["s8HashableP", "goBack"]
 - !private ["s8HashableP", "gradientRotateSpeed"]
-- !private ["s8HashableP", "init"]
+- ["s8HashableP", "init"]
 - !private ["s8HashableP", "isAnimating"]
 - !private ["s8HashableP", "isHidden"]
 - !private ["s8HashableP", "isIdleTimerDisabled"]
@@ -486,17 +595,24 @@ depends-member:
 - !private ["s8HashableP", "shared"]
 - !private ["s8HashableP", "slider"]
 - !private ["s8HashableP", "sliderValue"]
+- ["s8HashableP", "standard"]
 - !private ["s8HashableP", "startAngle"]
 - !private ["s8HashableP", "stop"]
 - !private ["s8HashableP", "stopAnimation"]
+- !private ["s8HashableP", "string"]
 - !private ["s8HashableP", "tapGestureRecognizer"]
 - !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "timerButton"]
+- !private ["s8HashableP", "trackColor"]
 - !private ["s8HashableP", "trackThickness"]
+- !private ["s8HashableP", "uid"]
 - !private ["s8HashableP", "value"]
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidLoad"]
 - !private ["s8HashableP", "white"]
 - !private ["s8HashableP", "zazen"]
+- !private ["So20ISO8601DateFormatterC", "init"]
+- !private ["So20ISO8601DateFormatterC", "string"]
 - !private ["Si", "init"]
 - !private ["18KDCircularProgressAAC", "animate"]
 - !private ["18KDCircularProgressAAC", "center"]
@@ -511,18 +627,23 @@ depends-member:
 - !private ["18KDCircularProgressAAC", "set"]
 - !private ["18KDCircularProgressAAC", "startAngle"]
 - !private ["18KDCircularProgressAAC", "stopAnimation"]
+- !private ["18KDCircularProgressAAC", "trackColor"]
 - !private ["18KDCircularProgressAAC", "trackThickness"]
-- !private ["18KDCircularProgress0aB8GlowModeO", "forward"]
+- !private ["18KDCircularProgress0aB8GlowModeO", "constant"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "seconds"]
-- !private ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "AVAudioPlayer"]
+- !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "Bundle"]
 - !private ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "DataService"]
+- !private ["So8NSCodingP", "Date"]
 - !private ["So8NSCodingP", "DispatchQueue"]
 - !private ["So8NSCodingP", "Double"]
+- !private ["So8NSCodingP", "ISO8601DateFormatter"]
 - !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "KDCircularProgress"]
 - !private ["So8NSCodingP", "SWRevealViewController"]
@@ -530,6 +651,7 @@ depends-member:
 - !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "URL"]
+- ["So8NSCodingP", "UserDefaults"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "addSubview"]
@@ -538,14 +660,20 @@ depends-member:
 - !private ["So8NSCodingP", "backButton"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "bringSubview"]
 - !private ["So8NSCodingP", "btnSound"]
 - !private ["So8NSCodingP", "center"]
 - !private ["So8NSCodingP", "clockwise"]
 - !private ["So8NSCodingP", "countDownLabel"]
 - !private ["So8NSCodingP", "darkGray"]
 - !private ["So8NSCodingP", "debugDescription"]
+- !private ["So8NSCodingP", "defaults"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "durationSlide"]
+- !private ["So8NSCodingP", "durationSliderValueChanged"]
 - !private ["So8NSCodingP", "glowAmount"]
 - !private ["So8NSCodingP", "glowMode"]
+- !private ["So8NSCodingP", "goBack"]
 - !private ["So8NSCodingP", "gradientRotateSpeed"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isAnimating"]
@@ -566,8 +694,11 @@ depends-member:
 - !private ["So8NSCodingP", "sliderValue"]
 - !private ["So8NSCodingP", "startAngle"]
 - !private ["So8NSCodingP", "stopAnimation"]
+- !private ["So8NSCodingP", "string"]
 - !private ["So8NSCodingP", "tapGestureRecognizer"]
 - !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "timerButton"]
+- !private ["So8NSCodingP", "trackColor"]
 - !private ["So8NSCodingP", "trackThickness"]
 - !private ["So8NSCodingP", "value"]
 - !private ["So8NSCodingP", "view"]
@@ -578,14 +709,19 @@ depends-member:
 - !private ["So9NSCopyingP", "darkGray"]
 - !private ["So9NSCopyingP", "debugDescription"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "string"]
 - !private ["So9NSCopyingP", "white"]
 - !private ["So7NSErrorC", "debugDescription"]
 - !private ["So26NSExtensionRequestHandlingP", "AVAudioPlayer"]
+- !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - !private ["So26NSExtensionRequestHandlingP", "Bundle"]
 - !private ["So26NSExtensionRequestHandlingP", "CGPoint"]
 - !private ["So26NSExtensionRequestHandlingP", "CGRect"]
+- !private ["So26NSExtensionRequestHandlingP", "DataService"]
+- !private ["So26NSExtensionRequestHandlingP", "Date"]
 - !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
 - !private ["So26NSExtensionRequestHandlingP", "Double"]
+- !private ["So26NSExtensionRequestHandlingP", "ISO8601DateFormatter"]
 - !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "KDCircularProgress"]
 - !private ["So26NSExtensionRequestHandlingP", "SWRevealViewController"]
@@ -593,10 +729,16 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
+- ["So26NSExtensionRequestHandlingP", "UserDefaults"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "backButton"]
 - !private ["So26NSExtensionRequestHandlingP", "btnSound"]
 - !private ["So26NSExtensionRequestHandlingP", "countDownLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "defaults"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "durationSlide"]
+- !private ["So26NSExtensionRequestHandlingP", "durationSliderValueChanged"]
+- !private ["So26NSExtensionRequestHandlingP", "goBack"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "label"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
@@ -610,6 +752,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "slider"]
 - !private ["So26NSExtensionRequestHandlingP", "sliderValue"]
 - !private ["So26NSExtensionRequestHandlingP", "tapGestureRecognizer"]
+- !private ["So26NSExtensionRequestHandlingP", "timerButton"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "zazen"]
@@ -623,11 +766,16 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "white"]
 - ["So8NSObjectC", "AVAudioPlayer"]
 - ["So8NSObjectC", "AnyObject"]
+- !private ["So8NSObjectC", "Auth"]
 - !private ["So8NSObjectC", "Bundle"]
 - !private ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "CGRect"]
+- !private ["So8NSObjectC", "DataService"]
+- !private ["So8NSObjectC", "Date"]
 - !private ["So8NSObjectC", "DispatchQueue"]
 - ["So8NSObjectC", "Double"]
+- !private ["So8NSObjectC", "Float"]
+- !private ["So8NSObjectC", "ISO8601DateFormatter"]
 - !private ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "KDCircularProgress"]
 - !private ["So8NSObjectC", "NSError"]
@@ -641,24 +789,34 @@ depends-member:
 - ["So8NSObjectC", "UISlider"]
 - ["So8NSObjectC", "UISwipeGestureRecognizer"]
 - !private ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "UserDefaults"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "addSubview"]
 - !private ["So8NSObjectC", "addTarget"]
 - !private ["So8NSObjectC", "animate"]
 - ["So8NSObjectC", "animateButtonTapped"]
 - !private ["So8NSObjectC", "asyncAfter"]
+- !private ["So8NSObjectC", "auth"]
 - ["So8NSObjectC", "backButton"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "black"]
+- !private ["So8NSObjectC", "bringSubview"]
 - ["So8NSObjectC", "btnSound"]
 - !private ["So8NSObjectC", "center"]
 - !private ["So8NSObjectC", "clockwise"]
 - ["So8NSObjectC", "countDownLabel"]
+- !private ["So8NSObjectC", "currentUser"]
 - !private ["So8NSObjectC", "darkGray"]
 - ["So8NSObjectC", "darkMode"]
 - !private ["So8NSObjectC", "debugDescription"]
+- ["So8NSObjectC", "defaults"]
+- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "durationSlide"]
+- ["So8NSObjectC", "durationSliderValueChanged"]
 - !private ["So8NSObjectC", "glowAmount"]
 - !private ["So8NSObjectC", "glowMode"]
+- ["So8NSObjectC", "goBack"]
+- ["So8NSObjectC", "goBackButton"]
 - ["So8NSObjectC", "goBackToOneButtonTapped"]
 - !private ["So8NSObjectC", "gradientRotateSpeed"]
 - ["So8NSObjectC", "init"]
@@ -683,27 +841,37 @@ depends-member:
 - !private ["So8NSObjectC", "roundedCorners"]
 - !private ["So8NSObjectC", "set"]
 - !private ["So8NSObjectC", "setNavigationBarHidden"]
+- ["So8NSObjectC", "shareZazen"]
 - !private ["So8NSObjectC", "shared"]
 - ["So8NSObjectC", "slider"]
 - ["So8NSObjectC", "sliderChanged"]
 - ["So8NSObjectC", "sliderValue"]
+- ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "startAngle"]
 - !private ["So8NSObjectC", "stop"]
 - !private ["So8NSObjectC", "stopAnimation"]
+- !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectC", "tapGestureRecognizer"]
 - !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "timerButton"]
+- !private ["So8NSObjectC", "trackColor"]
 - !private ["So8NSObjectC", "trackThickness"]
+- !private ["So8NSObjectC", "uid"]
 - !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectC", "white"]
 - ["So8NSObjectC", "zazen"]
 - !private ["So16NSObjectProtocolP", "AVAudioPlayer"]
+- !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "Bundle"]
 - !private ["So16NSObjectProtocolP", "CGPoint"]
 - !private ["So16NSObjectProtocolP", "CGRect"]
+- !private ["So16NSObjectProtocolP", "DataService"]
+- !private ["So16NSObjectProtocolP", "Date"]
 - !private ["So16NSObjectProtocolP", "DispatchQueue"]
 - !private ["So16NSObjectProtocolP", "Double"]
+- !private ["So16NSObjectProtocolP", "ISO8601DateFormatter"]
 - !private ["So16NSObjectProtocolP", "Int"]
 - !private ["So16NSObjectProtocolP", "KDCircularProgress"]
 - !private ["So16NSObjectProtocolP", "SWRevealViewController"]
@@ -711,23 +879,32 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIApplication"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "URL"]
+- ["So16NSObjectProtocolP", "UserDefaults"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "addSubview"]
 - !private ["So16NSObjectProtocolP", "addTarget"]
 - !private ["So16NSObjectProtocolP", "animate"]
 - !private ["So16NSObjectProtocolP", "asyncAfter"]
+- !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "backButton"]
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "black"]
+- !private ["So16NSObjectProtocolP", "bringSubview"]
 - !private ["So16NSObjectProtocolP", "btnSound"]
 - !private ["So16NSObjectProtocolP", "center"]
 - !private ["So16NSObjectProtocolP", "clockwise"]
 - !private ["So16NSObjectProtocolP", "countDownLabel"]
+- !private ["So16NSObjectProtocolP", "currentUser"]
 - !private ["So16NSObjectProtocolP", "darkGray"]
 - !private ["So16NSObjectProtocolP", "debugDescription"]
+- !private ["So16NSObjectProtocolP", "defaults"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "durationSlide"]
+- !private ["So16NSObjectProtocolP", "durationSliderValueChanged"]
 - !private ["So16NSObjectProtocolP", "glowAmount"]
 - !private ["So16NSObjectProtocolP", "glowMode"]
+- !private ["So16NSObjectProtocolP", "goBack"]
 - !private ["So16NSObjectProtocolP", "gradientRotateSpeed"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isAnimating"]
@@ -753,12 +930,17 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "shared"]
 - !private ["So16NSObjectProtocolP", "slider"]
 - !private ["So16NSObjectProtocolP", "sliderValue"]
+- ["So16NSObjectProtocolP", "standard"]
 - !private ["So16NSObjectProtocolP", "startAngle"]
 - !private ["So16NSObjectProtocolP", "stop"]
 - !private ["So16NSObjectProtocolP", "stopAnimation"]
+- !private ["So16NSObjectProtocolP", "string"]
 - !private ["So16NSObjectProtocolP", "tapGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "timerButton"]
+- !private ["So16NSObjectProtocolP", "trackColor"]
 - !private ["So16NSObjectProtocolP", "trackThickness"]
+- !private ["So16NSObjectProtocolP", "uid"]
 - !private ["So16NSObjectProtocolP", "value"]
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
@@ -768,36 +950,42 @@ depends-member:
 - !private ["So14NSSecureCodingP", "darkGray"]
 - !private ["So14NSSecureCodingP", "debugDescription"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "string"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["s7NumericP", "init"]
 - !private ["s7NumericP", "seconds"]
 - !private ["So9OS_objectC", "asyncAfter"]
 - !private ["So9OS_objectC", "main"]
 - !private ["s9OptionSetP", "touchUpInside"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "touchUpInside"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["So22SWRevealViewControllerC", "panGestureRecognizer"]
 - !private ["So22SWRevealViewControllerC", "revealToggle"]
 - !private ["So22SWRevealViewControllerC", "tapGestureRecognizer"]
-- !private ["s8SequenceP", "init"]
+- ["s8SequenceP", "init"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
 - !private ["s13SignedIntegerP", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["s13SignedNumericP", "seconds"]
 - !private ["s10StrideableP", "init"]
 - !private ["s10StrideableP", "seconds"]
-- !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "AVAudioPlayer"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "AnyObject"]
+- !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "Auth"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "Bundle"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "CGPoint"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "CGRect"]
+- !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "DataService"]
+- !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "Date"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "DispatchQueue"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "Double"]
+- !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "Float"]
+- !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "ISO8601DateFormatter"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "Int"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "KDCircularProgress"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "NSError"]
@@ -811,12 +999,19 @@ depends-member:
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "UISlider"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "UISwipeGestureRecognizer"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "URL"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "UserDefaults"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "animateButtonTapped"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "backButton"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "btnSound"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "countDownLabel"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "darkMode"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "defaults"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "deinit"]
+- !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "dismiss"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "durationSlide"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "durationSliderValueChanged"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "goBack"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "goBackButton"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "goBackToOneButtonTapped"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "init"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "label"]
@@ -826,9 +1021,11 @@ depends-member:
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "print"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "progress"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "revealViewController"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "shareZazen"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "slider"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "sliderChanged"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "sliderValue"]
+- ["18Pop_Up_Circle_Test19TimerViewControllerC", "timerButton"]
 - !private ["18Pop_Up_Circle_Test19TimerViewControllerC", "view"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "viewDidLoad"]
 - ["18Pop_Up_Circle_Test19TimerViewControllerC", "zazen"]
@@ -839,6 +1036,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "addTarget"]
 - !private ["So29UIAccessibilityIdentificationP", "animate"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "bringSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "center"]
 - !private ["So29UIAccessibilityIdentificationP", "clockwise"]
 - !private ["So29UIAccessibilityIdentificationP", "glowAmount"]
@@ -853,6 +1051,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "startAngle"]
 - !private ["So29UIAccessibilityIdentificationP", "stopAnimation"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "trackColor"]
 - !private ["So29UIAccessibilityIdentificationP", "trackThickness"]
 - !private ["So29UIAccessibilityIdentificationP", "value"]
 - !private ["So12UIAppearanceP", "addGestureRecognizer"]
@@ -860,6 +1059,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "addTarget"]
 - !private ["So12UIAppearanceP", "animate"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "bringSubview"]
 - !private ["So12UIAppearanceP", "center"]
 - !private ["So12UIAppearanceP", "clockwise"]
 - !private ["So12UIAppearanceP", "glowAmount"]
@@ -874,14 +1074,19 @@ depends-member:
 - !private ["So12UIAppearanceP", "startAngle"]
 - !private ["So12UIAppearanceP", "stopAnimation"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "trackColor"]
 - !private ["So12UIAppearanceP", "trackThickness"]
 - !private ["So12UIAppearanceP", "value"]
 - !private ["So21UIAppearanceContainerP", "AVAudioPlayer"]
+- !private ["So21UIAppearanceContainerP", "Auth"]
 - !private ["So21UIAppearanceContainerP", "Bundle"]
 - !private ["So21UIAppearanceContainerP", "CGPoint"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "DataService"]
+- !private ["So21UIAppearanceContainerP", "Date"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
 - !private ["So21UIAppearanceContainerP", "Double"]
+- !private ["So21UIAppearanceContainerP", "ISO8601DateFormatter"]
 - !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "KDCircularProgress"]
 - !private ["So21UIAppearanceContainerP", "SWRevealViewController"]
@@ -889,6 +1094,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "URL"]
+- ["So21UIAppearanceContainerP", "UserDefaults"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
@@ -896,12 +1102,18 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "animate"]
 - !private ["So21UIAppearanceContainerP", "backButton"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "bringSubview"]
 - !private ["So21UIAppearanceContainerP", "btnSound"]
 - !private ["So21UIAppearanceContainerP", "center"]
 - !private ["So21UIAppearanceContainerP", "clockwise"]
 - !private ["So21UIAppearanceContainerP", "countDownLabel"]
+- !private ["So21UIAppearanceContainerP", "defaults"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "durationSlide"]
+- !private ["So21UIAppearanceContainerP", "durationSliderValueChanged"]
 - !private ["So21UIAppearanceContainerP", "glowAmount"]
 - !private ["So21UIAppearanceContainerP", "glowMode"]
+- !private ["So21UIAppearanceContainerP", "goBack"]
 - !private ["So21UIAppearanceContainerP", "gradientRotateSpeed"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "isAnimating"]
@@ -924,6 +1136,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "stopAnimation"]
 - !private ["So21UIAppearanceContainerP", "tapGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "timerButton"]
+- !private ["So21UIAppearanceContainerP", "trackColor"]
 - !private ["So21UIAppearanceContainerP", "trackThickness"]
 - !private ["So21UIAppearanceContainerP", "value"]
 - !private ["So21UIAppearanceContainerP", "view"]
@@ -938,11 +1152,15 @@ depends-member:
 - !private ["So7UIColorC", "init"]
 - !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "AVAudioPlayer"]
+- !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "Bundle"]
 - !private ["So18UIContentContainerP", "CGPoint"]
 - !private ["So18UIContentContainerP", "CGRect"]
+- !private ["So18UIContentContainerP", "DataService"]
+- !private ["So18UIContentContainerP", "Date"]
 - !private ["So18UIContentContainerP", "DispatchQueue"]
 - !private ["So18UIContentContainerP", "Double"]
+- !private ["So18UIContentContainerP", "ISO8601DateFormatter"]
 - !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "KDCircularProgress"]
 - !private ["So18UIContentContainerP", "SWRevealViewController"]
@@ -950,10 +1168,16 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "URL"]
+- ["So18UIContentContainerP", "UserDefaults"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "backButton"]
 - !private ["So18UIContentContainerP", "btnSound"]
 - !private ["So18UIContentContainerP", "countDownLabel"]
+- !private ["So18UIContentContainerP", "defaults"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "durationSlide"]
+- !private ["So18UIContentContainerP", "durationSliderValueChanged"]
+- !private ["So18UIContentContainerP", "goBack"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "label"]
 - !private ["So18UIContentContainerP", "navigationController"]
@@ -967,6 +1191,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "slider"]
 - !private ["So18UIContentContainerP", "sliderValue"]
 - !private ["So18UIContentContainerP", "tapGestureRecognizer"]
+- !private ["So18UIContentContainerP", "timerButton"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "zazen"]
@@ -981,6 +1206,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "addTarget"]
 - !private ["So17UICoordinateSpaceP", "animate"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "bringSubview"]
 - !private ["So17UICoordinateSpaceP", "center"]
 - !private ["So17UICoordinateSpaceP", "clockwise"]
 - !private ["So17UICoordinateSpaceP", "glowAmount"]
@@ -995,6 +1221,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "startAngle"]
 - !private ["So17UICoordinateSpaceP", "stopAnimation"]
 - !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "trackColor"]
 - !private ["So17UICoordinateSpaceP", "trackThickness"]
 - !private ["So17UICoordinateSpaceP", "value"]
 - !private ["So13UIDynamicItemP", "addGestureRecognizer"]
@@ -1002,6 +1229,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "addTarget"]
 - !private ["So13UIDynamicItemP", "animate"]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "bringSubview"]
 - !private ["So13UIDynamicItemP", "center"]
 - !private ["So13UIDynamicItemP", "clockwise"]
 - !private ["So13UIDynamicItemP", "glowAmount"]
@@ -1016,14 +1244,19 @@ depends-member:
 - !private ["So13UIDynamicItemP", "startAngle"]
 - !private ["So13UIDynamicItemP", "stopAnimation"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "trackColor"]
 - !private ["So13UIDynamicItemP", "trackThickness"]
 - !private ["So13UIDynamicItemP", "value"]
 - !private ["So18UIFocusEnvironmentP", "AVAudioPlayer"]
+- !private ["So18UIFocusEnvironmentP", "Auth"]
 - !private ["So18UIFocusEnvironmentP", "Bundle"]
 - !private ["So18UIFocusEnvironmentP", "CGPoint"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "DataService"]
+- !private ["So18UIFocusEnvironmentP", "Date"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
 - !private ["So18UIFocusEnvironmentP", "Double"]
+- !private ["So18UIFocusEnvironmentP", "ISO8601DateFormatter"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "KDCircularProgress"]
 - !private ["So18UIFocusEnvironmentP", "SWRevealViewController"]
@@ -1031,6 +1264,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "URL"]
+- ["So18UIFocusEnvironmentP", "UserDefaults"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
@@ -1038,12 +1272,18 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "animate"]
 - !private ["So18UIFocusEnvironmentP", "backButton"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "bringSubview"]
 - !private ["So18UIFocusEnvironmentP", "btnSound"]
 - !private ["So18UIFocusEnvironmentP", "center"]
 - !private ["So18UIFocusEnvironmentP", "clockwise"]
 - !private ["So18UIFocusEnvironmentP", "countDownLabel"]
+- !private ["So18UIFocusEnvironmentP", "defaults"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "durationSlide"]
+- !private ["So18UIFocusEnvironmentP", "durationSliderValueChanged"]
 - !private ["So18UIFocusEnvironmentP", "glowAmount"]
 - !private ["So18UIFocusEnvironmentP", "glowMode"]
+- !private ["So18UIFocusEnvironmentP", "goBack"]
 - !private ["So18UIFocusEnvironmentP", "gradientRotateSpeed"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "isAnimating"]
@@ -1066,6 +1306,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "stopAnimation"]
 - !private ["So18UIFocusEnvironmentP", "tapGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "timerButton"]
+- !private ["So18UIFocusEnvironmentP", "trackColor"]
 - !private ["So18UIFocusEnvironmentP", "trackThickness"]
 - !private ["So18UIFocusEnvironmentP", "value"]
 - !private ["So18UIFocusEnvironmentP", "view"]
@@ -1076,6 +1318,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "animate"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "bringSubview"]
 - !private ["So11UIFocusItemP", "center"]
 - !private ["So11UIFocusItemP", "clockwise"]
 - !private ["So11UIFocusItemP", "glowAmount"]
@@ -1090,17 +1333,22 @@ depends-member:
 - !private ["So11UIFocusItemP", "startAngle"]
 - !private ["So11UIFocusItemP", "stopAnimation"]
 - !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "trackColor"]
 - !private ["So11UIFocusItemP", "trackThickness"]
 - !private ["So11UIFocusItemP", "value"]
 - !private ["So7UILabelC", "isHidden"]
 - !private ["So7UILabelC", "text"]
 - !private ["So22UINavigationControllerC", "setNavigationBarHidden"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVAudioPlayer"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "DataService"]
+- !private ["So30UIPasteConfigurationSupportingP", "Date"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
 - !private ["So30UIPasteConfigurationSupportingP", "Double"]
+- !private ["So30UIPasteConfigurationSupportingP", "ISO8601DateFormatter"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "KDCircularProgress"]
 - !private ["So30UIPasteConfigurationSupportingP", "SWRevealViewController"]
@@ -1108,6 +1356,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "URL"]
+- ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
@@ -1115,12 +1364,18 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "animate"]
 - !private ["So30UIPasteConfigurationSupportingP", "backButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "bringSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "btnSound"]
 - !private ["So30UIPasteConfigurationSupportingP", "center"]
 - !private ["So30UIPasteConfigurationSupportingP", "clockwise"]
 - !private ["So30UIPasteConfigurationSupportingP", "countDownLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "defaults"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "durationSlide"]
+- !private ["So30UIPasteConfigurationSupportingP", "durationSliderValueChanged"]
 - !private ["So30UIPasteConfigurationSupportingP", "glowAmount"]
 - !private ["So30UIPasteConfigurationSupportingP", "glowMode"]
+- !private ["So30UIPasteConfigurationSupportingP", "goBack"]
 - !private ["So30UIPasteConfigurationSupportingP", "gradientRotateSpeed"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "isAnimating"]
@@ -1145,6 +1400,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "stopAnimation"]
 - !private ["So30UIPasteConfigurationSupportingP", "tapGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "timerButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "trackColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "trackThickness"]
 - !private ["So30UIPasteConfigurationSupportingP", "value"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
@@ -1152,11 +1409,16 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "zazen"]
 - ["So11UIResponderC", "AVAudioPlayer"]
 - ["So11UIResponderC", "AnyObject"]
+- !private ["So11UIResponderC", "Auth"]
 - !private ["So11UIResponderC", "Bundle"]
 - !private ["So11UIResponderC", "CGPoint"]
 - !private ["So11UIResponderC", "CGRect"]
+- !private ["So11UIResponderC", "DataService"]
+- !private ["So11UIResponderC", "Date"]
 - !private ["So11UIResponderC", "DispatchQueue"]
 - ["So11UIResponderC", "Double"]
+- !private ["So11UIResponderC", "Float"]
+- !private ["So11UIResponderC", "ISO8601DateFormatter"]
 - !private ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "KDCircularProgress"]
 - !private ["So11UIResponderC", "NSError"]
@@ -1170,6 +1432,7 @@ depends-member:
 - ["So11UIResponderC", "UISlider"]
 - ["So11UIResponderC", "UISwipeGestureRecognizer"]
 - !private ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", "UserDefaults"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "addSubview"]
 - !private ["So11UIResponderC", "addTarget"]
@@ -1177,13 +1440,20 @@ depends-member:
 - ["So11UIResponderC", "animateButtonTapped"]
 - ["So11UIResponderC", "backButton"]
 - !private ["So11UIResponderC", "backgroundColor"]
+- !private ["So11UIResponderC", "bringSubview"]
 - ["So11UIResponderC", "btnSound"]
 - !private ["So11UIResponderC", "center"]
 - !private ["So11UIResponderC", "clockwise"]
 - ["So11UIResponderC", "countDownLabel"]
 - ["So11UIResponderC", "darkMode"]
+- ["So11UIResponderC", "defaults"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "durationSlide"]
+- ["So11UIResponderC", "durationSliderValueChanged"]
 - !private ["So11UIResponderC", "glowAmount"]
 - !private ["So11UIResponderC", "glowMode"]
+- ["So11UIResponderC", "goBack"]
+- ["So11UIResponderC", "goBackButton"]
 - ["So11UIResponderC", "goBackToOneButtonTapped"]
 - !private ["So11UIResponderC", "gradientRotateSpeed"]
 - ["So11UIResponderC", "init"]
@@ -1203,6 +1473,7 @@ depends-member:
 - !private ["So11UIResponderC", "roundedCorners"]
 - !private ["So11UIResponderC", "set"]
 - !private ["So11UIResponderC", "setNavigationBarHidden"]
+- ["So11UIResponderC", "shareZazen"]
 - !private ["So11UIResponderC", "shared"]
 - ["So11UIResponderC", "slider"]
 - ["So11UIResponderC", "sliderChanged"]
@@ -1211,17 +1482,23 @@ depends-member:
 - !private ["So11UIResponderC", "stopAnimation"]
 - !private ["So11UIResponderC", "tapGestureRecognizer"]
 - !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "timerButton"]
+- !private ["So11UIResponderC", "trackColor"]
 - !private ["So11UIResponderC", "trackThickness"]
 - !private ["So11UIResponderC", "value"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "zazen"]
 - !private ["So30UIResponderStandardEditActionsP", "AVAudioPlayer"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
 - !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "DataService"]
+- !private ["So30UIResponderStandardEditActionsP", "Date"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
 - !private ["So30UIResponderStandardEditActionsP", "Double"]
+- !private ["So30UIResponderStandardEditActionsP", "ISO8601DateFormatter"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "KDCircularProgress"]
 - !private ["So30UIResponderStandardEditActionsP", "SWRevealViewController"]
@@ -1229,6 +1506,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "URL"]
+- ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
@@ -1236,12 +1514,18 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "animate"]
 - !private ["So30UIResponderStandardEditActionsP", "backButton"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "bringSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "btnSound"]
 - !private ["So30UIResponderStandardEditActionsP", "center"]
 - !private ["So30UIResponderStandardEditActionsP", "clockwise"]
 - !private ["So30UIResponderStandardEditActionsP", "countDownLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "defaults"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "durationSlide"]
+- !private ["So30UIResponderStandardEditActionsP", "durationSliderValueChanged"]
 - !private ["So30UIResponderStandardEditActionsP", "glowAmount"]
 - !private ["So30UIResponderStandardEditActionsP", "glowMode"]
+- !private ["So30UIResponderStandardEditActionsP", "goBack"]
 - !private ["So30UIResponderStandardEditActionsP", "gradientRotateSpeed"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "isAnimating"]
@@ -1266,6 +1550,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "stopAnimation"]
 - !private ["So30UIResponderStandardEditActionsP", "tapGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "timerButton"]
+- !private ["So30UIResponderStandardEditActionsP", "trackColor"]
 - !private ["So30UIResponderStandardEditActionsP", "trackThickness"]
 - !private ["So30UIResponderStandardEditActionsP", "value"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
@@ -1276,11 +1562,15 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
 - !private ["So16UIStateRestoringP", "AVAudioPlayer"]
+- !private ["So16UIStateRestoringP", "Auth"]
 - !private ["So16UIStateRestoringP", "Bundle"]
 - !private ["So16UIStateRestoringP", "CGPoint"]
 - !private ["So16UIStateRestoringP", "CGRect"]
+- !private ["So16UIStateRestoringP", "DataService"]
+- !private ["So16UIStateRestoringP", "Date"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
 - !private ["So16UIStateRestoringP", "Double"]
+- !private ["So16UIStateRestoringP", "ISO8601DateFormatter"]
 - !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "KDCircularProgress"]
 - !private ["So16UIStateRestoringP", "SWRevealViewController"]
@@ -1288,10 +1578,16 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "URL"]
+- ["So16UIStateRestoringP", "UserDefaults"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "backButton"]
 - !private ["So16UIStateRestoringP", "btnSound"]
 - !private ["So16UIStateRestoringP", "countDownLabel"]
+- !private ["So16UIStateRestoringP", "defaults"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "durationSlide"]
+- !private ["So16UIStateRestoringP", "durationSliderValueChanged"]
+- !private ["So16UIStateRestoringP", "goBack"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "label"]
 - !private ["So16UIStateRestoringP", "navigationController"]
@@ -1305,15 +1601,20 @@ depends-member:
 - !private ["So16UIStateRestoringP", "slider"]
 - !private ["So16UIStateRestoringP", "sliderValue"]
 - !private ["So16UIStateRestoringP", "tapGestureRecognizer"]
+- !private ["So16UIStateRestoringP", "timerButton"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "zazen"]
 - !private ["So18UITraitEnvironmentP", "AVAudioPlayer"]
+- !private ["So18UITraitEnvironmentP", "Auth"]
 - !private ["So18UITraitEnvironmentP", "Bundle"]
 - !private ["So18UITraitEnvironmentP", "CGPoint"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "DataService"]
+- !private ["So18UITraitEnvironmentP", "Date"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
 - !private ["So18UITraitEnvironmentP", "Double"]
+- !private ["So18UITraitEnvironmentP", "ISO8601DateFormatter"]
 - !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "KDCircularProgress"]
 - !private ["So18UITraitEnvironmentP", "SWRevealViewController"]
@@ -1321,6 +1622,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "URL"]
+- ["So18UITraitEnvironmentP", "UserDefaults"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
@@ -1328,12 +1630,18 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "animate"]
 - !private ["So18UITraitEnvironmentP", "backButton"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "bringSubview"]
 - !private ["So18UITraitEnvironmentP", "btnSound"]
 - !private ["So18UITraitEnvironmentP", "center"]
 - !private ["So18UITraitEnvironmentP", "clockwise"]
 - !private ["So18UITraitEnvironmentP", "countDownLabel"]
+- !private ["So18UITraitEnvironmentP", "defaults"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "durationSlide"]
+- !private ["So18UITraitEnvironmentP", "durationSliderValueChanged"]
 - !private ["So18UITraitEnvironmentP", "glowAmount"]
 - !private ["So18UITraitEnvironmentP", "glowMode"]
+- !private ["So18UITraitEnvironmentP", "goBack"]
 - !private ["So18UITraitEnvironmentP", "gradientRotateSpeed"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "isAnimating"]
@@ -1356,6 +1664,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "stopAnimation"]
 - !private ["So18UITraitEnvironmentP", "tapGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "timerButton"]
+- !private ["So18UITraitEnvironmentP", "trackColor"]
 - !private ["So18UITraitEnvironmentP", "trackThickness"]
 - !private ["So18UITraitEnvironmentP", "value"]
 - !private ["So18UITraitEnvironmentP", "view"]
@@ -1366,6 +1676,7 @@ depends-member:
 - !private ["So6UIViewC", "addTarget"]
 - !private ["So6UIViewC", "animate"]
 - !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "bringSubview"]
 - !private ["So6UIViewC", "center"]
 - !private ["So6UIViewC", "clockwise"]
 - !private ["So6UIViewC", "glowAmount"]
@@ -1380,15 +1691,21 @@ depends-member:
 - !private ["So6UIViewC", "startAngle"]
 - !private ["So6UIViewC", "stopAnimation"]
 - !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "trackColor"]
 - !private ["So6UIViewC", "trackThickness"]
 - !private ["So6UIViewC", "value"]
 - ["So16UIViewControllerC", "AVAudioPlayer"]
 - ["So16UIViewControllerC", "AnyObject"]
+- !private ["So16UIViewControllerC", "Auth"]
 - !private ["So16UIViewControllerC", "Bundle"]
 - !private ["So16UIViewControllerC", "CGPoint"]
 - !private ["So16UIViewControllerC", "CGRect"]
+- !private ["So16UIViewControllerC", "DataService"]
+- !private ["So16UIViewControllerC", "Date"]
 - !private ["So16UIViewControllerC", "DispatchQueue"]
 - ["So16UIViewControllerC", "Double"]
+- !private ["So16UIViewControllerC", "Float"]
+- !private ["So16UIViewControllerC", "ISO8601DateFormatter"]
 - !private ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "KDCircularProgress"]
 - !private ["So16UIViewControllerC", "NSError"]
@@ -1402,12 +1719,19 @@ depends-member:
 - ["So16UIViewControllerC", "UISlider"]
 - ["So16UIViewControllerC", "UISwipeGestureRecognizer"]
 - !private ["So16UIViewControllerC", "URL"]
+- ["So16UIViewControllerC", "UserDefaults"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "animateButtonTapped"]
 - ["So16UIViewControllerC", "backButton"]
 - ["So16UIViewControllerC", "btnSound"]
 - ["So16UIViewControllerC", "countDownLabel"]
 - ["So16UIViewControllerC", "darkMode"]
+- ["So16UIViewControllerC", "defaults"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "durationSlide"]
+- ["So16UIViewControllerC", "durationSliderValueChanged"]
+- ["So16UIViewControllerC", "goBack"]
+- ["So16UIViewControllerC", "goBackButton"]
 - ["So16UIViewControllerC", "goBackToOneButtonTapped"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "label"]
@@ -1420,14 +1744,21 @@ depends-member:
 - !private ["So16UIViewControllerC", "revealToggle"]
 - !private ["So16UIViewControllerC", "revealViewController"]
 - !private ["So16UIViewControllerC", "setNavigationBarHidden"]
+- ["So16UIViewControllerC", "shareZazen"]
 - ["So16UIViewControllerC", "slider"]
 - ["So16UIViewControllerC", "sliderChanged"]
 - ["So16UIViewControllerC", "sliderValue"]
 - !private ["So16UIViewControllerC", "tapGestureRecognizer"]
+- ["So16UIViewControllerC", "timerButton"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "zazen"]
 - !private ["10Foundation3URLV", "init"]
+- !private ["So4UserC", "uid"]
+- !private ["So12UserDefaultsC", "set"]
+- ["So12UserDefaultsC", "standard"]
+- !private ["So12UserDefaultsC", "value"]
+- !private ["So8UserInfoP", "uid"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s15_CVarArgAlignedP", "seconds"]
@@ -1438,6 +1769,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "animate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bringSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "center"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "clockwise"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "glowAmount"]
@@ -1452,29 +1784,34 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "startAngle"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "stopAnimation"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "trackColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "trackThickness"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "value"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "seconds"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "seconds"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "darkGray"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVAudioPlayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DataService"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ISO8601DateFormatter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "KDCircularProgress"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SWRevealViewController"]
@@ -1482,23 +1819,32 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "asyncAfter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bringSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btnSound"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clockwise"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "countDownLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "darkGray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "debugDescription"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "defaults"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "durationSlide"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "durationSliderValueChanged"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "glowAmount"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "glowMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "goBack"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "gradientRotateSpeed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isAnimating"]
@@ -1524,26 +1870,32 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "slider"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sliderValue"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startAngle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stop"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stopAnimation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tapGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timerButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trackColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "trackThickness"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zazen"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "seconds"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "So13AVAudioPlayerC"
-- !private "s23BidirectionalCollectionP"
+- !private "So4AuthC"
+- "s23BidirectionalCollectionP"
 - !private "s19BinaryFloatingPointP"
 - !private "s13BinaryIntegerP"
 - !private "Sb"
@@ -1553,36 +1905,40 @@ depends-nominal:
 - !private "SC7CGPointV"
 - !private "SC6CGRectV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- "s10CollectionP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- !private "18Pop_Up_Circle_Test11DataServiceC"
+- !private "10Foundation4DateV"
+- "s9DecodableP"
 - !private "So14DispatchObjectC"
 - !private "So13DispatchQueueC"
 - !private "8Dispatch0A4TimeV"
 - !private "8Dispatch0A12TimeIntervalO"
 - !private "Sd"
-- !private "s9EncodableP"
+- "s9EncodableP"
 - "s9EquatableP"
 - !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "s13FloatingPointP"
+- !private "So9FormatterC"
 - "s8HashableP"
+- !private "So20ISO8601DateFormatterC"
 - !private "Si"
 - !private "18KDCircularProgressAAC"
 - !private "18KDCircularProgress0aB8GlowModeO"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So7NSErrorC"
@@ -1595,19 +1951,19 @@ depends-nominal:
 - !private "s7NumericP"
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
-- !private "s26RangeReplaceableCollectionP"
+- "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "So22SWRevealViewControllerC"
-- !private "s8SequenceP"
+- "s8SequenceP"
 - !private "s10SetAlgebraP"
 - !private "s13SignedIntegerP"
 - !private "s13SignedNumericP"
 - !private "s10StrideableP"
-- !private "SS"
-- !private "s14StringProtocolP"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - "18Pop_Up_Circle_Test19TimerViewControllerC"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
@@ -1636,23 +1992,26 @@ depends-nominal:
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "10Foundation3URLV"
+- !private "So4UserC"
+- "So12UserDefaultsC"
+- !private "So8UserInfoP"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s33_ExpressibleByStringInterpolationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s16_SwiftStringViewP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
@@ -1676,81 +2035,87 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging-umbrella.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton-umbrella.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-umbrella.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Headers/Fabric.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FIRMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Headers/FirebaseMessaging.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Headers/OneSignal.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Headers/DLRadioButton.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/Pop Up Circle Test-Bridging-Header.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pop Up Circle Test/Supporting Files/SWRevealViewController.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Headers/FABAttributes.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Headers/KDCircularProgress-Swift.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthSwiftNameSupport.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap"
-- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/Fabric/iOS/Fabric.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseMessaging/FirebaseMessaging.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/DLRadioButton/DLRadioButton.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/josephhall/Desktop/Code/PopUpCircleTest/DerivedData2/Pop Up Circle Test/Build/Products/Debug-iphoneos/KDCircularProgress/KDCircularProgress.framework/Modules/module.modulemap"
@@ -1768,4 +2133,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "ffa0a3b4bf387ebbd1345ef3bf464b1d"
+interface-hash: "ab4b783d72bb31b452ba1a2032f5182d"

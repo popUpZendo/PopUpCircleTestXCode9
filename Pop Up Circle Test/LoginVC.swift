@@ -23,29 +23,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
-//        func editingChanged(_ textField: UITextField) {
-//            if textField.text?.count == 1 {
-//                if textField.text?.first == " " {
-//                    textField.text = ""
-//                    return
-//                }
-//            }
-//            guard
-//                let habit = habitNameField.text, !habit.isEmpty,
-//                let goal = goalField.text, !goal.isEmpty,
-//                let frequency = frequencyField.text, !frequency.isEmpty
-//                else {
-//                    doneBarButton.isEnabled = false
-//                    return
-//            }
-//            doneBarButton.isEnabled = true
-//        }
         
     }
     
-    //actions
+   
     @IBAction func loginButton(_ sender: Any) {
         login()
     }
@@ -144,7 +125,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 print(error!)
                 return
             }
-            guard let uid = user?.uid else{
+            // CHANGED THIS:
+            //guard let uid = user?.uid else{
+            //                TO THIS:
+            guard let uid = Auth.auth().currentUser?.uid else{
                 return
             }
             

@@ -21,6 +21,8 @@ class DataService {
     private var _REF_BUDDHA = DB_BASE.child("Buddha")
     private var _REF_BODHI = DB_BASE.child("bodhi")
     private var _REF_CONVERSATION = DB_BASE.child("conversation")
+    private var _REF_ONESIGNAL = DB_BASE.child("onesignal")
+    private var _REF_ZAZEN = DB_BASE.child("zazen")
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
@@ -48,6 +50,14 @@ class DataService {
     
     var REF_CONVERSATION: DatabaseReference {
         return _REF_CONVERSATION
+    }
+    
+    var REF_ONESIGNAL: DatabaseReference {
+        return _REF_ONESIGNAL
+    }
+    
+    var REF_ZAZEN: DatabaseReference {
+        return _REF_ZAZEN
     }
     
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
@@ -94,6 +104,15 @@ class DataService {
         }
     }
     
+    func uploadZazen(withDate date: String, withDuration duration: String, forUID uid: String, withKey key: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+        if key != nil {
+            REF_ZAZEN.child(key!).child("zazen").childByAutoId().child("sessions").childByAutoId().setValue(["Date":date, "Duration": duration, "senderId": uid])
+            sendComplete(true)
+        } else {
+            REF_ZAZEN.child(uid).child("sessions").childByAutoId().setValue(["Date": date, "Duration": duration, "senderId": uid])
+            sendComplete(true)
+        }
+    }
     
     func uploadBodhi(withName name: String, withPopUpGroup popUpGroup: String, withCity city: String, withState state: String, withTemple temple: String, withTeacher teacher: String, withPractice practice: String, forUID uid: String, withBodhiKey bodhiKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
         if bodhiKey != nil {
@@ -102,6 +121,27 @@ class DataService {
         } else {
             REF_BODHI.child(uid).setValue(["Name": name, "PopUpGroup": popUpGroup, "City": city, "State": state, "Temple": temple, "Teacher": teacher, "Practice": practice,"senderId": uid])
             sendComplete(true)
+        }
+    }
+    
+    func uploadPlayerID(withPlayerID playerID: String, forUserId id: String, forUID uid: String, withKey Key: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
+        if Key != nil {
+            REF_ONESIGNAL.child(Key!).child("profile").childByAutoId().setValue(["playerID": playerID, "senderId": uid])
+            sendComplete(true)
+        } else {
+            REF_ONESIGNAL.child(uid).setValue(["playerID": playerID, "senderId": uid])
+            sendComplete(true)
+        }
+    }
+    
+    func getPlayerID(forUID uid: String, handler: @escaping (_ username: String?) -> ()) {
+        REF_ONESIGNAL.observeSingleEvent(of: .value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                if user.key == uid {
+                    handler(user.childSnapshot(forPath: "playerID").value as? String ?? "defaultValue")
+                }
+            }
         }
     }
     
@@ -234,6 +274,19 @@ class DataService {
         }
     }
     
+    func getOnesignalIdsFor(group: Group, handler: @escaping (_ oneSignalArray: [String]) -> ()) {
+        var oneSignalArray = [String]()
+        REF_ONESIGNAL.observeSingleEvent(of: .value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                if group.members.contains(user.key) {
+                    let playerID = user.childSnapshot(forPath: "playerID").value as! String
+                    oneSignalArray.append(playerID)
+                }
+            }
+            handler(oneSignalArray)
+        }
+    }
     
     
     func getEmailsFor(group: Group, handler: @escaping (_ emailArray: [String]) -> ()) {
@@ -273,7 +326,7 @@ class DataService {
     func getAllConversations(handler: @escaping (_ conversationsArray: [Conversation]) -> ()) {
         var partner = [""]
         var title: String = ""
-        var partnerName = ""
+        var partnerName = "unyeilding"
         
         var conversationsArray = [Conversation]()
         REF_CONVERSATION.observeSingleEvent(of: .value) { (conversationSnapshot) in
@@ -282,26 +335,36 @@ class DataService {
                 let memberArray = conversation.childSnapshot(forPath: "members").value as! [String]
                 partner = memberArray.filter {$0 != (Auth.auth().currentUser?.uid)!}
                 if memberArray.contains((Auth.auth().currentUser?.uid)!) {
-                    
+                    //var partnerName = "unyielding"
                     let newPartner = (String(describing: partner))
                     title = newPartner.replacingOccurrences(of: "[\\[\\]\\^+<>\"]", with: "", options: .regularExpression, range: nil)
+                    print ("newpartner \(newPartner)")
                 
-                        databaseRef.child("bodhi").child(title).observeSingleEvent(of: .value, with: { (snapshot) in
+                      func getPartnerName(completion: @escaping (String) -> ()){  databaseRef.child("bodhi").child(title).observeSingleEvent(of: .value, with: { (snapshot) in
                             
                             if let bodhiDict = snapshot.value as? [String: AnyObject]
                             {
                                 
-                                partnerName = (bodhiDict["Name"] as! String)
+                                let partnerName = (bodhiDict["Name"] as! String)
                                     print ("partnerName returned from firebase: \(partnerName)")
+                                    completion(partnerName)
                                 // Point A:This prints "Sandy"
+                            }else{
+                                completion("")
                             }
                         })
+                    }
+                    
+                    getPartnerName(completion: { (name) in
+                        print("Received \(name)")
+                       partnerName = name
+                    })
                     
                     print ("partnerName: \(partnerName)")
                     // This prints nothing but if I add partnerName = "Sandy", then the function complete
                     title = partnerName
                     print ("new title: \(title)")
-                    let conversation = Conversation(conversationTitle: title, key: conversation.key, conversationMembers: memberArray, conversationMemberCount: memberArray.count)
+                    let conversation = Conversation(conversationTitle: newPartner, key: conversation.key, conversationMembers: memberArray, conversationMemberCount: memberArray.count, partnerName: partnerName)
                     conversationsArray.append(conversation)
                 }
             }
