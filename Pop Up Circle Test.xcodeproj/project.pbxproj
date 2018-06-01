@@ -16,6 +16,7 @@
 		D7079F241F06127500026B21 /* DharmaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F221F06127500026B21 /* DharmaCell.swift */; };
 		D7079F251F06127500026B21 /* DharmaRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F231F06127500026B21 /* DharmaRock.swift */; };
 		D7079F2B1F06B91100026B21 /* LearningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7079F2A1F06B91100026B21 /* LearningVC.swift */; };
+		D707BDE820ACFFBA001C687C /* NewMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707BDE720ACFFB8001C687C /* NewMeVC.swift */; };
 		D7237B37209CD6580070430D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7237B36209CD6570070430D /* LoginVC.swift */; };
 		D7237B3B209E11220070430D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D7237B39209E11210070430D /* Contents.json */; };
 		D7237B3C209E11220070430D /* amanda-flavell-21988.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7237B3A209E11210070430D /* amanda-flavell-21988.jpg */; };
@@ -144,6 +145,7 @@
 		D7079F221F06127500026B21 /* DharmaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaCell.swift; sourceTree = "<group>"; };
 		D7079F231F06127500026B21 /* DharmaRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaRock.swift; sourceTree = "<group>"; };
 		D7079F2A1F06B91100026B21 /* LearningVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningVC.swift; sourceTree = "<group>"; };
+		D707BDE720ACFFB8001C687C /* NewMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMeVC.swift; sourceTree = "<group>"; };
 		D7237B36209CD6570070430D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = "Pop Up Circle Test/LoginVC.swift"; sourceTree = SOURCE_ROOT; };
 		D7237B39209E11210070430D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		D7237B3A209E11210070430D /* amanda-flavell-21988.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amanda-flavell-21988.jpg"; sourceTree = "<group>"; };
@@ -476,6 +478,7 @@
 				D76E0F54209A6BE500B70AD5 /* ConversationsVC.swift */,
 				D7B8D8CA1F86761A002DB434 /* GroupFeedVC.swift */,
 				D7B8D8CB1F86761A002DB434 /* GroupsVC.swift */,
+				D707BDE720ACFFB8001C687C /* NewMeVC.swift */,
 				D7B8D8CD1F86761A002DB434 /* MeVC.swift */,
 			);
 			path = Controller;
@@ -852,6 +855,7 @@
 				D7B8D8EF1F86761B002DB434 /* InsetTextField.swift in Sources */,
 				D76E0F4320992B2200B70AD5 /* Bodhi.swift in Sources */,
 				D7B8D8DF1F86761B002DB434 /* CreateGroupsVC.swift in Sources */,
+				D707BDE820ACFFBA001C687C /* NewMeVC.swift in Sources */,
 				D703D4A01F01ACB500580685 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

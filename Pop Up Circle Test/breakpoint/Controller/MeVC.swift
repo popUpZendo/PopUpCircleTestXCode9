@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  Me.swift
 //  breakpoint
 //
 //  Created by Joseph Hall on 7/24/17.
@@ -13,7 +13,7 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     
     let storageRef = Storage.storage().reference()
     let databaseRef = Database.database().reference()
-    
+   
     @IBOutlet weak var profile_image: UIImageView!
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var menuBtn: UIButton!
@@ -27,7 +27,7 @@ class MeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     @IBOutlet weak var teacherField: UITextField!
     @IBOutlet weak var practiceField: UITextField!
     @IBOutlet weak var keyField: UITextField!
-    @IBOutlet weak var uploadImageButton: UIButton!
+    @IBOutlet weak var uploadImageButton2: UIButton!
     @IBOutlet var mainView: UIView!
     
     
@@ -247,9 +247,11 @@ dismiss(animated: false, completion: nil)    }
     
 }
 
-extension MeVC: UITextFieldDelegate {
+extension NewMeVC: UITextFieldDelegate {
     private func textViewDidBeginEditing(_ textView: UITextView) {
         textView.text = ""
     }
 }
+
+
 

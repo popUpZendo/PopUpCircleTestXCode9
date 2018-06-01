@@ -83,6 +83,7 @@ class TimerViewController: UIViewController {
         
     }
     
+    
    
     @IBAction func lightSwitch(_ sender: UISwipeGestureRecognizer) {
         if self.view.backgroundColor != UIColor.darkGray{

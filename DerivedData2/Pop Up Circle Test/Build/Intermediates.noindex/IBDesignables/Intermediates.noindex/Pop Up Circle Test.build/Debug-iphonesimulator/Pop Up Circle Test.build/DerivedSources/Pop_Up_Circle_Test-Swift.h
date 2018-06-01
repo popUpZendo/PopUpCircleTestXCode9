@@ -792,7 +792,7 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test4MeVC")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified teacherField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified practiceField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified keyField;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified uploadImageButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified uploadImageButton2;
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified mainView;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker SWIFT_DEPRECATED_OBJC("Swift property 'MeVC.imagePicker' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (void)viewDidLoad;
@@ -813,6 +813,45 @@ SWIFT_CLASS("_TtC18Pop_Up_Circle_Test4MeVC")
 
 
 @interface MeVC (SWIFT_EXTENSION(Pop_Up_Circle_Test)) <UITextFieldDelegate>
+@end
+
+
+SWIFT_CLASS("_TtC18Pop_Up_Circle_Test7NewMeVC")
+@interface NewMeVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (nonatomic, readonly, strong) FIRStorageReference * _Nonnull storageRef SWIFT_DEPRECATED_OBJC("Swift property 'NewMeVC.storageRef' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, readonly, strong) FIRDatabaseReference * _Nonnull databaseRef SWIFT_DEPRECATED_OBJC("Swift property 'NewMeVC.databaseRef' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profile_image;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified sendBtn;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified popUpGroupField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified cityField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified stateField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified templeField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified teacherField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified practiceField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified keyField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified uploadImageButton;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified mainView;
+@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker SWIFT_DEPRECATED_OBJC("Swift property 'NewMeVC.imagePicker' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)viewDidLoad;
+- (BOOL)textFieldShouldReturnWithTextField:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'NewMeVC.textFieldShouldReturn(textField:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)viewWillAppear:(BOOL)animated;
+- (IBAction)sendBtnWasPressed:(id _Nonnull)sender;
+- (IBAction)dismiss:(id _Nonnull)sender;
+- (void)setupProfile SWIFT_DEPRECATED_OBJC("Swift method 'NewMeVC.setupProfile()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (IBAction)profileWasTapped:(id _Nonnull)sender;
+- (void)setUpProfileText SWIFT_DEPRECATED_OBJC("Swift method 'NewMeVC.setUpProfileText()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
+- (void)saveChanges SWIFT_DEPRECATED_OBJC("Swift method 'NewMeVC.saveChanges()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface NewMeVC (SWIFT_EXTENSION(Pop_Up_Circle_Test)) <UITextFieldDelegate>
 @end
 
 

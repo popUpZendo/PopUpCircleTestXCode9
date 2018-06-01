@@ -197,6 +197,7 @@ depends-member:
 - ["18Pop_Up_Circle_Test11DataServiceC", "getEmailsForConversation"]
 - ["18Pop_Up_Circle_Test11DataServiceC", "getIds"]
 - ["18Pop_Up_Circle_Test11DataServiceC", "getOnesignalIdsFor"]
+- ["18Pop_Up_Circle_Test11DataServiceC", "getPartnerName"]
 - ["18Pop_Up_Circle_Test11DataServiceC", "getPic"]
 - ["18Pop_Up_Circle_Test11DataServiceC", "getPlayerID"]
 - ["18Pop_Up_Circle_Test11DataServiceC", "getUsername"]
@@ -666,4 +667,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "0eb97d50c47580ec21d88b64957d68d8"
+interface-hash: "18370cf8c83854c1b1cbbceee1500c4d"

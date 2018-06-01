@@ -37,8 +37,8 @@ class ConversationFeedVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
+        //self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        //self.view.addGestureRecognizer(self.revealViewController()  .tapGestureRecognizer())
         self.mainView.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         
         func getMyName(completion: @escaping (String) -> ()){

@@ -38,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                print("Approval granted to send notifications")
 //            }
 //        }
+        if !UserDefaults.standard.bool(forKey: "Walkthrough") {
+            UserDefaults.standard.set(false, forKey: "Walkthrough")
+        }
         
         self.addCategory()
         

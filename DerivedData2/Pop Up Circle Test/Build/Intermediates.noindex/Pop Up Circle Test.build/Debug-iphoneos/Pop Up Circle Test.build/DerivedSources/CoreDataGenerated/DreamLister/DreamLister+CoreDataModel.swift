@@ -2,7 +2,7 @@
 //  DreamLister+CoreDataModel.swift
 //  
 //
-//  Created by Joseph Hall on 5/16/18.
+//  Created by Joseph Hall on 5/31/18.
 //
 //  This file was automatically generated and should not be edited.
 //

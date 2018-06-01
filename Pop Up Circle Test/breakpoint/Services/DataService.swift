@@ -339,37 +339,46 @@ class DataService {
                     let newPartner = (String(describing: partner))
                     title = newPartner.replacingOccurrences(of: "[\\[\\]\\^+<>\"]", with: "", options: .regularExpression, range: nil)
                     print ("newpartner \(newPartner)")
-                
-                      func getPartnerName(completion: @escaping (String) -> ()){  databaseRef.child("bodhi").child(title).observeSingleEvent(of: .value, with: { (snapshot) in
-                            
-                            if let bodhiDict = snapshot.value as? [String: AnyObject]
-                            {
-                                
-                                let partnerName = (bodhiDict["Name"] as! String)
-                                    print ("partnerName returned from firebase: \(partnerName)")
-                                    completion(partnerName)
-                                // Point A:This prints "Sandy"
-                            }else{
-                                completion("")
-                            }
-                        })
-                    }
-                    
-                    getPartnerName(completion: { (name) in
+                    self.getPartnerName(title: title, completion: { (name) in
                         print("Received \(name)")
-                       partnerName = name
+                        partnerName = name
+                        
+                        print ("partnerName: \(partnerName)")
+                        // This prints nothing but if I add partnerName = "Sandy", then the function complete
+                        title = partnerName
+                        print ("new title: \(title)")
+                        let conversation = Conversation(conversationTitle: title, key: conversation.key, conversationMembers: memberArray, conversationMemberCount: memberArray.count, partnerName: partnerName)
+                        conversationsArray.append(conversation)
+                        handler(conversationsArray)
                     })
                     
-                    print ("partnerName: \(partnerName)")
-                    // This prints nothing but if I add partnerName = "Sandy", then the function complete
-                    title = partnerName
-                    print ("new title: \(title)")
-                    let conversation = Conversation(conversationTitle: newPartner, key: conversation.key, conversationMembers: memberArray, conversationMemberCount: memberArray.count, partnerName: partnerName)
-                    conversationsArray.append(conversation)
+                    
+                    /*getPartnerName(completion: { (name) in
+                     
+                    })*/
+                    
+                    
                 }
             }
-            handler(conversationsArray)
+            
         }
+        
+        //Line 1
+    }
+    
+    func getPartnerName(title: String, completion: @escaping (String) -> ()){  databaseRef.child("bodhi").child(title).observeSingleEvent(of: .value, with: { (snapshot) in
+        
+        if let bodhiDict = snapshot.value as? [String: AnyObject]
+        {
+            
+            let partnerName = (bodhiDict["Name"] as! String)
+            print ("partnerName returned from firebase: \(partnerName)")
+            completion(partnerName)
+            // Point A:This prints "Sandy"
+        }else{
+            completion("")
+        }
+    })
     }
     
     func createGroup(withTitle title: String, andDescription description: String, forUserIds ids: [String], handler: @escaping (_ groupCreated: Bool) -> ()) {

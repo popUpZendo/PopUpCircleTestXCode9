@@ -3,8 +3,10 @@ provides-top-level:
 - "MeVC"
 provides-nominal:
 - "18Pop_Up_Circle_Test4MeVCC"
+- "18Pop_Up_Circle_Test7NewMeVCC"
 provides-member:
 - ["18Pop_Up_Circle_Test4MeVCC", ""]
+- ["18Pop_Up_Circle_Test7NewMeVCC", ""]
 provides-dynamic-lookup:
 - "cityField"
 - "databaseRef"
@@ -33,6 +35,7 @@ provides-dynamic-lookup:
 - "templeField"
 - "textFieldShouldReturn"
 - "uploadImageButton"
+- "uploadImageButton2"
 - "viewDidLoad"
 - "viewWillAppear"
 depends-top-level:
@@ -53,6 +56,7 @@ depends-top-level:
 - "MeVC"
 - !private "NSDictionary"
 - !private "NSUUID"
+- "NewMeVC"
 - !private "SWRevealViewController"
 - "Storage"
 - "String"
@@ -643,7 +647,6 @@ depends-member:
 - ["18Pop_Up_Circle_Test4MeVCC", "UILabel"]
 - !private ["18Pop_Up_Circle_Test4MeVCC", "UITapGestureRecognizer"]
 - ["18Pop_Up_Circle_Test4MeVCC", "UITextField"]
-- ["18Pop_Up_Circle_Test4MeVCC", "UITextView"]
 - ["18Pop_Up_Circle_Test4MeVCC", "UIView"]
 - !private ["18Pop_Up_Circle_Test4MeVCC", "URL"]
 - !private ["18Pop_Up_Circle_Test4MeVCC", "URLSession"]
@@ -680,15 +683,9 @@ depends-member:
 - ["18Pop_Up_Circle_Test4MeVCC", "storageRef"]
 - ["18Pop_Up_Circle_Test4MeVCC", "teacherField"]
 - ["18Pop_Up_Circle_Test4MeVCC", "templeField"]
-- ["18Pop_Up_Circle_Test4MeVCC", "textField"]
-- ["18Pop_Up_Circle_Test4MeVCC", "textFieldDidBeginEditing"]
-- ["18Pop_Up_Circle_Test4MeVCC", "textFieldDidEndEditing"]
-- ["18Pop_Up_Circle_Test4MeVCC", "textFieldShouldBeginEditing"]
-- ["18Pop_Up_Circle_Test4MeVCC", "textFieldShouldClear"]
-- ["18Pop_Up_Circle_Test4MeVCC", "textFieldShouldEndEditing"]
 - ["18Pop_Up_Circle_Test4MeVCC", "textFieldShouldReturn"]
-- !private ["18Pop_Up_Circle_Test4MeVCC", "textViewDidBeginEditing"]
 - ["18Pop_Up_Circle_Test4MeVCC", "uploadImageButton"]
+- ["18Pop_Up_Circle_Test4MeVCC", "uploadImageButton2"]
 - !private ["18Pop_Up_Circle_Test4MeVCC", "view"]
 - ["18Pop_Up_Circle_Test4MeVCC", "viewDidLoad"]
 - ["18Pop_Up_Circle_Test4MeVCC", "viewWillAppear"]
@@ -938,6 +935,7 @@ depends-member:
 - !private ["So8NSObjectC", "unbindFromKeyboard"]
 - !private ["So8NSObjectC", "updateChildValues"]
 - ["So8NSObjectC", "uploadImageButton"]
+- ["So8NSObjectC", "uploadImageButton2"]
 - !private ["So8NSObjectC", "uuidString"]
 - !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectC", "view"]
@@ -1041,6 +1039,16 @@ depends-member:
 - !private ["So14NSSecureCodingP", "uuidString"]
 - !private ["So6NSUUIDC", "init"]
 - !private ["So6NSUUIDC", "uuidString"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "UITextView"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "deinit"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "textField"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "textFieldDidBeginEditing"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "textFieldDidEndEditing"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "textFieldShouldBeginEditing"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "textFieldShouldClear"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "textFieldShouldEndEditing"]
+- ["18Pop_Up_Circle_Test7NewMeVCC", "textFieldShouldReturn"]
+- !private ["18Pop_Up_Circle_Test7NewMeVCC", "textViewDidBeginEditing"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
 - !private ["s9OptionSetP", "touchUpInside"]
@@ -1618,6 +1626,7 @@ depends-member:
 - ["So11UIResponderC", "textViewDidBeginEditing"]
 - !private ["So11UIResponderC", "unbindFromKeyboard"]
 - ["So11UIResponderC", "uploadImageButton"]
+- ["So11UIResponderC", "uploadImageButton2"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
@@ -1975,6 +1984,7 @@ depends-member:
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
 - ["So16UIViewControllerC", "textViewDidBeginEditing"]
 - ["So16UIViewControllerC", "uploadImageButton"]
+- ["So16UIViewControllerC", "uploadImageButton2"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewWillAppear"]
@@ -2162,6 +2172,7 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So6NSUUIDC"
+- "18Pop_Up_Circle_Test7NewMeVCC"
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "So17ProgressReportingP"
@@ -2359,4 +2370,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "e563328d1ea5e9a64ba2129e1ab47f85"
+interface-hash: "1c9bef1371d21030ee2a1b4160360ea2"
